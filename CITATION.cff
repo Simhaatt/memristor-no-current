@@ -1,15 +1,25 @@
 cff-version: 1.2.0
-message: "Cite the associated paper and the version-specific Zenodo DOI after publication of the software release. Replace the provisional creator with the actual author list before creating a release."
-title: "Memristor no-current benchmark: code, checkpoints and result tables"
+message: "Please cite the associated paper and the version-specific Zenodo DOI for this software release when available."
+title: "No-current memory inference for memristor dynamics: a cross-regime evaluation of recurrent and KAN-gated models against compact device models"
 type: software
 repository-code: "https://github.com/Simhaatt/memristor-no-current"
 version: 1.0.0
 authors:
-  - name: "Memristor benchmark contributors"
+  - given-names: "Simhaa"
+    family-names: "T. T."
+    affiliation: "Department of Electrical and Electronics Engineering, Sri Sivasubramaniya Nadar College of Engineering, Rajiv Gandhi Salai, Kalavakkam, Chennai, Tamil Nadu 603110, India"
+  - given-names: "Sivakumar"
+    family-names: "B."
+    affiliation: "Department of Mathematics, Sri Sivasubramaniya Nadar College of Engineering, Rajiv Gandhi Salai, Kalavakkam, Chennai, Tamil Nadu 603110, India"
 license: MIT
 references:
   - type: article
     title: "No-current memory inference for memristor dynamics: a cross-regime evaluation of recurrent and KAN-gated models against compact device models"
     doi: 10.1007/s10825-026-02674-6
     authors:
-      - name: "Memristor benchmark contributors"
+      - given-names: "Simhaa"
+        family-names: "T. T."
+        affiliation: "Department of Electrical and Electronics Engineering, Sri Sivasubramaniya Nadar College of Engineering, Rajiv Gandhi Salai, Kalavakkam, Chennai, Tamil Nadu 603110, India"
+      - given-names: "Sivakumar"
+        family-names: "B."
+        affiliation: "Department of Mathematics, Sri Sivasubramaniya Nadar College of Engineering, Rajiv Gandhi Salai, Kalavakkam, Chennai, Tamil Nadu 603110, India"

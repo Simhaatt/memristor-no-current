@@ -1,0 +1,38 @@
+{
+  "title": "No-current memory inference for memristor dynamics: a cross-regime evaluation of recurrent and KAN-gated models against compact device models",
+  "description": "Research software and archived artifacts accompanying the paper of the same title. Includes model implementations, available trained checkpoints, archived data split definitions, run configurations, numerical result tables, and analysis scripts. Original measurement datasets are obtained from their cited providers; processed numerical partitions are regenerated locally. Reproduction requirements and historical artifact gaps are documented in the repository.",
+  "upload_type": "software",
+  "version": "1.0.0",
+  "access_right": "open",
+  "license": "mit",
+  "creators": [
+    {
+      "name": "Simhaa T. T.",
+      "affiliation": "Department of Electrical and Electronics Engineering, Sri Sivasubramaniya Nadar College of Engineering, Rajiv Gandhi Salai, Kalavakkam, Chennai, Tamil Nadu 603110, India"
+    },
+    {
+      "name": "Sivakumar B.",
+      "affiliation": "Department of Mathematics, Sri Sivasubramaniya Nadar College of Engineering, Rajiv Gandhi Salai, Kalavakkam, Chennai, Tamil Nadu 603110, India"
+    }
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://doi.org/10.1007/s10825-026-02674-6",
+      "relation": "isSupplementTo",
+      "resource_type": "publication-article"
+    },
+    {
+      "identifier": "https://github.com/Simhaatt/memristor-no-current",
+      "relation": "isIdenticalTo",
+      "resource_type": "software"
+    }
+  ],
+  "keywords": [
+    "memristor",
+    "recurrent neural networks",
+    "Kolmogorov-Arnold networks",
+    "device modelling",
+    "reproducibility"
+  ],
+  "language": "eng"
+}

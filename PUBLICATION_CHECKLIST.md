@@ -1,9 +1,9 @@
 # Upload and obtain the software DOI
 
-This folder is a prepared local archive. It has not been published and has no Zenodo software DOI yet.
+The source repository is https://github.com/Simhaatt/memristor-no-current. A Zenodo software DOI is obtained by connecting the repository and publishing a GitHub release.
 
 1. Create `memristor-no-current` on GitHub, choose **Public**, and leave the initialize README/license/gitignore options unchecked because they are included here.
-2. Replace the provisional creator entries in `CITATION.cff` with the actual author names. Add `repository-code: https://github.com/YOUR-OWNER/memristor-no-current`. The paper DOI is an article reference, not the software DOI. Confirm that the supplied paper title and DOI match the final proof.
+2. Confirm the title, creator names and departmental affiliations in `.zenodo.json` and `CITATION.cff` before publishing a release. Zenodo uses `.zenodo.json` for archiving when both files are present; GitHub uses `CITATION.cff` for its citation button. The paper DOI is an article reference, not the software DOI.
 3. Use GitHub Desktop: **File > Add local repository**, select this extracted folder, and use **create a repository here** when prompted. Commit the supplied files, then publish it with the public repository destination. Alternatively use the commands below for an empty remote.
 4. Open the repository online and confirm the README, `data/splits`, `results`, code and checkpoint inventory are present. Do not upload just the ZIP into the repository as its sole content.
 5. Sign into Zenodo, connect GitHub under **Linked accounts**, then open the **GitHub** page, choose **Sync now**, and enable this repository.

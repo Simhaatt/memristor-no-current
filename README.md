@@ -1,6 +1,11 @@
-# Memristor no-current benchmark: research artifacts
+# No-current memory inference for memristor dynamics: a cross-regime evaluation of recurrent and KAN-gated models against compact device models
 
 Source repository: https://github.com/Simhaatt/memristor-no-current
+
+**Authors:** Simhaa T. T.; Sivakumar B.
+
+- Simhaa T. T.: Department of Electrical and Electronics Engineering, Sri Sivasubramaniya Nadar College of Engineering, Rajiv Gandhi Salai, Kalavakkam, Chennai, Tamil Nadu 603110, India.
+- Sivakumar B.: Department of Mathematics, Sri Sivasubramaniya Nadar College of Engineering, Rajiv Gandhi Salai, Kalavakkam, Chennai, Tamil Nadu 603110, India.
 
 Research code and archived results associated with *No-current memory inference for memristor dynamics: a cross-regime evaluation of recurrent and KAN-gated models against compact device models*. Paper DOI supplied by the authors: https://doi.org/10.1007/s10825-026-02674-6.
 
