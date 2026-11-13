@@ -1,0 +1,2 @@
+variant,feature_mode,perturbation,runs,params,teacher_r2_mean,teacher_r2_std,teacher_rmse_mean,rollout_r2_mean,rollout_r2_std,rollout_rmse_mean,rollout_final_state_mae_mean,eval_seconds_mean
+static_mlp_h200,no_current,none,3,41401,0.8941172162691752,0.00746985483645768,0.2841802140076955,0.8941172162691752,0.00746985483645768,0.2841802140076955,0.18078281978766123,0.3935244999981175

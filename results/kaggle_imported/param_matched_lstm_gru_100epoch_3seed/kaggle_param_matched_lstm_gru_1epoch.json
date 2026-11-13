@@ -1,0 +1,247 @@
+{
+  "note": "Track B/C sequence run. Timing is recorded for every variant and seed.",
+  "results": [
+    {
+      "batch_size": 64,
+      "checkpoint_path": "checkpoints/sequence/lstm_h100_seed0.pt",
+      "complexity": {
+        "base_scales": 0,
+        "kan_edges": 0,
+        "kan_layers": 0,
+        "kan_output_biases": 0,
+        "spline_coefficients": 0,
+        "spline_scales": 0,
+        "total_parameters": 42901,
+        "trainable_parameters": 42901
+      },
+      "cuda_name": "Tesla T4",
+      "device": "cuda",
+      "epoch_summaries": [
+        {
+          "epoch": 1,
+          "epoch_seconds": 1.6683056419999502,
+          "rollout_val_metrics": {
+            "rollout_final_state_mae": 0.520455539226532,
+            "rollout_mae": 0.546463668346405,
+            "rollout_normalized_horizon_rmse": 0.7725864052772522,
+            "rollout_r2": 0.4634496569633484,
+            "rollout_rmse": 0.7725864052772522
+          },
+          "teacher_forced_val_metrics": {
+            "final_state_mae": 0.24885520339012146,
+            "mae": 0.26529693603515625,
+            "normalized_horizon_rmse": 0.3974228799343109,
+            "r2": 0.8580216765403748,
+            "rmse": 0.3974228799343109
+          },
+          "train_loss_last": 0.14725354313850403,
+          "train_loss_mean": 0.4828183446557094,
+          "val_metrics": {
+            "final_state_mae": 0.24885520339012146,
+            "mae": 0.26529693603515625,
+            "normalized_horizon_rmse": 0.3974228799343109,
+            "r2": 0.8580216765403748,
+            "rmse": 0.3974228799343109
+          }
+        }
+      ],
+      "epochs": 1,
+      "eval_stride": 512,
+      "eval_windows": 256,
+      "feature_mode": "full",
+      "feature_names": [
+        "V_t",
+        "V_t_minus_1",
+        "I_t_minus_1",
+        "dV_t",
+        "sweep_direction"
+      ],
+      "final_rollout_val_metrics": {
+        "rollout_final_state_mae": 0.520455539226532,
+        "rollout_mae": 0.546463668346405,
+        "rollout_normalized_horizon_rmse": 0.7725864052772522,
+        "rollout_r2": 0.4634496569633484,
+        "rollout_rmse": 0.7725864052772522
+      },
+      "final_teacher_forced_val_metrics": {
+        "final_state_mae": 0.24885520339012146,
+        "mae": 0.26529693603515625,
+        "normalized_horizon_rmse": 0.3974228799343109,
+        "r2": 0.8580216765403748,
+        "rmse": 0.3974228799343109
+      },
+      "final_val_metrics": {
+        "final_state_mae": 0.24885520339012146,
+        "mae": 0.26529693603515625,
+        "normalized_horizon_rmse": 0.3974228799343109,
+        "r2": 0.8580216765403748,
+        "rmse": 0.3974228799343109
+      },
+      "global_steps": 39,
+      "lr": 0.001,
+      "model_input_dim": 5,
+      "rollout_eval": true,
+      "seed": 0,
+      "stride": 256,
+      "timing": {
+        "peak_cuda_memory_mb": 208.70654296875,
+        "projection_seconds_per_event": 0.0,
+        "projection_wall_clock_fraction": 0.0,
+        "projection_wall_clock_seconds": 0.0,
+        "seconds_per_epoch": 1.6686174579999715,
+        "seconds_per_step": 0.042785063025640294,
+        "wall_clock_seconds": 1.6686174579999715
+      },
+      "train_windows": 2457,
+      "variant": "lstm_h100",
+      "variant_config": {
+        "gauge_every_steps": 0,
+        "grid_size": 4,
+        "hidden_dim": 100,
+        "model_name": "lstm",
+        "moment_mode": "unchanged",
+        "name": "lstm_h100"
+      },
+      "weight_decay": 0.0,
+      "window": 256
+    },
+    {
+      "batch_size": 64,
+      "checkpoint_path": "checkpoints/sequence/gru_h116_seed0.pt",
+      "complexity": {
+        "base_scales": 0,
+        "kan_edges": 0,
+        "kan_layers": 0,
+        "kan_output_biases": 0,
+        "spline_coefficients": 0,
+        "spline_scales": 0,
+        "total_parameters": 42921,
+        "trainable_parameters": 42921
+      },
+      "cuda_name": "Tesla T4",
+      "device": "cuda",
+      "epoch_summaries": [
+        {
+          "epoch": 1,
+          "epoch_seconds": 0.7901733700000477,
+          "rollout_val_metrics": {
+            "rollout_final_state_mae": 1.7998650074005127,
+            "rollout_mae": 1.603166103363037,
+            "rollout_normalized_horizon_rmse": 1.9373573064804077,
+            "rollout_r2": -2.373927593231201,
+            "rollout_rmse": 1.9373573064804077
+          },
+          "teacher_forced_val_metrics": {
+            "final_state_mae": 0.09312716871500015,
+            "mae": 0.10344447195529938,
+            "normalized_horizon_rmse": 0.15426957607269287,
+            "r2": 0.9786067605018616,
+            "rmse": 0.15426957607269287
+          },
+          "train_loss_last": 0.027875272557139397,
+          "train_loss_mean": 0.28015322271638954,
+          "val_metrics": {
+            "final_state_mae": 0.09312716871500015,
+            "mae": 0.10344447195529938,
+            "normalized_horizon_rmse": 0.15426957607269287,
+            "r2": 0.9786067605018616,
+            "rmse": 0.15426957607269287
+          }
+        }
+      ],
+      "epochs": 1,
+      "eval_stride": 512,
+      "eval_windows": 256,
+      "feature_mode": "full",
+      "feature_names": [
+        "V_t",
+        "V_t_minus_1",
+        "I_t_minus_1",
+        "dV_t",
+        "sweep_direction"
+      ],
+      "final_rollout_val_metrics": {
+        "rollout_final_state_mae": 1.7998650074005127,
+        "rollout_mae": 1.603166103363037,
+        "rollout_normalized_horizon_rmse": 1.9373573064804077,
+        "rollout_r2": -2.373927593231201,
+        "rollout_rmse": 1.9373573064804077
+      },
+      "final_teacher_forced_val_metrics": {
+        "final_state_mae": 0.09312716871500015,
+        "mae": 0.10344447195529938,
+        "normalized_horizon_rmse": 0.15426957607269287,
+        "r2": 0.9786067605018616,
+        "rmse": 0.15426957607269287
+      },
+      "final_val_metrics": {
+        "final_state_mae": 0.09312716871500015,
+        "mae": 0.10344447195529938,
+        "normalized_horizon_rmse": 0.15426957607269287,
+        "r2": 0.9786067605018616,
+        "rmse": 0.15426957607269287
+      },
+      "global_steps": 39,
+      "lr": 0.001,
+      "model_input_dim": 5,
+      "rollout_eval": true,
+      "seed": 0,
+      "stride": 256,
+      "timing": {
+        "peak_cuda_memory_mb": 223.14453125,
+        "projection_seconds_per_event": 0.0,
+        "projection_wall_clock_fraction": 0.0,
+        "projection_wall_clock_seconds": 0.0,
+        "seconds_per_epoch": 0.7904203079999661,
+        "seconds_per_step": 0.020267187384614516,
+        "wall_clock_seconds": 0.7904203079999661
+      },
+      "train_windows": 2457,
+      "variant": "gru_h116",
+      "variant_config": {
+        "gauge_every_steps": 0,
+        "grid_size": 4,
+        "hidden_dim": 116,
+        "model_name": "gru",
+        "moment_mode": "unchanged",
+        "name": "gru_h116"
+      },
+      "weight_decay": 0.0,
+      "window": 256
+    }
+  ],
+  "summary": {
+    "gru_h116": {
+      "peak_cuda_memory_mb_max": 223.14453125,
+      "rollout_final_state_mae_mean": 1.7998650074005127,
+      "rollout_final_state_mae_std": 0.0,
+      "rollout_r2_mean": -2.373927593231201,
+      "rollout_r2_std": 0.0,
+      "rollout_rmse_mean": 1.9373573064804077,
+      "rollout_rmse_std": 0.0,
+      "runs": 1,
+      "seconds_per_step_mean": 0.020267187384614516,
+      "teacher_forced_r2_mean": 0.9786067605018616,
+      "teacher_forced_r2_std": 0.0,
+      "teacher_forced_rmse_mean": 0.15426957607269287,
+      "teacher_forced_rmse_std": 0.0,
+      "wall_clock_seconds_mean": 0.7904203079999661
+    },
+    "lstm_h100": {
+      "peak_cuda_memory_mb_max": 208.70654296875,
+      "rollout_final_state_mae_mean": 0.520455539226532,
+      "rollout_final_state_mae_std": 0.0,
+      "rollout_r2_mean": 0.4634496569633484,
+      "rollout_r2_std": 0.0,
+      "rollout_rmse_mean": 0.7725864052772522,
+      "rollout_rmse_std": 0.0,
+      "runs": 1,
+      "seconds_per_step_mean": 0.042785063025640294,
+      "teacher_forced_r2_mean": 0.8580216765403748,
+      "teacher_forced_r2_std": 0.0,
+      "teacher_forced_rmse_mean": 0.3974228799343109,
+      "teacher_forced_rmse_std": 0.0,
+      "wall_clock_seconds_mean": 1.6686174579999715
+    }
+  }
+}

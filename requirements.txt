@@ -1,0 +1,8 @@
+# Reference environment for Python 3.11; not the original Kaggle lockfile.
+torch==2.10.0
+numpy==2.2.6
+pandas==2.2.3
+scipy==1.15.3
+matplotlib==3.10.3
+scikit-learn==1.6.1
+PyYAML==6.0.2

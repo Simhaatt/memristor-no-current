@@ -1,0 +1,4162 @@
+{
+  "note": "SDC-to-SDC-cache transfer quick pass. Evaluation uses target true test split.",
+  "results": [
+    {
+      "adaptation_mode": "zero_shot",
+      "batch_size": 64,
+      "complexity": {
+        "base_scales": 0,
+        "kan_edges": 0,
+        "kan_layers": 0,
+        "kan_output_biases": 0,
+        "spline_coefficients": 0,
+        "spline_scales": 0,
+        "total_parameters": 41401,
+        "trainable_parameters": 41401
+      },
+      "epoch_summaries": [],
+      "epochs": 0,
+      "eval_stride": 512,
+      "feature_mode": "no_current",
+      "feature_names": [
+        "V_t",
+        "V_t_minus_1",
+        "dV_t",
+        "sweep_direction"
+      ],
+      "lr": 0.0,
+      "model_input_dim": 4,
+      "rollout_test_metrics": {
+        "rollout_final_state_mae": 0.8338384032249451,
+        "rollout_mae": 0.8311060667037964,
+        "rollout_normalized_horizon_rmse": 0.9860283136367798,
+        "rollout_r2": 0.37765777111053467,
+        "rollout_rmse": 0.9860283136367798
+      },
+      "seed": 0,
+      "source_checkpoint": "checkpoints\\sequence\\static_mlp_h200_no_current_seed0.pt",
+      "source_dataset": "original_sdc_state_characterisation",
+      "target_cache": "data\\processed\\sdc4dopant_holdout_w.npz",
+      "target_fold": "holdout_w",
+      "teacher_forced_test_metrics": {
+        "final_state_mae": 0.8338384032249451,
+        "mae": 0.8311060667037964,
+        "normalized_horizon_rmse": 0.9860283136367798,
+        "r2": 0.37765777111053467,
+        "rmse": 0.9860283136367798
+      },
+      "test_windows": 594,
+      "timing": {
+        "eval_wall_clock_seconds": 0.9814942999946652,
+        "global_steps": 0,
+        "seconds_per_epoch": 0.0,
+        "wall_clock_seconds": 0.0
+      },
+      "train_stride": 256,
+      "train_windows": 2880,
+      "variant": "static_mlp_h200",
+      "variant_config": {
+        "gauge_every_steps": 0,
+        "grid_size": 4,
+        "hidden_dim": 200,
+        "model_name": "static_mlp_sequence",
+        "moment_mode": "unchanged",
+        "name": "static_mlp_h200"
+      },
+      "window": 256
+    },
+    {
+      "adaptation_mode": "head_only",
+      "batch_size": 64,
+      "complexity": {
+        "base_scales": 0,
+        "kan_edges": 0,
+        "kan_layers": 0,
+        "kan_output_biases": 0,
+        "spline_coefficients": 0,
+        "spline_scales": 0,
+        "total_parameters": 41401,
+        "trainable_parameters": 201
+      },
+      "epoch_summaries": [
+        {
+          "epoch": 1.0,
+          "epoch_seconds": 1.7973897999982,
+          "train_loss_last": 0.5198338031768799,
+          "train_loss_mean": 0.6078727920850118
+        },
+        {
+          "epoch": 2.0,
+          "epoch_seconds": 1.648637799997232,
+          "train_loss_last": 0.278313547372818,
+          "train_loss_mean": 0.35298227866490683
+        },
+        {
+          "epoch": 3.0,
+          "epoch_seconds": 1.5862612999990233,
+          "train_loss_last": 0.18927858769893646,
+          "train_loss_mean": 0.20970257719357807
+        },
+        {
+          "epoch": 4.0,
+          "epoch_seconds": 1.6078224000011687,
+          "train_loss_last": 0.13249310851097107,
+          "train_loss_mean": 0.13803876092036566
+        },
+        {
+          "epoch": 5.0,
+          "epoch_seconds": 1.3593342000021948,
+          "train_loss_last": 0.09003117680549622,
+          "train_loss_mean": 0.1127672639158037
+        },
+        {
+          "epoch": 6.0,
+          "epoch_seconds": 1.4580084000044735,
+          "train_loss_last": 0.09230105578899384,
+          "train_loss_mean": 0.10033414877123303
+        },
+        {
+          "epoch": 7.0,
+          "epoch_seconds": 1.2736819999990985,
+          "train_loss_last": 0.09988421201705933,
+          "train_loss_mean": 0.0913972321483824
+        },
+        {
+          "epoch": 8.0,
+          "epoch_seconds": 1.2700422999987495,
+          "train_loss_last": 0.09232831001281738,
+          "train_loss_mean": 0.08422294275628196
+        },
+        {
+          "epoch": 9.0,
+          "epoch_seconds": 1.4425465999956941,
+          "train_loss_last": 0.07100778818130493,
+          "train_loss_mean": 0.0785850293106503
+        },
+        {
+          "epoch": 10.0,
+          "epoch_seconds": 1.5042143000027863,
+          "train_loss_last": 0.06967290490865707,
+          "train_loss_mean": 0.07396885289086236
+        }
+      ],
+      "epochs": 10,
+      "eval_stride": 512,
+      "feature_mode": "no_current",
+      "feature_names": [
+        "V_t",
+        "V_t_minus_1",
+        "dV_t",
+        "sweep_direction"
+      ],
+      "lr": 0.0003,
+      "model_input_dim": 4,
+      "rollout_test_metrics": {
+        "rollout_final_state_mae": 0.36189669370651245,
+        "rollout_mae": 0.357839435338974,
+        "rollout_normalized_horizon_rmse": 0.5498588681221008,
+        "rollout_r2": 0.8064679503440857,
+        "rollout_rmse": 0.5498588681221008
+      },
+      "seed": 0,
+      "source_checkpoint": "checkpoints\\sequence\\static_mlp_h200_no_current_seed0.pt",
+      "source_dataset": "original_sdc_state_characterisation",
+      "target_cache": "data\\processed\\sdc4dopant_holdout_w.npz",
+      "target_fold": "holdout_w",
+      "teacher_forced_test_metrics": {
+        "final_state_mae": 0.36189669370651245,
+        "mae": 0.357839435338974,
+        "normalized_horizon_rmse": 0.5498588681221008,
+        "r2": 0.8064679503440857,
+        "rmse": 0.5498588681221008
+      },
+      "test_windows": 594,
+      "timing": {
+        "eval_wall_clock_seconds": 1.2784518000044045,
+        "global_steps": 450,
+        "seconds_per_epoch": 1.494871399999829,
+        "wall_clock_seconds": 14.94871399999829
+      },
+      "train_stride": 256,
+      "train_windows": 2880,
+      "variant": "static_mlp_h200",
+      "variant_config": {
+        "gauge_every_steps": 0,
+        "grid_size": 4,
+        "hidden_dim": 200,
+        "model_name": "static_mlp_sequence",
+        "moment_mode": "unchanged",
+        "name": "static_mlp_h200"
+      },
+      "window": 256
+    },
+    {
+      "adaptation_mode": "full",
+      "batch_size": 64,
+      "complexity": {
+        "base_scales": 0,
+        "kan_edges": 0,
+        "kan_layers": 0,
+        "kan_output_biases": 0,
+        "spline_coefficients": 0,
+        "spline_scales": 0,
+        "total_parameters": 41401,
+        "trainable_parameters": 41401
+      },
+      "epoch_summaries": [
+        {
+          "epoch": 1.0,
+          "epoch_seconds": 3.472629299998516,
+          "train_loss_last": 0.037396229803562164,
+          "train_loss_mean": 0.24015883430838586
+        },
+        {
+          "epoch": 2.0,
+          "epoch_seconds": 3.3205661000029068,
+          "train_loss_last": 0.05247200280427933,
+          "train_loss_mean": 0.04619131729834609
+        },
+        {
+          "epoch": 3.0,
+          "epoch_seconds": 3.0006197999973665,
+          "train_loss_last": 0.055718425661325455,
+          "train_loss_mean": 0.04281670012407833
+        },
+        {
+          "epoch": 4.0,
+          "epoch_seconds": 3.0935648000013316,
+          "train_loss_last": 0.04809440299868584,
+          "train_loss_mean": 0.041862874064180586
+        },
+        {
+          "epoch": 5.0,
+          "epoch_seconds": 3.429835599999933,
+          "train_loss_last": 0.027714114636182785,
+          "train_loss_mean": 0.04184386221071084
+        },
+        {
+          "epoch": 6.0,
+          "epoch_seconds": 3.531209000000672,
+          "train_loss_last": 0.03843412920832634,
+          "train_loss_mean": 0.04117485053009457
+        },
+        {
+          "epoch": 7.0,
+          "epoch_seconds": 3.8167181000026176,
+          "train_loss_last": 0.06040836125612259,
+          "train_loss_mean": 0.040838506362504426
+        },
+        {
+          "epoch": 8.0,
+          "epoch_seconds": 3.0633259000023827,
+          "train_loss_last": 0.045949786901474,
+          "train_loss_mean": 0.04066344156033463
+        },
+        {
+          "epoch": 9.0,
+          "epoch_seconds": 4.065117199999804,
+          "train_loss_last": 0.031788796186447144,
+          "train_loss_mean": 0.040537616569134925
+        },
+        {
+          "epoch": 10.0,
+          "epoch_seconds": 3.6211208000022452,
+          "train_loss_last": 0.03656221926212311,
+          "train_loss_mean": 0.04051461526089244
+        }
+      ],
+      "epochs": 10,
+      "eval_stride": 512,
+      "feature_mode": "no_current",
+      "feature_names": [
+        "V_t",
+        "V_t_minus_1",
+        "dV_t",
+        "sweep_direction"
+      ],
+      "lr": 0.0003,
+      "model_input_dim": 4,
+      "rollout_test_metrics": {
+        "rollout_final_state_mae": 0.3165655732154846,
+        "rollout_mae": 0.31233155727386475,
+        "rollout_normalized_horizon_rmse": 0.5238884091377258,
+        "rollout_r2": 0.8243176341056824,
+        "rollout_rmse": 0.5238884091377258
+      },
+      "seed": 0,
+      "source_checkpoint": "checkpoints\\sequence\\static_mlp_h200_no_current_seed0.pt",
+      "source_dataset": "original_sdc_state_characterisation",
+      "target_cache": "data\\processed\\sdc4dopant_holdout_w.npz",
+      "target_fold": "holdout_w",
+      "teacher_forced_test_metrics": {
+        "final_state_mae": 0.3165655732154846,
+        "mae": 0.31233155727386475,
+        "normalized_horizon_rmse": 0.5238884091377258,
+        "r2": 0.8243176341056824,
+        "rmse": 0.5238884091377258
+      },
+      "test_windows": 594,
+      "timing": {
+        "eval_wall_clock_seconds": 0.9934146000014152,
+        "global_steps": 450,
+        "seconds_per_epoch": 3.441547060000448,
+        "wall_clock_seconds": 34.41547060000448
+      },
+      "train_stride": 256,
+      "train_windows": 2880,
+      "variant": "static_mlp_h200",
+      "variant_config": {
+        "gauge_every_steps": 0,
+        "grid_size": 4,
+        "hidden_dim": 200,
+        "model_name": "static_mlp_sequence",
+        "moment_mode": "unchanged",
+        "name": "static_mlp_h200"
+      },
+      "window": 256
+    },
+    {
+      "adaptation_mode": "scratch_same_budget",
+      "batch_size": 64,
+      "complexity": {
+        "base_scales": 0,
+        "kan_edges": 0,
+        "kan_layers": 0,
+        "kan_output_biases": 0,
+        "spline_coefficients": 0,
+        "spline_scales": 0,
+        "total_parameters": 41401,
+        "trainable_parameters": 41401
+      },
+      "epoch_summaries": [
+        {
+          "epoch": 1.0,
+          "epoch_seconds": 3.777213800000027,
+          "train_loss_last": 0.044789835810661316,
+          "train_loss_mean": 0.18500980991456245
+        },
+        {
+          "epoch": 2.0,
+          "epoch_seconds": 3.3696338000008836,
+          "train_loss_last": 0.05703376978635788,
+          "train_loss_mean": 0.05185722207857503
+        },
+        {
+          "epoch": 3.0,
+          "epoch_seconds": 3.0261269999973592,
+          "train_loss_last": 0.06456609815359116,
+          "train_loss_mean": 0.05007957414620452
+        },
+        {
+          "epoch": 4.0,
+          "epoch_seconds": 3.0757160000066506,
+          "train_loss_last": 0.05292811244726181,
+          "train_loss_mean": 0.04903516467246744
+        },
+        {
+          "epoch": 5.0,
+          "epoch_seconds": 3.128446399998211,
+          "train_loss_last": 0.033020585775375366,
+          "train_loss_mean": 0.04809865156809489
+        },
+        {
+          "epoch": 6.0,
+          "epoch_seconds": 3.0684098999990965,
+          "train_loss_last": 0.044186435639858246,
+          "train_loss_mean": 0.046443075065811475
+        },
+        {
+          "epoch": 7.0,
+          "epoch_seconds": 3.0559447999985423,
+          "train_loss_last": 0.06280545145273209,
+          "train_loss_mean": 0.044467557138866846
+        },
+        {
+          "epoch": 8.0,
+          "epoch_seconds": 3.8086573999971733,
+          "train_loss_last": 0.045754335820674896,
+          "train_loss_mean": 0.042736001188556354
+        },
+        {
+          "epoch": 9.0,
+          "epoch_seconds": 3.4281779999946593,
+          "train_loss_last": 0.03419582545757294,
+          "train_loss_mean": 0.042049514833423826
+        },
+        {
+          "epoch": 10.0,
+          "epoch_seconds": 3.267551999997522,
+          "train_loss_last": 0.037549085915088654,
+          "train_loss_mean": 0.040969269225994746
+        }
+      ],
+      "epochs": 10,
+      "eval_stride": 512,
+      "feature_mode": "no_current",
+      "feature_names": [
+        "V_t",
+        "V_t_minus_1",
+        "dV_t",
+        "sweep_direction"
+      ],
+      "lr": 0.001,
+      "model_input_dim": 4,
+      "rollout_test_metrics": {
+        "rollout_final_state_mae": 0.31274837255477905,
+        "rollout_mae": 0.30650603771209717,
+        "rollout_normalized_horizon_rmse": 0.5230387449264526,
+        "rollout_r2": 0.8248870968818665,
+        "rollout_rmse": 0.5230387449264526
+      },
+      "seed": 0,
+      "source_checkpoint": null,
+      "source_dataset": "original_sdc_state_characterisation",
+      "target_cache": "data\\processed\\sdc4dopant_holdout_w.npz",
+      "target_fold": "holdout_w",
+      "teacher_forced_test_metrics": {
+        "final_state_mae": 0.31274837255477905,
+        "mae": 0.30650603771209717,
+        "normalized_horizon_rmse": 0.5230387449264526,
+        "r2": 0.8248870968818665,
+        "rmse": 0.5230387449264526
+      },
+      "test_windows": 594,
+      "timing": {
+        "eval_wall_clock_seconds": 0.776866299995163,
+        "global_steps": 450,
+        "seconds_per_epoch": 3.3006577599997398,
+        "wall_clock_seconds": 33.0065775999974
+      },
+      "train_stride": 256,
+      "train_windows": 2880,
+      "variant": "static_mlp_h200",
+      "variant_config": {
+        "gauge_every_steps": 0,
+        "grid_size": 4,
+        "hidden_dim": 200,
+        "model_name": "static_mlp_sequence",
+        "moment_mode": "unchanged",
+        "name": "static_mlp_h200"
+      },
+      "window": 256
+    },
+    {
+      "adaptation_mode": "zero_shot",
+      "batch_size": 64,
+      "complexity": {
+        "base_scales": 0,
+        "kan_edges": 0,
+        "kan_layers": 0,
+        "kan_output_biases": 0,
+        "spline_coefficients": 0,
+        "spline_scales": 0,
+        "total_parameters": 42573,
+        "trainable_parameters": 42573
+      },
+      "epoch_summaries": [],
+      "epochs": 0,
+      "eval_stride": 512,
+      "feature_mode": "no_current",
+      "feature_names": [
+        "V_t",
+        "V_t_minus_1",
+        "dV_t",
+        "sweep_direction"
+      ],
+      "lr": 0.0,
+      "model_input_dim": 4,
+      "rollout_test_metrics": {
+        "rollout_final_state_mae": 0.6284350156784058,
+        "rollout_mae": 0.6421218514442444,
+        "rollout_normalized_horizon_rmse": 0.7383830547332764,
+        "rollout_r2": 0.651009202003479,
+        "rollout_rmse": 0.7383830547332764
+      },
+      "seed": 0,
+      "source_checkpoint": "checkpoints\\kaggle_imported\\no_current_baselines_100epoch_3seed\\sequence\\gru_h116_no_current_seed0.pt",
+      "source_dataset": "original_sdc_state_characterisation",
+      "target_cache": "data\\processed\\sdc4dopant_holdout_w.npz",
+      "target_fold": "holdout_w",
+      "teacher_forced_test_metrics": {
+        "final_state_mae": 0.6284350156784058,
+        "mae": 0.6421218514442444,
+        "normalized_horizon_rmse": 0.7383830547332764,
+        "r2": 0.651009202003479,
+        "rmse": 0.7383830547332764
+      },
+      "test_windows": 594,
+      "timing": {
+        "eval_wall_clock_seconds": 2.0452531000046292,
+        "global_steps": 0,
+        "seconds_per_epoch": 0.0,
+        "wall_clock_seconds": 0.0
+      },
+      "train_stride": 256,
+      "train_windows": 2880,
+      "variant": "gru_h116",
+      "variant_config": {
+        "gauge_every_steps": 0,
+        "grid_size": 4,
+        "hidden_dim": 116,
+        "model_name": "gru",
+        "moment_mode": "unchanged",
+        "name": "gru_h116"
+      },
+      "window": 256
+    },
+    {
+      "adaptation_mode": "head_only",
+      "batch_size": 64,
+      "complexity": {
+        "base_scales": 0,
+        "kan_edges": 0,
+        "kan_layers": 0,
+        "kan_output_biases": 0,
+        "spline_coefficients": 0,
+        "spline_scales": 0,
+        "total_parameters": 42573,
+        "trainable_parameters": 117
+      },
+      "epoch_summaries": [
+        {
+          "epoch": 1.0,
+          "epoch_seconds": 3.3953343999965,
+          "train_loss_last": 0.3345527648925781,
+          "train_loss_mean": 0.3499463624424405
+        },
+        {
+          "epoch": 2.0,
+          "epoch_seconds": 2.8050848999992013,
+          "train_loss_last": 0.2693519592285156,
+          "train_loss_mean": 0.29346821275022295
+        },
+        {
+          "epoch": 3.0,
+          "epoch_seconds": 2.825781100000313,
+          "train_loss_last": 0.2651691138744354,
+          "train_loss_mean": 0.2563379857275221
+        },
+        {
+          "epoch": 4.0,
+          "epoch_seconds": 3.011250600000494,
+          "train_loss_last": 0.23060761392116547,
+          "train_loss_mean": 0.22862706316841974
+        },
+        {
+          "epoch": 5.0,
+          "epoch_seconds": 3.0531843999997363,
+          "train_loss_last": 0.16791480779647827,
+          "train_loss_mean": 0.2073707550764084
+        },
+        {
+          "epoch": 6.0,
+          "epoch_seconds": 4.317724599997746,
+          "train_loss_last": 0.20835554599761963,
+          "train_loss_mean": 0.19029012719790142
+        },
+        {
+          "epoch": 7.0,
+          "epoch_seconds": 3.446724399997038,
+          "train_loss_last": 0.18393775820732117,
+          "train_loss_mean": 0.17647550834549797
+        },
+        {
+          "epoch": 8.0,
+          "epoch_seconds": 3.1702801999999792,
+          "train_loss_last": 0.15782158076763153,
+          "train_loss_mean": 0.16482041908635034
+        },
+        {
+          "epoch": 9.0,
+          "epoch_seconds": 2.969003899997915,
+          "train_loss_last": 0.14726804196834564,
+          "train_loss_mean": 0.15484345820215012
+        },
+        {
+          "epoch": 10.0,
+          "epoch_seconds": 3.371755399995891,
+          "train_loss_last": 0.14699050784111023,
+          "train_loss_mean": 0.1461883255177074
+        }
+      ],
+      "epochs": 10,
+      "eval_stride": 512,
+      "feature_mode": "no_current",
+      "feature_names": [
+        "V_t",
+        "V_t_minus_1",
+        "dV_t",
+        "sweep_direction"
+      ],
+      "lr": 0.0003,
+      "model_input_dim": 4,
+      "rollout_test_metrics": {
+        "rollout_final_state_mae": 0.434746116399765,
+        "rollout_mae": 0.4569336473941803,
+        "rollout_normalized_horizon_rmse": 0.6019918918609619,
+        "rollout_r2": 0.768030047416687,
+        "rollout_rmse": 0.6019918918609619
+      },
+      "seed": 0,
+      "source_checkpoint": "checkpoints\\kaggle_imported\\no_current_baselines_100epoch_3seed\\sequence\\gru_h116_no_current_seed0.pt",
+      "source_dataset": "original_sdc_state_characterisation",
+      "target_cache": "data\\processed\\sdc4dopant_holdout_w.npz",
+      "target_fold": "holdout_w",
+      "teacher_forced_test_metrics": {
+        "final_state_mae": 0.434746116399765,
+        "mae": 0.4569336473941803,
+        "normalized_horizon_rmse": 0.6019918918609619,
+        "r2": 0.768030047416687,
+        "rmse": 0.6019918918609619
+      },
+      "test_windows": 594,
+      "timing": {
+        "eval_wall_clock_seconds": 1.7717679999987013,
+        "global_steps": 450,
+        "seconds_per_epoch": 3.236673819999851,
+        "wall_clock_seconds": 32.36673819999851
+      },
+      "train_stride": 256,
+      "train_windows": 2880,
+      "variant": "gru_h116",
+      "variant_config": {
+        "gauge_every_steps": 0,
+        "grid_size": 4,
+        "hidden_dim": 116,
+        "model_name": "gru",
+        "moment_mode": "unchanged",
+        "name": "gru_h116"
+      },
+      "window": 256
+    },
+    {
+      "adaptation_mode": "full",
+      "batch_size": 64,
+      "complexity": {
+        "base_scales": 0,
+        "kan_edges": 0,
+        "kan_layers": 0,
+        "kan_output_biases": 0,
+        "spline_coefficients": 0,
+        "spline_scales": 0,
+        "total_parameters": 42573,
+        "trainable_parameters": 42573
+      },
+      "epoch_summaries": [
+        {
+          "epoch": 1.0,
+          "epoch_seconds": 13.57545989999926,
+          "train_loss_last": 0.08895546197891235,
+          "train_loss_mean": 0.16749407549699147
+        },
+        {
+          "epoch": 2.0,
+          "epoch_seconds": 10.667318799998611,
+          "train_loss_last": 0.06966228038072586,
+          "train_loss_mean": 0.07405245511068238
+        },
+        {
+          "epoch": 3.0,
+          "epoch_seconds": 10.048120699997526,
+          "train_loss_last": 0.06939293444156647,
+          "train_loss_mean": 0.06076930347416136
+        },
+        {
+          "epoch": 4.0,
+          "epoch_seconds": 11.134860699996352,
+          "train_loss_last": 0.05768182873725891,
+          "train_loss_mean": 0.05431286775403553
+        },
+        {
+          "epoch": 5.0,
+          "epoch_seconds": 10.429851300003065,
+          "train_loss_last": 0.031007593497633934,
+          "train_loss_mean": 0.05069791732562913
+        },
+        {
+          "epoch": 6.0,
+          "epoch_seconds": 10.232088999997359,
+          "train_loss_last": 0.04969347268342972,
+          "train_loss_mean": 0.04829998037053479
+        },
+        {
+          "epoch": 7.0,
+          "epoch_seconds": 11.93669249999948,
+          "train_loss_last": 0.06582938134670258,
+          "train_loss_mean": 0.046459579178028634
+        },
+        {
+          "epoch": 8.0,
+          "epoch_seconds": 10.043679800000973,
+          "train_loss_last": 0.050032030791044235,
+          "train_loss_mean": 0.04550619146062268
+        },
+        {
+          "epoch": 9.0,
+          "epoch_seconds": 10.25472930000251,
+          "train_loss_last": 0.0355125293135643,
+          "train_loss_mean": 0.04454432171252039
+        },
+        {
+          "epoch": 10.0,
+          "epoch_seconds": 11.024921600001107,
+          "train_loss_last": 0.04157515615224838,
+          "train_loss_mean": 0.04403317525155014
+        }
+      ],
+      "epochs": 10,
+      "eval_stride": 512,
+      "feature_mode": "no_current",
+      "feature_names": [
+        "V_t",
+        "V_t_minus_1",
+        "dV_t",
+        "sweep_direction"
+      ],
+      "lr": 0.0003,
+      "model_input_dim": 4,
+      "rollout_test_metrics": {
+        "rollout_final_state_mae": 0.3112598657608032,
+        "rollout_mae": 0.3154323697090149,
+        "rollout_normalized_horizon_rmse": 0.5265905857086182,
+        "rollout_r2": 0.8225007057189941,
+        "rollout_rmse": 0.5265905857086182
+      },
+      "seed": 0,
+      "source_checkpoint": "checkpoints\\kaggle_imported\\no_current_baselines_100epoch_3seed\\sequence\\gru_h116_no_current_seed0.pt",
+      "source_dataset": "original_sdc_state_characterisation",
+      "target_cache": "data\\processed\\sdc4dopant_holdout_w.npz",
+      "target_fold": "holdout_w",
+      "teacher_forced_test_metrics": {
+        "final_state_mae": 0.3112598657608032,
+        "mae": 0.3154323697090149,
+        "normalized_horizon_rmse": 0.5265905857086182,
+        "r2": 0.8225007057189941,
+        "rmse": 0.5265905857086182
+      },
+      "test_windows": 594,
+      "timing": {
+        "eval_wall_clock_seconds": 1.546395699995628,
+        "global_steps": 450,
+        "seconds_per_epoch": 10.93481912999996,
+        "wall_clock_seconds": 109.3481912999996
+      },
+      "train_stride": 256,
+      "train_windows": 2880,
+      "variant": "gru_h116",
+      "variant_config": {
+        "gauge_every_steps": 0,
+        "grid_size": 4,
+        "hidden_dim": 116,
+        "model_name": "gru",
+        "moment_mode": "unchanged",
+        "name": "gru_h116"
+      },
+      "window": 256
+    },
+    {
+      "adaptation_mode": "scratch_same_budget",
+      "batch_size": 64,
+      "complexity": {
+        "base_scales": 0,
+        "kan_edges": 0,
+        "kan_layers": 0,
+        "kan_output_biases": 0,
+        "spline_coefficients": 0,
+        "spline_scales": 0,
+        "total_parameters": 42573,
+        "trainable_parameters": 42573
+      },
+      "epoch_summaries": [
+        {
+          "epoch": 1.0,
+          "epoch_seconds": 11.287579199997708,
+          "train_loss_last": 0.06643161177635193,
+          "train_loss_mean": 0.2995232596993446
+        },
+        {
+          "epoch": 2.0,
+          "epoch_seconds": 11.257315099996049,
+          "train_loss_last": 0.06951583176851273,
+          "train_loss_mean": 0.06855366023050415
+        },
+        {
+          "epoch": 3.0,
+          "epoch_seconds": 10.917438700002094,
+          "train_loss_last": 0.06175589561462402,
+          "train_loss_mean": 0.05319381654262543
+        },
+        {
+          "epoch": 4.0,
+          "epoch_seconds": 10.261373499997717,
+          "train_loss_last": 0.05209706723690033,
+          "train_loss_mean": 0.04808713731666406
+        },
+        {
+          "epoch": 5.0,
+          "epoch_seconds": 11.85448660000111,
+          "train_loss_last": 0.028769610449671745,
+          "train_loss_mean": 0.046048572866453065
+        },
+        {
+          "epoch": 6.0,
+          "epoch_seconds": 10.055098200005887,
+          "train_loss_last": 0.044220589101314545,
+          "train_loss_mean": 0.04431439083483484
+        },
+        {
+          "epoch": 7.0,
+          "epoch_seconds": 10.223387599995476,
+          "train_loss_last": 0.06309499591588974,
+          "train_loss_mean": 0.043683354639344744
+        },
+        {
+          "epoch": 8.0,
+          "epoch_seconds": 11.198806099993817,
+          "train_loss_last": 0.047332100570201874,
+          "train_loss_mean": 0.04330464502175649
+        },
+        {
+          "epoch": 9.0,
+          "epoch_seconds": 10.093439899996156,
+          "train_loss_last": 0.03508532792329788,
+          "train_loss_mean": 0.04379586780236827
+        },
+        {
+          "epoch": 10.0,
+          "epoch_seconds": 10.126132499994128,
+          "train_loss_last": 0.040088143199682236,
+          "train_loss_mean": 0.042718337683214085
+        }
+      ],
+      "epochs": 10,
+      "eval_stride": 512,
+      "feature_mode": "no_current",
+      "feature_names": [
+        "V_t",
+        "V_t_minus_1",
+        "dV_t",
+        "sweep_direction"
+      ],
+      "lr": 0.001,
+      "model_input_dim": 4,
+      "rollout_test_metrics": {
+        "rollout_final_state_mae": 0.3148711025714874,
+        "rollout_mae": 0.3135782480239868,
+        "rollout_normalized_horizon_rmse": 0.5261873006820679,
+        "rollout_r2": 0.8227724432945251,
+        "rollout_rmse": 0.5261873006820679
+      },
+      "seed": 0,
+      "source_checkpoint": null,
+      "source_dataset": "original_sdc_state_characterisation",
+      "target_cache": "data\\processed\\sdc4dopant_holdout_w.npz",
+      "target_fold": "holdout_w",
+      "teacher_forced_test_metrics": {
+        "final_state_mae": 0.3148711025714874,
+        "mae": 0.3135782480239868,
+        "normalized_horizon_rmse": 0.5261873006820679,
+        "r2": 0.8227724432945251,
+        "rmse": 0.5261873006820679
+      },
+      "test_windows": 594,
+      "timing": {
+        "eval_wall_clock_seconds": 1.4472558000052231,
+        "global_steps": 450,
+        "seconds_per_epoch": 10.727554090000194,
+        "wall_clock_seconds": 107.27554090000194
+      },
+      "train_stride": 256,
+      "train_windows": 2880,
+      "variant": "gru_h116",
+      "variant_config": {
+        "gauge_every_steps": 0,
+        "grid_size": 4,
+        "hidden_dim": 116,
+        "model_name": "gru",
+        "moment_mode": "unchanged",
+        "name": "gru_h116"
+      },
+      "window": 256
+    },
+    {
+      "adaptation_mode": "zero_shot",
+      "batch_size": 64,
+      "complexity": {
+        "base_scales": 0,
+        "kan_edges": 0,
+        "kan_layers": 0,
+        "kan_output_biases": 0,
+        "spline_coefficients": 0,
+        "spline_scales": 0,
+        "total_parameters": 42501,
+        "trainable_parameters": 42501
+      },
+      "epoch_summaries": [],
+      "epochs": 0,
+      "eval_stride": 512,
+      "feature_mode": "no_current",
+      "feature_names": [
+        "V_t",
+        "V_t_minus_1",
+        "dV_t",
+        "sweep_direction"
+      ],
+      "lr": 0.0,
+      "model_input_dim": 4,
+      "rollout_test_metrics": {
+        "rollout_final_state_mae": 0.6172884106636047,
+        "rollout_mae": 0.6384409070014954,
+        "rollout_normalized_horizon_rmse": 0.7710846066474915,
+        "rollout_r2": 0.6194125413894653,
+        "rollout_rmse": 0.7710846066474915
+      },
+      "seed": 0,
+      "source_checkpoint": "checkpoints\\kaggle_imported\\no_current_baselines_100epoch_3seed\\sequence\\lstm_h100_no_current_seed0.pt",
+      "source_dataset": "original_sdc_state_characterisation",
+      "target_cache": "data\\processed\\sdc4dopant_holdout_w.npz",
+      "target_fold": "holdout_w",
+      "teacher_forced_test_metrics": {
+        "final_state_mae": 0.6172884106636047,
+        "mae": 0.6384409070014954,
+        "normalized_horizon_rmse": 0.7710846066474915,
+        "r2": 0.6194125413894653,
+        "rmse": 0.7710846066474915
+      },
+      "test_windows": 594,
+      "timing": {
+        "eval_wall_clock_seconds": 2.2917421999954968,
+        "global_steps": 0,
+        "seconds_per_epoch": 0.0,
+        "wall_clock_seconds": 0.0
+      },
+      "train_stride": 256,
+      "train_windows": 2880,
+      "variant": "lstm_h100",
+      "variant_config": {
+        "gauge_every_steps": 0,
+        "grid_size": 4,
+        "hidden_dim": 100,
+        "model_name": "lstm",
+        "moment_mode": "unchanged",
+        "name": "lstm_h100"
+      },
+      "window": 256
+    },
+    {
+      "adaptation_mode": "head_only",
+      "batch_size": 64,
+      "complexity": {
+        "base_scales": 0,
+        "kan_edges": 0,
+        "kan_layers": 0,
+        "kan_output_biases": 0,
+        "spline_coefficients": 0,
+        "spline_scales": 0,
+        "total_parameters": 42501,
+        "trainable_parameters": 101
+      },
+      "epoch_summaries": [
+        {
+          "epoch": 1.0,
+          "epoch_seconds": 2.4002103000020725,
+          "train_loss_last": 0.41307535767555237,
+          "train_loss_mean": 0.4148137324386173
+        },
+        {
+          "epoch": 2.0,
+          "epoch_seconds": 1.6933751000033226,
+          "train_loss_last": 0.31718161702156067,
+          "train_loss_mean": 0.371311797036065
+        },
+        {
+          "epoch": 3.0,
+          "epoch_seconds": 1.511566599998332,
+          "train_loss_last": 0.3645292818546295,
+          "train_loss_mean": 0.34162010351816813
+        },
+        {
+          "epoch": 4.0,
+          "epoch_seconds": 1.390182499999355,
+          "train_loss_last": 0.33588021993637085,
+          "train_loss_mean": 0.3188048303127289
+        },
+        {
+          "epoch": 5.0,
+          "epoch_seconds": 1.328114200005075,
+          "train_loss_last": 0.24721619486808777,
+          "train_loss_mean": 0.30043761134147645
+        },
+        {
+          "epoch": 6.0,
+          "epoch_seconds": 1.5151098999995156,
+          "train_loss_last": 0.31288301944732666,
+          "train_loss_mean": 0.28506885204050275
+        },
+        {
+          "epoch": 7.0,
+          "epoch_seconds": 1.503661100003228,
+          "train_loss_last": 0.28633564710617065,
+          "train_loss_mean": 0.2720529480112924
+        },
+        {
+          "epoch": 8.0,
+          "epoch_seconds": 1.4844526999950176,
+          "train_loss_last": 0.22512046992778778,
+          "train_loss_mean": 0.26052721507019466
+        },
+        {
+          "epoch": 9.0,
+          "epoch_seconds": 1.3679231999994954,
+          "train_loss_last": 0.23686674237251282,
+          "train_loss_mean": 0.2502946886751387
+        },
+        {
+          "epoch": 10.0,
+          "epoch_seconds": 1.4800969999996596,
+          "train_loss_last": 0.24110783636569977,
+          "train_loss_mean": 0.24094353748692407
+        }
+      ],
+      "epochs": 10,
+      "eval_stride": 512,
+      "feature_mode": "no_current",
+      "feature_names": [
+        "V_t",
+        "V_t_minus_1",
+        "dV_t",
+        "sweep_direction"
+      ],
+      "lr": 0.0003,
+      "model_input_dim": 4,
+      "rollout_test_metrics": {
+        "rollout_final_state_mae": 0.5327506065368652,
+        "rollout_mae": 0.5400652885437012,
+        "rollout_normalized_horizon_rmse": 0.703764796257019,
+        "rollout_r2": 0.6829662322998047,
+        "rollout_rmse": 0.703764796257019
+      },
+      "seed": 0,
+      "source_checkpoint": "checkpoints\\kaggle_imported\\no_current_baselines_100epoch_3seed\\sequence\\lstm_h100_no_current_seed0.pt",
+      "source_dataset": "original_sdc_state_characterisation",
+      "target_cache": "data\\processed\\sdc4dopant_holdout_w.npz",
+      "target_fold": "holdout_w",
+      "teacher_forced_test_metrics": {
+        "final_state_mae": 0.5327506065368652,
+        "mae": 0.5400652885437012,
+        "normalized_horizon_rmse": 0.703764796257019,
+        "r2": 0.6829662322998047,
+        "rmse": 0.703764796257019
+      },
+      "test_windows": 594,
+      "timing": {
+        "eval_wall_clock_seconds": 1.0237147000007099,
+        "global_steps": 450,
+        "seconds_per_epoch": 1.5675178600002255,
+        "wall_clock_seconds": 15.675178600002255
+      },
+      "train_stride": 256,
+      "train_windows": 2880,
+      "variant": "lstm_h100",
+      "variant_config": {
+        "gauge_every_steps": 0,
+        "grid_size": 4,
+        "hidden_dim": 100,
+        "model_name": "lstm",
+        "moment_mode": "unchanged",
+        "name": "lstm_h100"
+      },
+      "window": 256
+    },
+    {
+      "adaptation_mode": "full",
+      "batch_size": 64,
+      "complexity": {
+        "base_scales": 0,
+        "kan_edges": 0,
+        "kan_layers": 0,
+        "kan_output_biases": 0,
+        "spline_coefficients": 0,
+        "spline_scales": 0,
+        "total_parameters": 42501,
+        "trainable_parameters": 42501
+      },
+      "epoch_summaries": [
+        {
+          "epoch": 1.0,
+          "epoch_seconds": 4.285941300004197,
+          "train_loss_last": 0.08467203378677368,
+          "train_loss_mean": 0.20072315997547574
+        },
+        {
+          "epoch": 2.0,
+          "epoch_seconds": 3.415719699994952,
+          "train_loss_last": 0.0649261549115181,
+          "train_loss_mean": 0.07141569579641024
+        },
+        {
+          "epoch": 3.0,
+          "epoch_seconds": 3.2251445000001695,
+          "train_loss_last": 0.06449446827173233,
+          "train_loss_mean": 0.05711139556434419
+        },
+        {
+          "epoch": 4.0,
+          "epoch_seconds": 4.442014100000961,
+          "train_loss_last": 0.054213039577007294,
+          "train_loss_mean": 0.05232286171780692
+        },
+        {
+          "epoch": 5.0,
+          "epoch_seconds": 3.3644914999968023,
+          "train_loss_last": 0.0300026535987854,
+          "train_loss_mean": 0.04952311995956633
+        },
+        {
+          "epoch": 6.0,
+          "epoch_seconds": 3.349550700004329,
+          "train_loss_last": 0.046980880200862885,
+          "train_loss_mean": 0.04756891027920776
+        },
+        {
+          "epoch": 7.0,
+          "epoch_seconds": 3.191643700003624,
+          "train_loss_last": 0.0639563575387001,
+          "train_loss_mean": 0.04610984188814958
+        },
+        {
+          "epoch": 8.0,
+          "epoch_seconds": 3.3089764999967883,
+          "train_loss_last": 0.049406133592128754,
+          "train_loss_mean": 0.045192267869909604
+        },
+        {
+          "epoch": 9.0,
+          "epoch_seconds": 3.350471199999447,
+          "train_loss_last": 0.03472874313592911,
+          "train_loss_mean": 0.04436533136500253
+        },
+        {
+          "epoch": 10.0,
+          "epoch_seconds": 3.272222599996894,
+          "train_loss_last": 0.04150797054171562,
+          "train_loss_mean": 0.04375394570330779
+        }
+      ],
+      "epochs": 10,
+      "eval_stride": 512,
+      "feature_mode": "no_current",
+      "feature_names": [
+        "V_t",
+        "V_t_minus_1",
+        "dV_t",
+        "sweep_direction"
+      ],
+      "lr": 0.0003,
+      "model_input_dim": 4,
+      "rollout_test_metrics": {
+        "rollout_final_state_mae": 0.31685173511505127,
+        "rollout_mae": 0.31954580545425415,
+        "rollout_normalized_horizon_rmse": 0.5353690981864929,
+        "rollout_r2": 0.8165333867073059,
+        "rollout_rmse": 0.5353690981864929
+      },
+      "seed": 0,
+      "source_checkpoint": "checkpoints\\kaggle_imported\\no_current_baselines_100epoch_3seed\\sequence\\lstm_h100_no_current_seed0.pt",
+      "source_dataset": "original_sdc_state_characterisation",
+      "target_cache": "data\\processed\\sdc4dopant_holdout_w.npz",
+      "target_fold": "holdout_w",
+      "teacher_forced_test_metrics": {
+        "final_state_mae": 0.31685173511505127,
+        "mae": 0.31954580545425415,
+        "normalized_horizon_rmse": 0.5353690981864929,
+        "r2": 0.8165333867073059,
+        "rmse": 0.5353690981864929
+      },
+      "test_windows": 594,
+      "timing": {
+        "eval_wall_clock_seconds": 1.098792400000093,
+        "global_steps": 450,
+        "seconds_per_epoch": 3.520658399999957,
+        "wall_clock_seconds": 35.206583999999566
+      },
+      "train_stride": 256,
+      "train_windows": 2880,
+      "variant": "lstm_h100",
+      "variant_config": {
+        "gauge_every_steps": 0,
+        "grid_size": 4,
+        "hidden_dim": 100,
+        "model_name": "lstm",
+        "moment_mode": "unchanged",
+        "name": "lstm_h100"
+      },
+      "window": 256
+    },
+    {
+      "adaptation_mode": "scratch_same_budget",
+      "batch_size": 64,
+      "complexity": {
+        "base_scales": 0,
+        "kan_edges": 0,
+        "kan_layers": 0,
+        "kan_output_biases": 0,
+        "spline_coefficients": 0,
+        "spline_scales": 0,
+        "total_parameters": 42501,
+        "trainable_parameters": 42501
+      },
+      "epoch_summaries": [
+        {
+          "epoch": 1.0,
+          "epoch_seconds": 4.196112699995865,
+          "train_loss_last": 0.06014912575483322,
+          "train_loss_mean": 0.3387644815776083
+        },
+        {
+          "epoch": 2.0,
+          "epoch_seconds": 4.507768800001941,
+          "train_loss_last": 0.06524350494146347,
+          "train_loss_mean": 0.06152492786447207
+        },
+        {
+          "epoch": 3.0,
+          "epoch_seconds": 3.5495000000009895,
+          "train_loss_last": 0.061534199863672256,
+          "train_loss_mean": 0.05163672967917389
+        },
+        {
+          "epoch": 4.0,
+          "epoch_seconds": 3.380724700000428,
+          "train_loss_last": 0.05477514490485191,
+          "train_loss_mean": 0.04863143778509564
+        },
+        {
+          "epoch": 5.0,
+          "epoch_seconds": 3.3762948000003234,
+          "train_loss_last": 0.0300732534378767,
+          "train_loss_mean": 0.04720915829141935
+        },
+        {
+          "epoch": 6.0,
+          "epoch_seconds": 3.237884499998472,
+          "train_loss_last": 0.04697110131382942,
+          "train_loss_mean": 0.04595769656201203
+        },
+        {
+          "epoch": 7.0,
+          "epoch_seconds": 3.395127899995714,
+          "train_loss_last": 0.0642193928360939,
+          "train_loss_mean": 0.04539626141389211
+        },
+        {
+          "epoch": 8.0,
+          "epoch_seconds": 3.1832787999956054,
+          "train_loss_last": 0.049371592700481415,
+          "train_loss_mean": 0.04513312789301078
+        },
+        {
+          "epoch": 9.0,
+          "epoch_seconds": 3.3512059999993653,
+          "train_loss_last": 0.0357123538851738,
+          "train_loss_mean": 0.04508869548638662
+        },
+        {
+          "epoch": 10.0,
+          "epoch_seconds": 3.4590804999970715,
+          "train_loss_last": 0.04196706786751747,
+          "train_loss_mean": 0.0441991250962019
+        }
+      ],
+      "epochs": 10,
+      "eval_stride": 512,
+      "feature_mode": "no_current",
+      "feature_names": [
+        "V_t",
+        "V_t_minus_1",
+        "dV_t",
+        "sweep_direction"
+      ],
+      "lr": 0.001,
+      "model_input_dim": 4,
+      "rollout_test_metrics": {
+        "rollout_final_state_mae": 0.3151240348815918,
+        "rollout_mae": 0.31520533561706543,
+        "rollout_normalized_horizon_rmse": 0.5319143533706665,
+        "rollout_r2": 0.818893551826477,
+        "rollout_rmse": 0.5319143533706665
+      },
+      "seed": 0,
+      "source_checkpoint": null,
+      "source_dataset": "original_sdc_state_characterisation",
+      "target_cache": "data\\processed\\sdc4dopant_holdout_w.npz",
+      "target_fold": "holdout_w",
+      "teacher_forced_test_metrics": {
+        "final_state_mae": 0.3151240348815918,
+        "mae": 0.31520533561706543,
+        "normalized_horizon_rmse": 0.5319143533706665,
+        "r2": 0.818893551826477,
+        "rmse": 0.5319143533706665
+      },
+      "test_windows": 594,
+      "timing": {
+        "eval_wall_clock_seconds": 1.3806682000067667,
+        "global_steps": 450,
+        "seconds_per_epoch": 3.563745810000546,
+        "wall_clock_seconds": 35.63745810000546
+      },
+      "train_stride": 256,
+      "train_windows": 2880,
+      "variant": "lstm_h100",
+      "variant_config": {
+        "gauge_every_steps": 0,
+        "grid_size": 4,
+        "hidden_dim": 100,
+        "model_name": "lstm",
+        "moment_mode": "unchanged",
+        "name": "lstm_h100"
+      },
+      "window": 256
+    },
+    {
+      "adaptation_mode": "zero_shot",
+      "batch_size": 64,
+      "complexity": {
+        "base_scales": 0,
+        "kan_edges": 0,
+        "kan_layers": 0,
+        "kan_output_biases": 0,
+        "spline_coefficients": 0,
+        "spline_scales": 0,
+        "total_parameters": 41401,
+        "trainable_parameters": 41401
+      },
+      "epoch_summaries": [],
+      "epochs": 0,
+      "eval_stride": 512,
+      "feature_mode": "no_current",
+      "feature_names": [
+        "V_t",
+        "V_t_minus_1",
+        "dV_t",
+        "sweep_direction"
+      ],
+      "lr": 0.0,
+      "model_input_dim": 4,
+      "rollout_test_metrics": {
+        "rollout_final_state_mae": 0.8593930602073669,
+        "rollout_mae": 0.8477874398231506,
+        "rollout_normalized_horizon_rmse": 0.9785075783729553,
+        "rollout_r2": 0.38711512088775635,
+        "rollout_rmse": 0.9785075783729553
+      },
+      "seed": 1,
+      "source_checkpoint": "checkpoints\\sequence\\static_mlp_h200_no_current_seed1.pt",
+      "source_dataset": "original_sdc_state_characterisation",
+      "target_cache": "data\\processed\\sdc4dopant_holdout_w.npz",
+      "target_fold": "holdout_w",
+      "teacher_forced_test_metrics": {
+        "final_state_mae": 0.8593930602073669,
+        "mae": 0.8477874398231506,
+        "normalized_horizon_rmse": 0.9785075783729553,
+        "r2": 0.38711512088775635,
+        "rmse": 0.9785075783729553
+      },
+      "test_windows": 594,
+      "timing": {
+        "eval_wall_clock_seconds": 0.910619799993583,
+        "global_steps": 0,
+        "seconds_per_epoch": 0.0,
+        "wall_clock_seconds": 0.0
+      },
+      "train_stride": 256,
+      "train_windows": 2880,
+      "variant": "static_mlp_h200",
+      "variant_config": {
+        "gauge_every_steps": 0,
+        "grid_size": 4,
+        "hidden_dim": 200,
+        "model_name": "static_mlp_sequence",
+        "moment_mode": "unchanged",
+        "name": "static_mlp_h200"
+      },
+      "window": 256
+    },
+    {
+      "adaptation_mode": "head_only",
+      "batch_size": 64,
+      "complexity": {
+        "base_scales": 0,
+        "kan_edges": 0,
+        "kan_layers": 0,
+        "kan_output_biases": 0,
+        "spline_coefficients": 0,
+        "spline_scales": 0,
+        "total_parameters": 41401,
+        "trainable_parameters": 201
+      },
+      "epoch_summaries": [
+        {
+          "epoch": 1.0,
+          "epoch_seconds": 1.6350377999988268,
+          "train_loss_last": 0.4872780442237854,
+          "train_loss_mean": 0.622805122534434
+        },
+        {
+          "epoch": 2.0,
+          "epoch_seconds": 1.3822170999992522,
+          "train_loss_last": 0.3291665315628052,
+          "train_loss_mean": 0.4239510635534922
+        },
+        {
+          "epoch": 3.0,
+          "epoch_seconds": 1.3344473999968613,
+          "train_loss_last": 0.25044113397598267,
+          "train_loss_mean": 0.28858255247275033
+        },
+        {
+          "epoch": 4.0,
+          "epoch_seconds": 1.3787656999993487,
+          "train_loss_last": 0.20002642273902893,
+          "train_loss_mean": 0.20143434471554225
+        },
+        {
+          "epoch": 5.0,
+          "epoch_seconds": 1.3255760000029113,
+          "train_loss_last": 0.1217818558216095,
+          "train_loss_mean": 0.15156154632568358
+        },
+        {
+          "epoch": 6.0,
+          "epoch_seconds": 1.4660081999973045,
+          "train_loss_last": 0.09572754800319672,
+          "train_loss_mean": 0.1288670043150584
+        },
+        {
+          "epoch": 7.0,
+          "epoch_seconds": 1.2542711999994935,
+          "train_loss_last": 0.11888250708580017,
+          "train_loss_mean": 0.1165588766336441
+        },
+        {
+          "epoch": 8.0,
+          "epoch_seconds": 1.2623795000035898,
+          "train_loss_last": 0.12149374186992645,
+          "train_loss_mean": 0.10758184442917505
+        },
+        {
+          "epoch": 9.0,
+          "epoch_seconds": 1.3989029000003939,
+          "train_loss_last": 0.08359850943088531,
+          "train_loss_mean": 0.10019813941584693
+        },
+        {
+          "epoch": 10.0,
+          "epoch_seconds": 1.330274299994926,
+          "train_loss_last": 0.07250696420669556,
+          "train_loss_mean": 0.09391822152667575
+        }
+      ],
+      "epochs": 10,
+      "eval_stride": 512,
+      "feature_mode": "no_current",
+      "feature_names": [
+        "V_t",
+        "V_t_minus_1",
+        "dV_t",
+        "sweep_direction"
+      ],
+      "lr": 0.0003,
+      "model_input_dim": 4,
+      "rollout_test_metrics": {
+        "rollout_final_state_mae": 0.38796141743659973,
+        "rollout_mae": 0.3798125088214874,
+        "rollout_normalized_horizon_rmse": 0.5626083612442017,
+        "rollout_r2": 0.7973890900611877,
+        "rollout_rmse": 0.5626083612442017
+      },
+      "seed": 1,
+      "source_checkpoint": "checkpoints\\sequence\\static_mlp_h200_no_current_seed1.pt",
+      "source_dataset": "original_sdc_state_characterisation",
+      "target_cache": "data\\processed\\sdc4dopant_holdout_w.npz",
+      "target_fold": "holdout_w",
+      "teacher_forced_test_metrics": {
+        "final_state_mae": 0.38796141743659973,
+        "mae": 0.3798125088214874,
+        "normalized_horizon_rmse": 0.5626083612442017,
+        "r2": 0.7973890900611877,
+        "rmse": 0.5626083612442017
+      },
+      "test_windows": 594,
+      "timing": {
+        "eval_wall_clock_seconds": 0.8467799999998533,
+        "global_steps": 450,
+        "seconds_per_epoch": 1.3768474500000594,
+        "wall_clock_seconds": 13.768474500000593
+      },
+      "train_stride": 256,
+      "train_windows": 2880,
+      "variant": "static_mlp_h200",
+      "variant_config": {
+        "gauge_every_steps": 0,
+        "grid_size": 4,
+        "hidden_dim": 200,
+        "model_name": "static_mlp_sequence",
+        "moment_mode": "unchanged",
+        "name": "static_mlp_h200"
+      },
+      "window": 256
+    },
+    {
+      "adaptation_mode": "full",
+      "batch_size": 64,
+      "complexity": {
+        "base_scales": 0,
+        "kan_edges": 0,
+        "kan_layers": 0,
+        "kan_output_biases": 0,
+        "spline_coefficients": 0,
+        "spline_scales": 0,
+        "total_parameters": 41401,
+        "trainable_parameters": 41401
+      },
+      "epoch_summaries": [
+        {
+          "epoch": 1.0,
+          "epoch_seconds": 3.5193094999995083,
+          "train_loss_last": 0.05663745850324631,
+          "train_loss_mean": 0.24097843517859777
+        },
+        {
+          "epoch": 2.0,
+          "epoch_seconds": 3.381563599999936,
+          "train_loss_last": 0.04049927741289139,
+          "train_loss_mean": 0.053427569485372965
+        },
+        {
+          "epoch": 3.0,
+          "epoch_seconds": 2.751192000003357,
+          "train_loss_last": 0.05346030741930008,
+          "train_loss_mean": 0.04637366384267807
+        },
+        {
+          "epoch": 4.0,
+          "epoch_seconds": 3.424536899998202,
+          "train_loss_last": 0.07193917781114578,
+          "train_loss_mean": 0.044247061510880786
+        },
+        {
+          "epoch": 5.0,
+          "epoch_seconds": 3.6032936999981757,
+          "train_loss_last": 0.030757961794734,
+          "train_loss_mean": 0.043557678825325435
+        },
+        {
+          "epoch": 6.0,
+          "epoch_seconds": 3.138578199999756,
+          "train_loss_last": 0.025083549320697784,
+          "train_loss_mean": 0.043017007493310506
+        },
+        {
+          "epoch": 7.0,
+          "epoch_seconds": 3.1282534999991185,
+          "train_loss_last": 0.04074922204017639,
+          "train_loss_mean": 0.04259966305560536
+        },
+        {
+          "epoch": 8.0,
+          "epoch_seconds": 2.9354625000050873,
+          "train_loss_last": 0.05163048580288887,
+          "train_loss_mean": 0.04235480378071467
+        },
+        {
+          "epoch": 9.0,
+          "epoch_seconds": 3.0908831999986432,
+          "train_loss_last": 0.02689630165696144,
+          "train_loss_mean": 0.04201725572347641
+        },
+        {
+          "epoch": 10.0,
+          "epoch_seconds": 2.928444600001967,
+          "train_loss_last": 0.026757989078760147,
+          "train_loss_mean": 0.041753317291537924
+        }
+      ],
+      "epochs": 10,
+      "eval_stride": 512,
+      "feature_mode": "no_current",
+      "feature_names": [
+        "V_t",
+        "V_t_minus_1",
+        "dV_t",
+        "sweep_direction"
+      ],
+      "lr": 0.0003,
+      "model_input_dim": 4,
+      "rollout_test_metrics": {
+        "rollout_final_state_mae": 0.3318404257297516,
+        "rollout_mae": 0.32624509930610657,
+        "rollout_normalized_horizon_rmse": 0.5450893640518188,
+        "rollout_r2": 0.8098107576370239,
+        "rollout_rmse": 0.5450893640518188
+      },
+      "seed": 1,
+      "source_checkpoint": "checkpoints\\sequence\\static_mlp_h200_no_current_seed1.pt",
+      "source_dataset": "original_sdc_state_characterisation",
+      "target_cache": "data\\processed\\sdc4dopant_holdout_w.npz",
+      "target_fold": "holdout_w",
+      "teacher_forced_test_metrics": {
+        "final_state_mae": 0.3318404257297516,
+        "mae": 0.32624509930610657,
+        "normalized_horizon_rmse": 0.5450893640518188,
+        "r2": 0.8098107576370239,
+        "rmse": 0.5450893640518188
+      },
+      "test_windows": 594,
+      "timing": {
+        "eval_wall_clock_seconds": 0.745342599999276,
+        "global_steps": 450,
+        "seconds_per_epoch": 3.1902110799994263,
+        "wall_clock_seconds": 31.90211079999426
+      },
+      "train_stride": 256,
+      "train_windows": 2880,
+      "variant": "static_mlp_h200",
+      "variant_config": {
+        "gauge_every_steps": 0,
+        "grid_size": 4,
+        "hidden_dim": 200,
+        "model_name": "static_mlp_sequence",
+        "moment_mode": "unchanged",
+        "name": "static_mlp_h200"
+      },
+      "window": 256
+    },
+    {
+      "adaptation_mode": "scratch_same_budget",
+      "batch_size": 64,
+      "complexity": {
+        "base_scales": 0,
+        "kan_edges": 0,
+        "kan_layers": 0,
+        "kan_output_biases": 0,
+        "spline_coefficients": 0,
+        "spline_scales": 0,
+        "total_parameters": 41401,
+        "trainable_parameters": 41401
+      },
+      "epoch_summaries": [
+        {
+          "epoch": 1.0,
+          "epoch_seconds": 3.7061017000014544,
+          "train_loss_last": 0.041781481355428696,
+          "train_loss_mean": 0.186630530986521
+        },
+        {
+          "epoch": 2.0,
+          "epoch_seconds": 3.335184899995511,
+          "train_loss_last": 0.04289065673947334,
+          "train_loss_mean": 0.051569864153862
+        },
+        {
+          "epoch": 3.0,
+          "epoch_seconds": 3.5539873000016087,
+          "train_loss_last": 0.05444556102156639,
+          "train_loss_mean": 0.0498230717662308
+        },
+        {
+          "epoch": 4.0,
+          "epoch_seconds": 3.538227699995332,
+          "train_loss_last": 0.07850952446460724,
+          "train_loss_mean": 0.04837860663731893
+        },
+        {
+          "epoch": 5.0,
+          "epoch_seconds": 2.8834846999961883,
+          "train_loss_last": 0.03661666810512543,
+          "train_loss_mean": 0.04703664489918285
+        },
+        {
+          "epoch": 6.0,
+          "epoch_seconds": 2.5020427999988897,
+          "train_loss_last": 0.02560405246913433,
+          "train_loss_mean": 0.045509264576766226
+        },
+        {
+          "epoch": 7.0,
+          "epoch_seconds": 2.599052399993525,
+          "train_loss_last": 0.040312424302101135,
+          "train_loss_mean": 0.0433493788043658
+        },
+        {
+          "epoch": 8.0,
+          "epoch_seconds": 2.6380819999976666,
+          "train_loss_last": 0.05098692700266838,
+          "train_loss_mean": 0.04183431983821922
+        },
+        {
+          "epoch": 9.0,
+          "epoch_seconds": 2.516776199998276,
+          "train_loss_last": 0.025678232312202454,
+          "train_loss_mean": 0.04069030065503385
+        },
+        {
+          "epoch": 10.0,
+          "epoch_seconds": 2.5041914000030374,
+          "train_loss_last": 0.02464451640844345,
+          "train_loss_mean": 0.04023554503089852
+        }
+      ],
+      "epochs": 10,
+      "eval_stride": 512,
+      "feature_mode": "no_current",
+      "feature_names": [
+        "V_t",
+        "V_t_minus_1",
+        "dV_t",
+        "sweep_direction"
+      ],
+      "lr": 0.001,
+      "model_input_dim": 4,
+      "rollout_test_metrics": {
+        "rollout_final_state_mae": 0.3238314390182495,
+        "rollout_mae": 0.3173055052757263,
+        "rollout_normalized_horizon_rmse": 0.5392540097236633,
+        "rollout_r2": 0.813861072063446,
+        "rollout_rmse": 0.5392540097236633
+      },
+      "seed": 1,
+      "source_checkpoint": null,
+      "source_dataset": "original_sdc_state_characterisation",
+      "target_cache": "data\\processed\\sdc4dopant_holdout_w.npz",
+      "target_fold": "holdout_w",
+      "teacher_forced_test_metrics": {
+        "final_state_mae": 0.3238314390182495,
+        "mae": 0.3173055052757263,
+        "normalized_horizon_rmse": 0.5392540097236633,
+        "r2": 0.813861072063446,
+        "rmse": 0.5392540097236633
+      },
+      "test_windows": 594,
+      "timing": {
+        "eval_wall_clock_seconds": 0.6982875999965472,
+        "global_steps": 450,
+        "seconds_per_epoch": 2.9777934300000197,
+        "wall_clock_seconds": 29.777934300000197
+      },
+      "train_stride": 256,
+      "train_windows": 2880,
+      "variant": "static_mlp_h200",
+      "variant_config": {
+        "gauge_every_steps": 0,
+        "grid_size": 4,
+        "hidden_dim": 200,
+        "model_name": "static_mlp_sequence",
+        "moment_mode": "unchanged",
+        "name": "static_mlp_h200"
+      },
+      "window": 256
+    },
+    {
+      "adaptation_mode": "zero_shot",
+      "batch_size": 64,
+      "complexity": {
+        "base_scales": 0,
+        "kan_edges": 0,
+        "kan_layers": 0,
+        "kan_output_biases": 0,
+        "spline_coefficients": 0,
+        "spline_scales": 0,
+        "total_parameters": 42573,
+        "trainable_parameters": 42573
+      },
+      "epoch_summaries": [],
+      "epochs": 0,
+      "eval_stride": 512,
+      "feature_mode": "no_current",
+      "feature_names": [
+        "V_t",
+        "V_t_minus_1",
+        "dV_t",
+        "sweep_direction"
+      ],
+      "lr": 0.0,
+      "model_input_dim": 4,
+      "rollout_test_metrics": {
+        "rollout_final_state_mae": 0.660324215888977,
+        "rollout_mae": 0.6881101131439209,
+        "rollout_normalized_horizon_rmse": 0.8130698800086975,
+        "rollout_r2": 0.5768383741378784,
+        "rollout_rmse": 0.8130698800086975
+      },
+      "seed": 1,
+      "source_checkpoint": "checkpoints\\kaggle_imported\\no_current_baselines_100epoch_3seed\\sequence\\gru_h116_no_current_seed1.pt",
+      "source_dataset": "original_sdc_state_characterisation",
+      "target_cache": "data\\processed\\sdc4dopant_holdout_w.npz",
+      "target_fold": "holdout_w",
+      "teacher_forced_test_metrics": {
+        "final_state_mae": 0.660324215888977,
+        "mae": 0.6881101131439209,
+        "normalized_horizon_rmse": 0.8130698800086975,
+        "r2": 0.5768383741378784,
+        "rmse": 0.8130698800086975
+      },
+      "test_windows": 594,
+      "timing": {
+        "eval_wall_clock_seconds": 1.5183614999987185,
+        "global_steps": 0,
+        "seconds_per_epoch": 0.0,
+        "wall_clock_seconds": 0.0
+      },
+      "train_stride": 256,
+      "train_windows": 2880,
+      "variant": "gru_h116",
+      "variant_config": {
+        "gauge_every_steps": 0,
+        "grid_size": 4,
+        "hidden_dim": 116,
+        "model_name": "gru",
+        "moment_mode": "unchanged",
+        "name": "gru_h116"
+      },
+      "window": 256
+    },
+    {
+      "adaptation_mode": "head_only",
+      "batch_size": 64,
+      "complexity": {
+        "base_scales": 0,
+        "kan_edges": 0,
+        "kan_layers": 0,
+        "kan_output_biases": 0,
+        "spline_coefficients": 0,
+        "spline_scales": 0,
+        "total_parameters": 42573,
+        "trainable_parameters": 117
+      },
+      "epoch_summaries": [
+        {
+          "epoch": 1.0,
+          "epoch_seconds": 2.5926364999977523,
+          "train_loss_last": 0.33787474036216736,
+          "train_loss_mean": 0.4244103021091885
+        },
+        {
+          "epoch": 2.0,
+          "epoch_seconds": 2.2833817999999155,
+          "train_loss_last": 0.3108893930912018,
+          "train_loss_mean": 0.3391159349017673
+        },
+        {
+          "epoch": 3.0,
+          "epoch_seconds": 2.709106599999359,
+          "train_loss_last": 0.24829497933387756,
+          "train_loss_mean": 0.2841359009345373
+        },
+        {
+          "epoch": 4.0,
+          "epoch_seconds": 2.535339299996849,
+          "train_loss_last": 0.2722744047641754,
+          "train_loss_mean": 0.24381225539578333
+        },
+        {
+          "epoch": 5.0,
+          "epoch_seconds": 2.2632816999976058,
+          "train_loss_last": 0.18327370285987854,
+          "train_loss_mean": 0.2128603716691335
+        },
+        {
+          "epoch": 6.0,
+          "epoch_seconds": 2.2744712000057916,
+          "train_loss_last": 0.15430855751037598,
+          "train_loss_mean": 0.18851433495680492
+        },
+        {
+          "epoch": 7.0,
+          "epoch_seconds": 2.2369728999983636,
+          "train_loss_last": 0.14429809153079987,
+          "train_loss_mean": 0.1689832819832696
+        },
+        {
+          "epoch": 8.0,
+          "epoch_seconds": 2.2530100000003586,
+          "train_loss_last": 0.14520207047462463,
+          "train_loss_mean": 0.15306924912664627
+        },
+        {
+          "epoch": 9.0,
+          "epoch_seconds": 2.2907540000014706,
+          "train_loss_last": 0.12096945196390152,
+          "train_loss_mean": 0.14014654407898586
+        },
+        {
+          "epoch": 10.0,
+          "epoch_seconds": 2.3377958000055514,
+          "train_loss_last": 0.10535314679145813,
+          "train_loss_mean": 0.12942730436722438
+        }
+      ],
+      "epochs": 10,
+      "eval_stride": 512,
+      "feature_mode": "no_current",
+      "feature_names": [
+        "V_t",
+        "V_t_minus_1",
+        "dV_t",
+        "sweep_direction"
+      ],
+      "lr": 0.0003,
+      "model_input_dim": 4,
+      "rollout_test_metrics": {
+        "rollout_final_state_mae": 0.4052770733833313,
+        "rollout_mae": 0.43442240357398987,
+        "rollout_normalized_horizon_rmse": 0.5697981715202332,
+        "rollout_r2": 0.7921774983406067,
+        "rollout_rmse": 0.5697981715202332
+      },
+      "seed": 1,
+      "source_checkpoint": "checkpoints\\kaggle_imported\\no_current_baselines_100epoch_3seed\\sequence\\gru_h116_no_current_seed1.pt",
+      "source_dataset": "original_sdc_state_characterisation",
+      "target_cache": "data\\processed\\sdc4dopant_holdout_w.npz",
+      "target_fold": "holdout_w",
+      "teacher_forced_test_metrics": {
+        "final_state_mae": 0.4052770733833313,
+        "mae": 0.43442240357398987,
+        "normalized_horizon_rmse": 0.5697981715202332,
+        "r2": 0.7921774983406067,
+        "rmse": 0.5697981715202332
+      },
+      "test_windows": 594,
+      "timing": {
+        "eval_wall_clock_seconds": 1.1802363999959198,
+        "global_steps": 450,
+        "seconds_per_epoch": 2.3777253699998253,
+        "wall_clock_seconds": 23.777253699998255
+      },
+      "train_stride": 256,
+      "train_windows": 2880,
+      "variant": "gru_h116",
+      "variant_config": {
+        "gauge_every_steps": 0,
+        "grid_size": 4,
+        "hidden_dim": 116,
+        "model_name": "gru",
+        "moment_mode": "unchanged",
+        "name": "gru_h116"
+      },
+      "window": 256
+    },
+    {
+      "adaptation_mode": "full",
+      "batch_size": 64,
+      "complexity": {
+        "base_scales": 0,
+        "kan_edges": 0,
+        "kan_layers": 0,
+        "kan_output_biases": 0,
+        "spline_coefficients": 0,
+        "spline_scales": 0,
+        "total_parameters": 42573,
+        "trainable_parameters": 42573
+      },
+      "epoch_summaries": [
+        {
+          "epoch": 1.0,
+          "epoch_seconds": 9.36423449999711,
+          "train_loss_last": 0.06844417750835419,
+          "train_loss_mean": 0.1747055325243208
+        },
+        {
+          "epoch": 2.0,
+          "epoch_seconds": 9.448649499994644,
+          "train_loss_last": 0.057426441460847855,
+          "train_loss_mean": 0.07127201217744085
+        },
+        {
+          "epoch": 3.0,
+          "epoch_seconds": 8.511756700005208,
+          "train_loss_last": 0.062283627688884735,
+          "train_loss_mean": 0.05922871786687109
+        },
+        {
+          "epoch": 4.0,
+          "epoch_seconds": 8.401706399999966,
+          "train_loss_last": 0.08131089061498642,
+          "train_loss_mean": 0.05326686915424135
+        },
+        {
+          "epoch": 5.0,
+          "epoch_seconds": 9.193172200000845,
+          "train_loss_last": 0.03601478785276413,
+          "train_loss_mean": 0.05010384346048037
+        },
+        {
+          "epoch": 6.0,
+          "epoch_seconds": 8.366834699998435,
+          "train_loss_last": 0.026928234845399857,
+          "train_loss_mean": 0.04800693169236183
+        },
+        {
+          "epoch": 7.0,
+          "epoch_seconds": 8.34589500000584,
+          "train_loss_last": 0.041907913982868195,
+          "train_loss_mean": 0.04665206720431646
+        },
+        {
+          "epoch": 8.0,
+          "epoch_seconds": 8.536614100004954,
+          "train_loss_last": 0.05323995649814606,
+          "train_loss_mean": 0.045512883406546384
+        },
+        {
+          "epoch": 9.0,
+          "epoch_seconds": 9.33723089999694,
+          "train_loss_last": 0.028440341353416443,
+          "train_loss_mean": 0.04472475370599164
+        },
+        {
+          "epoch": 10.0,
+          "epoch_seconds": 8.41223650000029,
+          "train_loss_last": 0.028505878522992134,
+          "train_loss_mean": 0.04395982548594475
+        }
+      ],
+      "epochs": 10,
+      "eval_stride": 512,
+      "feature_mode": "no_current",
+      "feature_names": [
+        "V_t",
+        "V_t_minus_1",
+        "dV_t",
+        "sweep_direction"
+      ],
+      "lr": 0.0003,
+      "model_input_dim": 4,
+      "rollout_test_metrics": {
+        "rollout_final_state_mae": 0.32677769660949707,
+        "rollout_mae": 0.3281286358833313,
+        "rollout_normalized_horizon_rmse": 0.5444223880767822,
+        "rollout_r2": 0.8102759122848511,
+        "rollout_rmse": 0.5444223880767822
+      },
+      "seed": 1,
+      "source_checkpoint": "checkpoints\\kaggle_imported\\no_current_baselines_100epoch_3seed\\sequence\\gru_h116_no_current_seed1.pt",
+      "source_dataset": "original_sdc_state_characterisation",
+      "target_cache": "data\\processed\\sdc4dopant_holdout_w.npz",
+      "target_fold": "holdout_w",
+      "teacher_forced_test_metrics": {
+        "final_state_mae": 0.32677769660949707,
+        "mae": 0.3281286358833313,
+        "normalized_horizon_rmse": 0.5444223880767822,
+        "r2": 0.8102759122848511,
+        "rmse": 0.5444223880767822
+      },
+      "test_windows": 594,
+      "timing": {
+        "eval_wall_clock_seconds": 1.2223038000011002,
+        "global_steps": 450,
+        "seconds_per_epoch": 8.791872409999632,
+        "wall_clock_seconds": 87.91872409999633
+      },
+      "train_stride": 256,
+      "train_windows": 2880,
+      "variant": "gru_h116",
+      "variant_config": {
+        "gauge_every_steps": 0,
+        "grid_size": 4,
+        "hidden_dim": 116,
+        "model_name": "gru",
+        "moment_mode": "unchanged",
+        "name": "gru_h116"
+      },
+      "window": 256
+    },
+    {
+      "adaptation_mode": "scratch_same_budget",
+      "batch_size": 64,
+      "complexity": {
+        "base_scales": 0,
+        "kan_edges": 0,
+        "kan_layers": 0,
+        "kan_output_biases": 0,
+        "spline_coefficients": 0,
+        "spline_scales": 0,
+        "total_parameters": 42573,
+        "trainable_parameters": 42573
+      },
+      "epoch_summaries": [
+        {
+          "epoch": 1.0,
+          "epoch_seconds": 9.210768400000234,
+          "train_loss_last": 0.06798087060451508,
+          "train_loss_mean": 0.3063703217440181
+        },
+        {
+          "epoch": 2.0,
+          "epoch_seconds": 9.285497199998645,
+          "train_loss_last": 0.05645100399851799,
+          "train_loss_mean": 0.07454567237032785
+        },
+        {
+          "epoch": 3.0,
+          "epoch_seconds": 8.455215500005579,
+          "train_loss_last": 0.0595942959189415,
+          "train_loss_mean": 0.0582092236313555
+        },
+        {
+          "epoch": 4.0,
+          "epoch_seconds": 8.406926000003295,
+          "train_loss_last": 0.08235949277877808,
+          "train_loss_mean": 0.050259672477841376
+        },
+        {
+          "epoch": 5.0,
+          "epoch_seconds": 9.292615300000762,
+          "train_loss_last": 0.031341440975666046,
+          "train_loss_mean": 0.04671544109781583
+        },
+        {
+          "epoch": 6.0,
+          "epoch_seconds": 8.450665299998946,
+          "train_loss_last": 0.023803504183888435,
+          "train_loss_mean": 0.046426392015483646
+        },
+        {
+          "epoch": 7.0,
+          "epoch_seconds": 8.41124950000085,
+          "train_loss_last": 0.042075999081134796,
+          "train_loss_mean": 0.04440393990112675
+        },
+        {
+          "epoch": 8.0,
+          "epoch_seconds": 8.387914199993247,
+          "train_loss_last": 0.05374859273433685,
+          "train_loss_mean": 0.0438589208241966
+        },
+        {
+          "epoch": 9.0,
+          "epoch_seconds": 9.20442959999491,
+          "train_loss_last": 0.027905499562621117,
+          "train_loss_mean": 0.04334550495776865
+        },
+        {
+          "epoch": 10.0,
+          "epoch_seconds": 8.395570000000589,
+          "train_loss_last": 0.026637930423021317,
+          "train_loss_mean": 0.04279020399683052
+        }
+      ],
+      "epochs": 10,
+      "eval_stride": 512,
+      "feature_mode": "no_current",
+      "feature_names": [
+        "V_t",
+        "V_t_minus_1",
+        "dV_t",
+        "sweep_direction"
+      ],
+      "lr": 0.001,
+      "model_input_dim": 4,
+      "rollout_test_metrics": {
+        "rollout_final_state_mae": 0.3302125632762909,
+        "rollout_mae": 0.32836204767227173,
+        "rollout_normalized_horizon_rmse": 0.5450970530509949,
+        "rollout_r2": 0.8098054528236389,
+        "rollout_rmse": 0.5450970530509949
+      },
+      "seed": 1,
+      "source_checkpoint": null,
+      "source_dataset": "original_sdc_state_characterisation",
+      "target_cache": "data\\processed\\sdc4dopant_holdout_w.npz",
+      "target_fold": "holdout_w",
+      "teacher_forced_test_metrics": {
+        "final_state_mae": 0.3302125632762909,
+        "mae": 0.32836204767227173,
+        "normalized_horizon_rmse": 0.5450970530509949,
+        "r2": 0.8098054528236389,
+        "rmse": 0.5450970530509949
+      },
+      "test_windows": 594,
+      "timing": {
+        "eval_wall_clock_seconds": 1.2140539000029094,
+        "global_steps": 450,
+        "seconds_per_epoch": 8.75012057999993,
+        "wall_clock_seconds": 87.5012057999993
+      },
+      "train_stride": 256,
+      "train_windows": 2880,
+      "variant": "gru_h116",
+      "variant_config": {
+        "gauge_every_steps": 0,
+        "grid_size": 4,
+        "hidden_dim": 116,
+        "model_name": "gru",
+        "moment_mode": "unchanged",
+        "name": "gru_h116"
+      },
+      "window": 256
+    },
+    {
+      "adaptation_mode": "zero_shot",
+      "batch_size": 64,
+      "complexity": {
+        "base_scales": 0,
+        "kan_edges": 0,
+        "kan_layers": 0,
+        "kan_output_biases": 0,
+        "spline_coefficients": 0,
+        "spline_scales": 0,
+        "total_parameters": 42501,
+        "trainable_parameters": 42501
+      },
+      "epoch_summaries": [],
+      "epochs": 0,
+      "eval_stride": 512,
+      "feature_mode": "no_current",
+      "feature_names": [
+        "V_t",
+        "V_t_minus_1",
+        "dV_t",
+        "sweep_direction"
+      ],
+      "lr": 0.0,
+      "model_input_dim": 4,
+      "rollout_test_metrics": {
+        "rollout_final_state_mae": 0.5766300559043884,
+        "rollout_mae": 0.6081969141960144,
+        "rollout_normalized_horizon_rmse": 0.7265728712081909,
+        "rollout_r2": 0.6620838642120361,
+        "rollout_rmse": 0.7265728712081909
+      },
+      "seed": 1,
+      "source_checkpoint": "checkpoints\\kaggle_imported\\no_current_baselines_100epoch_3seed\\sequence\\lstm_h100_no_current_seed1.pt",
+      "source_dataset": "original_sdc_state_characterisation",
+      "target_cache": "data\\processed\\sdc4dopant_holdout_w.npz",
+      "target_fold": "holdout_w",
+      "teacher_forced_test_metrics": {
+        "final_state_mae": 0.5766300559043884,
+        "mae": 0.6081969141960144,
+        "normalized_horizon_rmse": 0.7265728712081909,
+        "r2": 0.6620838642120361,
+        "rmse": 0.7265728712081909
+      },
+      "test_windows": 594,
+      "timing": {
+        "eval_wall_clock_seconds": 1.1076006000002963,
+        "global_steps": 0,
+        "seconds_per_epoch": 0.0,
+        "wall_clock_seconds": 0.0
+      },
+      "train_stride": 256,
+      "train_windows": 2880,
+      "variant": "lstm_h100",
+      "variant_config": {
+        "gauge_every_steps": 0,
+        "grid_size": 4,
+        "hidden_dim": 100,
+        "model_name": "lstm",
+        "moment_mode": "unchanged",
+        "name": "lstm_h100"
+      },
+      "window": 256
+    },
+    {
+      "adaptation_mode": "head_only",
+      "batch_size": 64,
+      "complexity": {
+        "base_scales": 0,
+        "kan_edges": 0,
+        "kan_layers": 0,
+        "kan_output_biases": 0,
+        "spline_coefficients": 0,
+        "spline_scales": 0,
+        "total_parameters": 42501,
+        "trainable_parameters": 101
+      },
+      "epoch_summaries": [
+        {
+          "epoch": 1.0,
+          "epoch_seconds": 1.5374695999998949,
+          "train_loss_last": 0.32884883880615234,
+          "train_loss_mean": 0.38345965875519644
+        },
+        {
+          "epoch": 2.0,
+          "epoch_seconds": 1.4497875000015483,
+          "train_loss_last": 0.3420003354549408,
+          "train_loss_mean": 0.3433523688051436
+        },
+        {
+          "epoch": 3.0,
+          "epoch_seconds": 1.3718278000014834,
+          "train_loss_last": 0.3050328195095062,
+          "train_loss_mean": 0.313308733370569
+        },
+        {
+          "epoch": 4.0,
+          "epoch_seconds": 1.2775720999998157,
+          "train_loss_last": 0.33275240659713745,
+          "train_loss_mean": 0.2885128203365538
+        },
+        {
+          "epoch": 5.0,
+          "epoch_seconds": 1.2837119000032544,
+          "train_loss_last": 0.2248067855834961,
+          "train_loss_mean": 0.26758044560750327
+        },
+        {
+          "epoch": 6.0,
+          "epoch_seconds": 1.2650310000026366,
+          "train_loss_last": 0.21905529499053955,
+          "train_loss_mean": 0.2495588971508874
+        },
+        {
+          "epoch": 7.0,
+          "epoch_seconds": 1.2929270999957225,
+          "train_loss_last": 0.19455234706401825,
+          "train_loss_mean": 0.23398608465989432
+        },
+        {
+          "epoch": 8.0,
+          "epoch_seconds": 1.4880808999951114,
+          "train_loss_last": 0.21662470698356628,
+          "train_loss_mean": 0.22027271125051712
+        },
+        {
+          "epoch": 9.0,
+          "epoch_seconds": 1.5176516999999876,
+          "train_loss_last": 0.19142809510231018,
+          "train_loss_mean": 0.20822261936134762
+        },
+        {
+          "epoch": 10.0,
+          "epoch_seconds": 1.6031328000026406,
+          "train_loss_last": 0.17325228452682495,
+          "train_loss_mean": 0.19746285279591877
+        }
+      ],
+      "epochs": 10,
+      "eval_stride": 512,
+      "feature_mode": "no_current",
+      "feature_names": [
+        "V_t",
+        "V_t_minus_1",
+        "dV_t",
+        "sweep_direction"
+      ],
+      "lr": 0.0003,
+      "model_input_dim": 4,
+      "rollout_test_metrics": {
+        "rollout_final_state_mae": 0.49070262908935547,
+        "rollout_mae": 0.5152294039726257,
+        "rollout_normalized_horizon_rmse": 0.6529363393783569,
+        "rollout_r2": 0.7271071672439575,
+        "rollout_rmse": 0.6529363393783569
+      },
+      "seed": 1,
+      "source_checkpoint": "checkpoints\\kaggle_imported\\no_current_baselines_100epoch_3seed\\sequence\\lstm_h100_no_current_seed1.pt",
+      "source_dataset": "original_sdc_state_characterisation",
+      "target_cache": "data\\processed\\sdc4dopant_holdout_w.npz",
+      "target_fold": "holdout_w",
+      "teacher_forced_test_metrics": {
+        "final_state_mae": 0.49070262908935547,
+        "mae": 0.5152294039726257,
+        "normalized_horizon_rmse": 0.6529363393783569,
+        "r2": 0.7271071672439575,
+        "rmse": 0.6529363393783569
+      },
+      "test_windows": 594,
+      "timing": {
+        "eval_wall_clock_seconds": 0.9933940000046277,
+        "global_steps": 450,
+        "seconds_per_epoch": 1.4087613700001385,
+        "wall_clock_seconds": 14.087613700001384
+      },
+      "train_stride": 256,
+      "train_windows": 2880,
+      "variant": "lstm_h100",
+      "variant_config": {
+        "gauge_every_steps": 0,
+        "grid_size": 4,
+        "hidden_dim": 100,
+        "model_name": "lstm",
+        "moment_mode": "unchanged",
+        "name": "lstm_h100"
+      },
+      "window": 256
+    },
+    {
+      "adaptation_mode": "full",
+      "batch_size": 64,
+      "complexity": {
+        "base_scales": 0,
+        "kan_edges": 0,
+        "kan_layers": 0,
+        "kan_output_biases": 0,
+        "spline_coefficients": 0,
+        "spline_scales": 0,
+        "total_parameters": 42501,
+        "trainable_parameters": 42501
+      },
+      "epoch_summaries": [
+        {
+          "epoch": 1.0,
+          "epoch_seconds": 3.481642799997644,
+          "train_loss_last": 0.06665530800819397,
+          "train_loss_mean": 0.16966515878836314
+        },
+        {
+          "epoch": 2.0,
+          "epoch_seconds": 3.1067285999961314,
+          "train_loss_last": 0.055373892188072205,
+          "train_loss_mean": 0.06761821690532896
+        },
+        {
+          "epoch": 3.0,
+          "epoch_seconds": 2.8391826000006404,
+          "train_loss_last": 0.05832253769040108,
+          "train_loss_mean": 0.05548943475716644
+        },
+        {
+          "epoch": 4.0,
+          "epoch_seconds": 2.869162900002266,
+          "train_loss_last": 0.07914961129426956,
+          "train_loss_mean": 0.05072961623469988
+        },
+        {
+          "epoch": 5.0,
+          "epoch_seconds": 2.929183499996725,
+          "train_loss_last": 0.03526119887828827,
+          "train_loss_mean": 0.04815093158847756
+        },
+        {
+          "epoch": 6.0,
+          "epoch_seconds": 2.855561000003945,
+          "train_loss_last": 0.026959901675581932,
+          "train_loss_mean": 0.04670850874649154
+        },
+        {
+          "epoch": 7.0,
+          "epoch_seconds": 2.8875662999998895,
+          "train_loss_last": 0.04211265593767166,
+          "train_loss_mean": 0.04546131003234122
+        },
+        {
+          "epoch": 8.0,
+          "epoch_seconds": 2.8770212000017636,
+          "train_loss_last": 0.05421563237905502,
+          "train_loss_mean": 0.044632401607102815
+        },
+        {
+          "epoch": 9.0,
+          "epoch_seconds": 3.2399615999966045,
+          "train_loss_last": 0.028624532744288445,
+          "train_loss_mean": 0.044198094432552654
+        },
+        {
+          "epoch": 10.0,
+          "epoch_seconds": 3.3111829000044963,
+          "train_loss_last": 0.02841338887810707,
+          "train_loss_mean": 0.043670838781529005
+        }
+      ],
+      "epochs": 10,
+      "eval_stride": 512,
+      "feature_mode": "no_current",
+      "feature_names": [
+        "V_t",
+        "V_t_minus_1",
+        "dV_t",
+        "sweep_direction"
+      ],
+      "lr": 0.0003,
+      "model_input_dim": 4,
+      "rollout_test_metrics": {
+        "rollout_final_state_mae": 0.31249281764030457,
+        "rollout_mae": 0.31534188985824585,
+        "rollout_normalized_horizon_rmse": 0.5283141732215881,
+        "rollout_r2": 0.8213368654251099,
+        "rollout_rmse": 0.5283141732215881
+      },
+      "seed": 1,
+      "source_checkpoint": "checkpoints\\kaggle_imported\\no_current_baselines_100epoch_3seed\\sequence\\lstm_h100_no_current_seed1.pt",
+      "source_dataset": "original_sdc_state_characterisation",
+      "target_cache": "data\\processed\\sdc4dopant_holdout_w.npz",
+      "target_fold": "holdout_w",
+      "teacher_forced_test_metrics": {
+        "final_state_mae": 0.31249281764030457,
+        "mae": 0.31534188985824585,
+        "normalized_horizon_rmse": 0.5283141732215881,
+        "r2": 0.8213368654251099,
+        "rmse": 0.5283141732215881
+      },
+      "test_windows": 594,
+      "timing": {
+        "eval_wall_clock_seconds": 0.9053902000014205,
+        "global_steps": 450,
+        "seconds_per_epoch": 3.039764859999559,
+        "wall_clock_seconds": 30.39764859999559
+      },
+      "train_stride": 256,
+      "train_windows": 2880,
+      "variant": "lstm_h100",
+      "variant_config": {
+        "gauge_every_steps": 0,
+        "grid_size": 4,
+        "hidden_dim": 100,
+        "model_name": "lstm",
+        "moment_mode": "unchanged",
+        "name": "lstm_h100"
+      },
+      "window": 256
+    },
+    {
+      "adaptation_mode": "scratch_same_budget",
+      "batch_size": 64,
+      "complexity": {
+        "base_scales": 0,
+        "kan_edges": 0,
+        "kan_layers": 0,
+        "kan_output_biases": 0,
+        "spline_coefficients": 0,
+        "spline_scales": 0,
+        "total_parameters": 42501,
+        "trainable_parameters": 42501
+      },
+      "epoch_summaries": [
+        {
+          "epoch": 1.0,
+          "epoch_seconds": 3.4595477000038954,
+          "train_loss_last": 0.05872302129864693,
+          "train_loss_mean": 0.3676422908074326
+        },
+        {
+          "epoch": 2.0,
+          "epoch_seconds": 3.1680007000031765,
+          "train_loss_last": 0.0488969162106514,
+          "train_loss_mean": 0.06195317746864425
+        },
+        {
+          "epoch": 3.0,
+          "epoch_seconds": 2.884915299997374,
+          "train_loss_last": 0.05789116024971008,
+          "train_loss_mean": 0.053308363589975566
+        },
+        {
+          "epoch": 4.0,
+          "epoch_seconds": 2.8985548999989987,
+          "train_loss_last": 0.07979026436805725,
+          "train_loss_mean": 0.04928975399169657
+        },
+        {
+          "epoch": 5.0,
+          "epoch_seconds": 2.8372946999952546,
+          "train_loss_last": 0.032794613391160965,
+          "train_loss_mean": 0.04770512663655811
+        },
+        {
+          "epoch": 6.0,
+          "epoch_seconds": 2.854066200001398,
+          "train_loss_last": 0.023828255012631416,
+          "train_loss_mean": 0.04816029721664058
+        },
+        {
+          "epoch": 7.0,
+          "epoch_seconds": 3.0863946999961627,
+          "train_loss_last": 0.04443110525608063,
+          "train_loss_mean": 0.046991352116068204
+        },
+        {
+          "epoch": 8.0,
+          "epoch_seconds": 3.2615168999982416,
+          "train_loss_last": 0.05567718297243118,
+          "train_loss_mean": 0.04571761530306604
+        },
+        {
+          "epoch": 9.0,
+          "epoch_seconds": 3.3782301000028383,
+          "train_loss_last": 0.030617892742156982,
+          "train_loss_mean": 0.045108016994264394
+        },
+        {
+          "epoch": 10.0,
+          "epoch_seconds": 2.929911599996558,
+          "train_loss_last": 0.028460022062063217,
+          "train_loss_mean": 0.04465184998181131
+        }
+      ],
+      "epochs": 10,
+      "eval_stride": 512,
+      "feature_mode": "no_current",
+      "feature_names": [
+        "V_t",
+        "V_t_minus_1",
+        "dV_t",
+        "sweep_direction"
+      ],
+      "lr": 0.001,
+      "model_input_dim": 4,
+      "rollout_test_metrics": {
+        "rollout_final_state_mae": 0.3228420317173004,
+        "rollout_mae": 0.323148638010025,
+        "rollout_normalized_horizon_rmse": 0.5436580777168274,
+        "rollout_r2": 0.8108082413673401,
+        "rollout_rmse": 0.5436580777168274
+      },
+      "seed": 1,
+      "source_checkpoint": null,
+      "source_dataset": "original_sdc_state_characterisation",
+      "target_cache": "data\\processed\\sdc4dopant_holdout_w.npz",
+      "target_fold": "holdout_w",
+      "teacher_forced_test_metrics": {
+        "final_state_mae": 0.3228420317173004,
+        "mae": 0.323148638010025,
+        "normalized_horizon_rmse": 0.5436580777168274,
+        "r2": 0.8108082413673401,
+        "rmse": 0.5436580777168274
+      },
+      "test_windows": 594,
+      "timing": {
+        "eval_wall_clock_seconds": 0.8921747999993386,
+        "global_steps": 450,
+        "seconds_per_epoch": 3.0758896299994376,
+        "wall_clock_seconds": 30.758896299994376
+      },
+      "train_stride": 256,
+      "train_windows": 2880,
+      "variant": "lstm_h100",
+      "variant_config": {
+        "gauge_every_steps": 0,
+        "grid_size": 4,
+        "hidden_dim": 100,
+        "model_name": "lstm",
+        "moment_mode": "unchanged",
+        "name": "lstm_h100"
+      },
+      "window": 256
+    },
+    {
+      "adaptation_mode": "zero_shot",
+      "batch_size": 64,
+      "complexity": {
+        "base_scales": 0,
+        "kan_edges": 0,
+        "kan_layers": 0,
+        "kan_output_biases": 0,
+        "spline_coefficients": 0,
+        "spline_scales": 0,
+        "total_parameters": 41401,
+        "trainable_parameters": 41401
+      },
+      "epoch_summaries": [],
+      "epochs": 0,
+      "eval_stride": 512,
+      "feature_mode": "no_current",
+      "feature_names": [
+        "V_t",
+        "V_t_minus_1",
+        "dV_t",
+        "sweep_direction"
+      ],
+      "lr": 0.0,
+      "model_input_dim": 4,
+      "rollout_test_metrics": {
+        "rollout_final_state_mae": 0.8184683918952942,
+        "rollout_mae": 0.8119965195655823,
+        "rollout_normalized_horizon_rmse": 0.962016224861145,
+        "rollout_r2": 0.40759962797164917,
+        "rollout_rmse": 0.962016224861145
+      },
+      "seed": 2,
+      "source_checkpoint": "checkpoints\\sequence\\static_mlp_h200_no_current_seed2.pt",
+      "source_dataset": "original_sdc_state_characterisation",
+      "target_cache": "data\\processed\\sdc4dopant_holdout_w.npz",
+      "target_fold": "holdout_w",
+      "teacher_forced_test_metrics": {
+        "final_state_mae": 0.8184683918952942,
+        "mae": 0.8119965195655823,
+        "normalized_horizon_rmse": 0.962016224861145,
+        "r2": 0.40759962797164917,
+        "rmse": 0.962016224861145
+      },
+      "test_windows": 594,
+      "timing": {
+        "eval_wall_clock_seconds": 0.8828241000010166,
+        "global_steps": 0,
+        "seconds_per_epoch": 0.0,
+        "wall_clock_seconds": 0.0
+      },
+      "train_stride": 256,
+      "train_windows": 2880,
+      "variant": "static_mlp_h200",
+      "variant_config": {
+        "gauge_every_steps": 0,
+        "grid_size": 4,
+        "hidden_dim": 200,
+        "model_name": "static_mlp_sequence",
+        "moment_mode": "unchanged",
+        "name": "static_mlp_h200"
+      },
+      "window": 256
+    },
+    {
+      "adaptation_mode": "head_only",
+      "batch_size": 64,
+      "complexity": {
+        "base_scales": 0,
+        "kan_edges": 0,
+        "kan_layers": 0,
+        "kan_output_biases": 0,
+        "spline_coefficients": 0,
+        "spline_scales": 0,
+        "total_parameters": 41401,
+        "trainable_parameters": 201
+      },
+      "epoch_summaries": [
+        {
+          "epoch": 1.0,
+          "epoch_seconds": 1.5031936000013957,
+          "train_loss_last": 0.43241003155708313,
+          "train_loss_mean": 0.5881170246336195
+        },
+        {
+          "epoch": 2.0,
+          "epoch_seconds": 1.7064603000035277,
+          "train_loss_last": 0.2703511416912079,
+          "train_loss_mean": 0.3447979907194773
+        },
+        {
+          "epoch": 3.0,
+          "epoch_seconds": 1.5120898000022862,
+          "train_loss_last": 0.19407156109809875,
+          "train_loss_mean": 0.20570749309327868
+        },
+        {
+          "epoch": 4.0,
+          "epoch_seconds": 1.3200940000024275,
+          "train_loss_last": 0.14654628932476044,
+          "train_loss_mean": 0.14015265819099215
+        },
+        {
+          "epoch": 5.0,
+          "epoch_seconds": 1.0850619999982882,
+          "train_loss_last": 0.09595401585102081,
+          "train_loss_mean": 0.11688409547011057
+        },
+        {
+          "epoch": 6.0,
+          "epoch_seconds": 1.0774422999966191,
+          "train_loss_last": 0.1097768098115921,
+          "train_loss_mean": 0.10517411281665166
+        },
+        {
+          "epoch": 7.0,
+          "epoch_seconds": 1.0958577000055811,
+          "train_loss_last": 0.09859351068735123,
+          "train_loss_mean": 0.09669916464222802
+        },
+        {
+          "epoch": 8.0,
+          "epoch_seconds": 1.1370655999999144,
+          "train_loss_last": 0.07641414552927017,
+          "train_loss_mean": 0.08999196655220455
+        },
+        {
+          "epoch": 9.0,
+          "epoch_seconds": 1.0938259999966249,
+          "train_loss_last": 0.08383484929800034,
+          "train_loss_mean": 0.08453989070322779
+        },
+        {
+          "epoch": 10.0,
+          "epoch_seconds": 1.0842011999993701,
+          "train_loss_last": 0.0748816505074501,
+          "train_loss_mean": 0.08005090041293038
+        }
+      ],
+      "epochs": 10,
+      "eval_stride": 512,
+      "feature_mode": "no_current",
+      "feature_names": [
+        "V_t",
+        "V_t_minus_1",
+        "dV_t",
+        "sweep_direction"
+      ],
+      "lr": 0.0003,
+      "model_input_dim": 4,
+      "rollout_test_metrics": {
+        "rollout_final_state_mae": 0.37397900223731995,
+        "rollout_mae": 0.3732042908668518,
+        "rollout_normalized_horizon_rmse": 0.5585426092147827,
+        "rollout_r2": 0.8003068566322327,
+        "rollout_rmse": 0.5585426092147827
+      },
+      "seed": 2,
+      "source_checkpoint": "checkpoints\\sequence\\static_mlp_h200_no_current_seed2.pt",
+      "source_dataset": "original_sdc_state_characterisation",
+      "target_cache": "data\\processed\\sdc4dopant_holdout_w.npz",
+      "target_fold": "holdout_w",
+      "teacher_forced_test_metrics": {
+        "final_state_mae": 0.37397900223731995,
+        "mae": 0.3732042908668518,
+        "normalized_horizon_rmse": 0.5585426092147827,
+        "r2": 0.8003068566322327,
+        "rmse": 0.5585426092147827
+      },
+      "test_windows": 594,
+      "timing": {
+        "eval_wall_clock_seconds": 0.6701506000026711,
+        "global_steps": 450,
+        "seconds_per_epoch": 1.261593809999613,
+        "wall_clock_seconds": 12.615938099996129
+      },
+      "train_stride": 256,
+      "train_windows": 2880,
+      "variant": "static_mlp_h200",
+      "variant_config": {
+        "gauge_every_steps": 0,
+        "grid_size": 4,
+        "hidden_dim": 200,
+        "model_name": "static_mlp_sequence",
+        "moment_mode": "unchanged",
+        "name": "static_mlp_h200"
+      },
+      "window": 256
+    },
+    {
+      "adaptation_mode": "full",
+      "batch_size": 64,
+      "complexity": {
+        "base_scales": 0,
+        "kan_edges": 0,
+        "kan_layers": 0,
+        "kan_output_biases": 0,
+        "spline_coefficients": 0,
+        "spline_scales": 0,
+        "total_parameters": 41401,
+        "trainable_parameters": 41401
+      },
+      "epoch_summaries": [
+        {
+          "epoch": 1.0,
+          "epoch_seconds": 3.028619400000025,
+          "train_loss_last": 0.04439803212881088,
+          "train_loss_mean": 0.22127097605003251
+        },
+        {
+          "epoch": 2.0,
+          "epoch_seconds": 3.054378300003009,
+          "train_loss_last": 0.05121611803770065,
+          "train_loss_mean": 0.0524961841189199
+        },
+        {
+          "epoch": 3.0,
+          "epoch_seconds": 3.0566012999988743,
+          "train_loss_last": 0.05475137382745743,
+          "train_loss_mean": 0.044084498203463024
+        },
+        {
+          "epoch": 4.0,
+          "epoch_seconds": 3.0188246999969124,
+          "train_loss_last": 0.04603545740246773,
+          "train_loss_mean": 0.04211580033103625
+        },
+        {
+          "epoch": 5.0,
+          "epoch_seconds": 2.6443981999982498,
+          "train_loss_last": 0.026079189032316208,
+          "train_loss_mean": 0.04158515619734923
+        },
+        {
+          "epoch": 6.0,
+          "epoch_seconds": 2.524105199998303,
+          "train_loss_last": 0.04643923416733742,
+          "train_loss_mean": 0.041351497628622585
+        },
+        {
+          "epoch": 7.0,
+          "epoch_seconds": 2.566530399999465,
+          "train_loss_last": 0.05746571719646454,
+          "train_loss_mean": 0.040797115117311475
+        },
+        {
+          "epoch": 8.0,
+          "epoch_seconds": 2.515088400003151,
+          "train_loss_last": 0.02948666550219059,
+          "train_loss_mean": 0.040824468889170226
+        },
+        {
+          "epoch": 9.0,
+          "epoch_seconds": 2.501837900003011,
+          "train_loss_last": 0.0383802130818367,
+          "train_loss_mean": 0.040804268502526816
+        },
+        {
+          "epoch": 10.0,
+          "epoch_seconds": 2.5524242999963462,
+          "train_loss_last": 0.035344406962394714,
+          "train_loss_mean": 0.04058276580439674
+        }
+      ],
+      "epochs": 10,
+      "eval_stride": 512,
+      "feature_mode": "no_current",
+      "feature_names": [
+        "V_t",
+        "V_t_minus_1",
+        "dV_t",
+        "sweep_direction"
+      ],
+      "lr": 0.0003,
+      "model_input_dim": 4,
+      "rollout_test_metrics": {
+        "rollout_final_state_mae": 0.3163434863090515,
+        "rollout_mae": 0.31239980459213257,
+        "rollout_normalized_horizon_rmse": 0.5352067351341248,
+        "rollout_r2": 0.8166446685791016,
+        "rollout_rmse": 0.5352067351341248
+      },
+      "seed": 2,
+      "source_checkpoint": "checkpoints\\sequence\\static_mlp_h200_no_current_seed2.pt",
+      "source_dataset": "original_sdc_state_characterisation",
+      "target_cache": "data\\processed\\sdc4dopant_holdout_w.npz",
+      "target_fold": "holdout_w",
+      "teacher_forced_test_metrics": {
+        "final_state_mae": 0.3163434863090515,
+        "mae": 0.31239980459213257,
+        "normalized_horizon_rmse": 0.5352067351341248,
+        "r2": 0.8166446685791016,
+        "rmse": 0.5352067351341248
+      },
+      "test_windows": 594,
+      "timing": {
+        "eval_wall_clock_seconds": 0.6547294999982114,
+        "global_steps": 450,
+        "seconds_per_epoch": 2.7463449000002584,
+        "wall_clock_seconds": 27.463449000002583
+      },
+      "train_stride": 256,
+      "train_windows": 2880,
+      "variant": "static_mlp_h200",
+      "variant_config": {
+        "gauge_every_steps": 0,
+        "grid_size": 4,
+        "hidden_dim": 200,
+        "model_name": "static_mlp_sequence",
+        "moment_mode": "unchanged",
+        "name": "static_mlp_h200"
+      },
+      "window": 256
+    },
+    {
+      "adaptation_mode": "scratch_same_budget",
+      "batch_size": 64,
+      "complexity": {
+        "base_scales": 0,
+        "kan_edges": 0,
+        "kan_layers": 0,
+        "kan_output_biases": 0,
+        "spline_coefficients": 0,
+        "spline_scales": 0,
+        "total_parameters": 41401,
+        "trainable_parameters": 41401
+      },
+      "epoch_summaries": [
+        {
+          "epoch": 1.0,
+          "epoch_seconds": 3.14819659999921,
+          "train_loss_last": 0.03591311722993851,
+          "train_loss_mean": 0.20821552880936198
+        },
+        {
+          "epoch": 2.0,
+          "epoch_seconds": 2.9337124999947264,
+          "train_loss_last": 0.05790682137012482,
+          "train_loss_mean": 0.05260255808631579
+        },
+        {
+          "epoch": 3.0,
+          "epoch_seconds": 2.746665499995288,
+          "train_loss_last": 0.05923626944422722,
+          "train_loss_mean": 0.050328343568576704
+        },
+        {
+          "epoch": 4.0,
+          "epoch_seconds": 3.1171228000021074,
+          "train_loss_last": 0.052372388541698456,
+          "train_loss_mean": 0.04941694951719708
+        },
+        {
+          "epoch": 5.0,
+          "epoch_seconds": 3.039722699999402,
+          "train_loss_last": 0.03145608305931091,
+          "train_loss_mean": 0.048053940344187945
+        },
+        {
+          "epoch": 6.0,
+          "epoch_seconds": 2.6039888999948744,
+          "train_loss_last": 0.04994500055909157,
+          "train_loss_mean": 0.04662779797282484
+        },
+        {
+          "epoch": 7.0,
+          "epoch_seconds": 2.596855299998424,
+          "train_loss_last": 0.05998416990041733,
+          "train_loss_mean": 0.04476487959424655
+        },
+        {
+          "epoch": 8.0,
+          "epoch_seconds": 2.683796999997867,
+          "train_loss_last": 0.031777095049619675,
+          "train_loss_mean": 0.043233811027473874
+        },
+        {
+          "epoch": 9.0,
+          "epoch_seconds": 2.668862499995157,
+          "train_loss_last": 0.03994948789477348,
+          "train_loss_mean": 0.04205505351225535
+        },
+        {
+          "epoch": 10.0,
+          "epoch_seconds": 2.5797920000040904,
+          "train_loss_last": 0.035859283059835434,
+          "train_loss_mean": 0.04095614709787899
+        }
+      ],
+      "epochs": 10,
+      "eval_stride": 512,
+      "feature_mode": "no_current",
+      "feature_names": [
+        "V_t",
+        "V_t_minus_1",
+        "dV_t",
+        "sweep_direction"
+      ],
+      "lr": 0.001,
+      "model_input_dim": 4,
+      "rollout_test_metrics": {
+        "rollout_final_state_mae": 0.32293155789375305,
+        "rollout_mae": 0.3165850341320038,
+        "rollout_normalized_horizon_rmse": 0.5372819900512695,
+        "rollout_r2": 0.8152199387550354,
+        "rollout_rmse": 0.5372819900512695
+      },
+      "seed": 2,
+      "source_checkpoint": null,
+      "source_dataset": "original_sdc_state_characterisation",
+      "target_cache": "data\\processed\\sdc4dopant_holdout_w.npz",
+      "target_fold": "holdout_w",
+      "teacher_forced_test_metrics": {
+        "final_state_mae": 0.32293155789375305,
+        "mae": 0.3165850341320038,
+        "normalized_horizon_rmse": 0.5372819900512695,
+        "r2": 0.8152199387550354,
+        "rmse": 0.5372819900512695
+      },
+      "test_windows": 594,
+      "timing": {
+        "eval_wall_clock_seconds": 0.6766010999999708,
+        "global_steps": 450,
+        "seconds_per_epoch": 2.8119326500003807,
+        "wall_clock_seconds": 28.119326500003808
+      },
+      "train_stride": 256,
+      "train_windows": 2880,
+      "variant": "static_mlp_h200",
+      "variant_config": {
+        "gauge_every_steps": 0,
+        "grid_size": 4,
+        "hidden_dim": 200,
+        "model_name": "static_mlp_sequence",
+        "moment_mode": "unchanged",
+        "name": "static_mlp_h200"
+      },
+      "window": 256
+    },
+    {
+      "adaptation_mode": "zero_shot",
+      "batch_size": 64,
+      "complexity": {
+        "base_scales": 0,
+        "kan_edges": 0,
+        "kan_layers": 0,
+        "kan_output_biases": 0,
+        "spline_coefficients": 0,
+        "spline_scales": 0,
+        "total_parameters": 42573,
+        "trainable_parameters": 42573
+      },
+      "epoch_summaries": [],
+      "epochs": 0,
+      "eval_stride": 512,
+      "feature_mode": "no_current",
+      "feature_names": [
+        "V_t",
+        "V_t_minus_1",
+        "dV_t",
+        "sweep_direction"
+      ],
+      "lr": 0.0,
+      "model_input_dim": 4,
+      "rollout_test_metrics": {
+        "rollout_final_state_mae": 0.7205599546432495,
+        "rollout_mae": 0.7266810536384583,
+        "rollout_normalized_horizon_rmse": 0.8548147082328796,
+        "rollout_r2": 0.5322709083557129,
+        "rollout_rmse": 0.8548147082328796
+      },
+      "seed": 2,
+      "source_checkpoint": "checkpoints\\kaggle_imported\\no_current_baselines_100epoch_3seed\\sequence\\gru_h116_no_current_seed2.pt",
+      "source_dataset": "original_sdc_state_characterisation",
+      "target_cache": "data\\processed\\sdc4dopant_holdout_w.npz",
+      "target_fold": "holdout_w",
+      "teacher_forced_test_metrics": {
+        "final_state_mae": 0.7205599546432495,
+        "mae": 0.7266810536384583,
+        "normalized_horizon_rmse": 0.8548147082328796,
+        "r2": 0.5322709083557129,
+        "rmse": 0.8548147082328796
+      },
+      "test_windows": 594,
+      "timing": {
+        "eval_wall_clock_seconds": 1.521900400002778,
+        "global_steps": 0,
+        "seconds_per_epoch": 0.0,
+        "wall_clock_seconds": 0.0
+      },
+      "train_stride": 256,
+      "train_windows": 2880,
+      "variant": "gru_h116",
+      "variant_config": {
+        "gauge_every_steps": 0,
+        "grid_size": 4,
+        "hidden_dim": 116,
+        "model_name": "gru",
+        "moment_mode": "unchanged",
+        "name": "gru_h116"
+      },
+      "window": 256
+    },
+    {
+      "adaptation_mode": "head_only",
+      "batch_size": 64,
+      "complexity": {
+        "base_scales": 0,
+        "kan_edges": 0,
+        "kan_layers": 0,
+        "kan_output_biases": 0,
+        "spline_coefficients": 0,
+        "spline_scales": 0,
+        "total_parameters": 42573,
+        "trainable_parameters": 117
+      },
+      "epoch_summaries": [
+        {
+          "epoch": 1.0,
+          "epoch_seconds": 2.6533734000040567,
+          "train_loss_last": 0.3705946207046509,
+          "train_loss_mean": 0.42063048945532905
+        },
+        {
+          "epoch": 2.0,
+          "epoch_seconds": 2.3029332000005525,
+          "train_loss_last": 0.35589930415153503,
+          "train_loss_mean": 0.3556897335582309
+        },
+        {
+          "epoch": 3.0,
+          "epoch_seconds": 2.294646100002865,
+          "train_loss_last": 0.31080201268196106,
+          "train_loss_mean": 0.3062878234518899
+        },
+        {
+          "epoch": 4.0,
+          "epoch_seconds": 2.7651998000001186,
+          "train_loss_last": 0.24771414697170258,
+          "train_loss_mean": 0.266921893424458
+        },
+        {
+          "epoch": 5.0,
+          "epoch_seconds": 2.485236900000018,
+          "train_loss_last": 0.19376690685749054,
+          "train_loss_mean": 0.2352880852089988
+        },
+        {
+          "epoch": 6.0,
+          "epoch_seconds": 2.327247900000657,
+          "train_loss_last": 0.2013588547706604,
+          "train_loss_mean": 0.20993597474363115
+        },
+        {
+          "epoch": 7.0,
+          "epoch_seconds": 2.3122673999969265,
+          "train_loss_last": 0.1964091807603836,
+          "train_loss_mean": 0.18930061591996086
+        },
+        {
+          "epoch": 8.0,
+          "epoch_seconds": 2.2768580000047223,
+          "train_loss_last": 0.15169751644134521,
+          "train_loss_mean": 0.17273363669713337
+        },
+        {
+          "epoch": 9.0,
+          "epoch_seconds": 2.3119226999988314,
+          "train_loss_last": 0.160145565867424,
+          "train_loss_mean": 0.1588428060213725
+        },
+        {
+          "epoch": 10.0,
+          "epoch_seconds": 2.559113100003742,
+          "train_loss_last": 0.14222855865955353,
+          "train_loss_mean": 0.14755060192611483
+        }
+      ],
+      "epochs": 10,
+      "eval_stride": 512,
+      "feature_mode": "no_current",
+      "feature_names": [
+        "V_t",
+        "V_t_minus_1",
+        "dV_t",
+        "sweep_direction"
+      ],
+      "lr": 0.0003,
+      "model_input_dim": 4,
+      "rollout_test_metrics": {
+        "rollout_final_state_mae": 0.4192081391811371,
+        "rollout_mae": 0.4462933838367462,
+        "rollout_normalized_horizon_rmse": 0.5894651412963867,
+        "rollout_r2": 0.7775835990905762,
+        "rollout_rmse": 0.5894651412963867
+      },
+      "seed": 2,
+      "source_checkpoint": "checkpoints\\kaggle_imported\\no_current_baselines_100epoch_3seed\\sequence\\gru_h116_no_current_seed2.pt",
+      "source_dataset": "original_sdc_state_characterisation",
+      "target_cache": "data\\processed\\sdc4dopant_holdout_w.npz",
+      "target_fold": "holdout_w",
+      "teacher_forced_test_metrics": {
+        "final_state_mae": 0.4192081391811371,
+        "mae": 0.4462933838367462,
+        "normalized_horizon_rmse": 0.5894651412963867,
+        "r2": 0.7775835990905762,
+        "rmse": 0.5894651412963867
+      },
+      "test_windows": 594,
+      "timing": {
+        "eval_wall_clock_seconds": 1.2274649999963003,
+        "global_steps": 450,
+        "seconds_per_epoch": 2.4289199200000438,
+        "wall_clock_seconds": 24.28919920000044
+      },
+      "train_stride": 256,
+      "train_windows": 2880,
+      "variant": "gru_h116",
+      "variant_config": {
+        "gauge_every_steps": 0,
+        "grid_size": 4,
+        "hidden_dim": 116,
+        "model_name": "gru",
+        "moment_mode": "unchanged",
+        "name": "gru_h116"
+      },
+      "window": 256
+    },
+    {
+      "adaptation_mode": "full",
+      "batch_size": 64,
+      "complexity": {
+        "base_scales": 0,
+        "kan_edges": 0,
+        "kan_layers": 0,
+        "kan_output_biases": 0,
+        "spline_coefficients": 0,
+        "spline_scales": 0,
+        "total_parameters": 42573,
+        "trainable_parameters": 42573
+      },
+      "epoch_summaries": [
+        {
+          "epoch": 1.0,
+          "epoch_seconds": 9.268174999997427,
+          "train_loss_last": 0.08767865598201752,
+          "train_loss_mean": 0.19241871568891739
+        },
+        {
+          "epoch": 2.0,
+          "epoch_seconds": 9.27182499999617,
+          "train_loss_last": 0.08043881505727768,
+          "train_loss_mean": 0.08542565645443069
+        },
+        {
+          "epoch": 3.0,
+          "epoch_seconds": 8.516394500002207,
+          "train_loss_last": 0.08035492897033691,
+          "train_loss_mean": 0.06628624399503072
+        },
+        {
+          "epoch": 4.0,
+          "epoch_seconds": 8.444160200000624,
+          "train_loss_last": 0.05928761139512062,
+          "train_loss_mean": 0.057873191353347564
+        },
+        {
+          "epoch": 5.0,
+          "epoch_seconds": 9.017833200006862,
+          "train_loss_last": 0.03296444192528725,
+          "train_loss_mean": 0.05284223432342212
+        },
+        {
+          "epoch": 6.0,
+          "epoch_seconds": 8.67233269999997,
+          "train_loss_last": 0.05385876074433327,
+          "train_loss_mean": 0.04957204572856426
+        },
+        {
+          "epoch": 7.0,
+          "epoch_seconds": 8.439662999997381,
+          "train_loss_last": 0.06363272666931152,
+          "train_loss_mean": 0.047382583593328795
+        },
+        {
+          "epoch": 8.0,
+          "epoch_seconds": 8.427969500000472,
+          "train_loss_last": 0.035781651735305786,
+          "train_loss_mean": 0.046162562237845525
+        },
+        {
+          "epoch": 9.0,
+          "epoch_seconds": 9.072219100002258,
+          "train_loss_last": 0.04311206936836243,
+          "train_loss_mean": 0.044830824765894145
+        },
+        {
+          "epoch": 10.0,
+          "epoch_seconds": 8.468679099998553,
+          "train_loss_last": 0.040437422692775726,
+          "train_loss_mean": 0.04418963462942176
+        }
+      ],
+      "epochs": 10,
+      "eval_stride": 512,
+      "feature_mode": "no_current",
+      "feature_names": [
+        "V_t",
+        "V_t_minus_1",
+        "dV_t",
+        "sweep_direction"
+      ],
+      "lr": 0.0003,
+      "model_input_dim": 4,
+      "rollout_test_metrics": {
+        "rollout_final_state_mae": 0.3361806869506836,
+        "rollout_mae": 0.3360251784324646,
+        "rollout_normalized_horizon_rmse": 0.5544978380203247,
+        "rollout_r2": 0.8031886219978333,
+        "rollout_rmse": 0.5544978380203247
+      },
+      "seed": 2,
+      "source_checkpoint": "checkpoints\\kaggle_imported\\no_current_baselines_100epoch_3seed\\sequence\\gru_h116_no_current_seed2.pt",
+      "source_dataset": "original_sdc_state_characterisation",
+      "target_cache": "data\\processed\\sdc4dopant_holdout_w.npz",
+      "target_fold": "holdout_w",
+      "teacher_forced_test_metrics": {
+        "final_state_mae": 0.3361806869506836,
+        "mae": 0.3360251784324646,
+        "normalized_horizon_rmse": 0.5544978380203247,
+        "r2": 0.8031886219978333,
+        "rmse": 0.5544978380203247
+      },
+      "test_windows": 594,
+      "timing": {
+        "eval_wall_clock_seconds": 1.24243209999986,
+        "global_steps": 450,
+        "seconds_per_epoch": 8.759969670000283,
+        "wall_clock_seconds": 87.59969670000282
+      },
+      "train_stride": 256,
+      "train_windows": 2880,
+      "variant": "gru_h116",
+      "variant_config": {
+        "gauge_every_steps": 0,
+        "grid_size": 4,
+        "hidden_dim": 116,
+        "model_name": "gru",
+        "moment_mode": "unchanged",
+        "name": "gru_h116"
+      },
+      "window": 256
+    },
+    {
+      "adaptation_mode": "scratch_same_budget",
+      "batch_size": 64,
+      "complexity": {
+        "base_scales": 0,
+        "kan_edges": 0,
+        "kan_layers": 0,
+        "kan_output_biases": 0,
+        "spline_coefficients": 0,
+        "spline_scales": 0,
+        "total_parameters": 42573,
+        "trainable_parameters": 42573
+      },
+      "epoch_summaries": [
+        {
+          "epoch": 1.0,
+          "epoch_seconds": 9.25054960000125,
+          "train_loss_last": 0.05868493765592575,
+          "train_loss_mean": 0.2860854243238767
+        },
+        {
+          "epoch": 2.0,
+          "epoch_seconds": 9.15280029999849,
+          "train_loss_last": 0.06632772088050842,
+          "train_loss_mean": 0.07010506267348925
+        },
+        {
+          "epoch": 3.0,
+          "epoch_seconds": 8.483185400000366,
+          "train_loss_last": 0.06503282487392426,
+          "train_loss_mean": 0.05406779609620571
+        },
+        {
+          "epoch": 4.0,
+          "epoch_seconds": 8.45532639999874,
+          "train_loss_last": 0.05030529573559761,
+          "train_loss_mean": 0.04858681692017449
+        },
+        {
+          "epoch": 5.0,
+          "epoch_seconds": 8.845133799994073,
+          "train_loss_last": 0.030378909781575203,
+          "train_loss_mean": 0.045754575522409545
+        },
+        {
+          "epoch": 6.0,
+          "epoch_seconds": 8.731796700005361,
+          "train_loss_last": 0.05160083621740341,
+          "train_loss_mean": 0.04468602430489328
+        },
+        {
+          "epoch": 7.0,
+          "epoch_seconds": 8.438443300001381,
+          "train_loss_last": 0.05863024294376373,
+          "train_loss_mean": 0.04407025575637817
+        },
+        {
+          "epoch": 8.0,
+          "epoch_seconds": 8.437819999999192,
+          "train_loss_last": 0.032390739768743515,
+          "train_loss_mean": 0.04337520785629749
+        },
+        {
+          "epoch": 9.0,
+          "epoch_seconds": 9.067787799998769,
+          "train_loss_last": 0.04127119481563568,
+          "train_loss_mean": 0.04305710560745663
+        },
+        {
+          "epoch": 10.0,
+          "epoch_seconds": 8.467593400004262,
+          "train_loss_last": 0.04066530615091324,
+          "train_loss_mean": 0.04300790751973788
+        }
+      ],
+      "epochs": 10,
+      "eval_stride": 512,
+      "feature_mode": "no_current",
+      "feature_names": [
+        "V_t",
+        "V_t_minus_1",
+        "dV_t",
+        "sweep_direction"
+      ],
+      "lr": 0.001,
+      "model_input_dim": 4,
+      "rollout_test_metrics": {
+        "rollout_final_state_mae": 0.33153432607650757,
+        "rollout_mae": 0.3295493423938751,
+        "rollout_normalized_horizon_rmse": 0.5449668765068054,
+        "rollout_r2": 0.8098962306976318,
+        "rollout_rmse": 0.5449668765068054
+      },
+      "seed": 2,
+      "source_checkpoint": null,
+      "source_dataset": "original_sdc_state_characterisation",
+      "target_cache": "data\\processed\\sdc4dopant_holdout_w.npz",
+      "target_fold": "holdout_w",
+      "teacher_forced_test_metrics": {
+        "final_state_mae": 0.33153432607650757,
+        "mae": 0.3295493423938751,
+        "normalized_horizon_rmse": 0.5449668765068054,
+        "r2": 0.8098962306976318,
+        "rmse": 0.5449668765068054
+      },
+      "test_windows": 594,
+      "timing": {
+        "eval_wall_clock_seconds": 1.246851300005801,
+        "global_steps": 450,
+        "seconds_per_epoch": 8.733083579999947,
+        "wall_clock_seconds": 87.33083579999948
+      },
+      "train_stride": 256,
+      "train_windows": 2880,
+      "variant": "gru_h116",
+      "variant_config": {
+        "gauge_every_steps": 0,
+        "grid_size": 4,
+        "hidden_dim": 116,
+        "model_name": "gru",
+        "moment_mode": "unchanged",
+        "name": "gru_h116"
+      },
+      "window": 256
+    },
+    {
+      "adaptation_mode": "zero_shot",
+      "batch_size": 64,
+      "complexity": {
+        "base_scales": 0,
+        "kan_edges": 0,
+        "kan_layers": 0,
+        "kan_output_biases": 0,
+        "spline_coefficients": 0,
+        "spline_scales": 0,
+        "total_parameters": 42501,
+        "trainable_parameters": 42501
+      },
+      "epoch_summaries": [],
+      "epochs": 0,
+      "eval_stride": 512,
+      "feature_mode": "no_current",
+      "feature_names": [
+        "V_t",
+        "V_t_minus_1",
+        "dV_t",
+        "sweep_direction"
+      ],
+      "lr": 0.0,
+      "model_input_dim": 4,
+      "rollout_test_metrics": {
+        "rollout_final_state_mae": 0.5589694380760193,
+        "rollout_mae": 0.6082940697669983,
+        "rollout_normalized_horizon_rmse": 0.7199142575263977,
+        "rollout_r2": 0.6682491302490234,
+        "rollout_rmse": 0.7199142575263977
+      },
+      "seed": 2,
+      "source_checkpoint": "checkpoints\\kaggle_imported\\no_current_baselines_100epoch_3seed\\sequence\\lstm_h100_no_current_seed2.pt",
+      "source_dataset": "original_sdc_state_characterisation",
+      "target_cache": "data\\processed\\sdc4dopant_holdout_w.npz",
+      "target_fold": "holdout_w",
+      "teacher_forced_test_metrics": {
+        "final_state_mae": 0.5589694380760193,
+        "mae": 0.6082940697669983,
+        "normalized_horizon_rmse": 0.7199142575263977,
+        "r2": 0.6682491302490234,
+        "rmse": 0.7199142575263977
+      },
+      "test_windows": 594,
+      "timing": {
+        "eval_wall_clock_seconds": 1.11636770000041,
+        "global_steps": 0,
+        "seconds_per_epoch": 0.0,
+        "wall_clock_seconds": 0.0
+      },
+      "train_stride": 256,
+      "train_windows": 2880,
+      "variant": "lstm_h100",
+      "variant_config": {
+        "gauge_every_steps": 0,
+        "grid_size": 4,
+        "hidden_dim": 100,
+        "model_name": "lstm",
+        "moment_mode": "unchanged",
+        "name": "lstm_h100"
+      },
+      "window": 256
+    },
+    {
+      "adaptation_mode": "head_only",
+      "batch_size": 64,
+      "complexity": {
+        "base_scales": 0,
+        "kan_edges": 0,
+        "kan_layers": 0,
+        "kan_output_biases": 0,
+        "spline_coefficients": 0,
+        "spline_scales": 0,
+        "total_parameters": 42501,
+        "trainable_parameters": 101
+      },
+      "epoch_summaries": [
+        {
+          "epoch": 1.0,
+          "epoch_seconds": 1.5020741999978782,
+          "train_loss_last": 0.3443925380706787,
+          "train_loss_mean": 0.3972885376877255
+        },
+        {
+          "epoch": 2.0,
+          "epoch_seconds": 1.4351833000037004,
+          "train_loss_last": 0.3649657964706421,
+          "train_loss_mean": 0.35175793766975405
+        },
+        {
+          "epoch": 3.0,
+          "epoch_seconds": 1.437363599994569,
+          "train_loss_last": 0.3321366310119629,
+          "train_loss_mean": 0.3199308163589901
+        },
+        {
+          "epoch": 4.0,
+          "epoch_seconds": 1.4143346000055317,
+          "train_loss_last": 0.29149797558784485,
+          "train_loss_mean": 0.2945814702245924
+        },
+        {
+          "epoch": 5.0,
+          "epoch_seconds": 1.2968171000029542,
+          "train_loss_last": 0.23800760507583618,
+          "train_loss_mean": 0.27357370985878837
+        },
+        {
+          "epoch": 6.0,
+          "epoch_seconds": 1.274468000003253,
+          "train_loss_last": 0.2579622268676758,
+          "train_loss_mean": 0.2557901077800327
+        },
+        {
+          "epoch": 7.0,
+          "epoch_seconds": 1.2718644999986282,
+          "train_loss_last": 0.23891621828079224,
+          "train_loss_mean": 0.24024179644054836
+        },
+        {
+          "epoch": 8.0,
+          "epoch_seconds": 1.2724492000052123,
+          "train_loss_last": 0.20056752860546112,
+          "train_loss_mean": 0.22659396860334607
+        },
+        {
+          "epoch": 9.0,
+          "epoch_seconds": 1.350690500003111,
+          "train_loss_last": 0.23598547279834747,
+          "train_loss_mean": 0.21403307914733888
+        },
+        {
+          "epoch": 10.0,
+          "epoch_seconds": 3.361236500000814,
+          "train_loss_last": 0.1988723874092102,
+          "train_loss_mean": 0.20278600090079837
+        }
+      ],
+      "epochs": 10,
+      "eval_stride": 512,
+      "feature_mode": "no_current",
+      "feature_names": [
+        "V_t",
+        "V_t_minus_1",
+        "dV_t",
+        "sweep_direction"
+      ],
+      "lr": 0.0003,
+      "model_input_dim": 4,
+      "rollout_test_metrics": {
+        "rollout_final_state_mae": 0.4829653799533844,
+        "rollout_mae": 0.5239425897598267,
+        "rollout_normalized_horizon_rmse": 0.661651611328125,
+        "rollout_r2": 0.7197734713554382,
+        "rollout_rmse": 0.661651611328125
+      },
+      "seed": 2,
+      "source_checkpoint": "checkpoints\\kaggle_imported\\no_current_baselines_100epoch_3seed\\sequence\\lstm_h100_no_current_seed2.pt",
+      "source_dataset": "original_sdc_state_characterisation",
+      "target_cache": "data\\processed\\sdc4dopant_holdout_w.npz",
+      "target_fold": "holdout_w",
+      "teacher_forced_test_metrics": {
+        "final_state_mae": 0.4829653799533844,
+        "mae": 0.5239425897598267,
+        "normalized_horizon_rmse": 0.661651611328125,
+        "r2": 0.7197734713554382,
+        "rmse": 0.661651611328125
+      },
+      "test_windows": 594,
+      "timing": {
+        "eval_wall_clock_seconds": 2.2323604999983218,
+        "global_steps": 450,
+        "seconds_per_epoch": 1.561689810000098,
+        "wall_clock_seconds": 15.61689810000098
+      },
+      "train_stride": 256,
+      "train_windows": 2880,
+      "variant": "lstm_h100",
+      "variant_config": {
+        "gauge_every_steps": 0,
+        "grid_size": 4,
+        "hidden_dim": 100,
+        "model_name": "lstm",
+        "moment_mode": "unchanged",
+        "name": "lstm_h100"
+      },
+      "window": 256
+    },
+    {
+      "adaptation_mode": "full",
+      "batch_size": 64,
+      "complexity": {
+        "base_scales": 0,
+        "kan_edges": 0,
+        "kan_layers": 0,
+        "kan_output_biases": 0,
+        "spline_coefficients": 0,
+        "spline_scales": 0,
+        "total_parameters": 42501,
+        "trainable_parameters": 42501
+      },
+      "epoch_summaries": [
+        {
+          "epoch": 1.0,
+          "epoch_seconds": 5.046389999995881,
+          "train_loss_last": 0.06419394910335541,
+          "train_loss_mean": 0.1750831370552381
+        },
+        {
+          "epoch": 2.0,
+          "epoch_seconds": 4.45896619999985,
+          "train_loss_last": 0.07417693734169006,
+          "train_loss_mean": 0.07150042181213696
+        },
+        {
+          "epoch": 3.0,
+          "epoch_seconds": 4.2209576000022935,
+          "train_loss_last": 0.07087931782007217,
+          "train_loss_mean": 0.05806793057256275
+        },
+        {
+          "epoch": 4.0,
+          "epoch_seconds": 4.146126499996171,
+          "train_loss_last": 0.05529710650444031,
+          "train_loss_mean": 0.05212845280766487
+        },
+        {
+          "epoch": 5.0,
+          "epoch_seconds": 4.207020400004694,
+          "train_loss_last": 0.030824711546301842,
+          "train_loss_mean": 0.04908565833336777
+        },
+        {
+          "epoch": 6.0,
+          "epoch_seconds": 4.558142000001681,
+          "train_loss_last": 0.052603829652071,
+          "train_loss_mean": 0.04727459711333116
+        },
+        {
+          "epoch": 7.0,
+          "epoch_seconds": 4.651905999999144,
+          "train_loss_last": 0.06185738742351532,
+          "train_loss_mean": 0.04600710053410795
+        },
+        {
+          "epoch": 8.0,
+          "epoch_seconds": 4.345919300001697,
+          "train_loss_last": 0.034637585282325745,
+          "train_loss_mean": 0.04533003415498468
+        },
+        {
+          "epoch": 9.0,
+          "epoch_seconds": 4.154891999998654,
+          "train_loss_last": 0.0423593744635582,
+          "train_loss_mean": 0.04453197622464763
+        },
+        {
+          "epoch": 10.0,
+          "epoch_seconds": 4.169068899995182,
+          "train_loss_last": 0.039476342499256134,
+          "train_loss_mean": 0.04403356752461857
+        }
+      ],
+      "epochs": 10,
+      "eval_stride": 512,
+      "feature_mode": "no_current",
+      "feature_names": [
+        "V_t",
+        "V_t_minus_1",
+        "dV_t",
+        "sweep_direction"
+      ],
+      "lr": 0.0003,
+      "model_input_dim": 4,
+      "rollout_test_metrics": {
+        "rollout_final_state_mae": 0.3201795518398285,
+        "rollout_mae": 0.32358691096305847,
+        "rollout_normalized_horizon_rmse": 0.5380098819732666,
+        "rollout_r2": 0.8147189617156982,
+        "rollout_rmse": 0.5380098819732666
+      },
+      "seed": 2,
+      "source_checkpoint": "checkpoints\\kaggle_imported\\no_current_baselines_100epoch_3seed\\sequence\\lstm_h100_no_current_seed2.pt",
+      "source_dataset": "original_sdc_state_characterisation",
+      "target_cache": "data\\processed\\sdc4dopant_holdout_w.npz",
+      "target_fold": "holdout_w",
+      "teacher_forced_test_metrics": {
+        "final_state_mae": 0.3201795518398285,
+        "mae": 0.32358691096305847,
+        "normalized_horizon_rmse": 0.5380098819732666,
+        "r2": 0.8147189617156982,
+        "rmse": 0.5380098819732666
+      },
+      "test_windows": 594,
+      "timing": {
+        "eval_wall_clock_seconds": 1.8515800000022864,
+        "global_steps": 450,
+        "seconds_per_epoch": 4.396002519999456,
+        "wall_clock_seconds": 43.96002519999456
+      },
+      "train_stride": 256,
+      "train_windows": 2880,
+      "variant": "lstm_h100",
+      "variant_config": {
+        "gauge_every_steps": 0,
+        "grid_size": 4,
+        "hidden_dim": 100,
+        "model_name": "lstm",
+        "moment_mode": "unchanged",
+        "name": "lstm_h100"
+      },
+      "window": 256
+    },
+    {
+      "adaptation_mode": "scratch_same_budget",
+      "batch_size": 64,
+      "complexity": {
+        "base_scales": 0,
+        "kan_edges": 0,
+        "kan_layers": 0,
+        "kan_output_biases": 0,
+        "spline_coefficients": 0,
+        "spline_scales": 0,
+        "total_parameters": 42501,
+        "trainable_parameters": 42501
+      },
+      "epoch_summaries": [
+        {
+          "epoch": 1.0,
+          "epoch_seconds": 4.896085499996843,
+          "train_loss_last": 0.04745909944176674,
+          "train_loss_mean": 0.323949105044206
+        },
+        {
+          "epoch": 2.0,
+          "epoch_seconds": 4.860653700001421,
+          "train_loss_last": 0.06034854054450989,
+          "train_loss_mean": 0.06069637288649877
+        },
+        {
+          "epoch": 3.0,
+          "epoch_seconds": 4.266919100002269,
+          "train_loss_last": 0.06399887055158615,
+          "train_loss_mean": 0.05241212844848633
+        },
+        {
+          "epoch": 4.0,
+          "epoch_seconds": 4.047547499998473,
+          "train_loss_last": 0.051713116466999054,
+          "train_loss_mean": 0.048975922912359235
+        },
+        {
+          "epoch": 5.0,
+          "epoch_seconds": 4.022033000001102,
+          "train_loss_last": 0.030157506465911865,
+          "train_loss_mean": 0.04730165811876456
+        },
+        {
+          "epoch": 6.0,
+          "epoch_seconds": 3.946372899998096,
+          "train_loss_last": 0.05508473515510559,
+          "train_loss_mean": 0.046719041383928725
+        },
+        {
+          "epoch": 7.0,
+          "epoch_seconds": 4.041704300005222,
+          "train_loss_last": 0.060235440731048584,
+          "train_loss_mean": 0.045476385454336805
+        },
+        {
+          "epoch": 8.0,
+          "epoch_seconds": 4.019546200004697,
+          "train_loss_last": 0.033129237592220306,
+          "train_loss_mean": 0.04497108178006278
+        },
+        {
+          "epoch": 9.0,
+          "epoch_seconds": 4.00003260000085,
+          "train_loss_last": 0.04241359233856201,
+          "train_loss_mean": 0.04487828343278832
+        },
+        {
+          "epoch": 10.0,
+          "epoch_seconds": 4.189296399999876,
+          "train_loss_last": 0.04056695103645325,
+          "train_loss_mean": 0.044243747451239164
+        }
+      ],
+      "epochs": 10,
+      "eval_stride": 512,
+      "feature_mode": "no_current",
+      "feature_names": [
+        "V_t",
+        "V_t_minus_1",
+        "dV_t",
+        "sweep_direction"
+      ],
+      "lr": 0.001,
+      "model_input_dim": 4,
+      "rollout_test_metrics": {
+        "rollout_final_state_mae": 0.33559703826904297,
+        "rollout_mae": 0.33493438363075256,
+        "rollout_normalized_horizon_rmse": 0.5517662167549133,
+        "rollout_r2": 0.805122971534729,
+        "rollout_rmse": 0.5517662167549133
+      },
+      "seed": 2,
+      "source_checkpoint": null,
+      "source_dataset": "original_sdc_state_characterisation",
+      "target_cache": "data\\processed\\sdc4dopant_holdout_w.npz",
+      "target_fold": "holdout_w",
+      "teacher_forced_test_metrics": {
+        "final_state_mae": 0.33559703826904297,
+        "mae": 0.33493438363075256,
+        "normalized_horizon_rmse": 0.5517662167549133,
+        "r2": 0.805122971534729,
+        "rmse": 0.5517662167549133
+      },
+      "test_windows": 594,
+      "timing": {
+        "eval_wall_clock_seconds": 1.8757704000017839,
+        "global_steps": 450,
+        "seconds_per_epoch": 4.229088609999598,
+        "wall_clock_seconds": 42.29088609999599
+      },
+      "train_stride": 256,
+      "train_windows": 2880,
+      "variant": "lstm_h100",
+      "variant_config": {
+        "gauge_every_steps": 0,
+        "grid_size": 4,
+        "hidden_dim": 100,
+        "model_name": "lstm",
+        "moment_mode": "unchanged",
+        "name": "lstm_h100"
+      },
+      "window": 256
+    }
+  ],
+  "summary": [
+    {
+      "adaptation_mode": "full",
+      "epochs": 10,
+      "eval_seconds_mean": 1.3370438666655293,
+      "final_state_mae_mean": 0.32473941644032794,
+      "params": 42573,
+      "rollout_r2_mean": 0.8119884133338928,
+      "rollout_r2_std": 0.00797657567696434,
+      "rollout_rmse_mean": 0.5418369372685751,
+      "runs": 3,
+      "seconds_per_epoch_mean": 9.495553736666626,
+      "target_fold": "holdout_w",
+      "test_r2_mean": 0.8119884133338928,
+      "test_r2_std": 0.00797657567696434,
+      "test_rmse_mean": 0.5418369372685751,
+      "variant": "gru_h116"
+    },
+    {
+      "adaptation_mode": "head_only",
+      "epochs": 10,
+      "eval_seconds_mean": 1.3931564666636405,
+      "final_state_mae_mean": 0.41974377632141113,
+      "params": 42573,
+      "rollout_r2_mean": 0.7792637149492899,
+      "rollout_r2_std": 0.00992948264865139,
+      "rollout_rmse_mean": 0.5870850682258606,
+      "runs": 3,
+      "seconds_per_epoch_mean": 2.6811063699999065,
+      "target_fold": "holdout_w",
+      "test_r2_mean": 0.7792637149492899,
+      "test_r2_std": 0.00992948264865139,
+      "test_rmse_mean": 0.5870850682258606,
+      "variant": "gru_h116"
+    },
+    {
+      "adaptation_mode": "scratch_same_budget",
+      "epochs": 10,
+      "eval_seconds_mean": 1.3027203333379778,
+      "final_state_mae_mean": 0.32553933064142865,
+      "params": 42573,
+      "rollout_r2_mean": 0.814158042271932,
+      "rollout_r2_std": 0.006091414115465718,
+      "rollout_rmse_mean": 0.538750410079956,
+      "runs": 3,
+      "seconds_per_epoch_mean": 9.403586083333357,
+      "target_fold": "holdout_w",
+      "test_r2_mean": 0.814158042271932,
+      "test_r2_std": 0.006091414115465718,
+      "test_rmse_mean": 0.538750410079956,
+      "variant": "gru_h116"
+    },
+    {
+      "adaptation_mode": "zero_shot",
+      "epochs": 0,
+      "eval_seconds_mean": 1.6951716666687087,
+      "final_state_mae_mean": 0.6697730620702108,
+      "params": 42573,
+      "rollout_r2_mean": 0.5867061614990234,
+      "rollout_r2_std": 0.048974316501266685,
+      "rollout_rmse_mean": 0.8020892143249512,
+      "runs": 3,
+      "seconds_per_epoch_mean": 0.0,
+      "target_fold": "holdout_w",
+      "test_r2_mean": 0.5867061614990234,
+      "test_r2_std": 0.048974316501266685,
+      "test_rmse_mean": 0.8020892143249512,
+      "variant": "gru_h116"
+    },
+    {
+      "adaptation_mode": "full",
+      "epochs": 10,
+      "eval_seconds_mean": 1.2852542000012666,
+      "final_state_mae_mean": 0.31650803486506146,
+      "params": 42501,
+      "rollout_r2_mean": 0.8175297379493713,
+      "rollout_r2_std": 0.0027920958943578587,
+      "rollout_rmse_mean": 0.5338977177937826,
+      "runs": 3,
+      "seconds_per_epoch_mean": 3.652141926666324,
+      "target_fold": "holdout_w",
+      "test_r2_mean": 0.8175297379493713,
+      "test_r2_std": 0.0027920958943578587,
+      "test_rmse_mean": 0.5338977177937826,
+      "variant": "lstm_h100"
+    },
+    {
+      "adaptation_mode": "head_only",
+      "epochs": 10,
+      "eval_seconds_mean": 1.4164897333345532,
+      "final_state_mae_mean": 0.502139538526535,
+      "params": 42501,
+      "rollout_r2_mean": 0.7099489569664001,
+      "rollout_r2_std": 0.019313144861661715,
+      "rollout_rmse_mean": 0.6727842489878336,
+      "runs": 3,
+      "seconds_per_epoch_mean": 1.5126563466668206,
+      "target_fold": "holdout_w",
+      "test_r2_mean": 0.7099489569664001,
+      "test_r2_std": 0.019313144861661715,
+      "test_rmse_mean": 0.6727842489878336,
+      "variant": "lstm_h100"
+    },
+    {
+      "adaptation_mode": "scratch_same_budget",
+      "epochs": 10,
+      "eval_seconds_mean": 1.3828711333359631,
+      "final_state_mae_mean": 0.3245210349559784,
+      "params": 42501,
+      "rollout_r2_mean": 0.8116082549095154,
+      "rollout_r2_std": 0.005650205697943974,
+      "rollout_rmse_mean": 0.5424462159474691,
+      "runs": 3,
+      "seconds_per_epoch_mean": 3.6229080166665275,
+      "target_fold": "holdout_w",
+      "test_r2_mean": 0.8116082549095154,
+      "test_r2_std": 0.005650205697943974,
+      "test_rmse_mean": 0.5424462159474691,
+      "variant": "lstm_h100"
+    },
+    {
+      "adaptation_mode": "zero_shot",
+      "epochs": 0,
+      "eval_seconds_mean": 1.5052368333320676,
+      "final_state_mae_mean": 0.5842959682146708,
+      "params": 42501,
+      "rollout_r2_mean": 0.6499151786168417,
+      "rollout_r2_std": 0.021714983839051464,
+      "rollout_rmse_mean": 0.7391905784606934,
+      "runs": 3,
+      "seconds_per_epoch_mean": 0.0,
+      "target_fold": "holdout_w",
+      "test_r2_mean": 0.6499151786168417,
+      "test_r2_std": 0.021714983839051464,
+      "test_rmse_mean": 0.7391905784606934,
+      "variant": "lstm_h100"
+    },
+    {
+      "adaptation_mode": "full",
+      "epochs": 10,
+      "eval_seconds_mean": 0.7978288999996342,
+      "final_state_mae_mean": 0.32158316175142926,
+      "params": 41401,
+      "rollout_r2_mean": 0.8169243534406027,
+      "rollout_r2_std": 0.005925708617852872,
+      "rollout_rmse_mean": 0.5347281694412231,
+      "runs": 3,
+      "seconds_per_epoch_mean": 3.126034346666711,
+      "target_fold": "holdout_w",
+      "test_r2_mean": 0.8169243534406027,
+      "test_r2_std": 0.005925708617852872,
+      "test_rmse_mean": 0.5347281694412231,
+      "variant": "static_mlp_h200"
+    },
+    {
+      "adaptation_mode": "head_only",
+      "epochs": 10,
+      "eval_seconds_mean": 0.931794133335643,
+      "final_state_mae_mean": 0.37461237112681073,
+      "params": 41401,
+      "rollout_r2_mean": 0.8013879656791687,
+      "rollout_r2_std": 0.0037844439122651087,
+      "rollout_rmse_mean": 0.5570032795270284,
+      "runs": 3,
+      "seconds_per_epoch_mean": 1.3777708866665004,
+      "target_fold": "holdout_w",
+      "test_r2_mean": 0.8013879656791687,
+      "test_r2_std": 0.0037844439122651087,
+      "test_rmse_mean": 0.5570032795270284,
+      "variant": "static_mlp_h200"
+    },
+    {
+      "adaptation_mode": "scratch_same_budget",
+      "epochs": 10,
+      "eval_seconds_mean": 0.7172516666638936,
+      "final_state_mae_mean": 0.31983712315559387,
+      "params": 41401,
+      "rollout_r2_mean": 0.8179893692334493,
+      "rollout_r2_std": 0.0049088773125961355,
+      "rollout_rmse_mean": 0.5331915815671285,
+      "runs": 3,
+      "seconds_per_epoch_mean": 3.0301279466667133,
+      "target_fold": "holdout_w",
+      "test_r2_mean": 0.8179893692334493,
+      "test_r2_std": 0.0049088773125961355,
+      "test_rmse_mean": 0.5331915815671285,
+      "variant": "static_mlp_h200"
+    },
+    {
+      "adaptation_mode": "zero_shot",
+      "epochs": 0,
+      "eval_seconds_mean": 0.9249793999964216,
+      "final_state_mae_mean": 0.837233285109202,
+      "params": 41401,
+      "rollout_r2_mean": 0.39079083998998004,
+      "rollout_r2_std": 0.012496983136253501,
+      "rollout_rmse_mean": 0.9755173722902933,
+      "runs": 3,
+      "seconds_per_epoch_mean": 0.0,
+      "target_fold": "holdout_w",
+      "test_r2_mean": 0.39079083998998004,
+      "test_r2_std": 0.012496983136253501,
+      "test_rmse_mean": 0.9755173722902933,
+      "variant": "static_mlp_h200"
+    }
+  ]
+}

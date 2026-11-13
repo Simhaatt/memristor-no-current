@@ -1,0 +1,231 @@
+{
+  "note": "Track B/C sequence run. Timing is recorded for every variant and seed.",
+  "results": [
+    {
+      "batch_size": 64,
+      "checkpoint_path": "checkpoints/sequence/kan_lstm_h32_seed0.pt",
+      "complexity": {
+        "base_scales": 4736,
+        "kan_edges": 4736,
+        "kan_layers": 1,
+        "kan_output_biases": 128,
+        "spline_coefficients": 33152,
+        "spline_scales": 4736,
+        "total_parameters": 42785,
+        "trainable_parameters": 42785
+      },
+      "cuda_name": "Tesla T4",
+      "device": "cuda",
+      "epoch_summaries": [
+        {
+          "epoch": 1,
+          "epoch_seconds": 43.30707777800012,
+          "rollout_val_metrics": {
+            "rollout_final_state_mae": 0.6389766931533813,
+            "rollout_mae": 0.628504753112793,
+            "rollout_normalized_horizon_rmse": 0.8424528241157532,
+            "rollout_r2": 0.36201924085617065,
+            "rollout_rmse": 0.8424528241157532
+          },
+          "teacher_forced_val_metrics": {
+            "final_state_mae": 0.3807510733604431,
+            "mae": 0.4379924237728119,
+            "normalized_horizon_rmse": 0.5882003307342529,
+            "r2": 0.6889953017234802,
+            "rmse": 0.5882003307342529
+          },
+          "train_loss_last": 0.3155628442764282,
+          "train_loss_mean": 0.6791532020538281,
+          "val_metrics": {
+            "final_state_mae": 0.3807510733604431,
+            "mae": 0.4379924237728119,
+            "normalized_horizon_rmse": 0.5882003307342529,
+            "r2": 0.6889953017234802,
+            "rmse": 0.5882003307342529
+          }
+        }
+      ],
+      "epochs": 1,
+      "eval_stride": 512,
+      "eval_windows": 256,
+      "feature_mode": "full",
+      "final_rollout_val_metrics": {
+        "rollout_final_state_mae": 0.6389766931533813,
+        "rollout_mae": 0.628504753112793,
+        "rollout_normalized_horizon_rmse": 0.8424528241157532,
+        "rollout_r2": 0.36201924085617065,
+        "rollout_rmse": 0.8424528241157532
+      },
+      "final_teacher_forced_val_metrics": {
+        "final_state_mae": 0.3807510733604431,
+        "mae": 0.4379924237728119,
+        "normalized_horizon_rmse": 0.5882003307342529,
+        "r2": 0.6889953017234802,
+        "rmse": 0.5882003307342529
+      },
+      "final_val_metrics": {
+        "final_state_mae": 0.3807510733604431,
+        "mae": 0.4379924237728119,
+        "normalized_horizon_rmse": 0.5882003307342529,
+        "r2": 0.6889953017234802,
+        "rmse": 0.5882003307342529
+      },
+      "global_steps": 39,
+      "lr": 0.001,
+      "rollout_eval": true,
+      "seed": 0,
+      "stride": 256,
+      "timing": {
+        "peak_cuda_memory_mb": 490.1337890625,
+        "projection_seconds_per_event": 0.0,
+        "projection_wall_clock_fraction": 0.0,
+        "projection_wall_clock_seconds": 0.0,
+        "seconds_per_epoch": 43.307364101000076,
+        "seconds_per_step": 1.1104452333589763,
+        "wall_clock_seconds": 43.307364101000076
+      },
+      "train_windows": 2457,
+      "variant": "kan_lstm_h32",
+      "variant_config": {
+        "gauge_every_steps": 0,
+        "grid_size": 4,
+        "hidden_dim": 32,
+        "model_name": "kan_lstm",
+        "moment_mode": "unchanged",
+        "name": "kan_lstm_h32"
+      },
+      "weight_decay": 0.0,
+      "window": 256
+    },
+    {
+      "batch_size": 64,
+      "checkpoint_path": "checkpoints/sequence/gauge_kan_lstm_h32_seed0.pt",
+      "complexity": {
+        "base_scales": 4736,
+        "kan_edges": 4736,
+        "kan_layers": 1,
+        "kan_output_biases": 128,
+        "spline_coefficients": 33152,
+        "spline_scales": 4736,
+        "total_parameters": 42785,
+        "trainable_parameters": 42785
+      },
+      "cuda_name": "Tesla T4",
+      "device": "cuda",
+      "epoch_summaries": [
+        {
+          "epoch": 1,
+          "epoch_seconds": 44.51279218599984,
+          "rollout_val_metrics": {
+            "rollout_final_state_mae": 0.6054391264915466,
+            "rollout_mae": 0.6075210571289062,
+            "rollout_normalized_horizon_rmse": 0.8900773525238037,
+            "rollout_r2": 0.2878493070602417,
+            "rollout_rmse": 0.8900773525238037
+          },
+          "teacher_forced_val_metrics": {
+            "final_state_mae": 0.4662103056907654,
+            "mae": 0.46803364157676697,
+            "normalized_horizon_rmse": 0.6966409087181091,
+            "r2": 0.5637511014938354,
+            "rmse": 0.6966409087181091
+          },
+          "train_loss_last": 0.4625590443611145,
+          "train_loss_mean": 0.7391056555968064,
+          "val_metrics": {
+            "final_state_mae": 0.4662103056907654,
+            "mae": 0.46803364157676697,
+            "normalized_horizon_rmse": 0.6966409087181091,
+            "r2": 0.5637511014938354,
+            "rmse": 0.6966409087181091
+          }
+        }
+      ],
+      "epochs": 1,
+      "eval_stride": 512,
+      "eval_windows": 256,
+      "feature_mode": "full",
+      "final_rollout_val_metrics": {
+        "rollout_final_state_mae": 0.6054391264915466,
+        "rollout_mae": 0.6075210571289062,
+        "rollout_normalized_horizon_rmse": 0.8900773525238037,
+        "rollout_r2": 0.2878493070602417,
+        "rollout_rmse": 0.8900773525238037
+      },
+      "final_teacher_forced_val_metrics": {
+        "final_state_mae": 0.4662103056907654,
+        "mae": 0.46803364157676697,
+        "normalized_horizon_rmse": 0.6966409087181091,
+        "r2": 0.5637511014938354,
+        "rmse": 0.6966409087181091
+      },
+      "final_val_metrics": {
+        "final_state_mae": 0.4662103056907654,
+        "mae": 0.46803364157676697,
+        "normalized_horizon_rmse": 0.6966409087181091,
+        "r2": 0.5637511014938354,
+        "rmse": 0.6966409087181091
+      },
+      "global_steps": 39,
+      "lr": 0.001,
+      "rollout_eval": true,
+      "seed": 0,
+      "stride": 256,
+      "timing": {
+        "peak_cuda_memory_mb": 490.1337890625,
+        "projection_seconds_per_event": 0.004683491897431407,
+        "projection_wall_clock_fraction": 0.004103434731244985,
+        "projection_wall_clock_seconds": 0.18265618399982486,
+        "seconds_per_epoch": 44.51299849099996,
+        "seconds_per_step": 1.1413589356666658,
+        "wall_clock_seconds": 44.51299849099996
+      },
+      "train_windows": 2457,
+      "variant": "gauge_kan_lstm_h32",
+      "variant_config": {
+        "gauge_every_steps": 1,
+        "grid_size": 4,
+        "hidden_dim": 32,
+        "model_name": "gauge_kan_lstm",
+        "moment_mode": "reset",
+        "name": "gauge_kan_lstm_h32"
+      },
+      "weight_decay": 0.0,
+      "window": 256
+    }
+  ],
+  "summary": {
+    "gauge_kan_lstm_h32": {
+      "peak_cuda_memory_mb_max": 490.1337890625,
+      "rollout_final_state_mae_mean": 0.6054391264915466,
+      "rollout_final_state_mae_std": 0.0,
+      "rollout_r2_mean": 0.2878493070602417,
+      "rollout_r2_std": 0.0,
+      "rollout_rmse_mean": 0.8900773525238037,
+      "rollout_rmse_std": 0.0,
+      "runs": 1,
+      "seconds_per_step_mean": 1.1413589356666658,
+      "teacher_forced_r2_mean": 0.5637511014938354,
+      "teacher_forced_r2_std": 0.0,
+      "teacher_forced_rmse_mean": 0.6966409087181091,
+      "teacher_forced_rmse_std": 0.0,
+      "wall_clock_seconds_mean": 44.51299849099996
+    },
+    "kan_lstm_h32": {
+      "peak_cuda_memory_mb_max": 490.1337890625,
+      "rollout_final_state_mae_mean": 0.6389766931533813,
+      "rollout_final_state_mae_std": 0.0,
+      "rollout_r2_mean": 0.36201924085617065,
+      "rollout_r2_std": 0.0,
+      "rollout_rmse_mean": 0.8424528241157532,
+      "rollout_rmse_std": 0.0,
+      "runs": 1,
+      "seconds_per_step_mean": 1.1104452333589763,
+      "teacher_forced_r2_mean": 0.6889953017234802,
+      "teacher_forced_r2_std": 0.0,
+      "teacher_forced_rmse_mean": 0.5882003307342529,
+      "teacher_forced_rmse_std": 0.0,
+      "wall_clock_seconds_mean": 43.307364101000076
+    }
+  }
+}

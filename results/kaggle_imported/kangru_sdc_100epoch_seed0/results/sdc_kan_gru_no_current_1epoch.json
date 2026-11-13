@@ -1,0 +1,245 @@
+{
+  "note": "Track B/C sequence run. Timing is recorded for every variant and seed.",
+  "results": [
+    {
+      "batch_size": 16,
+      "checkpoint_path": null,
+      "complexity": {
+        "base_scales": 3456,
+        "kan_edges": 3456,
+        "kan_layers": 2,
+        "kan_output_biases": 96,
+        "spline_coefficients": 24192,
+        "spline_scales": 3456,
+        "total_parameters": 31233,
+        "trainable_parameters": 31233
+      },
+      "cuda_name": null,
+      "device": "cpu",
+      "epoch_summaries": [
+        {
+          "epoch": 1,
+          "epoch_seconds": 13.032135100002051,
+          "rollout_val_metrics": {
+            "rollout_final_state_mae": 0.8231493234634399,
+            "rollout_mae": 0.7995730042457581,
+            "rollout_normalized_horizon_rmse": 1.036639928817749,
+            "rollout_r2": -0.0001188516616821289,
+            "rollout_rmse": 1.036639928817749
+          },
+          "teacher_forced_val_metrics": {
+            "final_state_mae": 0.8231493234634399,
+            "mae": 0.7995730042457581,
+            "normalized_horizon_rmse": 1.036639928817749,
+            "r2": -0.0001188516616821289,
+            "rmse": 1.036639928817749
+          },
+          "train_loss_last": 1.1460912227630615,
+          "train_loss_mean": 0.8983405977487564,
+          "val_metrics": {
+            "final_state_mae": 0.8231493234634399,
+            "mae": 0.7995730042457581,
+            "normalized_horizon_rmse": 1.036639928817749,
+            "r2": -0.0001188516616821289,
+            "rmse": 1.036639928817749
+          }
+        }
+      ],
+      "epochs": 1,
+      "eval_stride": 512,
+      "eval_windows": 32,
+      "feature_mode": "no_current",
+      "feature_names": [
+        "V_t",
+        "V_t_minus_1",
+        "dV_t",
+        "sweep_direction"
+      ],
+      "final_rollout_val_metrics": {
+        "rollout_final_state_mae": 0.8231493234634399,
+        "rollout_mae": 0.7995730042457581,
+        "rollout_normalized_horizon_rmse": 1.036639928817749,
+        "rollout_r2": -0.0001188516616821289,
+        "rollout_rmse": 1.036639928817749
+      },
+      "final_teacher_forced_val_metrics": {
+        "final_state_mae": 0.8231493234634399,
+        "mae": 0.7995730042457581,
+        "normalized_horizon_rmse": 1.036639928817749,
+        "r2": -0.0001188516616821289,
+        "rmse": 1.036639928817749
+      },
+      "final_val_metrics": {
+        "final_state_mae": 0.8231493234634399,
+        "mae": 0.7995730042457581,
+        "normalized_horizon_rmse": 1.036639928817749,
+        "r2": -0.0001188516616821289,
+        "rmse": 1.036639928817749
+      },
+      "global_steps": 4,
+      "lr": 0.001,
+      "model_input_dim": 4,
+      "rollout_eval": true,
+      "seed": 0,
+      "stride": 256,
+      "timing": {
+        "peak_cuda_memory_mb": 0.0,
+        "projection_seconds_per_event": 0.0,
+        "projection_wall_clock_fraction": 0.0,
+        "projection_wall_clock_seconds": 0.0,
+        "seconds_per_epoch": 13.032318199999281,
+        "seconds_per_step": 3.2580795499998203,
+        "wall_clock_seconds": 13.032318199999281
+      },
+      "train_windows": 64,
+      "variant": "kan_gru_h32",
+      "variant_config": {
+        "gauge_every_steps": 0,
+        "grid_size": 4,
+        "hidden_dim": 32,
+        "model_name": "kan_gru",
+        "moment_mode": "unchanged",
+        "name": "kan_gru_h32"
+      },
+      "weight_decay": 0.0,
+      "window": 256
+    },
+    {
+      "batch_size": 16,
+      "checkpoint_path": null,
+      "complexity": {
+        "base_scales": 3456,
+        "kan_edges": 3456,
+        "kan_layers": 2,
+        "kan_output_biases": 96,
+        "spline_coefficients": 24192,
+        "spline_scales": 3456,
+        "total_parameters": 31233,
+        "trainable_parameters": 31233
+      },
+      "cuda_name": null,
+      "device": "cpu",
+      "epoch_summaries": [
+        {
+          "epoch": 1,
+          "epoch_seconds": 13.603161799997906,
+          "rollout_val_metrics": {
+            "rollout_final_state_mae": 0.8224243521690369,
+            "rollout_mae": 0.7989141345024109,
+            "rollout_normalized_horizon_rmse": 1.0357069969177246,
+            "rollout_r2": 0.0016804933547973633,
+            "rollout_rmse": 1.0357069969177246
+          },
+          "teacher_forced_val_metrics": {
+            "final_state_mae": 0.8224243521690369,
+            "mae": 0.7989141345024109,
+            "normalized_horizon_rmse": 1.0357069969177246,
+            "r2": 0.0016804933547973633,
+            "rmse": 1.0357069969177246
+          },
+          "train_loss_last": 1.1452617645263672,
+          "train_loss_mean": 0.8978594094514847,
+          "val_metrics": {
+            "final_state_mae": 0.8224243521690369,
+            "mae": 0.7989141345024109,
+            "normalized_horizon_rmse": 1.0357069969177246,
+            "r2": 0.0016804933547973633,
+            "rmse": 1.0357069969177246
+          }
+        }
+      ],
+      "epochs": 1,
+      "eval_stride": 512,
+      "eval_windows": 32,
+      "feature_mode": "no_current",
+      "feature_names": [
+        "V_t",
+        "V_t_minus_1",
+        "dV_t",
+        "sweep_direction"
+      ],
+      "final_rollout_val_metrics": {
+        "rollout_final_state_mae": 0.8224243521690369,
+        "rollout_mae": 0.7989141345024109,
+        "rollout_normalized_horizon_rmse": 1.0357069969177246,
+        "rollout_r2": 0.0016804933547973633,
+        "rollout_rmse": 1.0357069969177246
+      },
+      "final_teacher_forced_val_metrics": {
+        "final_state_mae": 0.8224243521690369,
+        "mae": 0.7989141345024109,
+        "normalized_horizon_rmse": 1.0357069969177246,
+        "r2": 0.0016804933547973633,
+        "rmse": 1.0357069969177246
+      },
+      "final_val_metrics": {
+        "final_state_mae": 0.8224243521690369,
+        "mae": 0.7989141345024109,
+        "normalized_horizon_rmse": 1.0357069969177246,
+        "r2": 0.0016804933547973633,
+        "rmse": 1.0357069969177246
+      },
+      "global_steps": 4,
+      "lr": 0.001,
+      "model_input_dim": 4,
+      "rollout_eval": true,
+      "seed": 0,
+      "stride": 256,
+      "timing": {
+        "peak_cuda_memory_mb": 0.0,
+        "projection_seconds_per_event": 0.0,
+        "projection_wall_clock_fraction": 0.0,
+        "projection_wall_clock_seconds": 0.0,
+        "seconds_per_epoch": 13.603302699993947,
+        "seconds_per_step": 3.4008256749984866,
+        "wall_clock_seconds": 13.603302699993947
+      },
+      "train_windows": 64,
+      "variant": "clipped_kan_gru_h32",
+      "variant_config": {
+        "gauge_every_steps": 0,
+        "grid_size": 4,
+        "hidden_dim": 32,
+        "model_name": "clipped_kan_gru",
+        "moment_mode": "unchanged",
+        "name": "clipped_kan_gru_h32"
+      },
+      "weight_decay": 0.0,
+      "window": 256
+    }
+  ],
+  "summary": {
+    "clipped_kan_gru_h32": {
+      "peak_cuda_memory_mb_max": 0.0,
+      "rollout_final_state_mae_mean": 0.8224243521690369,
+      "rollout_final_state_mae_std": 0.0,
+      "rollout_r2_mean": 0.0016804933547973633,
+      "rollout_r2_std": 0.0,
+      "rollout_rmse_mean": 1.0357069969177246,
+      "rollout_rmse_std": 0.0,
+      "runs": 1,
+      "seconds_per_step_mean": 3.4008256749984866,
+      "teacher_forced_r2_mean": 0.0016804933547973633,
+      "teacher_forced_r2_std": 0.0,
+      "teacher_forced_rmse_mean": 1.0357069969177246,
+      "teacher_forced_rmse_std": 0.0,
+      "wall_clock_seconds_mean": 13.603302699993947
+    },
+    "kan_gru_h32": {
+      "peak_cuda_memory_mb_max": 0.0,
+      "rollout_final_state_mae_mean": 0.8231493234634399,
+      "rollout_final_state_mae_std": 0.0,
+      "rollout_r2_mean": -0.0001188516616821289,
+      "rollout_r2_std": 0.0,
+      "rollout_rmse_mean": 1.036639928817749,
+      "rollout_rmse_std": 0.0,
+      "runs": 1,
+      "seconds_per_step_mean": 3.2580795499998203,
+      "teacher_forced_r2_mean": -0.0001188516616821289,
+      "teacher_forced_r2_std": 0.0,
+      "teacher_forced_rmse_mean": 1.036639928817749,
+      "teacher_forced_rmse_std": 0.0,
+      "wall_clock_seconds_mean": 13.032318199999281
+    }
+  }
+}

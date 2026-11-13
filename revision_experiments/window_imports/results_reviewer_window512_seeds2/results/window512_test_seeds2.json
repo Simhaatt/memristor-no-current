@@ -1,0 +1,147 @@
+{
+  "split": "test",
+  "results": [
+    {
+      "checkpoint_path": "checkpoints/window512_kan_seeds2/clipped_kan_gru_h32_no_current_seed2.pt",
+      "variant": "clipped_kan_gru_h32",
+      "variant_config": {
+        "name": "clipped_kan_gru_h32",
+        "model_name": "clipped_kan_gru",
+        "hidden_dim": 32,
+        "grid_size": 4,
+        "gauge_every_steps": 0,
+        "moment_mode": "unchanged"
+      },
+      "seed": 2,
+      "feature_mode": "no_current",
+      "feature_names": [
+        "V_t",
+        "V_t_minus_1",
+        "dV_t",
+        "sweep_direction"
+      ],
+      "split": "test",
+      "perturbation": "none",
+      "window": 512,
+      "stride": 1024,
+      "batch_size": 64,
+      "eval_windows": 153,
+      "model_input_dim": 4,
+      "complexity": {
+        "total_parameters": 31233,
+        "trainable_parameters": 31233,
+        "kan_layers": 2,
+        "kan_edges": 3456,
+        "spline_coefficients": 24192,
+        "spline_scales": 3456,
+        "base_scales": 3456,
+        "kan_output_biases": 96
+      },
+      "teacher_forced_metrics": {
+        "rmse": 0.11071408540010452,
+        "mae": 0.07879264652729034,
+        "r2": 0.9839601516723633,
+        "final_state_mae": 0.07028408348560333,
+        "normalized_horizon_rmse": 0.11071408540010452
+      },
+      "rollout_metrics": {
+        "rollout_rmse": 0.11071408540010452,
+        "rollout_mae": 0.07879264652729034,
+        "rollout_r2": 0.9839601516723633,
+        "rollout_final_state_mae": 0.07028408348560333,
+        "rollout_normalized_horizon_rmse": 0.11071408540010452
+      },
+      "timing": {
+        "eval_wall_clock_seconds": 9.04780785100047,
+        "seconds_per_window": 0.059135999026146864
+      }
+    },
+    {
+      "checkpoint_path": "checkpoints/window512_gru_seeds2/gru_h116_no_current_seed2.pt",
+      "variant": "gru_h116",
+      "variant_config": {
+        "name": "gru_h116",
+        "model_name": "gru",
+        "hidden_dim": 116,
+        "grid_size": 4,
+        "gauge_every_steps": 0,
+        "moment_mode": "unchanged"
+      },
+      "seed": 2,
+      "feature_mode": "no_current",
+      "feature_names": [
+        "V_t",
+        "V_t_minus_1",
+        "dV_t",
+        "sweep_direction"
+      ],
+      "split": "test",
+      "perturbation": "none",
+      "window": 512,
+      "stride": 1024,
+      "batch_size": 64,
+      "eval_windows": 153,
+      "model_input_dim": 4,
+      "complexity": {
+        "total_parameters": 42573,
+        "trainable_parameters": 42573,
+        "kan_layers": 0,
+        "kan_edges": 0,
+        "spline_coefficients": 0,
+        "spline_scales": 0,
+        "base_scales": 0,
+        "kan_output_biases": 0
+      },
+      "teacher_forced_metrics": {
+        "rmse": 0.17247019708156586,
+        "mae": 0.116413414478302,
+        "r2": 0.961075484752655,
+        "final_state_mae": 0.09656455367803574,
+        "normalized_horizon_rmse": 0.17247019708156586
+      },
+      "rollout_metrics": {
+        "rollout_rmse": 0.17247018218040466,
+        "rollout_mae": 0.116413414478302,
+        "rollout_r2": 0.9610755443572998,
+        "rollout_final_state_mae": 0.09656455367803574,
+        "rollout_normalized_horizon_rmse": 0.17247018218040466
+      },
+      "timing": {
+        "eval_wall_clock_seconds": 0.554032862000895,
+        "seconds_per_window": 0.0036211298169993135
+      }
+    }
+  ],
+  "summary": [
+    {
+      "variant": "clipped_kan_gru_h32",
+      "feature_mode": "no_current",
+      "perturbation": "none",
+      "runs": 1,
+      "params": 31233,
+      "teacher_r2_mean": 0.9839601516723633,
+      "teacher_r2_std": 0.0,
+      "teacher_rmse_mean": 0.11071408540010452,
+      "rollout_r2_mean": 0.9839601516723633,
+      "rollout_r2_std": 0.0,
+      "rollout_rmse_mean": 0.11071408540010452,
+      "rollout_final_state_mae_mean": 0.07028408348560333,
+      "eval_seconds_mean": 9.04780785100047
+    },
+    {
+      "variant": "gru_h116",
+      "feature_mode": "no_current",
+      "perturbation": "none",
+      "runs": 1,
+      "params": 42573,
+      "teacher_r2_mean": 0.961075484752655,
+      "teacher_r2_std": 0.0,
+      "teacher_rmse_mean": 0.17247019708156586,
+      "rollout_r2_mean": 0.9610755443572998,
+      "rollout_r2_std": 0.0,
+      "rollout_rmse_mean": 0.17247018218040466,
+      "rollout_final_state_mae_mean": 0.09656455367803574,
+      "eval_seconds_mean": 0.554032862000895
+    }
+  ]
+}

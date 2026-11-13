@@ -1,0 +1,23 @@
+[
+  {
+    "directory": "data/raw/sdc/memristor-state-characterisation",
+    "url": "https://github.com/sdpenguin/memristor-state-characterisation",
+    "commit": "06c2617c4a2fd0060971573ab2c77db5eef8f4ff"
+  },
+  {
+    "directory": "data/raw/candidate_memristor_programming_study",
+    "url": "https://github.com/mancorz98/memristor_programming_study",
+    "commit": "fdc5a80f6e9de2791dfbb0670f62f95877e35c99"
+  },
+  {
+    "directory": "data/raw/rram_lstm",
+    "url": "https://github.com/albertlin11/rram_lstm",
+    "commit": "260627e53f56012c3ccf76c92f959773037f2756"
+  },
+  {
+    "directory": "data/raw/southampton/D0132",
+    "url": "https://doi.org/10.5258/SOTON/D0132",
+    "download": "https://eprints.soton.ac.uk/411693/1/data_sets.zip",
+    "sha256": "f144625a9de06ddca2561f4103581e5e9b69a597ea3a3e32634937df89829b83"
+  }
+]

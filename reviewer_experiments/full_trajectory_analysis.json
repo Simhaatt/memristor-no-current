@@ -1,0 +1,114 @@
+{
+  "dataset": "original submitted SDC formulation",
+  "split_counts": {
+    "test": 9,
+    "train": 39,
+    "val": 8
+  },
+  "split_seed": 42,
+  "test_trajectory_ids": [
+    43,
+    14,
+    54,
+    2,
+    36,
+    33,
+    1,
+    13,
+    8
+  ],
+  "window": 256,
+  "expected_reset_count_for_15999_samples": 63,
+  "continuous_reset_count": 1,
+  "summary": [
+    {
+      "model": "clipped_kan_gru_h32",
+      "observations": 27,
+      "reset_r2_mean": 0.9818455101424631,
+      "reset_r2_std": 0.02267007557441129,
+      "continuous_r2_mean": 0.994184836576656,
+      "continuous_r2_std": 0.0064115570423773464,
+      "delta_r2_mean": 0.012339326434192822,
+      "delta_r2_median": 0.00618363687305068,
+      "reset_rmse_mean": 0.06458754255154474,
+      "reset_rmse_std": 0.012798752844003553,
+      "continuous_rmse_mean": 0.03846469805308853,
+      "continuous_rmse_std": 0.010265808774027888,
+      "delta_rmse_mean": -0.0261228444984562,
+      "improved": 27,
+      "degraded": 0,
+      "ties": 0
+    },
+    {
+      "model": "gru_h116",
+      "observations": 27,
+      "reset_r2_mean": 0.9578501285873071,
+      "reset_r2_std": 0.03949681022017686,
+      "continuous_r2_mean": 0.9864912864294577,
+      "continuous_r2_std": 0.014395977474090134,
+      "delta_r2_mean": 0.02864115784215058,
+      "delta_r2_median": 0.008286236696433358,
+      "reset_rmse_mean": 0.10613663564752354,
+      "reset_rmse_std": 0.03949932501430215,
+      "continuous_rmse_mean": 0.05312044814605869,
+      "continuous_rmse_std": 0.017359041078083778,
+      "delta_rmse_mean": -0.05301618750146485,
+      "improved": 27,
+      "degraded": 0,
+      "ties": 0
+    }
+  ],
+  "position_summary": [
+    {
+      "model": "clipped_kan_gru_h32",
+      "observations": 27,
+      "q1_rmse_mean": 0.03996397425995806,
+      "q2_rmse_mean": 0.03799786274478211,
+      "q3_rmse_mean": 0.03737754018732053,
+      "q4_rmse_mean": 0.03810574826217312,
+      "q4_minus_q1_mean": -0.001858225997784944,
+      "q4_div_q1_mean": 0.9643774621306521,
+      "trajectories_with_q4_gt_q1": 9
+    },
+    {
+      "model": "gru_h116",
+      "observations": 27,
+      "q1_rmse_mean": 0.056446021856439925,
+      "q2_rmse_mean": 0.05209924534741394,
+      "q3_rmse_mean": 0.05119658071228514,
+      "q4_rmse_mean": 0.05160894747096154,
+      "q4_minus_q1_mean": -0.004837074385478384,
+      "q4_div_q1_mean": 0.9276308958480022,
+      "trajectories_with_q4_gt_q1": 9
+    }
+  ],
+  "pca": {
+    "fit_rows": 15999,
+    "hidden_dim": 32,
+    "centering": "per-dimension mean centering",
+    "scaling": "none",
+    "algorithm": "SVD",
+    "pc1_explained_variance_ratio": 0.5245688236609449,
+    "pc2_explained_variance_ratio": 0.377257142286832,
+    "pc1_pc2_cumulative_ratio": 0.901825965947777,
+    "marked_indices": [
+      0,
+      5333,
+      10666,
+      15998
+    ],
+    "trajectory_id": 43,
+    "local_test_index": 0,
+    "seed": 0
+  },
+  "figures": {
+    "full_trajectory": {
+      "png": "reviewer_experiments\\figures\\figure_full_trajectory_continuous_inference.png",
+      "svg": "reviewer_experiments\\figures\\figure_full_trajectory_continuous_inference.svg"
+    },
+    "pca": {
+      "png": "reviewer_experiments\\figures\\figure_same_trajectory_prediction_hidden_pca.png",
+      "svg": "reviewer_experiments\\figures\\figure_same_trajectory_prediction_hidden_pca.svg"
+    }
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "cache": "data\\processed\\sdc_state_splits.npz",
+  "split": "test",
+  "window": 256,
+  "stride": 512,
+  "batch_size": 32,
+  "grid_points": 401,
+  "checkpoints": [
+    {
+      "checkpoint_path": "results\\kaggle_imported\\kangru_sdc_100epoch_seed0\\checkpoints\\sequence\\clipped_kan_gru_h32_no_current_seed0.pt",
+      "seed": 0,
+      "variant": "clipped_kan_gru_h32",
+      "feature_mode": "no_current",
+      "feature_names": [
+        "V_t",
+        "V_t_minus_1",
+        "dV_t",
+        "sweep_direction"
+      ],
+      "split": "test",
+      "windows": 288,
+      "variant_config": {
+        "name": "clipped_kan_gru_h32",
+        "model_name": "clipped_kan_gru",
+        "hidden_dim": 32,
+        "grid_size": 4,
+        "gauge_every_steps": 0,
+        "moment_mode": "unchanged"
+      }
+    },
+    {
+      "checkpoint_path": "results\\kaggle_imported\\clipped_kangru_sdc_100epoch_seed1_2\\checkpoints\\sequence\\clipped_kan_gru_h32_no_current_seed1.pt",
+      "seed": 1,
+      "variant": "clipped_kan_gru_h32",
+      "feature_mode": "no_current",
+      "feature_names": [
+        "V_t",
+        "V_t_minus_1",
+        "dV_t",
+        "sweep_direction"
+      ],
+      "split": "test",
+      "windows": 288,
+      "variant_config": {
+        "name": "clipped_kan_gru_h32",
+        "model_name": "clipped_kan_gru",
+        "hidden_dim": 32,
+        "grid_size": 4,
+        "gauge_every_steps": 0,
+        "moment_mode": "unchanged"
+      }
+    },
+    {
+      "checkpoint_path": "results\\kaggle_imported\\clipped_kangru_sdc_100epoch_seed1_2\\checkpoints\\sequence\\clipped_kan_gru_h32_no_current_seed2.pt",
+      "seed": 2,
+      "variant": "clipped_kan_gru_h32",
+      "feature_mode": "no_current",
+      "feature_names": [
+        "V_t",
+        "V_t_minus_1",
+        "dV_t",
+        "sweep_direction"
+      ],
+      "split": "test",
+      "windows": 288,
+      "variant_config": {
+        "name": "clipped_kan_gru_h32",
+        "model_name": "clipped_kan_gru",
+        "hidden_dim": 32,
+        "grid_size": 4,
+        "gauge_every_steps": 0,
+        "moment_mode": "unchanged"
+      }
+    }
+  ],
+  "plots": [
+    "results\\interpretability\\kan_gate_splines_sdc\\physical_input_spline_importance.png",
+    "results\\interpretability\\kan_gate_splines_sdc\\gate_activation_and_saturation.png"
+  ]
+}

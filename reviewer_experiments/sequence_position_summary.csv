@@ -1,0 +1,3 @@
+"model","observations","q1_rmse_mean","q2_rmse_mean","q3_rmse_mean","q4_rmse_mean","q4_minus_q1_mean","q4_div_q1_mean","seed_trajectory_observations_with_q4_gt_q1","seed_trajectory_observations","seed_averaged_trajectories_with_q4_gt_q1","test_trajectories"
+"clipped_kan_gru_h32","27","0.03996397425995806","0.03799786274478211","0.03737754018732053","0.03810574826217312","-0.001858225997784944","0.9643774621306521","9","27","3","9"
+"gru_h116","27","0.056446021856439925","0.05209924534741394","0.05119658071228514","0.05160894747096154","-0.004837074385478384","0.9276308958480022","9","27","1","9"

@@ -1,0 +1,2 @@
+variant,feature_mode,perturbation,runs,params,teacher_r2_mean,teacher_r2_std,teacher_rmse_mean,rollout_r2_mean,rollout_r2_std,rollout_rmse_mean,rollout_final_state_mae_mean,eval_seconds_mean
+hybrid_clipped_kan_gru_h32,no_current,none,3,12801,0.9675436417261759,0.006862251582331638,0.15658399959405264,0.9675436417261759,0.006862251582331638,0.15658399959405264,0.07995331039031346,8.350733299991893

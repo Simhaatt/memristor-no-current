@@ -1,0 +1,507 @@
+{
+  "split": "test",
+  "results": [
+    {
+      "checkpoint_path": "results\\imported_kaggle\\holdout_cr_seed1_2\\extracted\\results_models_holdout_cr_seed1_2\\checkpoints\\holdout_cr_seed1\\static_mlp_h200_no_current_seed1.pt",
+      "variant": "static_mlp_h200",
+      "variant_config": {
+        "name": "static_mlp_h200",
+        "model_name": "static_mlp_sequence",
+        "hidden_dim": 200,
+        "grid_size": 4,
+        "gauge_every_steps": 0,
+        "moment_mode": "unchanged"
+      },
+      "seed": 1,
+      "feature_mode": "no_current",
+      "feature_names": [
+        "V_t",
+        "V_t_minus_1",
+        "dV_t",
+        "sweep_direction"
+      ],
+      "split": "test",
+      "perturbation": "none",
+      "window": 256,
+      "stride": 512,
+      "batch_size": 64,
+      "eval_windows": 594,
+      "model_input_dim": 4,
+      "complexity": {
+        "total_parameters": 41401,
+        "trainable_parameters": 41401,
+        "kan_layers": 0,
+        "kan_edges": 0,
+        "spline_coefficients": 0,
+        "spline_scales": 0,
+        "base_scales": 0,
+        "kan_output_biases": 0
+      },
+      "teacher_forced_metrics": {
+        "rmse": 0.32905420660972595,
+        "mae": 0.22751270234584808,
+        "r2": 0.8922138214111328,
+        "final_state_mae": 0.22581680119037628,
+        "normalized_horizon_rmse": 0.32905420660972595
+      },
+      "rollout_metrics": {
+        "rollout_rmse": 0.32905420660972595,
+        "rollout_mae": 0.22751270234584808,
+        "rollout_r2": 0.8922138214111328,
+        "rollout_final_state_mae": 0.22581680119037628,
+        "rollout_normalized_horizon_rmse": 0.32905420660972595
+      },
+      "timing": {
+        "eval_wall_clock_seconds": 1.272947799996473,
+        "seconds_per_window": 0.0021430097643038264
+      }
+    },
+    {
+      "checkpoint_path": "results\\imported_kaggle\\holdout_cr_seed1_2\\extracted\\results_models_holdout_cr_seed1_2\\checkpoints\\holdout_cr_seed1\\lstm_h100_no_current_seed1.pt",
+      "variant": "lstm_h100",
+      "variant_config": {
+        "name": "lstm_h100",
+        "model_name": "lstm",
+        "hidden_dim": 100,
+        "grid_size": 4,
+        "gauge_every_steps": 0,
+        "moment_mode": "unchanged"
+      },
+      "seed": 1,
+      "feature_mode": "no_current",
+      "feature_names": [
+        "V_t",
+        "V_t_minus_1",
+        "dV_t",
+        "sweep_direction"
+      ],
+      "split": "test",
+      "perturbation": "none",
+      "window": 256,
+      "stride": 512,
+      "batch_size": 64,
+      "eval_windows": 594,
+      "model_input_dim": 4,
+      "complexity": {
+        "total_parameters": 42501,
+        "trainable_parameters": 42501,
+        "kan_layers": 0,
+        "kan_edges": 0,
+        "spline_coefficients": 0,
+        "spline_scales": 0,
+        "base_scales": 0,
+        "kan_output_biases": 0
+      },
+      "teacher_forced_metrics": {
+        "rmse": 0.3301113545894623,
+        "mae": 0.22620218992233276,
+        "r2": 0.8915201425552368,
+        "final_state_mae": 0.22479382157325745,
+        "normalized_horizon_rmse": 0.3301113545894623
+      },
+      "rollout_metrics": {
+        "rollout_rmse": 0.3301113545894623,
+        "rollout_mae": 0.22620218992233276,
+        "rollout_r2": 0.8915201425552368,
+        "rollout_final_state_mae": 0.22479382157325745,
+        "rollout_normalized_horizon_rmse": 0.3301113545894623
+      },
+      "timing": {
+        "eval_wall_clock_seconds": 1.3515171999970335,
+        "seconds_per_window": 0.0022752814814764872
+      }
+    },
+    {
+      "checkpoint_path": "results\\imported_kaggle\\holdout_cr_seed1_2\\extracted\\results_models_holdout_cr_seed1_2\\checkpoints\\holdout_cr_seed1\\gru_h116_no_current_seed1.pt",
+      "variant": "gru_h116",
+      "variant_config": {
+        "name": "gru_h116",
+        "model_name": "gru",
+        "hidden_dim": 116,
+        "grid_size": 4,
+        "gauge_every_steps": 0,
+        "moment_mode": "unchanged"
+      },
+      "seed": 1,
+      "feature_mode": "no_current",
+      "feature_names": [
+        "V_t",
+        "V_t_minus_1",
+        "dV_t",
+        "sweep_direction"
+      ],
+      "split": "test",
+      "perturbation": "none",
+      "window": 256,
+      "stride": 512,
+      "batch_size": 64,
+      "eval_windows": 594,
+      "model_input_dim": 4,
+      "complexity": {
+        "total_parameters": 42573,
+        "trainable_parameters": 42573,
+        "kan_layers": 0,
+        "kan_edges": 0,
+        "spline_coefficients": 0,
+        "spline_scales": 0,
+        "base_scales": 0,
+        "kan_output_biases": 0
+      },
+      "teacher_forced_metrics": {
+        "rmse": 0.3294983506202698,
+        "mae": 0.2255479246377945,
+        "r2": 0.891922652721405,
+        "final_state_mae": 0.2244989424943924,
+        "normalized_horizon_rmse": 0.3294983506202698
+      },
+      "rollout_metrics": {
+        "rollout_rmse": 0.3294983506202698,
+        "rollout_mae": 0.2255479246377945,
+        "rollout_r2": 0.891922652721405,
+        "rollout_final_state_mae": 0.2244989424943924,
+        "rollout_normalized_horizon_rmse": 0.3294983506202698
+      },
+      "timing": {
+        "eval_wall_clock_seconds": 1.9247785000043223,
+        "seconds_per_window": 0.003240367845125122
+      }
+    },
+    {
+      "checkpoint_path": "results\\imported_kaggle\\holdout_cr_seed1_2\\extracted\\results_models_holdout_cr_seed1_2\\checkpoints\\holdout_cr_seed1\\clipped_kan_gru_h32_no_current_seed1.pt",
+      "variant": "clipped_kan_gru_h32",
+      "variant_config": {
+        "name": "clipped_kan_gru_h32",
+        "model_name": "clipped_kan_gru",
+        "hidden_dim": 32,
+        "grid_size": 4,
+        "gauge_every_steps": 0,
+        "moment_mode": "unchanged"
+      },
+      "seed": 1,
+      "feature_mode": "no_current",
+      "feature_names": [
+        "V_t",
+        "V_t_minus_1",
+        "dV_t",
+        "sweep_direction"
+      ],
+      "split": "test",
+      "perturbation": "none",
+      "window": 256,
+      "stride": 512,
+      "batch_size": 64,
+      "eval_windows": 594,
+      "model_input_dim": 4,
+      "complexity": {
+        "total_parameters": 31233,
+        "trainable_parameters": 31233,
+        "kan_layers": 2,
+        "kan_edges": 3456,
+        "spline_coefficients": 24192,
+        "spline_scales": 3456,
+        "base_scales": 3456,
+        "kan_output_biases": 96
+      },
+      "teacher_forced_metrics": {
+        "rmse": 0.3287478983402252,
+        "mae": 0.22595196962356567,
+        "r2": 0.892414391040802,
+        "final_state_mae": 0.22139038145542145,
+        "normalized_horizon_rmse": 0.3287478983402252
+      },
+      "rollout_metrics": {
+        "rollout_rmse": 0.3287478983402252,
+        "rollout_mae": 0.22595196962356567,
+        "rollout_r2": 0.892414391040802,
+        "rollout_final_state_mae": 0.22139038145542145,
+        "rollout_normalized_horizon_rmse": 0.3287478983402252
+      },
+      "timing": {
+        "eval_wall_clock_seconds": 25.49565089999669,
+        "seconds_per_window": 0.04292197121211564
+      }
+    },
+    {
+      "checkpoint_path": "results\\imported_kaggle\\holdout_cr_seed1_2\\extracted\\results_models_holdout_cr_seed1_2\\checkpoints\\holdout_cr_seed2\\static_mlp_h200_no_current_seed2.pt",
+      "variant": "static_mlp_h200",
+      "variant_config": {
+        "name": "static_mlp_h200",
+        "model_name": "static_mlp_sequence",
+        "hidden_dim": 200,
+        "grid_size": 4,
+        "gauge_every_steps": 0,
+        "moment_mode": "unchanged"
+      },
+      "seed": 2,
+      "feature_mode": "no_current",
+      "feature_names": [
+        "V_t",
+        "V_t_minus_1",
+        "dV_t",
+        "sweep_direction"
+      ],
+      "split": "test",
+      "perturbation": "none",
+      "window": 256,
+      "stride": 512,
+      "batch_size": 64,
+      "eval_windows": 594,
+      "model_input_dim": 4,
+      "complexity": {
+        "total_parameters": 41401,
+        "trainable_parameters": 41401,
+        "kan_layers": 0,
+        "kan_edges": 0,
+        "spline_coefficients": 0,
+        "spline_scales": 0,
+        "base_scales": 0,
+        "kan_output_biases": 0
+      },
+      "teacher_forced_metrics": {
+        "rmse": 0.32421693205833435,
+        "mae": 0.22340713441371918,
+        "r2": 0.8953595161437988,
+        "final_state_mae": 0.22094027698040009,
+        "normalized_horizon_rmse": 0.32421693205833435
+      },
+      "rollout_metrics": {
+        "rollout_rmse": 0.32421693205833435,
+        "rollout_mae": 0.22340713441371918,
+        "rollout_r2": 0.8953595161437988,
+        "rollout_final_state_mae": 0.22094027698040009,
+        "rollout_normalized_horizon_rmse": 0.32421693205833435
+      },
+      "timing": {
+        "eval_wall_clock_seconds": 0.9667258999979822,
+        "seconds_per_window": 0.0016274846801312831
+      }
+    },
+    {
+      "checkpoint_path": "results\\imported_kaggle\\holdout_cr_seed1_2\\extracted\\results_models_holdout_cr_seed1_2\\checkpoints\\holdout_cr_seed2\\lstm_h100_no_current_seed2.pt",
+      "variant": "lstm_h100",
+      "variant_config": {
+        "name": "lstm_h100",
+        "model_name": "lstm",
+        "hidden_dim": 100,
+        "grid_size": 4,
+        "gauge_every_steps": 0,
+        "moment_mode": "unchanged"
+      },
+      "seed": 2,
+      "feature_mode": "no_current",
+      "feature_names": [
+        "V_t",
+        "V_t_minus_1",
+        "dV_t",
+        "sweep_direction"
+      ],
+      "split": "test",
+      "perturbation": "none",
+      "window": 256,
+      "stride": 512,
+      "batch_size": 64,
+      "eval_windows": 594,
+      "model_input_dim": 4,
+      "complexity": {
+        "total_parameters": 42501,
+        "trainable_parameters": 42501,
+        "kan_layers": 0,
+        "kan_edges": 0,
+        "spline_coefficients": 0,
+        "spline_scales": 0,
+        "base_scales": 0,
+        "kan_output_biases": 0
+      },
+      "teacher_forced_metrics": {
+        "rmse": 0.3219181299209595,
+        "mae": 0.2206113338470459,
+        "r2": 0.8968381881713867,
+        "final_state_mae": 0.21775078773498535,
+        "normalized_horizon_rmse": 0.3219181299209595
+      },
+      "rollout_metrics": {
+        "rollout_rmse": 0.3219181299209595,
+        "rollout_mae": 0.2206113338470459,
+        "rollout_r2": 0.8968381881713867,
+        "rollout_final_state_mae": 0.21775078773498535,
+        "rollout_normalized_horizon_rmse": 0.3219181299209595
+      },
+      "timing": {
+        "eval_wall_clock_seconds": 1.119337700001779,
+        "seconds_per_window": 0.0018844069023598972
+      }
+    },
+    {
+      "checkpoint_path": "results\\imported_kaggle\\holdout_cr_seed1_2\\extracted\\results_models_holdout_cr_seed1_2\\checkpoints\\holdout_cr_seed2\\gru_h116_no_current_seed2.pt",
+      "variant": "gru_h116",
+      "variant_config": {
+        "name": "gru_h116",
+        "model_name": "gru",
+        "hidden_dim": 116,
+        "grid_size": 4,
+        "gauge_every_steps": 0,
+        "moment_mode": "unchanged"
+      },
+      "seed": 2,
+      "feature_mode": "no_current",
+      "feature_names": [
+        "V_t",
+        "V_t_minus_1",
+        "dV_t",
+        "sweep_direction"
+      ],
+      "split": "test",
+      "perturbation": "none",
+      "window": 256,
+      "stride": 512,
+      "batch_size": 64,
+      "eval_windows": 594,
+      "model_input_dim": 4,
+      "complexity": {
+        "total_parameters": 42573,
+        "trainable_parameters": 42573,
+        "kan_layers": 0,
+        "kan_edges": 0,
+        "spline_coefficients": 0,
+        "spline_scales": 0,
+        "base_scales": 0,
+        "kan_output_biases": 0
+      },
+      "teacher_forced_metrics": {
+        "rmse": 0.32025572657585144,
+        "mae": 0.21934373676776886,
+        "r2": 0.8979008793830872,
+        "final_state_mae": 0.2162601500749588,
+        "normalized_horizon_rmse": 0.32025572657585144
+      },
+      "rollout_metrics": {
+        "rollout_rmse": 0.32025572657585144,
+        "rollout_mae": 0.21934373676776886,
+        "rollout_r2": 0.8979008793830872,
+        "rollout_final_state_mae": 0.2162601500749588,
+        "rollout_normalized_horizon_rmse": 0.32025572657585144
+      },
+      "timing": {
+        "eval_wall_clock_seconds": 1.591170300001977,
+        "seconds_per_window": 0.002678737878791207
+      }
+    },
+    {
+      "checkpoint_path": "results\\imported_kaggle\\holdout_cr_seed1_2\\extracted\\results_models_holdout_cr_seed1_2\\checkpoints\\holdout_cr_seed2\\clipped_kan_gru_h32_no_current_seed2.pt",
+      "variant": "clipped_kan_gru_h32",
+      "variant_config": {
+        "name": "clipped_kan_gru_h32",
+        "model_name": "clipped_kan_gru",
+        "hidden_dim": 32,
+        "grid_size": 4,
+        "gauge_every_steps": 0,
+        "moment_mode": "unchanged"
+      },
+      "seed": 2,
+      "feature_mode": "no_current",
+      "feature_names": [
+        "V_t",
+        "V_t_minus_1",
+        "dV_t",
+        "sweep_direction"
+      ],
+      "split": "test",
+      "perturbation": "none",
+      "window": 256,
+      "stride": 512,
+      "batch_size": 64,
+      "eval_windows": 594,
+      "model_input_dim": 4,
+      "complexity": {
+        "total_parameters": 31233,
+        "trainable_parameters": 31233,
+        "kan_layers": 2,
+        "kan_edges": 3456,
+        "spline_coefficients": 24192,
+        "spline_scales": 3456,
+        "base_scales": 3456,
+        "kan_output_biases": 96
+      },
+      "teacher_forced_metrics": {
+        "rmse": 0.3247022330760956,
+        "mae": 0.2225138545036316,
+        "r2": 0.895046055316925,
+        "final_state_mae": 0.2191518098115921,
+        "normalized_horizon_rmse": 0.3247022330760956
+      },
+      "rollout_metrics": {
+        "rollout_rmse": 0.3247022330760956,
+        "rollout_mae": 0.2225138545036316,
+        "rollout_r2": 0.895046055316925,
+        "rollout_final_state_mae": 0.2191518098115921,
+        "rollout_normalized_horizon_rmse": 0.3247022330760956
+      },
+      "timing": {
+        "eval_wall_clock_seconds": 23.929204299995035,
+        "seconds_per_window": 0.04028485572389737
+      }
+    }
+  ],
+  "summary": [
+    {
+      "variant": "clipped_kan_gru_h32",
+      "feature_mode": "no_current",
+      "perturbation": "none",
+      "runs": 2,
+      "params": 31233,
+      "teacher_r2_mean": 0.8937302231788635,
+      "teacher_r2_std": 0.0013158321380615234,
+      "teacher_rmse_mean": 0.3267250657081604,
+      "rollout_r2_mean": 0.8937302231788635,
+      "rollout_r2_std": 0.0013158321380615234,
+      "rollout_rmse_mean": 0.3267250657081604,
+      "rollout_final_state_mae_mean": 0.22027109563350677,
+      "eval_seconds_mean": 24.712427599995863
+    },
+    {
+      "variant": "gru_h116",
+      "feature_mode": "no_current",
+      "perturbation": "none",
+      "runs": 2,
+      "params": 42573,
+      "teacher_r2_mean": 0.8949117660522461,
+      "teacher_r2_std": 0.0029891133308410645,
+      "teacher_rmse_mean": 0.3248770385980606,
+      "rollout_r2_mean": 0.8949117660522461,
+      "rollout_r2_std": 0.0029891133308410645,
+      "rollout_rmse_mean": 0.3248770385980606,
+      "rollout_final_state_mae_mean": 0.2203795462846756,
+      "eval_seconds_mean": 1.7579744000031496
+    },
+    {
+      "variant": "lstm_h100",
+      "feature_mode": "no_current",
+      "perturbation": "none",
+      "runs": 2,
+      "params": 42501,
+      "teacher_r2_mean": 0.8941791653633118,
+      "teacher_r2_std": 0.002659022808074951,
+      "teacher_rmse_mean": 0.3260147422552109,
+      "rollout_r2_mean": 0.8941791653633118,
+      "rollout_r2_std": 0.002659022808074951,
+      "rollout_rmse_mean": 0.3260147422552109,
+      "rollout_final_state_mae_mean": 0.2212723046541214,
+      "eval_seconds_mean": 1.2354274499994062
+    },
+    {
+      "variant": "static_mlp_h200",
+      "feature_mode": "no_current",
+      "perturbation": "none",
+      "runs": 2,
+      "params": 41401,
+      "teacher_r2_mean": 0.8937866687774658,
+      "teacher_r2_std": 0.0015728473663330078,
+      "teacher_rmse_mean": 0.32663556933403015,
+      "rollout_r2_mean": 0.8937866687774658,
+      "rollout_r2_std": 0.0015728473663330078,
+      "rollout_rmse_mean": 0.32663556933403015,
+      "rollout_final_state_mae_mean": 0.22337853908538818,
+      "eval_seconds_mean": 1.1198368499972275
+    }
+  ]
+}

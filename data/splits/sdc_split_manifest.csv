@@ -1,0 +1,57 @@
+dataset,trajectory_id,source_filename,device_id,cycle_id_if_available,split,local_split_index,number_of_samples,measurement_condition,day_group,batch,split_seed
+SDC state-characterisation,28,data_04/150m150m/batch2/triangle150m150m1kv1.csv,not encoded in archived metadata,1,train,0,15999,triangle-wave filename condition 150m/150m; batch2,data_04,batch2,42
+SDC state-characterisation,51,data_04/250m250m/batch3/triangle250m250m1kz4.csv,not encoded in archived metadata,4,train,1,15999,triangle-wave filename condition 250m/250m; batch3,data_04,batch3,42
+SDC state-characterisation,18,data_04/150m150m/batch2/triangle150m150m1ks3.csv,not encoded in archived metadata,3,train,2,15999,triangle-wave filename condition 150m/150m; batch2,data_04,batch2,42
+SDC state-characterisation,24,data_04/150m150m/batch2/triangle150m150m1ku1.csv,not encoded in archived metadata,1,train,3,15999,triangle-wave filename condition 150m/150m; batch2,data_04,batch2,42
+SDC state-characterisation,7,data_04/150m150m/batch2/triangle150m150m1kp4.csv,not encoded in archived metadata,4,train,4,15999,triangle-wave filename condition 150m/150m; batch2,data_04,batch2,42
+SDC state-characterisation,17,data_04/150m150m/batch2/triangle150m150m1ks2.csv,not encoded in archived metadata,2,train,5,15999,triangle-wave filename condition 150m/150m; batch2,data_04,batch2,42
+SDC state-characterisation,27,data_04/150m150m/batch2/triangle150m150m1ku4.csv,not encoded in archived metadata,4,train,6,15999,triangle-wave filename condition 150m/150m; batch2,data_04,batch2,42
+SDC state-characterisation,46,data_04/250m250m/batch3/triangle250m250m1ka3.csv,not encoded in archived metadata,3,train,7,15999,triangle-wave filename condition 250m/250m; batch3,data_04,batch3,42
+SDC state-characterisation,55,data_10/400m400m/tri_400m_1khz_old2_4.csv,not encoded in archived metadata,4,train,8,15999,"triangle-wave 400m, filename states 1 kHz",data_10,,42
+SDC state-characterisation,39,data_04/200m200m/batch3/triangle200m200m1kx4.csv,not encoded in archived metadata,4,train,9,15999,triangle-wave filename condition 200m/200m; batch3,data_04,batch3,42
+SDC state-characterisation,41,data_04/200m200m/batch3/triangle200m200m1ky2.csv,not encoded in archived metadata,2,train,10,15999,triangle-wave filename condition 200m/200m; batch3,data_04,batch3,42
+SDC state-characterisation,5,data_04/150m150m/batch2/triangle150m150m1kp2.csv,not encoded in archived metadata,2,train,11,15999,triangle-wave filename condition 150m/150m; batch2,data_04,batch2,42
+SDC state-characterisation,53,data_10/400m400m/tri_400m_1khz_old2_2.csv,not encoded in archived metadata,2,train,12,15999,"triangle-wave 400m, filename states 1 kHz",data_10,,42
+SDC state-characterisation,25,data_04/150m150m/batch2/triangle150m150m1ku2.csv,not encoded in archived metadata,2,train,13,15999,triangle-wave filename condition 150m/150m; batch2,data_04,batch2,42
+SDC state-characterisation,29,data_04/150m150m/batch2/triangle150m150m1kv2.csv,not encoded in archived metadata,2,train,14,15999,triangle-wave filename condition 150m/150m; batch2,data_04,batch2,42
+SDC state-characterisation,31,data_04/150m150m/batch2/triangle150m150m1kv4.csv,not encoded in archived metadata,4,train,15,15999,triangle-wave filename condition 150m/150m; batch2,data_04,batch2,42
+SDC state-characterisation,34,data_04/150m150m/batch2/triangle150m150m1kw3.csv,not encoded in archived metadata,3,train,16,15999,triangle-wave filename condition 150m/150m; batch2,data_04,batch2,42
+SDC state-characterisation,20,data_04/150m150m/batch2/triangle150m150m1kt1.csv,not encoded in archived metadata,1,train,17,15999,triangle-wave filename condition 150m/150m; batch2,data_04,batch2,42
+SDC state-characterisation,48,data_04/250m250m/batch3/triangle250m250m1kz1.csv,not encoded in archived metadata,1,train,18,15999,triangle-wave filename condition 250m/250m; batch3,data_04,batch3,42
+SDC state-characterisation,42,data_04/200m200m/batch3/triangle200m200m1ky3.csv,not encoded in archived metadata,3,train,19,15999,triangle-wave filename condition 200m/200m; batch3,data_04,batch3,42
+SDC state-characterisation,40,data_04/200m200m/batch3/triangle200m200m1ky1.csv,not encoded in archived metadata,1,train,20,15999,triangle-wave filename condition 200m/200m; batch3,data_04,batch3,42
+SDC state-characterisation,50,data_04/250m250m/batch3/triangle250m250m1kz3.csv,not encoded in archived metadata,3,train,21,15999,triangle-wave filename condition 250m/250m; batch3,data_04,batch3,42
+SDC state-characterisation,44,data_04/250m250m/batch3/triangle250m250m1ka1.csv,not encoded in archived metadata,1,train,22,15999,triangle-wave filename condition 250m/250m; batch3,data_04,batch3,42
+SDC state-characterisation,4,data_04/150m150m/batch2/triangle150m150m1kp1.csv,not encoded in archived metadata,1,train,23,15999,triangle-wave filename condition 150m/150m; batch2,data_04,batch2,42
+SDC state-characterisation,26,data_04/150m150m/batch2/triangle150m150m1ku3.csv,not encoded in archived metadata,3,train,24,15999,triangle-wave filename condition 150m/150m; batch2,data_04,batch2,42
+SDC state-characterisation,15,data_04/150m150m/batch2/triangle150m150m1kr4.csv,not encoded in archived metadata,4,train,25,15999,triangle-wave filename condition 150m/150m; batch2,data_04,batch2,42
+SDC state-characterisation,32,data_04/150m150m/batch2/triangle150m150m1kw1.csv,not encoded in archived metadata,1,train,26,15999,triangle-wave filename condition 150m/150m; batch2,data_04,batch2,42
+SDC state-characterisation,23,data_04/150m150m/batch2/triangle150m150m1kt4.csv,not encoded in archived metadata,4,train,27,15999,triangle-wave filename condition 150m/150m; batch2,data_04,batch2,42
+SDC state-characterisation,37,data_04/200m200m/batch3/triangle200m200m1kx2.csv,not encoded in archived metadata,2,train,28,15999,triangle-wave filename condition 200m/200m; batch3,data_04,batch3,42
+SDC state-characterisation,9,data_04/150m150m/batch2/triangle150m150m1kq2.csv,not encoded in archived metadata,2,train,29,15999,triangle-wave filename condition 150m/150m; batch2,data_04,batch2,42
+SDC state-characterisation,52,data_10/400m400m/tri_400m_1khz_old2_1.csv,not encoded in archived metadata,1,train,30,15999,"triangle-wave 400m, filename states 1 kHz",data_10,,42
+SDC state-characterisation,21,data_04/150m150m/batch2/triangle150m150m1kt2.csv,not encoded in archived metadata,2,train,31,15999,triangle-wave filename condition 150m/150m; batch2,data_04,batch2,42
+SDC state-characterisation,16,data_04/150m150m/batch2/triangle150m150m1ks1.csv,not encoded in archived metadata,1,train,32,15999,triangle-wave filename condition 150m/150m; batch2,data_04,batch2,42
+SDC state-characterisation,3,data_04/150m150m/batch2/triangle150m150m1ko4.csv,not encoded in archived metadata,4,train,33,15999,triangle-wave filename condition 150m/150m; batch2,data_04,batch2,42
+SDC state-characterisation,30,data_04/150m150m/batch2/triangle150m150m1kv3.csv,not encoded in archived metadata,3,train,34,15999,triangle-wave filename condition 150m/150m; batch2,data_04,batch2,42
+SDC state-characterisation,10,data_04/150m150m/batch2/triangle150m150m1kq3.csv,not encoded in archived metadata,3,train,35,15999,triangle-wave filename condition 150m/150m; batch2,data_04,batch2,42
+SDC state-characterisation,47,data_04/250m250m/batch3/triangle250m250m1ka4.csv,not encoded in archived metadata,4,train,36,15999,triangle-wave filename condition 250m/250m; batch3,data_04,batch3,42
+SDC state-characterisation,49,data_04/250m250m/batch3/triangle250m250m1kz2.csv,not encoded in archived metadata,2,train,37,15999,triangle-wave filename condition 250m/250m; batch3,data_04,batch3,42
+SDC state-characterisation,6,data_04/150m150m/batch2/triangle150m150m1kp3.csv,not encoded in archived metadata,3,train,38,15999,triangle-wave filename condition 150m/150m; batch2,data_04,batch2,42
+SDC state-characterisation,38,data_04/200m200m/batch3/triangle200m200m1kx3.csv,not encoded in archived metadata,3,val,0,15999,triangle-wave filename condition 200m/200m; batch3,data_04,batch3,42
+SDC state-characterisation,11,data_04/150m150m/batch2/triangle150m150m1kq4.csv,not encoded in archived metadata,4,val,1,15999,triangle-wave filename condition 150m/150m; batch2,data_04,batch2,42
+SDC state-characterisation,22,data_04/150m150m/batch2/triangle150m150m1kt3.csv,not encoded in archived metadata,3,val,2,15999,triangle-wave filename condition 150m/150m; batch2,data_04,batch2,42
+SDC state-characterisation,19,data_04/150m150m/batch2/triangle150m150m1ks4.csv,not encoded in archived metadata,4,val,3,15999,triangle-wave filename condition 150m/150m; batch2,data_04,batch2,42
+SDC state-characterisation,35,data_04/150m150m/batch2/triangle150m150m1kw4.csv,not encoded in archived metadata,4,val,4,15999,triangle-wave filename condition 150m/150m; batch2,data_04,batch2,42
+SDC state-characterisation,0,data_04/150m150m/batch2/triangle150m150m1ko1.csv,not encoded in archived metadata,1,val,5,15999,triangle-wave filename condition 150m/150m; batch2,data_04,batch2,42
+SDC state-characterisation,45,data_04/250m250m/batch3/triangle250m250m1ka2.csv,not encoded in archived metadata,2,val,6,15999,triangle-wave filename condition 250m/250m; batch3,data_04,batch3,42
+SDC state-characterisation,12,data_04/150m150m/batch2/triangle150m150m1kr1.csv,not encoded in archived metadata,1,val,7,15999,triangle-wave filename condition 150m/150m; batch2,data_04,batch2,42
+SDC state-characterisation,43,data_04/200m200m/batch3/triangle200m200m1ky4.csv,not encoded in archived metadata,4,test,0,15999,triangle-wave filename condition 200m/200m; batch3,data_04,batch3,42
+SDC state-characterisation,14,data_04/150m150m/batch2/triangle150m150m1kr3.csv,not encoded in archived metadata,3,test,1,15999,triangle-wave filename condition 150m/150m; batch2,data_04,batch2,42
+SDC state-characterisation,54,data_10/400m400m/tri_400m_1khz_old2_3.csv,not encoded in archived metadata,3,test,2,15999,"triangle-wave 400m, filename states 1 kHz",data_10,,42
+SDC state-characterisation,2,data_04/150m150m/batch2/triangle150m150m1ko3.csv,not encoded in archived metadata,3,test,3,15999,triangle-wave filename condition 150m/150m; batch2,data_04,batch2,42
+SDC state-characterisation,36,data_04/200m200m/batch3/triangle200m200m1kx1.csv,not encoded in archived metadata,1,test,4,15999,triangle-wave filename condition 200m/200m; batch3,data_04,batch3,42
+SDC state-characterisation,33,data_04/150m150m/batch2/triangle150m150m1kw2.csv,not encoded in archived metadata,2,test,5,15999,triangle-wave filename condition 150m/150m; batch2,data_04,batch2,42
+SDC state-characterisation,1,data_04/150m150m/batch2/triangle150m150m1ko2.csv,not encoded in archived metadata,2,test,6,15999,triangle-wave filename condition 150m/150m; batch2,data_04,batch2,42
+SDC state-characterisation,13,data_04/150m150m/batch2/triangle150m150m1kr2.csv,not encoded in archived metadata,2,test,7,15999,triangle-wave filename condition 150m/150m; batch2,data_04,batch2,42
+SDC state-characterisation,8,data_04/150m150m/batch2/triangle150m150m1kq1.csv,not encoded in archived metadata,1,test,8,15999,triangle-wave filename condition 150m/150m; batch2,data_04,batch2,42

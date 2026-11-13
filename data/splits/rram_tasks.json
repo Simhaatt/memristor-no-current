@@ -1,0 +1,58 @@
+{
+  "random_walk": {
+    "train": [
+      "CSV_data/ds_rram_test_rnseed1.csv"
+    ],
+    "val": [
+      "CSV_data/ds_rram_test_rnseed2.csv"
+    ],
+    "test": [
+      "CSV_data/ds_rram_test_rnseed3.csv",
+      "CSV_data/ds_rram_test_rnseed4.csv",
+      "CSV_data/ds_rram_test_rnseed5.csv"
+    ],
+    "seq_len": 5,
+    "input_dim": 2,
+    "target_col": 10,
+    "notes": "RRAM random-walk compact-model task; rows are 5 voltage/current history pairs plus next current."
+  },
+  "sine": {
+    "train": [
+      "CSV_data/ds_rram_sine0.csv"
+    ],
+    "val": [
+      "CSV_data/ds_rram_sine-1.csv"
+    ],
+    "test": [
+      "CSV_data/ds_rram_sine1.csv"
+    ],
+    "seq_len": 5,
+    "input_dim": 2,
+    "target_col": 10,
+    "notes": "RRAM sinusoidal compact-model task; phase split."
+  },
+  "anneal": {
+    "train": [
+      "CSV_data/Anneal/ds0_rram_rndseed1.csv",
+      "CSV_data/Anneal/ds300_rram_rndseed1.csv",
+      "CSV_data/Anneal/ds400_rram_rndseed1.csv",
+      "CSV_data/Anneal/ds500_rram_rndseed1.csv"
+    ],
+    "val": [
+      "CSV_data/Anneal/ds0_rram_rndseed2.csv",
+      "CSV_data/Anneal/ds300_rram_rndseed2.csv",
+      "CSV_data/Anneal/ds400_rram_rndseed2.csv",
+      "CSV_data/Anneal/ds500_rram_rndseed2.csv"
+    ],
+    "test": [
+      "CSV_data/Anneal/ds0_rram_rndseed3.csv",
+      "CSV_data/Anneal/ds300_rram_rndseed3.csv",
+      "CSV_data/Anneal/ds400_rram_rndseed3.csv",
+      "CSV_data/Anneal/ds500_rram_rndseed3.csv"
+    ],
+    "seq_len": 5,
+    "input_dim": 3,
+    "target_col": 15,
+    "notes": "Process-aware RRAM annealing task; each timestep has temperature, voltage, current."
+  }
+}

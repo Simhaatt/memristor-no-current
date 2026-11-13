@@ -1,0 +1,77 @@
+{
+  "split": "test",
+  "results": [
+    {
+      "checkpoint_path": "results\\kaggle_imported\\kangru_sdc_100epoch_seed0\\checkpoints\\sequence\\clipped_kan_gru_h32_no_current_seed0.pt",
+      "variant": "clipped_kan_gru_h32",
+      "variant_config": {
+        "name": "clipped_kan_gru_h32",
+        "model_name": "clipped_kan_gru",
+        "hidden_dim": 32,
+        "grid_size": 4,
+        "gauge_every_steps": 0,
+        "moment_mode": "unchanged"
+      },
+      "seed": 0,
+      "feature_mode": "no_current",
+      "feature_names": [
+        "V_t",
+        "V_t_minus_1",
+        "dV_t",
+        "sweep_direction"
+      ],
+      "split": "test",
+      "perturbation": "reverse_time",
+      "window": 256,
+      "stride": 512,
+      "batch_size": 64,
+      "eval_windows": 288,
+      "model_input_dim": 4,
+      "complexity": {
+        "total_parameters": 31233,
+        "trainable_parameters": 31233,
+        "kan_layers": 2,
+        "kan_edges": 3456,
+        "spline_coefficients": 24192,
+        "spline_scales": 3456,
+        "base_scales": 3456,
+        "kan_output_biases": 96
+      },
+      "teacher_forced_metrics": {
+        "rmse": 1.3579541444778442,
+        "mae": 0.9807484149932861,
+        "r2": -1.4147803783416748,
+        "final_state_mae": 1.3340011835098267,
+        "normalized_horizon_rmse": 1.3579541444778442
+      },
+      "rollout_metrics": {
+        "rollout_rmse": 1.3579541444778442,
+        "rollout_mae": 0.9807484149932861,
+        "rollout_r2": -1.4147803783416748,
+        "rollout_final_state_mae": 1.3340011835098267,
+        "rollout_normalized_horizon_rmse": 1.3579541444778442
+      },
+      "timing": {
+        "eval_wall_clock_seconds": 22.566370199987432,
+        "seconds_per_window": 0.0783554520832897
+      }
+    }
+  ],
+  "summary": [
+    {
+      "variant": "clipped_kan_gru_h32",
+      "feature_mode": "no_current",
+      "perturbation": "reverse_time",
+      "runs": 1,
+      "params": 31233,
+      "teacher_r2_mean": -1.4147803783416748,
+      "teacher_r2_std": 0.0,
+      "teacher_rmse_mean": 1.3579541444778442,
+      "rollout_r2_mean": -1.4147803783416748,
+      "rollout_r2_std": 0.0,
+      "rollout_rmse_mean": 1.3579541444778442,
+      "rollout_final_state_mae_mean": 1.3340011835098267,
+      "eval_seconds_mean": 22.566370199987432
+    }
+  ]
+}

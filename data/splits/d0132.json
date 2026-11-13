@@ -1,0 +1,14 @@
+{
+  "device_transfer": {
+    "train": "DUT1 blocks 0..5",
+    "val": "DUT1 blocks 6..7",
+    "test": "all DUT2 blocks"
+  },
+  "source": "scripts/run_d0132_resistance_sequence.py:split_protocol",
+  "reference_outputs": "Published compact/VTEAM columns supplied by D0132; not newly fitted to held-out targets by this release.",
+  "within_d0132": {
+    "train": "all DUT1 blocks plus DUT2 blocks 0..3",
+    "val": "DUT2 block 4",
+    "test": "DUT2 block 5"
+  }
+}

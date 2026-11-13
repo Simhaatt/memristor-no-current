@@ -1,0 +1,28 @@
+{
+  "cache": "data\\processed\\sdc_state_splits.npz",
+  "split": "test",
+  "window": 256,
+  "stride": 512,
+  "batch_size": 32,
+  "max_windows": 0,
+  "grid_points": 401,
+  "device": "cpu",
+  "kan_checkpoints": [
+    "results\\kaggle_imported\\kangru_sdc_100epoch_seed0\\checkpoints\\sequence\\clipped_kan_gru_h32_no_current_seed0.pt",
+    "results\\kaggle_imported\\clipped_kangru_sdc_100epoch_seed1_2\\checkpoints\\sequence\\clipped_kan_gru_h32_no_current_seed1.pt",
+    "results\\kaggle_imported\\clipped_kangru_sdc_100epoch_seed1_2\\checkpoints\\sequence\\clipped_kan_gru_h32_no_current_seed2.pt"
+  ],
+  "gru_checkpoints": [
+    "checkpoints\\kaggle_imported\\no_current_baselines_100epoch_3seed\\sequence\\gru_h116_no_current_seed0.pt",
+    "checkpoints\\kaggle_imported\\no_current_baselines_100epoch_3seed\\sequence\\gru_h116_no_current_seed1.pt",
+    "checkpoints\\kaggle_imported\\no_current_baselines_100epoch_3seed\\sequence\\gru_h116_no_current_seed2.pt"
+  ],
+  "k_values": [
+    1,
+    4,
+    16,
+    32
+  ],
+  "random_repeats": 2,
+  "top_fit_edges": 8
+}

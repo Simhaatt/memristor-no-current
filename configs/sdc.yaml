@@ -1,0 +1,4500 @@
+{
+  "regime": "sdc",
+  "meaning": "Archived run records; missing settings must be read from the cited runner/log, not assumed.",
+  "runs": [
+    {
+      "variant": "supervised_gru_h32",
+      "seed": 0,
+      "epochs": 100,
+      "batch_size": 64,
+      "timing": {
+        "wall_clock_seconds": 12.232504661999997,
+        "seconds_per_epoch": 0.12232504661999996,
+        "seconds_per_step": 0.003136539656923076,
+        "peak_cuda_memory_mb": 79.87890625
+      },
+      "global_steps": 3900,
+      "checkpoint_path": "checkpoints/sdc_distillation_full/supervised_gru_h32_seed0.pt",
+      "source_log": "results/final_tables/sdc_distillation.json"
+    },
+    {
+      "variant": "distilled_gru_h32",
+      "seed": 0,
+      "epochs": 100,
+      "batch_size": 64,
+      "timing": {
+        "wall_clock_seconds": 13.27113146900001,
+        "seconds_per_epoch": 0.1327113146900001,
+        "seconds_per_step": 0.003402854222820516,
+        "peak_cuda_memory_mb": 79.9423828125
+      },
+      "global_steps": 3900,
+      "checkpoint_path": "checkpoints/sdc_distillation_full/distilled_gru_h32_from_clipped_kan_gru_h32_w0.25_seed0.pt",
+      "source_log": "results/final_tables/sdc_distillation.json"
+    },
+    {
+      "variant": "distilled_gru_h32",
+      "seed": 0,
+      "epochs": 100,
+      "batch_size": 64,
+      "timing": {
+        "wall_clock_seconds": 13.168469906999917,
+        "seconds_per_epoch": 0.13168469906999916,
+        "seconds_per_step": 0.003376530745384594,
+        "peak_cuda_memory_mb": 79.9423828125
+      },
+      "global_steps": 3900,
+      "checkpoint_path": "checkpoints/sdc_distillation_full/distilled_gru_h32_from_clipped_kan_gru_h32_w0.5_seed0.pt",
+      "source_log": "results/final_tables/sdc_distillation.json"
+    },
+    {
+      "variant": "distilled_gru_h32",
+      "seed": 0,
+      "epochs": 100,
+      "batch_size": 64,
+      "timing": {
+        "wall_clock_seconds": 13.254482115999963,
+        "seconds_per_epoch": 0.13254482115999963,
+        "seconds_per_step": 0.0033985851579487083,
+        "peak_cuda_memory_mb": 79.9423828125
+      },
+      "global_steps": 3900,
+      "checkpoint_path": "checkpoints/sdc_distillation_full/distilled_gru_h32_from_clipped_kan_gru_h32_w0.75_seed0.pt",
+      "source_log": "results/final_tables/sdc_distillation.json"
+    },
+    {
+      "variant": "supervised_gru_h64",
+      "seed": 0,
+      "epochs": 100,
+      "batch_size": 64,
+      "timing": {
+        "wall_clock_seconds": 11.768943658000012,
+        "seconds_per_epoch": 0.11768943658000013,
+        "seconds_per_step": 0.0030176778610256443,
+        "peak_cuda_memory_mb": 134.09814453125
+      },
+      "global_steps": 3900,
+      "checkpoint_path": "checkpoints/sdc_distillation_full/supervised_gru_h64_seed0.pt",
+      "source_log": "results/final_tables/sdc_distillation.json"
+    },
+    {
+      "variant": "distilled_gru_h64",
+      "seed": 0,
+      "epochs": 100,
+      "batch_size": 64,
+      "timing": {
+        "wall_clock_seconds": 13.71372184400002,
+        "seconds_per_epoch": 0.1371372184400002,
+        "seconds_per_step": 0.0035163389343589794,
+        "peak_cuda_memory_mb": 134.16162109375
+      },
+      "global_steps": 3900,
+      "checkpoint_path": "checkpoints/sdc_distillation_full/distilled_gru_h64_from_clipped_kan_gru_h32_w0.25_seed0.pt",
+      "source_log": "results/final_tables/sdc_distillation.json"
+    },
+    {
+      "variant": "distilled_gru_h64",
+      "seed": 0,
+      "epochs": 100,
+      "batch_size": 64,
+      "timing": {
+        "wall_clock_seconds": 13.596206443999904,
+        "seconds_per_epoch": 0.13596206443999903,
+        "seconds_per_step": 0.003486206780512796,
+        "peak_cuda_memory_mb": 134.16162109375
+      },
+      "global_steps": 3900,
+      "checkpoint_path": "checkpoints/sdc_distillation_full/distilled_gru_h64_from_clipped_kan_gru_h32_w0.5_seed0.pt",
+      "source_log": "results/final_tables/sdc_distillation.json"
+    },
+    {
+      "variant": "distilled_gru_h64",
+      "seed": 0,
+      "epochs": 100,
+      "batch_size": 64,
+      "timing": {
+        "wall_clock_seconds": 13.609443077000037,
+        "seconds_per_epoch": 0.13609443077000039,
+        "seconds_per_step": 0.0034896007889743683,
+        "peak_cuda_memory_mb": 134.16162109375
+      },
+      "global_steps": 3900,
+      "checkpoint_path": "checkpoints/sdc_distillation_full/distilled_gru_h64_from_clipped_kan_gru_h32_w0.75_seed0.pt",
+      "source_log": "results/final_tables/sdc_distillation.json"
+    },
+    {
+      "variant": "supervised_gru_h116",
+      "seed": 0,
+      "epochs": 100,
+      "batch_size": 64,
+      "timing": {
+        "wall_clock_seconds": 17.87754742000004,
+        "seconds_per_epoch": 0.17877547420000042,
+        "seconds_per_step": 0.004583986517948729,
+        "peak_cuda_memory_mb": 223.07421875
+      },
+      "global_steps": 3900,
+      "checkpoint_path": "checkpoints/sdc_distillation_full/supervised_gru_h116_seed0.pt",
+      "source_log": "results/final_tables/sdc_distillation.json"
+    },
+    {
+      "variant": "distilled_gru_h116",
+      "seed": 0,
+      "epochs": 100,
+      "batch_size": 64,
+      "timing": {
+        "wall_clock_seconds": 19.995147005000035,
+        "seconds_per_epoch": 0.19995147005000036,
+        "seconds_per_step": 0.00512696077051283,
+        "peak_cuda_memory_mb": 223.1376953125
+      },
+      "global_steps": 3900,
+      "checkpoint_path": "checkpoints/sdc_distillation_full/distilled_gru_h116_from_clipped_kan_gru_h32_w0.25_seed0.pt",
+      "source_log": "results/final_tables/sdc_distillation.json"
+    },
+    {
+      "variant": "distilled_gru_h116",
+      "seed": 0,
+      "epochs": 100,
+      "batch_size": 64,
+      "timing": {
+        "wall_clock_seconds": 20.03380090799999,
+        "seconds_per_epoch": 0.20033800907999988,
+        "seconds_per_step": 0.005136872027692305,
+        "peak_cuda_memory_mb": 223.1376953125
+      },
+      "global_steps": 3900,
+      "checkpoint_path": "checkpoints/sdc_distillation_full/distilled_gru_h116_from_clipped_kan_gru_h32_w0.5_seed0.pt",
+      "source_log": "results/final_tables/sdc_distillation.json"
+    },
+    {
+      "variant": "distilled_gru_h116",
+      "seed": 0,
+      "epochs": 100,
+      "batch_size": 64,
+      "timing": {
+        "wall_clock_seconds": 19.876562143,
+        "seconds_per_epoch": 0.19876562143,
+        "seconds_per_step": 0.005096554395641026,
+        "peak_cuda_memory_mb": 223.1376953125
+      },
+      "global_steps": 3900,
+      "checkpoint_path": "checkpoints/sdc_distillation_full/distilled_gru_h116_from_clipped_kan_gru_h32_w0.75_seed0.pt",
+      "source_log": "results/final_tables/sdc_distillation.json"
+    },
+    {
+      "variant": "supervised_gru_h32",
+      "seed": 1,
+      "epochs": 100,
+      "batch_size": 64,
+      "timing": {
+        "wall_clock_seconds": 11.492361638000034,
+        "seconds_per_epoch": 0.11492361638000034,
+        "seconds_per_step": 0.002946759394358983,
+        "peak_cuda_memory_mb": 79.87890625
+      },
+      "global_steps": 3900,
+      "checkpoint_path": "checkpoints/sdc_distillation_full/supervised_gru_h32_seed1.pt",
+      "source_log": "results/final_tables/sdc_distillation.json"
+    },
+    {
+      "variant": "distilled_gru_h32",
+      "seed": 1,
+      "epochs": 100,
+      "batch_size": 64,
+      "timing": {
+        "wall_clock_seconds": 13.113970613999982,
+        "seconds_per_epoch": 0.1311397061399998,
+        "seconds_per_step": 0.003362556567692303,
+        "peak_cuda_memory_mb": 79.9423828125
+      },
+      "global_steps": 3900,
+      "checkpoint_path": "checkpoints/sdc_distillation_full/distilled_gru_h32_from_clipped_kan_gru_h32_w0.25_seed1.pt",
+      "source_log": "results/final_tables/sdc_distillation.json"
+    },
+    {
+      "variant": "distilled_gru_h32",
+      "seed": 1,
+      "epochs": 100,
+      "batch_size": 64,
+      "timing": {
+        "wall_clock_seconds": 13.13974567699995,
+        "seconds_per_epoch": 0.1313974567699995,
+        "seconds_per_step": 0.0033691655582051157,
+        "peak_cuda_memory_mb": 79.9423828125
+      },
+      "global_steps": 3900,
+      "checkpoint_path": "checkpoints/sdc_distillation_full/distilled_gru_h32_from_clipped_kan_gru_h32_w0.5_seed1.pt",
+      "source_log": "results/final_tables/sdc_distillation.json"
+    },
+    {
+      "variant": "distilled_gru_h32",
+      "seed": 1,
+      "epochs": 100,
+      "batch_size": 64,
+      "timing": {
+        "wall_clock_seconds": 13.01967390099992,
+        "seconds_per_epoch": 0.1301967390099992,
+        "seconds_per_step": 0.0033383779233333126,
+        "peak_cuda_memory_mb": 79.9423828125
+      },
+      "global_steps": 3900,
+      "checkpoint_path": "checkpoints/sdc_distillation_full/distilled_gru_h32_from_clipped_kan_gru_h32_w0.75_seed1.pt",
+      "source_log": "results/final_tables/sdc_distillation.json"
+    },
+    {
+      "variant": "supervised_gru_h64",
+      "seed": 1,
+      "epochs": 100,
+      "batch_size": 64,
+      "timing": {
+        "wall_clock_seconds": 11.501265624000098,
+        "seconds_per_epoch": 0.11501265624000098,
+        "seconds_per_step": 0.0029490424676923326,
+        "peak_cuda_memory_mb": 134.09814453125
+      },
+      "global_steps": 3900,
+      "checkpoint_path": "checkpoints/sdc_distillation_full/supervised_gru_h64_seed1.pt",
+      "source_log": "results/final_tables/sdc_distillation.json"
+    },
+    {
+      "variant": "distilled_gru_h64",
+      "seed": 1,
+      "epochs": 100,
+      "batch_size": 64,
+      "timing": {
+        "wall_clock_seconds": 13.611546898000029,
+        "seconds_per_epoch": 0.1361154689800003,
+        "seconds_per_step": 0.0034901402302564177,
+        "peak_cuda_memory_mb": 134.16162109375
+      },
+      "global_steps": 3900,
+      "checkpoint_path": "checkpoints/sdc_distillation_full/distilled_gru_h64_from_clipped_kan_gru_h32_w0.25_seed1.pt",
+      "source_log": "results/final_tables/sdc_distillation.json"
+    },
+    {
+      "variant": "distilled_gru_h64",
+      "seed": 1,
+      "epochs": 100,
+      "batch_size": 64,
+      "timing": {
+        "wall_clock_seconds": 13.649893064000025,
+        "seconds_per_epoch": 0.13649893064000027,
+        "seconds_per_step": 0.003499972580512827,
+        "peak_cuda_memory_mb": 134.16162109375
+      },
+      "global_steps": 3900,
+      "checkpoint_path": "checkpoints/sdc_distillation_full/distilled_gru_h64_from_clipped_kan_gru_h32_w0.5_seed1.pt",
+      "source_log": "results/final_tables/sdc_distillation.json"
+    },
+    {
+      "variant": "distilled_gru_h64",
+      "seed": 1,
+      "epochs": 100,
+      "batch_size": 64,
+      "timing": {
+        "wall_clock_seconds": 13.950037228000042,
+        "seconds_per_epoch": 0.13950037228000042,
+        "seconds_per_step": 0.0035769326225641132,
+        "peak_cuda_memory_mb": 134.16162109375
+      },
+      "global_steps": 3900,
+      "checkpoint_path": "checkpoints/sdc_distillation_full/distilled_gru_h64_from_clipped_kan_gru_h32_w0.75_seed1.pt",
+      "source_log": "results/final_tables/sdc_distillation.json"
+    },
+    {
+      "variant": "supervised_gru_h116",
+      "seed": 1,
+      "epochs": 100,
+      "batch_size": 64,
+      "timing": {
+        "wall_clock_seconds": 17.898034962999986,
+        "seconds_per_epoch": 0.17898034962999987,
+        "seconds_per_step": 0.004589239734102561,
+        "peak_cuda_memory_mb": 223.07421875
+      },
+      "global_steps": 3900,
+      "checkpoint_path": "checkpoints/sdc_distillation_full/supervised_gru_h116_seed1.pt",
+      "source_log": "results/final_tables/sdc_distillation.json"
+    },
+    {
+      "variant": "distilled_gru_h116",
+      "seed": 1,
+      "epochs": 100,
+      "batch_size": 64,
+      "timing": {
+        "wall_clock_seconds": 19.847928679000006,
+        "seconds_per_epoch": 0.19847928679000007,
+        "seconds_per_step": 0.005089212481794873,
+        "peak_cuda_memory_mb": 223.1376953125
+      },
+      "global_steps": 3900,
+      "checkpoint_path": "checkpoints/sdc_distillation_full/distilled_gru_h116_from_clipped_kan_gru_h32_w0.25_seed1.pt",
+      "source_log": "results/final_tables/sdc_distillation.json"
+    },
+    {
+      "variant": "distilled_gru_h116",
+      "seed": 1,
+      "epochs": 100,
+      "batch_size": 64,
+      "timing": {
+        "wall_clock_seconds": 20.03254541199999,
+        "seconds_per_epoch": 0.2003254541199999,
+        "seconds_per_step": 0.005136550105641023,
+        "peak_cuda_memory_mb": 223.1376953125
+      },
+      "global_steps": 3900,
+      "checkpoint_path": "checkpoints/sdc_distillation_full/distilled_gru_h116_from_clipped_kan_gru_h32_w0.5_seed1.pt",
+      "source_log": "results/final_tables/sdc_distillation.json"
+    },
+    {
+      "variant": "distilled_gru_h116",
+      "seed": 1,
+      "epochs": 100,
+      "batch_size": 64,
+      "timing": {
+        "wall_clock_seconds": 20.00675261599997,
+        "seconds_per_epoch": 0.2000675261599997,
+        "seconds_per_step": 0.005129936568205121,
+        "peak_cuda_memory_mb": 223.1376953125
+      },
+      "global_steps": 3900,
+      "checkpoint_path": "checkpoints/sdc_distillation_full/distilled_gru_h116_from_clipped_kan_gru_h32_w0.75_seed1.pt",
+      "source_log": "results/final_tables/sdc_distillation.json"
+    },
+    {
+      "variant": "supervised_gru_h32",
+      "seed": 2,
+      "epochs": 100,
+      "batch_size": 64,
+      "timing": {
+        "wall_clock_seconds": 11.446528080999997,
+        "seconds_per_epoch": 0.11446528080999997,
+        "seconds_per_step": 0.0029350072002564094,
+        "peak_cuda_memory_mb": 79.87890625
+      },
+      "global_steps": 3900,
+      "checkpoint_path": "checkpoints/sdc_distillation_full/supervised_gru_h32_seed2.pt",
+      "source_log": "results/final_tables/sdc_distillation.json"
+    },
+    {
+      "variant": "distilled_gru_h32",
+      "seed": 2,
+      "epochs": 100,
+      "batch_size": 64,
+      "timing": {
+        "wall_clock_seconds": 13.123881084000004,
+        "seconds_per_epoch": 0.13123881084000005,
+        "seconds_per_step": 0.003365097713846155,
+        "peak_cuda_memory_mb": 79.9423828125
+      },
+      "global_steps": 3900,
+      "checkpoint_path": "checkpoints/sdc_distillation_full/distilled_gru_h32_from_clipped_kan_gru_h32_w0.25_seed2.pt",
+      "source_log": "results/final_tables/sdc_distillation.json"
+    },
+    {
+      "variant": "distilled_gru_h32",
+      "seed": 2,
+      "epochs": 100,
+      "batch_size": 64,
+      "timing": {
+        "wall_clock_seconds": 13.131712649000065,
+        "seconds_per_epoch": 0.13131712649000066,
+        "seconds_per_step": 0.003367105807435914,
+        "peak_cuda_memory_mb": 79.9423828125
+      },
+      "global_steps": 3900,
+      "checkpoint_path": "checkpoints/sdc_distillation_full/distilled_gru_h32_from_clipped_kan_gru_h32_w0.5_seed2.pt",
+      "source_log": "results/final_tables/sdc_distillation.json"
+    },
+    {
+      "variant": "distilled_gru_h32",
+      "seed": 2,
+      "epochs": 100,
+      "batch_size": 64,
+      "timing": {
+        "wall_clock_seconds": 13.255567220999978,
+        "seconds_per_epoch": 0.13255567220999978,
+        "seconds_per_step": 0.0033988633899999943,
+        "peak_cuda_memory_mb": 79.9423828125
+      },
+      "global_steps": 3900,
+      "checkpoint_path": "checkpoints/sdc_distillation_full/distilled_gru_h32_from_clipped_kan_gru_h32_w0.75_seed2.pt",
+      "source_log": "results/final_tables/sdc_distillation.json"
+    },
+    {
+      "variant": "supervised_gru_h64",
+      "seed": 2,
+      "epochs": 100,
+      "batch_size": 64,
+      "timing": {
+        "wall_clock_seconds": 11.575335927999959,
+        "seconds_per_epoch": 0.11575335927999958,
+        "seconds_per_step": 0.002968034853333323,
+        "peak_cuda_memory_mb": 134.09814453125
+      },
+      "global_steps": 3900,
+      "checkpoint_path": "checkpoints/sdc_distillation_full/supervised_gru_h64_seed2.pt",
+      "source_log": "results/final_tables/sdc_distillation.json"
+    },
+    {
+      "variant": "distilled_gru_h64",
+      "seed": 2,
+      "epochs": 100,
+      "batch_size": 64,
+      "timing": {
+        "wall_clock_seconds": 13.60570639499997,
+        "seconds_per_epoch": 0.1360570639499997,
+        "seconds_per_step": 0.003488642665384608,
+        "peak_cuda_memory_mb": 134.16162109375
+      },
+      "global_steps": 3900,
+      "checkpoint_path": "checkpoints/sdc_distillation_full/distilled_gru_h64_from_clipped_kan_gru_h32_w0.25_seed2.pt",
+      "source_log": "results/final_tables/sdc_distillation.json"
+    },
+    {
+      "variant": "distilled_gru_h64",
+      "seed": 2,
+      "epochs": 100,
+      "batch_size": 64,
+      "timing": {
+        "wall_clock_seconds": 13.63639298999999,
+        "seconds_per_epoch": 0.1363639298999999,
+        "seconds_per_step": 0.0034965110230769205,
+        "peak_cuda_memory_mb": 134.16162109375
+      },
+      "global_steps": 3900,
+      "checkpoint_path": "checkpoints/sdc_distillation_full/distilled_gru_h64_from_clipped_kan_gru_h32_w0.5_seed2.pt",
+      "source_log": "results/final_tables/sdc_distillation.json"
+    },
+    {
+      "variant": "distilled_gru_h64",
+      "seed": 2,
+      "epochs": 100,
+      "batch_size": 64,
+      "timing": {
+        "wall_clock_seconds": 13.65108729699989,
+        "seconds_per_epoch": 0.1365108729699989,
+        "seconds_per_step": 0.003500278794102536,
+        "peak_cuda_memory_mb": 134.16162109375
+      },
+      "global_steps": 3900,
+      "checkpoint_path": "checkpoints/sdc_distillation_full/distilled_gru_h64_from_clipped_kan_gru_h32_w0.75_seed2.pt",
+      "source_log": "results/final_tables/sdc_distillation.json"
+    },
+    {
+      "variant": "supervised_gru_h116",
+      "seed": 2,
+      "epochs": 100,
+      "batch_size": 64,
+      "timing": {
+        "wall_clock_seconds": 17.865675022000005,
+        "seconds_per_epoch": 0.17865675022000005,
+        "seconds_per_step": 0.004580942313333334,
+        "peak_cuda_memory_mb": 223.07421875
+      },
+      "global_steps": 3900,
+      "checkpoint_path": "checkpoints/sdc_distillation_full/supervised_gru_h116_seed2.pt",
+      "source_log": "results/final_tables/sdc_distillation.json"
+    },
+    {
+      "variant": "distilled_gru_h116",
+      "seed": 2,
+      "epochs": 100,
+      "batch_size": 64,
+      "timing": {
+        "wall_clock_seconds": 19.879899568999917,
+        "seconds_per_epoch": 0.19879899568999918,
+        "seconds_per_step": 0.005097410145897415,
+        "peak_cuda_memory_mb": 223.1376953125
+      },
+      "global_steps": 3900,
+      "checkpoint_path": "checkpoints/sdc_distillation_full/distilled_gru_h116_from_clipped_kan_gru_h32_w0.25_seed2.pt",
+      "source_log": "results/final_tables/sdc_distillation.json"
+    },
+    {
+      "variant": "distilled_gru_h116",
+      "seed": 2,
+      "epochs": 100,
+      "batch_size": 64,
+      "timing": {
+        "wall_clock_seconds": 20.03616092900006,
+        "seconds_per_epoch": 0.2003616092900006,
+        "seconds_per_step": 0.005137477161282067,
+        "peak_cuda_memory_mb": 223.1376953125
+      },
+      "global_steps": 3900,
+      "checkpoint_path": "checkpoints/sdc_distillation_full/distilled_gru_h116_from_clipped_kan_gru_h32_w0.5_seed2.pt",
+      "source_log": "results/final_tables/sdc_distillation.json"
+    },
+    {
+      "variant": "distilled_gru_h116",
+      "seed": 2,
+      "epochs": 100,
+      "batch_size": 64,
+      "timing": {
+        "wall_clock_seconds": 19.989492647999896,
+        "seconds_per_epoch": 0.19989492647999896,
+        "seconds_per_step": 0.005125510935384589,
+        "peak_cuda_memory_mb": 223.1376953125
+      },
+      "global_steps": 3900,
+      "checkpoint_path": "checkpoints/sdc_distillation_full/distilled_gru_h116_from_clipped_kan_gru_h32_w0.75_seed2.pt",
+      "source_log": "results/final_tables/sdc_distillation.json"
+    },
+    {
+      "variant": "supervised_gru_h32",
+      "seed": 0,
+      "epochs": 100,
+      "batch_size": 64,
+      "timing": {
+        "wall_clock_seconds": 12.232504661999997,
+        "seconds_per_epoch": 0.12232504661999996,
+        "seconds_per_step": 0.003136539656923076,
+        "peak_cuda_memory_mb": 79.87890625
+      },
+      "global_steps": 3900,
+      "checkpoint_path": "checkpoints/sdc_distillation_full/supervised_gru_h32_seed0.pt",
+      "source_log": "results/imported_kaggle/sdc_distillation/extracted/results/sdc_distillation_full.json"
+    },
+    {
+      "variant": "distilled_gru_h32",
+      "seed": 0,
+      "epochs": 100,
+      "batch_size": 64,
+      "timing": {
+        "wall_clock_seconds": 13.27113146900001,
+        "seconds_per_epoch": 0.1327113146900001,
+        "seconds_per_step": 0.003402854222820516,
+        "peak_cuda_memory_mb": 79.9423828125
+      },
+      "global_steps": 3900,
+      "checkpoint_path": "checkpoints/sdc_distillation_full/distilled_gru_h32_from_clipped_kan_gru_h32_w0.25_seed0.pt",
+      "source_log": "results/imported_kaggle/sdc_distillation/extracted/results/sdc_distillation_full.json"
+    },
+    {
+      "variant": "distilled_gru_h32",
+      "seed": 0,
+      "epochs": 100,
+      "batch_size": 64,
+      "timing": {
+        "wall_clock_seconds": 13.168469906999917,
+        "seconds_per_epoch": 0.13168469906999916,
+        "seconds_per_step": 0.003376530745384594,
+        "peak_cuda_memory_mb": 79.9423828125
+      },
+      "global_steps": 3900,
+      "checkpoint_path": "checkpoints/sdc_distillation_full/distilled_gru_h32_from_clipped_kan_gru_h32_w0.5_seed0.pt",
+      "source_log": "results/imported_kaggle/sdc_distillation/extracted/results/sdc_distillation_full.json"
+    },
+    {
+      "variant": "distilled_gru_h32",
+      "seed": 0,
+      "epochs": 100,
+      "batch_size": 64,
+      "timing": {
+        "wall_clock_seconds": 13.254482115999963,
+        "seconds_per_epoch": 0.13254482115999963,
+        "seconds_per_step": 0.0033985851579487083,
+        "peak_cuda_memory_mb": 79.9423828125
+      },
+      "global_steps": 3900,
+      "checkpoint_path": "checkpoints/sdc_distillation_full/distilled_gru_h32_from_clipped_kan_gru_h32_w0.75_seed0.pt",
+      "source_log": "results/imported_kaggle/sdc_distillation/extracted/results/sdc_distillation_full.json"
+    },
+    {
+      "variant": "supervised_gru_h64",
+      "seed": 0,
+      "epochs": 100,
+      "batch_size": 64,
+      "timing": {
+        "wall_clock_seconds": 11.768943658000012,
+        "seconds_per_epoch": 0.11768943658000013,
+        "seconds_per_step": 0.0030176778610256443,
+        "peak_cuda_memory_mb": 134.09814453125
+      },
+      "global_steps": 3900,
+      "checkpoint_path": "checkpoints/sdc_distillation_full/supervised_gru_h64_seed0.pt",
+      "source_log": "results/imported_kaggle/sdc_distillation/extracted/results/sdc_distillation_full.json"
+    },
+    {
+      "variant": "distilled_gru_h64",
+      "seed": 0,
+      "epochs": 100,
+      "batch_size": 64,
+      "timing": {
+        "wall_clock_seconds": 13.71372184400002,
+        "seconds_per_epoch": 0.1371372184400002,
+        "seconds_per_step": 0.0035163389343589794,
+        "peak_cuda_memory_mb": 134.16162109375
+      },
+      "global_steps": 3900,
+      "checkpoint_path": "checkpoints/sdc_distillation_full/distilled_gru_h64_from_clipped_kan_gru_h32_w0.25_seed0.pt",
+      "source_log": "results/imported_kaggle/sdc_distillation/extracted/results/sdc_distillation_full.json"
+    },
+    {
+      "variant": "distilled_gru_h64",
+      "seed": 0,
+      "epochs": 100,
+      "batch_size": 64,
+      "timing": {
+        "wall_clock_seconds": 13.596206443999904,
+        "seconds_per_epoch": 0.13596206443999903,
+        "seconds_per_step": 0.003486206780512796,
+        "peak_cuda_memory_mb": 134.16162109375
+      },
+      "global_steps": 3900,
+      "checkpoint_path": "checkpoints/sdc_distillation_full/distilled_gru_h64_from_clipped_kan_gru_h32_w0.5_seed0.pt",
+      "source_log": "results/imported_kaggle/sdc_distillation/extracted/results/sdc_distillation_full.json"
+    },
+    {
+      "variant": "distilled_gru_h64",
+      "seed": 0,
+      "epochs": 100,
+      "batch_size": 64,
+      "timing": {
+        "wall_clock_seconds": 13.609443077000037,
+        "seconds_per_epoch": 0.13609443077000039,
+        "seconds_per_step": 0.0034896007889743683,
+        "peak_cuda_memory_mb": 134.16162109375
+      },
+      "global_steps": 3900,
+      "checkpoint_path": "checkpoints/sdc_distillation_full/distilled_gru_h64_from_clipped_kan_gru_h32_w0.75_seed0.pt",
+      "source_log": "results/imported_kaggle/sdc_distillation/extracted/results/sdc_distillation_full.json"
+    },
+    {
+      "variant": "supervised_gru_h116",
+      "seed": 0,
+      "epochs": 100,
+      "batch_size": 64,
+      "timing": {
+        "wall_clock_seconds": 17.87754742000004,
+        "seconds_per_epoch": 0.17877547420000042,
+        "seconds_per_step": 0.004583986517948729,
+        "peak_cuda_memory_mb": 223.07421875
+      },
+      "global_steps": 3900,
+      "checkpoint_path": "checkpoints/sdc_distillation_full/supervised_gru_h116_seed0.pt",
+      "source_log": "results/imported_kaggle/sdc_distillation/extracted/results/sdc_distillation_full.json"
+    },
+    {
+      "variant": "distilled_gru_h116",
+      "seed": 0,
+      "epochs": 100,
+      "batch_size": 64,
+      "timing": {
+        "wall_clock_seconds": 19.995147005000035,
+        "seconds_per_epoch": 0.19995147005000036,
+        "seconds_per_step": 0.00512696077051283,
+        "peak_cuda_memory_mb": 223.1376953125
+      },
+      "global_steps": 3900,
+      "checkpoint_path": "checkpoints/sdc_distillation_full/distilled_gru_h116_from_clipped_kan_gru_h32_w0.25_seed0.pt",
+      "source_log": "results/imported_kaggle/sdc_distillation/extracted/results/sdc_distillation_full.json"
+    },
+    {
+      "variant": "distilled_gru_h116",
+      "seed": 0,
+      "epochs": 100,
+      "batch_size": 64,
+      "timing": {
+        "wall_clock_seconds": 20.03380090799999,
+        "seconds_per_epoch": 0.20033800907999988,
+        "seconds_per_step": 0.005136872027692305,
+        "peak_cuda_memory_mb": 223.1376953125
+      },
+      "global_steps": 3900,
+      "checkpoint_path": "checkpoints/sdc_distillation_full/distilled_gru_h116_from_clipped_kan_gru_h32_w0.5_seed0.pt",
+      "source_log": "results/imported_kaggle/sdc_distillation/extracted/results/sdc_distillation_full.json"
+    },
+    {
+      "variant": "distilled_gru_h116",
+      "seed": 0,
+      "epochs": 100,
+      "batch_size": 64,
+      "timing": {
+        "wall_clock_seconds": 19.876562143,
+        "seconds_per_epoch": 0.19876562143,
+        "seconds_per_step": 0.005096554395641026,
+        "peak_cuda_memory_mb": 223.1376953125
+      },
+      "global_steps": 3900,
+      "checkpoint_path": "checkpoints/sdc_distillation_full/distilled_gru_h116_from_clipped_kan_gru_h32_w0.75_seed0.pt",
+      "source_log": "results/imported_kaggle/sdc_distillation/extracted/results/sdc_distillation_full.json"
+    },
+    {
+      "variant": "supervised_gru_h32",
+      "seed": 1,
+      "epochs": 100,
+      "batch_size": 64,
+      "timing": {
+        "wall_clock_seconds": 11.492361638000034,
+        "seconds_per_epoch": 0.11492361638000034,
+        "seconds_per_step": 0.002946759394358983,
+        "peak_cuda_memory_mb": 79.87890625
+      },
+      "global_steps": 3900,
+      "checkpoint_path": "checkpoints/sdc_distillation_full/supervised_gru_h32_seed1.pt",
+      "source_log": "results/imported_kaggle/sdc_distillation/extracted/results/sdc_distillation_full.json"
+    },
+    {
+      "variant": "distilled_gru_h32",
+      "seed": 1,
+      "epochs": 100,
+      "batch_size": 64,
+      "timing": {
+        "wall_clock_seconds": 13.113970613999982,
+        "seconds_per_epoch": 0.1311397061399998,
+        "seconds_per_step": 0.003362556567692303,
+        "peak_cuda_memory_mb": 79.9423828125
+      },
+      "global_steps": 3900,
+      "checkpoint_path": "checkpoints/sdc_distillation_full/distilled_gru_h32_from_clipped_kan_gru_h32_w0.25_seed1.pt",
+      "source_log": "results/imported_kaggle/sdc_distillation/extracted/results/sdc_distillation_full.json"
+    },
+    {
+      "variant": "distilled_gru_h32",
+      "seed": 1,
+      "epochs": 100,
+      "batch_size": 64,
+      "timing": {
+        "wall_clock_seconds": 13.13974567699995,
+        "seconds_per_epoch": 0.1313974567699995,
+        "seconds_per_step": 0.0033691655582051157,
+        "peak_cuda_memory_mb": 79.9423828125
+      },
+      "global_steps": 3900,
+      "checkpoint_path": "checkpoints/sdc_distillation_full/distilled_gru_h32_from_clipped_kan_gru_h32_w0.5_seed1.pt",
+      "source_log": "results/imported_kaggle/sdc_distillation/extracted/results/sdc_distillation_full.json"
+    },
+    {
+      "variant": "distilled_gru_h32",
+      "seed": 1,
+      "epochs": 100,
+      "batch_size": 64,
+      "timing": {
+        "wall_clock_seconds": 13.01967390099992,
+        "seconds_per_epoch": 0.1301967390099992,
+        "seconds_per_step": 0.0033383779233333126,
+        "peak_cuda_memory_mb": 79.9423828125
+      },
+      "global_steps": 3900,
+      "checkpoint_path": "checkpoints/sdc_distillation_full/distilled_gru_h32_from_clipped_kan_gru_h32_w0.75_seed1.pt",
+      "source_log": "results/imported_kaggle/sdc_distillation/extracted/results/sdc_distillation_full.json"
+    },
+    {
+      "variant": "supervised_gru_h64",
+      "seed": 1,
+      "epochs": 100,
+      "batch_size": 64,
+      "timing": {
+        "wall_clock_seconds": 11.501265624000098,
+        "seconds_per_epoch": 0.11501265624000098,
+        "seconds_per_step": 0.0029490424676923326,
+        "peak_cuda_memory_mb": 134.09814453125
+      },
+      "global_steps": 3900,
+      "checkpoint_path": "checkpoints/sdc_distillation_full/supervised_gru_h64_seed1.pt",
+      "source_log": "results/imported_kaggle/sdc_distillation/extracted/results/sdc_distillation_full.json"
+    },
+    {
+      "variant": "distilled_gru_h64",
+      "seed": 1,
+      "epochs": 100,
+      "batch_size": 64,
+      "timing": {
+        "wall_clock_seconds": 13.611546898000029,
+        "seconds_per_epoch": 0.1361154689800003,
+        "seconds_per_step": 0.0034901402302564177,
+        "peak_cuda_memory_mb": 134.16162109375
+      },
+      "global_steps": 3900,
+      "checkpoint_path": "checkpoints/sdc_distillation_full/distilled_gru_h64_from_clipped_kan_gru_h32_w0.25_seed1.pt",
+      "source_log": "results/imported_kaggle/sdc_distillation/extracted/results/sdc_distillation_full.json"
+    },
+    {
+      "variant": "distilled_gru_h64",
+      "seed": 1,
+      "epochs": 100,
+      "batch_size": 64,
+      "timing": {
+        "wall_clock_seconds": 13.649893064000025,
+        "seconds_per_epoch": 0.13649893064000027,
+        "seconds_per_step": 0.003499972580512827,
+        "peak_cuda_memory_mb": 134.16162109375
+      },
+      "global_steps": 3900,
+      "checkpoint_path": "checkpoints/sdc_distillation_full/distilled_gru_h64_from_clipped_kan_gru_h32_w0.5_seed1.pt",
+      "source_log": "results/imported_kaggle/sdc_distillation/extracted/results/sdc_distillation_full.json"
+    },
+    {
+      "variant": "distilled_gru_h64",
+      "seed": 1,
+      "epochs": 100,
+      "batch_size": 64,
+      "timing": {
+        "wall_clock_seconds": 13.950037228000042,
+        "seconds_per_epoch": 0.13950037228000042,
+        "seconds_per_step": 0.0035769326225641132,
+        "peak_cuda_memory_mb": 134.16162109375
+      },
+      "global_steps": 3900,
+      "checkpoint_path": "checkpoints/sdc_distillation_full/distilled_gru_h64_from_clipped_kan_gru_h32_w0.75_seed1.pt",
+      "source_log": "results/imported_kaggle/sdc_distillation/extracted/results/sdc_distillation_full.json"
+    },
+    {
+      "variant": "supervised_gru_h116",
+      "seed": 1,
+      "epochs": 100,
+      "batch_size": 64,
+      "timing": {
+        "wall_clock_seconds": 17.898034962999986,
+        "seconds_per_epoch": 0.17898034962999987,
+        "seconds_per_step": 0.004589239734102561,
+        "peak_cuda_memory_mb": 223.07421875
+      },
+      "global_steps": 3900,
+      "checkpoint_path": "checkpoints/sdc_distillation_full/supervised_gru_h116_seed1.pt",
+      "source_log": "results/imported_kaggle/sdc_distillation/extracted/results/sdc_distillation_full.json"
+    },
+    {
+      "variant": "distilled_gru_h116",
+      "seed": 1,
+      "epochs": 100,
+      "batch_size": 64,
+      "timing": {
+        "wall_clock_seconds": 19.847928679000006,
+        "seconds_per_epoch": 0.19847928679000007,
+        "seconds_per_step": 0.005089212481794873,
+        "peak_cuda_memory_mb": 223.1376953125
+      },
+      "global_steps": 3900,
+      "checkpoint_path": "checkpoints/sdc_distillation_full/distilled_gru_h116_from_clipped_kan_gru_h32_w0.25_seed1.pt",
+      "source_log": "results/imported_kaggle/sdc_distillation/extracted/results/sdc_distillation_full.json"
+    },
+    {
+      "variant": "distilled_gru_h116",
+      "seed": 1,
+      "epochs": 100,
+      "batch_size": 64,
+      "timing": {
+        "wall_clock_seconds": 20.03254541199999,
+        "seconds_per_epoch": 0.2003254541199999,
+        "seconds_per_step": 0.005136550105641023,
+        "peak_cuda_memory_mb": 223.1376953125
+      },
+      "global_steps": 3900,
+      "checkpoint_path": "checkpoints/sdc_distillation_full/distilled_gru_h116_from_clipped_kan_gru_h32_w0.5_seed1.pt",
+      "source_log": "results/imported_kaggle/sdc_distillation/extracted/results/sdc_distillation_full.json"
+    },
+    {
+      "variant": "distilled_gru_h116",
+      "seed": 1,
+      "epochs": 100,
+      "batch_size": 64,
+      "timing": {
+        "wall_clock_seconds": 20.00675261599997,
+        "seconds_per_epoch": 0.2000675261599997,
+        "seconds_per_step": 0.005129936568205121,
+        "peak_cuda_memory_mb": 223.1376953125
+      },
+      "global_steps": 3900,
+      "checkpoint_path": "checkpoints/sdc_distillation_full/distilled_gru_h116_from_clipped_kan_gru_h32_w0.75_seed1.pt",
+      "source_log": "results/imported_kaggle/sdc_distillation/extracted/results/sdc_distillation_full.json"
+    },
+    {
+      "variant": "supervised_gru_h32",
+      "seed": 2,
+      "epochs": 100,
+      "batch_size": 64,
+      "timing": {
+        "wall_clock_seconds": 11.446528080999997,
+        "seconds_per_epoch": 0.11446528080999997,
+        "seconds_per_step": 0.0029350072002564094,
+        "peak_cuda_memory_mb": 79.87890625
+      },
+      "global_steps": 3900,
+      "checkpoint_path": "checkpoints/sdc_distillation_full/supervised_gru_h32_seed2.pt",
+      "source_log": "results/imported_kaggle/sdc_distillation/extracted/results/sdc_distillation_full.json"
+    },
+    {
+      "variant": "distilled_gru_h32",
+      "seed": 2,
+      "epochs": 100,
+      "batch_size": 64,
+      "timing": {
+        "wall_clock_seconds": 13.123881084000004,
+        "seconds_per_epoch": 0.13123881084000005,
+        "seconds_per_step": 0.003365097713846155,
+        "peak_cuda_memory_mb": 79.9423828125
+      },
+      "global_steps": 3900,
+      "checkpoint_path": "checkpoints/sdc_distillation_full/distilled_gru_h32_from_clipped_kan_gru_h32_w0.25_seed2.pt",
+      "source_log": "results/imported_kaggle/sdc_distillation/extracted/results/sdc_distillation_full.json"
+    },
+    {
+      "variant": "distilled_gru_h32",
+      "seed": 2,
+      "epochs": 100,
+      "batch_size": 64,
+      "timing": {
+        "wall_clock_seconds": 13.131712649000065,
+        "seconds_per_epoch": 0.13131712649000066,
+        "seconds_per_step": 0.003367105807435914,
+        "peak_cuda_memory_mb": 79.9423828125
+      },
+      "global_steps": 3900,
+      "checkpoint_path": "checkpoints/sdc_distillation_full/distilled_gru_h32_from_clipped_kan_gru_h32_w0.5_seed2.pt",
+      "source_log": "results/imported_kaggle/sdc_distillation/extracted/results/sdc_distillation_full.json"
+    },
+    {
+      "variant": "distilled_gru_h32",
+      "seed": 2,
+      "epochs": 100,
+      "batch_size": 64,
+      "timing": {
+        "wall_clock_seconds": 13.255567220999978,
+        "seconds_per_epoch": 0.13255567220999978,
+        "seconds_per_step": 0.0033988633899999943,
+        "peak_cuda_memory_mb": 79.9423828125
+      },
+      "global_steps": 3900,
+      "checkpoint_path": "checkpoints/sdc_distillation_full/distilled_gru_h32_from_clipped_kan_gru_h32_w0.75_seed2.pt",
+      "source_log": "results/imported_kaggle/sdc_distillation/extracted/results/sdc_distillation_full.json"
+    },
+    {
+      "variant": "supervised_gru_h64",
+      "seed": 2,
+      "epochs": 100,
+      "batch_size": 64,
+      "timing": {
+        "wall_clock_seconds": 11.575335927999959,
+        "seconds_per_epoch": 0.11575335927999958,
+        "seconds_per_step": 0.002968034853333323,
+        "peak_cuda_memory_mb": 134.09814453125
+      },
+      "global_steps": 3900,
+      "checkpoint_path": "checkpoints/sdc_distillation_full/supervised_gru_h64_seed2.pt",
+      "source_log": "results/imported_kaggle/sdc_distillation/extracted/results/sdc_distillation_full.json"
+    },
+    {
+      "variant": "distilled_gru_h64",
+      "seed": 2,
+      "epochs": 100,
+      "batch_size": 64,
+      "timing": {
+        "wall_clock_seconds": 13.60570639499997,
+        "seconds_per_epoch": 0.1360570639499997,
+        "seconds_per_step": 0.003488642665384608,
+        "peak_cuda_memory_mb": 134.16162109375
+      },
+      "global_steps": 3900,
+      "checkpoint_path": "checkpoints/sdc_distillation_full/distilled_gru_h64_from_clipped_kan_gru_h32_w0.25_seed2.pt",
+      "source_log": "results/imported_kaggle/sdc_distillation/extracted/results/sdc_distillation_full.json"
+    },
+    {
+      "variant": "distilled_gru_h64",
+      "seed": 2,
+      "epochs": 100,
+      "batch_size": 64,
+      "timing": {
+        "wall_clock_seconds": 13.63639298999999,
+        "seconds_per_epoch": 0.1363639298999999,
+        "seconds_per_step": 0.0034965110230769205,
+        "peak_cuda_memory_mb": 134.16162109375
+      },
+      "global_steps": 3900,
+      "checkpoint_path": "checkpoints/sdc_distillation_full/distilled_gru_h64_from_clipped_kan_gru_h32_w0.5_seed2.pt",
+      "source_log": "results/imported_kaggle/sdc_distillation/extracted/results/sdc_distillation_full.json"
+    },
+    {
+      "variant": "distilled_gru_h64",
+      "seed": 2,
+      "epochs": 100,
+      "batch_size": 64,
+      "timing": {
+        "wall_clock_seconds": 13.65108729699989,
+        "seconds_per_epoch": 0.1365108729699989,
+        "seconds_per_step": 0.003500278794102536,
+        "peak_cuda_memory_mb": 134.16162109375
+      },
+      "global_steps": 3900,
+      "checkpoint_path": "checkpoints/sdc_distillation_full/distilled_gru_h64_from_clipped_kan_gru_h32_w0.75_seed2.pt",
+      "source_log": "results/imported_kaggle/sdc_distillation/extracted/results/sdc_distillation_full.json"
+    },
+    {
+      "variant": "supervised_gru_h116",
+      "seed": 2,
+      "epochs": 100,
+      "batch_size": 64,
+      "timing": {
+        "wall_clock_seconds": 17.865675022000005,
+        "seconds_per_epoch": 0.17865675022000005,
+        "seconds_per_step": 0.004580942313333334,
+        "peak_cuda_memory_mb": 223.07421875
+      },
+      "global_steps": 3900,
+      "checkpoint_path": "checkpoints/sdc_distillation_full/supervised_gru_h116_seed2.pt",
+      "source_log": "results/imported_kaggle/sdc_distillation/extracted/results/sdc_distillation_full.json"
+    },
+    {
+      "variant": "distilled_gru_h116",
+      "seed": 2,
+      "epochs": 100,
+      "batch_size": 64,
+      "timing": {
+        "wall_clock_seconds": 19.879899568999917,
+        "seconds_per_epoch": 0.19879899568999918,
+        "seconds_per_step": 0.005097410145897415,
+        "peak_cuda_memory_mb": 223.1376953125
+      },
+      "global_steps": 3900,
+      "checkpoint_path": "checkpoints/sdc_distillation_full/distilled_gru_h116_from_clipped_kan_gru_h32_w0.25_seed2.pt",
+      "source_log": "results/imported_kaggle/sdc_distillation/extracted/results/sdc_distillation_full.json"
+    },
+    {
+      "variant": "distilled_gru_h116",
+      "seed": 2,
+      "epochs": 100,
+      "batch_size": 64,
+      "timing": {
+        "wall_clock_seconds": 20.03616092900006,
+        "seconds_per_epoch": 0.2003616092900006,
+        "seconds_per_step": 0.005137477161282067,
+        "peak_cuda_memory_mb": 223.1376953125
+      },
+      "global_steps": 3900,
+      "checkpoint_path": "checkpoints/sdc_distillation_full/distilled_gru_h116_from_clipped_kan_gru_h32_w0.5_seed2.pt",
+      "source_log": "results/imported_kaggle/sdc_distillation/extracted/results/sdc_distillation_full.json"
+    },
+    {
+      "variant": "distilled_gru_h116",
+      "seed": 2,
+      "epochs": 100,
+      "batch_size": 64,
+      "timing": {
+        "wall_clock_seconds": 19.989492647999896,
+        "seconds_per_epoch": 0.19989492647999896,
+        "seconds_per_step": 0.005125510935384589,
+        "peak_cuda_memory_mb": 223.1376953125
+      },
+      "global_steps": 3900,
+      "checkpoint_path": "checkpoints/sdc_distillation_full/distilled_gru_h116_from_clipped_kan_gru_h32_w0.75_seed2.pt",
+      "source_log": "results/imported_kaggle/sdc_distillation/extracted/results/sdc_distillation_full.json"
+    },
+    {
+      "variant": "bounded_kan_lstm_h32",
+      "variant_config": {
+        "gauge_every_steps": 0,
+        "grid_size": 4,
+        "hidden_dim": 32,
+        "model_name": "bounded_kan_lstm",
+        "moment_mode": "unchanged",
+        "name": "bounded_kan_lstm_h32"
+      },
+      "seed": 0,
+      "epochs": 100,
+      "batch_size": 64,
+      "window": 256,
+      "stride": 256,
+      "eval_stride": 512,
+      "feature_mode": "full",
+      "lr": 0.001,
+      "weight_decay": 0.0,
+      "timing": {
+        "peak_cuda_memory_mb": 490.1337890625,
+        "projection_seconds_per_event": 0.0,
+        "projection_wall_clock_fraction": 0.0,
+        "projection_wall_clock_seconds": 0.0,
+        "seconds_per_epoch": 46.135239271989995,
+        "seconds_per_step": 1.1829548531279486,
+        "wall_clock_seconds": 4613.523927198999
+      },
+      "train_windows": 2457,
+      "eval_windows": 256,
+      "global_steps": 3900,
+      "checkpoint_path": "checkpoints/sequence/bounded_kan_lstm_h32_seed0.pt",
+      "device": "cuda",
+      "cuda_name": "Tesla T4",
+      "source_log": "results/kaggle_imported/bounded_h32_100epoch_3seed/kaggle_bounded_h32_100epoch_3seed.json"
+    },
+    {
+      "variant": "gauge_bounded_kan_lstm_h32",
+      "variant_config": {
+        "gauge_every_steps": 1,
+        "grid_size": 4,
+        "hidden_dim": 32,
+        "model_name": "gauge_bounded_kan_lstm",
+        "moment_mode": "reset",
+        "name": "gauge_bounded_kan_lstm_h32"
+      },
+      "seed": 0,
+      "epochs": 100,
+      "batch_size": 64,
+      "window": 256,
+      "stride": 256,
+      "eval_stride": 512,
+      "feature_mode": "full",
+      "lr": 0.001,
+      "weight_decay": 0.0,
+      "timing": {
+        "peak_cuda_memory_mb": 490.1337890625,
+        "projection_seconds_per_event": 0.001098236914361293,
+        "projection_wall_clock_fraction": 0.0009249252816427023,
+        "projection_wall_clock_seconds": 4.283123966009043,
+        "seconds_per_epoch": 46.30778346119,
+        "seconds_per_step": 1.187379063107436,
+        "wall_clock_seconds": 4630.778346119
+      },
+      "train_windows": 2457,
+      "eval_windows": 256,
+      "global_steps": 3900,
+      "checkpoint_path": "checkpoints/sequence/gauge_bounded_kan_lstm_h32_seed0.pt",
+      "device": "cuda",
+      "cuda_name": "Tesla T4",
+      "source_log": "results/kaggle_imported/bounded_h32_100epoch_3seed/kaggle_bounded_h32_100epoch_3seed.json"
+    },
+    {
+      "variant": "bounded_kan_lstm_h32",
+      "variant_config": {
+        "gauge_every_steps": 0,
+        "grid_size": 4,
+        "hidden_dim": 32,
+        "model_name": "bounded_kan_lstm",
+        "moment_mode": "unchanged",
+        "name": "bounded_kan_lstm_h32"
+      },
+      "seed": 1,
+      "epochs": 100,
+      "batch_size": 64,
+      "window": 256,
+      "stride": 256,
+      "eval_stride": 512,
+      "feature_mode": "full",
+      "lr": 0.001,
+      "weight_decay": 0.0,
+      "timing": {
+        "peak_cuda_memory_mb": 490.1337890625,
+        "projection_seconds_per_event": 0.0,
+        "projection_wall_clock_fraction": 0.0,
+        "projection_wall_clock_seconds": 0.0,
+        "seconds_per_epoch": 45.150399270509986,
+        "seconds_per_step": 1.157702545397692,
+        "wall_clock_seconds": 4515.039927050999
+      },
+      "train_windows": 2457,
+      "eval_windows": 256,
+      "global_steps": 3900,
+      "checkpoint_path": "checkpoints/sequence/bounded_kan_lstm_h32_seed1.pt",
+      "device": "cuda",
+      "cuda_name": "Tesla T4",
+      "source_log": "results/kaggle_imported/bounded_h32_100epoch_3seed/kaggle_bounded_h32_100epoch_3seed.json"
+    },
+    {
+      "variant": "gauge_bounded_kan_lstm_h32",
+      "variant_config": {
+        "gauge_every_steps": 1,
+        "grid_size": 4,
+        "hidden_dim": 32,
+        "model_name": "gauge_bounded_kan_lstm",
+        "moment_mode": "reset",
+        "name": "gauge_bounded_kan_lstm_h32"
+      },
+      "seed": 1,
+      "epochs": 100,
+      "batch_size": 64,
+      "window": 256,
+      "stride": 256,
+      "eval_stride": 512,
+      "feature_mode": "full",
+      "lr": 0.001,
+      "weight_decay": 0.0,
+      "timing": {
+        "peak_cuda_memory_mb": 490.1337890625,
+        "projection_seconds_per_event": 0.0010188195323443767,
+        "projection_wall_clock_fraction": 0.00088987041418396,
+        "projection_wall_clock_seconds": 3.973396176143069,
+        "seconds_per_epoch": 44.651402190810025,
+        "seconds_per_step": 1.1449077484823083,
+        "wall_clock_seconds": 4465.140219081002
+      },
+      "train_windows": 2457,
+      "eval_windows": 256,
+      "global_steps": 3900,
+      "checkpoint_path": "checkpoints/sequence/gauge_bounded_kan_lstm_h32_seed1.pt",
+      "device": "cuda",
+      "cuda_name": "Tesla T4",
+      "source_log": "results/kaggle_imported/bounded_h32_100epoch_3seed/kaggle_bounded_h32_100epoch_3seed.json"
+    },
+    {
+      "variant": "bounded_kan_lstm_h32",
+      "variant_config": {
+        "gauge_every_steps": 0,
+        "grid_size": 4,
+        "hidden_dim": 32,
+        "model_name": "bounded_kan_lstm",
+        "moment_mode": "unchanged",
+        "name": "bounded_kan_lstm_h32"
+      },
+      "seed": 2,
+      "epochs": 100,
+      "batch_size": 64,
+      "window": 256,
+      "stride": 256,
+      "eval_stride": 512,
+      "feature_mode": "full",
+      "lr": 0.001,
+      "weight_decay": 0.0,
+      "timing": {
+        "peak_cuda_memory_mb": 490.1337890625,
+        "projection_seconds_per_event": 0.0,
+        "projection_wall_clock_fraction": 0.0,
+        "projection_wall_clock_seconds": 0.0,
+        "seconds_per_epoch": 45.63998675097002,
+        "seconds_per_step": 1.1702560705376928,
+        "wall_clock_seconds": 4563.998675097002
+      },
+      "train_windows": 2457,
+      "eval_windows": 256,
+      "global_steps": 3900,
+      "checkpoint_path": "checkpoints/sequence/bounded_kan_lstm_h32_seed2.pt",
+      "device": "cuda",
+      "cuda_name": "Tesla T4",
+      "source_log": "results/kaggle_imported/bounded_h32_100epoch_3seed/kaggle_bounded_h32_100epoch_3seed.json"
+    },
+    {
+      "variant": "gauge_bounded_kan_lstm_h32",
+      "variant_config": {
+        "gauge_every_steps": 1,
+        "grid_size": 4,
+        "hidden_dim": 32,
+        "model_name": "gauge_bounded_kan_lstm",
+        "moment_mode": "reset",
+        "name": "gauge_bounded_kan_lstm_h32"
+      },
+      "seed": 2,
+      "epochs": 100,
+      "batch_size": 64,
+      "window": 256,
+      "stride": 256,
+      "eval_stride": 512,
+      "feature_mode": "full",
+      "lr": 0.001,
+      "weight_decay": 0.0,
+      "timing": {
+        "peak_cuda_memory_mb": 490.1337890625,
+        "projection_seconds_per_event": 0.0009832625800220577,
+        "projection_wall_clock_fraction": 0.0009033799038386054,
+        "projection_wall_clock_seconds": 3.834724062086025,
+        "seconds_per_epoch": 42.448631475990005,
+        "seconds_per_step": 1.0884264481023078,
+        "wall_clock_seconds": 4244.8631475990005
+      },
+      "train_windows": 2457,
+      "eval_windows": 256,
+      "global_steps": 3900,
+      "checkpoint_path": "checkpoints/sequence/gauge_bounded_kan_lstm_h32_seed2.pt",
+      "device": "cuda",
+      "cuda_name": "Tesla T4",
+      "source_log": "results/kaggle_imported/bounded_h32_100epoch_3seed/kaggle_bounded_h32_100epoch_3seed.json"
+    },
+    {
+      "variant": "clipped_kan_lstm_h32",
+      "variant_config": {
+        "gauge_every_steps": 0,
+        "grid_size": 4,
+        "hidden_dim": 32,
+        "model_name": "clipped_kan_lstm",
+        "moment_mode": "unchanged",
+        "name": "clipped_kan_lstm_h32"
+      },
+      "seed": 0,
+      "epochs": 100,
+      "batch_size": 64,
+      "window": 256,
+      "stride": 256,
+      "eval_stride": 512,
+      "feature_mode": "full",
+      "lr": 0.001,
+      "weight_decay": 0.0,
+      "timing": {
+        "peak_cuda_memory_mb": 504.0712890625,
+        "projection_seconds_per_event": 0.0,
+        "projection_wall_clock_fraction": 0.0,
+        "projection_wall_clock_seconds": 0.0,
+        "seconds_per_epoch": 43.75220481669001,
+        "seconds_per_step": 1.1218514055561541,
+        "wall_clock_seconds": 4375.220481669001
+      },
+      "train_windows": 2457,
+      "eval_windows": 256,
+      "global_steps": 3900,
+      "checkpoint_path": "checkpoints/sequence/clipped_kan_lstm_h32_seed0.pt",
+      "device": "cuda",
+      "cuda_name": "Tesla T4",
+      "source_log": "results/kaggle_imported/clipped_h32_100epoch_3seed/kaggle_clipped_h32_100epoch_3seed.json"
+    },
+    {
+      "variant": "gauge_clipped_kan_lstm_h32",
+      "variant_config": {
+        "gauge_every_steps": 1,
+        "grid_size": 4,
+        "hidden_dim": 32,
+        "model_name": "gauge_clipped_kan_lstm",
+        "moment_mode": "reset",
+        "name": "gauge_clipped_kan_lstm_h32"
+      },
+      "seed": 0,
+      "epochs": 100,
+      "batch_size": 64,
+      "window": 256,
+      "stride": 256,
+      "eval_stride": 512,
+      "feature_mode": "full",
+      "lr": 0.001,
+      "weight_decay": 0.0,
+      "timing": {
+        "peak_cuda_memory_mb": 504.0712890625,
+        "projection_seconds_per_event": 0.0009738104705096563,
+        "projection_wall_clock_fraction": 0.0008662483967244918,
+        "projection_wall_clock_seconds": 3.7978608349876595,
+        "seconds_per_epoch": 43.842630466599985,
+        "seconds_per_step": 1.1241700119641023,
+        "wall_clock_seconds": 4384.2630466599985
+      },
+      "train_windows": 2457,
+      "eval_windows": 256,
+      "global_steps": 3900,
+      "checkpoint_path": "checkpoints/sequence/gauge_clipped_kan_lstm_h32_seed0.pt",
+      "device": "cuda",
+      "cuda_name": "Tesla T4",
+      "source_log": "results/kaggle_imported/clipped_h32_100epoch_3seed/kaggle_clipped_h32_100epoch_3seed.json"
+    },
+    {
+      "variant": "clipped_kan_lstm_h32",
+      "variant_config": {
+        "gauge_every_steps": 0,
+        "grid_size": 4,
+        "hidden_dim": 32,
+        "model_name": "clipped_kan_lstm",
+        "moment_mode": "unchanged",
+        "name": "clipped_kan_lstm_h32"
+      },
+      "seed": 1,
+      "epochs": 100,
+      "batch_size": 64,
+      "window": 256,
+      "stride": 256,
+      "eval_stride": 512,
+      "feature_mode": "full",
+      "lr": 0.001,
+      "weight_decay": 0.0,
+      "timing": {
+        "peak_cuda_memory_mb": 504.0712890625,
+        "projection_seconds_per_event": 0.0,
+        "projection_wall_clock_fraction": 0.0,
+        "projection_wall_clock_seconds": 0.0,
+        "seconds_per_epoch": 43.79823866120001,
+        "seconds_per_step": 1.12303176054359,
+        "wall_clock_seconds": 4379.823866120001
+      },
+      "train_windows": 2457,
+      "eval_windows": 256,
+      "global_steps": 3900,
+      "checkpoint_path": "checkpoints/sequence/clipped_kan_lstm_h32_seed1.pt",
+      "device": "cuda",
+      "cuda_name": "Tesla T4",
+      "source_log": "results/kaggle_imported/clipped_h32_100epoch_3seed/kaggle_clipped_h32_100epoch_3seed.json"
+    },
+    {
+      "variant": "gauge_clipped_kan_lstm_h32",
+      "variant_config": {
+        "gauge_every_steps": 1,
+        "grid_size": 4,
+        "hidden_dim": 32,
+        "model_name": "gauge_clipped_kan_lstm",
+        "moment_mode": "reset",
+        "name": "gauge_clipped_kan_lstm_h32"
+      },
+      "seed": 1,
+      "epochs": 100,
+      "batch_size": 64,
+      "window": 256,
+      "stride": 256,
+      "eval_stride": 512,
+      "feature_mode": "full",
+      "lr": 0.001,
+      "weight_decay": 0.0,
+      "timing": {
+        "peak_cuda_memory_mb": 504.0712890625,
+        "projection_seconds_per_event": 0.0009349037117685955,
+        "projection_wall_clock_fraction": 0.0008438440048729337,
+        "projection_wall_clock_seconds": 3.6461244758975226,
+        "seconds_per_epoch": 43.208513123779994,
+        "seconds_per_step": 1.1079105929174358,
+        "wall_clock_seconds": 4320.851312377999
+      },
+      "train_windows": 2457,
+      "eval_windows": 256,
+      "global_steps": 3900,
+      "checkpoint_path": "checkpoints/sequence/gauge_clipped_kan_lstm_h32_seed1.pt",
+      "device": "cuda",
+      "cuda_name": "Tesla T4",
+      "source_log": "results/kaggle_imported/clipped_h32_100epoch_3seed/kaggle_clipped_h32_100epoch_3seed.json"
+    },
+    {
+      "variant": "clipped_kan_lstm_h32",
+      "variant_config": {
+        "gauge_every_steps": 0,
+        "grid_size": 4,
+        "hidden_dim": 32,
+        "model_name": "clipped_kan_lstm",
+        "moment_mode": "unchanged",
+        "name": "clipped_kan_lstm_h32"
+      },
+      "seed": 2,
+      "epochs": 100,
+      "batch_size": 64,
+      "window": 256,
+      "stride": 256,
+      "eval_stride": 512,
+      "feature_mode": "full",
+      "lr": 0.001,
+      "weight_decay": 0.0,
+      "timing": {
+        "peak_cuda_memory_mb": 504.0712890625,
+        "projection_seconds_per_event": 0.0,
+        "projection_wall_clock_fraction": 0.0,
+        "projection_wall_clock_seconds": 0.0,
+        "seconds_per_epoch": 43.39848830884999,
+        "seconds_per_step": 1.1127817515089742,
+        "wall_clock_seconds": 4339.848830884999
+      },
+      "train_windows": 2457,
+      "eval_windows": 256,
+      "global_steps": 3900,
+      "checkpoint_path": "checkpoints/sequence/clipped_kan_lstm_h32_seed2.pt",
+      "device": "cuda",
+      "cuda_name": "Tesla T4",
+      "source_log": "results/kaggle_imported/clipped_h32_100epoch_3seed/kaggle_clipped_h32_100epoch_3seed.json"
+    },
+    {
+      "variant": "gauge_clipped_kan_lstm_h32",
+      "variant_config": {
+        "gauge_every_steps": 1,
+        "grid_size": 4,
+        "hidden_dim": 32,
+        "model_name": "gauge_clipped_kan_lstm",
+        "moment_mode": "reset",
+        "name": "gauge_clipped_kan_lstm_h32"
+      },
+      "seed": 2,
+      "epochs": 100,
+      "batch_size": 64,
+      "window": 256,
+      "stride": 256,
+      "eval_stride": 512,
+      "feature_mode": "full",
+      "lr": 0.001,
+      "weight_decay": 0.0,
+      "timing": {
+        "peak_cuda_memory_mb": 504.0712890625,
+        "projection_seconds_per_event": 0.000938179965682465,
+        "projection_wall_clock_fraction": 0.0008504424673925748,
+        "projection_wall_clock_seconds": 3.6589018661616137,
+        "seconds_per_epoch": 43.02350842591,
+        "seconds_per_step": 1.1031668827156411,
+        "wall_clock_seconds": 4302.350842591
+      },
+      "train_windows": 2457,
+      "eval_windows": 256,
+      "global_steps": 3900,
+      "checkpoint_path": "checkpoints/sequence/gauge_clipped_kan_lstm_h32_seed2.pt",
+      "device": "cuda",
+      "cuda_name": "Tesla T4",
+      "source_log": "results/kaggle_imported/clipped_h32_100epoch_3seed/kaggle_clipped_h32_100epoch_3seed.json"
+    },
+    {
+      "variant": "clipped_kan_gru_h32",
+      "variant_config": {
+        "gauge_every_steps": 0,
+        "grid_size": 4,
+        "hidden_dim": 32,
+        "model_name": "clipped_kan_gru",
+        "moment_mode": "unchanged",
+        "name": "clipped_kan_gru_h32"
+      },
+      "seed": 1,
+      "epochs": 100,
+      "batch_size": 32,
+      "window": 256,
+      "stride": 256,
+      "eval_stride": 512,
+      "feature_mode": "no_current",
+      "feature_names": [
+        "V_t",
+        "V_t_minus_1",
+        "dV_t",
+        "sweep_direction"
+      ],
+      "lr": 0.001,
+      "weight_decay": 0.0,
+      "model_input_dim": 4,
+      "timing": {
+        "peak_cuda_memory_mb": 284.57470703125,
+        "projection_seconds_per_event": 0.0,
+        "projection_wall_clock_fraction": 0.0,
+        "projection_wall_clock_seconds": 0.0,
+        "seconds_per_epoch": 141.52399917227,
+        "seconds_per_step": 1.8379740152242858,
+        "wall_clock_seconds": 14152.399917227001
+      },
+      "train_windows": 2457,
+      "eval_windows": 256,
+      "global_steps": 7700,
+      "checkpoint_path": "checkpoints/sequence/clipped_kan_gru_h32_no_current_seed1.pt",
+      "device": "cuda",
+      "cuda_name": "Tesla T4",
+      "source_log": "results/kaggle_imported/clipped_kangru_sdc_100epoch_seed1_2/results/sdc_clipped_kangru_no_current_100_seed1_2.json"
+    },
+    {
+      "variant": "clipped_kan_gru_h32",
+      "variant_config": {
+        "gauge_every_steps": 0,
+        "grid_size": 4,
+        "hidden_dim": 32,
+        "model_name": "clipped_kan_gru",
+        "moment_mode": "unchanged",
+        "name": "clipped_kan_gru_h32"
+      },
+      "seed": 2,
+      "epochs": 100,
+      "batch_size": 32,
+      "window": 256,
+      "stride": 256,
+      "eval_stride": 512,
+      "feature_mode": "no_current",
+      "feature_names": [
+        "V_t",
+        "V_t_minus_1",
+        "dV_t",
+        "sweep_direction"
+      ],
+      "lr": 0.001,
+      "weight_decay": 0.0,
+      "model_input_dim": 4,
+      "timing": {
+        "peak_cuda_memory_mb": 284.57470703125,
+        "projection_seconds_per_event": 0.0,
+        "projection_wall_clock_fraction": 0.0,
+        "projection_wall_clock_seconds": 0.0,
+        "seconds_per_epoch": 141.87663622212003,
+        "seconds_per_step": 1.8425537171703898,
+        "wall_clock_seconds": 14187.663622212001
+      },
+      "train_windows": 2457,
+      "eval_windows": 256,
+      "global_steps": 7700,
+      "checkpoint_path": "checkpoints/sequence/clipped_kan_gru_h32_no_current_seed2.pt",
+      "device": "cuda",
+      "cuda_name": "Tesla T4",
+      "source_log": "results/kaggle_imported/clipped_kangru_sdc_100epoch_seed1_2/results/sdc_clipped_kangru_no_current_100_seed1_2.json"
+    },
+    {
+      "variant": "clipped_kan_lstm_h32",
+      "variant_config": {
+        "gauge_every_steps": 0,
+        "grid_size": 4,
+        "hidden_dim": 32,
+        "model_name": "clipped_kan_lstm",
+        "moment_mode": "unchanged",
+        "name": "clipped_kan_lstm_h32"
+      },
+      "seed": 0,
+      "epochs": 100,
+      "batch_size": 64,
+      "window": 256,
+      "stride": 256,
+      "eval_stride": 512,
+      "feature_mode": "minimal_history",
+      "feature_names": [
+        "V_t",
+        "V_t_minus_1",
+        "I_t_minus_1"
+      ],
+      "lr": 0.001,
+      "weight_decay": 0.0,
+      "model_input_dim": 3,
+      "timing": {
+        "peak_cuda_memory_mb": 480.0107421875,
+        "projection_seconds_per_event": 0.0,
+        "projection_wall_clock_fraction": 0.0,
+        "projection_wall_clock_seconds": 0.0,
+        "seconds_per_epoch": 42.748053539800004,
+        "seconds_per_step": 1.0961039369179488,
+        "wall_clock_seconds": 4274.80535398
+      },
+      "train_windows": 2457,
+      "eval_windows": 256,
+      "global_steps": 3900,
+      "checkpoint_path": "checkpoints/sequence/clipped_kan_lstm_h32_seed0.pt",
+      "device": "cuda",
+      "cuda_name": "Tesla T4",
+      "source_log": "results/kaggle_imported/feature_session_a/kaggle_feature_minimal_history_clipped_h32_100epoch_3seed.json"
+    },
+    {
+      "variant": "clipped_kan_lstm_h32",
+      "variant_config": {
+        "gauge_every_steps": 0,
+        "grid_size": 4,
+        "hidden_dim": 32,
+        "model_name": "clipped_kan_lstm",
+        "moment_mode": "unchanged",
+        "name": "clipped_kan_lstm_h32"
+      },
+      "seed": 1,
+      "epochs": 100,
+      "batch_size": 64,
+      "window": 256,
+      "stride": 256,
+      "eval_stride": 512,
+      "feature_mode": "minimal_history",
+      "feature_names": [
+        "V_t",
+        "V_t_minus_1",
+        "I_t_minus_1"
+      ],
+      "lr": 0.001,
+      "weight_decay": 0.0,
+      "model_input_dim": 3,
+      "timing": {
+        "peak_cuda_memory_mb": 480.0107421875,
+        "projection_seconds_per_event": 0.0,
+        "projection_wall_clock_fraction": 0.0,
+        "projection_wall_clock_seconds": 0.0,
+        "seconds_per_epoch": 42.64270074088,
+        "seconds_per_step": 1.0934025830994871,
+        "wall_clock_seconds": 4264.270074088
+      },
+      "train_windows": 2457,
+      "eval_windows": 256,
+      "global_steps": 3900,
+      "checkpoint_path": "checkpoints/sequence/clipped_kan_lstm_h32_seed1.pt",
+      "device": "cuda",
+      "cuda_name": "Tesla T4",
+      "source_log": "results/kaggle_imported/feature_session_a/kaggle_feature_minimal_history_clipped_h32_100epoch_3seed.json"
+    },
+    {
+      "variant": "clipped_kan_lstm_h32",
+      "variant_config": {
+        "gauge_every_steps": 0,
+        "grid_size": 4,
+        "hidden_dim": 32,
+        "model_name": "clipped_kan_lstm",
+        "moment_mode": "unchanged",
+        "name": "clipped_kan_lstm_h32"
+      },
+      "seed": 2,
+      "epochs": 100,
+      "batch_size": 64,
+      "window": 256,
+      "stride": 256,
+      "eval_stride": 512,
+      "feature_mode": "minimal_history",
+      "feature_names": [
+        "V_t",
+        "V_t_minus_1",
+        "I_t_minus_1"
+      ],
+      "lr": 0.001,
+      "weight_decay": 0.0,
+      "model_input_dim": 3,
+      "timing": {
+        "peak_cuda_memory_mb": 480.0107421875,
+        "projection_seconds_per_event": 0.0,
+        "projection_wall_clock_fraction": 0.0,
+        "projection_wall_clock_seconds": 0.0,
+        "seconds_per_epoch": 42.69314300052001,
+        "seconds_per_step": 1.094695974372308,
+        "wall_clock_seconds": 4269.314300052001
+      },
+      "train_windows": 2457,
+      "eval_windows": 256,
+      "global_steps": 3900,
+      "checkpoint_path": "checkpoints/sequence/clipped_kan_lstm_h32_seed2.pt",
+      "device": "cuda",
+      "cuda_name": "Tesla T4",
+      "source_log": "results/kaggle_imported/feature_session_a/kaggle_feature_minimal_history_clipped_h32_100epoch_3seed.json"
+    },
+    {
+      "variant": "clipped_kan_lstm_h32",
+      "variant_config": {
+        "gauge_every_steps": 0,
+        "grid_size": 4,
+        "hidden_dim": 32,
+        "model_name": "clipped_kan_lstm",
+        "moment_mode": "unchanged",
+        "name": "clipped_kan_lstm_h32"
+      },
+      "seed": 0,
+      "epochs": 100,
+      "batch_size": 64,
+      "window": 256,
+      "stride": 256,
+      "eval_stride": 512,
+      "feature_mode": "no_current",
+      "feature_names": [
+        "V_t",
+        "V_t_minus_1",
+        "dV_t",
+        "sweep_direction"
+      ],
+      "lr": 0.001,
+      "weight_decay": 0.0,
+      "model_input_dim": 4,
+      "timing": {
+        "peak_cuda_memory_mb": 499.4794921875,
+        "projection_seconds_per_event": 0.0,
+        "projection_wall_clock_fraction": 0.0,
+        "projection_wall_clock_seconds": 0.0,
+        "seconds_per_epoch": 41.89093929418999,
+        "seconds_per_step": 1.0741266485689742,
+        "wall_clock_seconds": 4189.093929418999
+      },
+      "train_windows": 2457,
+      "eval_windows": 256,
+      "global_steps": 3900,
+      "checkpoint_path": "checkpoints/sequence/clipped_kan_lstm_h32_seed0.pt",
+      "device": "cuda",
+      "cuda_name": "Tesla T4",
+      "source_log": "results/kaggle_imported/feature_session_a/kaggle_feature_no_current_clipped_h32_100epoch_3seed.json"
+    },
+    {
+      "variant": "clipped_kan_lstm_h32",
+      "variant_config": {
+        "gauge_every_steps": 0,
+        "grid_size": 4,
+        "hidden_dim": 32,
+        "model_name": "clipped_kan_lstm",
+        "moment_mode": "unchanged",
+        "name": "clipped_kan_lstm_h32"
+      },
+      "seed": 1,
+      "epochs": 100,
+      "batch_size": 64,
+      "window": 256,
+      "stride": 256,
+      "eval_stride": 512,
+      "feature_mode": "no_current",
+      "feature_names": [
+        "V_t",
+        "V_t_minus_1",
+        "dV_t",
+        "sweep_direction"
+      ],
+      "lr": 0.001,
+      "weight_decay": 0.0,
+      "model_input_dim": 4,
+      "timing": {
+        "peak_cuda_memory_mb": 499.4794921875,
+        "projection_seconds_per_event": 0.0,
+        "projection_wall_clock_fraction": 0.0,
+        "projection_wall_clock_seconds": 0.0,
+        "seconds_per_epoch": 41.62001552050999,
+        "seconds_per_step": 1.0671798851412817,
+        "wall_clock_seconds": 4162.001552050999
+      },
+      "train_windows": 2457,
+      "eval_windows": 256,
+      "global_steps": 3900,
+      "checkpoint_path": "checkpoints/sequence/clipped_kan_lstm_h32_seed1.pt",
+      "device": "cuda",
+      "cuda_name": "Tesla T4",
+      "source_log": "results/kaggle_imported/feature_session_a/kaggle_feature_no_current_clipped_h32_100epoch_3seed.json"
+    },
+    {
+      "variant": "clipped_kan_lstm_h32",
+      "variant_config": {
+        "gauge_every_steps": 0,
+        "grid_size": 4,
+        "hidden_dim": 32,
+        "model_name": "clipped_kan_lstm",
+        "moment_mode": "unchanged",
+        "name": "clipped_kan_lstm_h32"
+      },
+      "seed": 2,
+      "epochs": 100,
+      "batch_size": 64,
+      "window": 256,
+      "stride": 256,
+      "eval_stride": 512,
+      "feature_mode": "no_current",
+      "feature_names": [
+        "V_t",
+        "V_t_minus_1",
+        "dV_t",
+        "sweep_direction"
+      ],
+      "lr": 0.001,
+      "weight_decay": 0.0,
+      "model_input_dim": 4,
+      "timing": {
+        "peak_cuda_memory_mb": 499.4794921875,
+        "projection_seconds_per_event": 0.0,
+        "projection_wall_clock_fraction": 0.0,
+        "projection_wall_clock_seconds": 0.0,
+        "seconds_per_epoch": 41.55972816880003,
+        "seconds_per_step": 1.0656340556102573,
+        "wall_clock_seconds": 4155.972816880003
+      },
+      "train_windows": 2457,
+      "eval_windows": 256,
+      "global_steps": 3900,
+      "checkpoint_path": "checkpoints/sequence/clipped_kan_lstm_h32_seed2.pt",
+      "device": "cuda",
+      "cuda_name": "Tesla T4",
+      "source_log": "results/kaggle_imported/feature_session_a/kaggle_feature_no_current_clipped_h32_100epoch_3seed.json"
+    },
+    {
+      "variant": "clipped_kan_lstm_h32",
+      "variant_config": {
+        "gauge_every_steps": 0,
+        "grid_size": 4,
+        "hidden_dim": 32,
+        "model_name": "clipped_kan_lstm",
+        "moment_mode": "unchanged",
+        "name": "clipped_kan_lstm_h32"
+      },
+      "seed": 0,
+      "epochs": 100,
+      "batch_size": 64,
+      "window": 256,
+      "stride": 256,
+      "eval_stride": 512,
+      "feature_mode": "voltage_direction",
+      "feature_names": [
+        "V_t",
+        "sweep_direction"
+      ],
+      "lr": 0.001,
+      "weight_decay": 0.0,
+      "model_input_dim": 2,
+      "timing": {
+        "peak_cuda_memory_mb": 473.1689453125,
+        "projection_seconds_per_event": 0.0,
+        "projection_wall_clock_fraction": 0.0,
+        "projection_wall_clock_seconds": 0.0,
+        "seconds_per_epoch": 44.319546094530004,
+        "seconds_per_step": 1.1363986178084617,
+        "wall_clock_seconds": 4431.954609453001
+      },
+      "train_windows": 2457,
+      "eval_windows": 256,
+      "global_steps": 3900,
+      "checkpoint_path": "checkpoints/sequence/clipped_kan_lstm_h32_voltage_direction_seed0.pt",
+      "device": "cuda",
+      "cuda_name": "Tesla T4",
+      "source_log": "results/kaggle_imported/feature_session_b/kaggle_feature_voltage_direction_clipped_h32_100epoch_3seed.json"
+    },
+    {
+      "variant": "clipped_kan_lstm_h32",
+      "variant_config": {
+        "gauge_every_steps": 0,
+        "grid_size": 4,
+        "hidden_dim": 32,
+        "model_name": "clipped_kan_lstm",
+        "moment_mode": "unchanged",
+        "name": "clipped_kan_lstm_h32"
+      },
+      "seed": 1,
+      "epochs": 100,
+      "batch_size": 64,
+      "window": 256,
+      "stride": 256,
+      "eval_stride": 512,
+      "feature_mode": "voltage_direction",
+      "feature_names": [
+        "V_t",
+        "sweep_direction"
+      ],
+      "lr": 0.001,
+      "weight_decay": 0.0,
+      "model_input_dim": 2,
+      "timing": {
+        "peak_cuda_memory_mb": 473.1689453125,
+        "projection_seconds_per_event": 0.0,
+        "projection_wall_clock_fraction": 0.0,
+        "projection_wall_clock_seconds": 0.0,
+        "seconds_per_epoch": 44.16293402667,
+        "seconds_per_step": 1.1323829237607692,
+        "wall_clock_seconds": 4416.293402667
+      },
+      "train_windows": 2457,
+      "eval_windows": 256,
+      "global_steps": 3900,
+      "checkpoint_path": "checkpoints/sequence/clipped_kan_lstm_h32_voltage_direction_seed1.pt",
+      "device": "cuda",
+      "cuda_name": "Tesla T4",
+      "source_log": "results/kaggle_imported/feature_session_b/kaggle_feature_voltage_direction_clipped_h32_100epoch_3seed.json"
+    },
+    {
+      "variant": "clipped_kan_lstm_h32",
+      "variant_config": {
+        "gauge_every_steps": 0,
+        "grid_size": 4,
+        "hidden_dim": 32,
+        "model_name": "clipped_kan_lstm",
+        "moment_mode": "unchanged",
+        "name": "clipped_kan_lstm_h32"
+      },
+      "seed": 2,
+      "epochs": 100,
+      "batch_size": 64,
+      "window": 256,
+      "stride": 256,
+      "eval_stride": 512,
+      "feature_mode": "voltage_direction",
+      "feature_names": [
+        "V_t",
+        "sweep_direction"
+      ],
+      "lr": 0.001,
+      "weight_decay": 0.0,
+      "model_input_dim": 2,
+      "timing": {
+        "peak_cuda_memory_mb": 473.1689453125,
+        "projection_seconds_per_event": 0.0,
+        "projection_wall_clock_fraction": 0.0,
+        "projection_wall_clock_seconds": 0.0,
+        "seconds_per_epoch": 44.14418966784,
+        "seconds_per_step": 1.1319022991753847,
+        "wall_clock_seconds": 4414.418966784
+      },
+      "train_windows": 2457,
+      "eval_windows": 256,
+      "global_steps": 3900,
+      "checkpoint_path": "checkpoints/sequence/clipped_kan_lstm_h32_voltage_direction_seed2.pt",
+      "device": "cuda",
+      "cuda_name": "Tesla T4",
+      "source_log": "results/kaggle_imported/feature_session_b/kaggle_feature_voltage_direction_clipped_h32_100epoch_3seed.json"
+    },
+    {
+      "variant": "clipped_kan_lstm_h32",
+      "variant_config": {
+        "gauge_every_steps": 0,
+        "grid_size": 4,
+        "hidden_dim": 32,
+        "model_name": "clipped_kan_lstm",
+        "moment_mode": "unchanged",
+        "name": "clipped_kan_lstm_h32"
+      },
+      "seed": 0,
+      "epochs": 100,
+      "batch_size": 64,
+      "window": 256,
+      "stride": 256,
+      "eval_stride": 512,
+      "feature_mode": "vt_only",
+      "feature_names": [
+        "V_t"
+      ],
+      "lr": 0.001,
+      "weight_decay": 0.0,
+      "model_input_dim": 1,
+      "timing": {
+        "peak_cuda_memory_mb": 455.4501953125,
+        "projection_seconds_per_event": 0.0,
+        "projection_wall_clock_fraction": 0.0,
+        "projection_wall_clock_seconds": 0.0,
+        "seconds_per_epoch": 42.94549601678,
+        "seconds_per_step": 1.1011665645328204,
+        "wall_clock_seconds": 4294.549601678
+      },
+      "train_windows": 2457,
+      "eval_windows": 256,
+      "global_steps": 3900,
+      "checkpoint_path": "checkpoints/sequence/clipped_kan_lstm_h32_vt_only_seed0.pt",
+      "device": "cuda",
+      "cuda_name": "Tesla T4",
+      "source_log": "results/kaggle_imported/feature_session_b/kaggle_feature_vt_only_clipped_h32_100epoch_3seed.json"
+    },
+    {
+      "variant": "clipped_kan_lstm_h32",
+      "variant_config": {
+        "gauge_every_steps": 0,
+        "grid_size": 4,
+        "hidden_dim": 32,
+        "model_name": "clipped_kan_lstm",
+        "moment_mode": "unchanged",
+        "name": "clipped_kan_lstm_h32"
+      },
+      "seed": 1,
+      "epochs": 100,
+      "batch_size": 64,
+      "window": 256,
+      "stride": 256,
+      "eval_stride": 512,
+      "feature_mode": "vt_only",
+      "feature_names": [
+        "V_t"
+      ],
+      "lr": 0.001,
+      "weight_decay": 0.0,
+      "model_input_dim": 1,
+      "timing": {
+        "peak_cuda_memory_mb": 455.4501953125,
+        "projection_seconds_per_event": 0.0,
+        "projection_wall_clock_fraction": 0.0,
+        "projection_wall_clock_seconds": 0.0,
+        "seconds_per_epoch": 42.701383812979984,
+        "seconds_per_step": 1.094907277255897,
+        "wall_clock_seconds": 4270.138381297998
+      },
+      "train_windows": 2457,
+      "eval_windows": 256,
+      "global_steps": 3900,
+      "checkpoint_path": "checkpoints/sequence/clipped_kan_lstm_h32_vt_only_seed1.pt",
+      "device": "cuda",
+      "cuda_name": "Tesla T4",
+      "source_log": "results/kaggle_imported/feature_session_b/kaggle_feature_vt_only_clipped_h32_100epoch_3seed.json"
+    },
+    {
+      "variant": "clipped_kan_lstm_h32",
+      "variant_config": {
+        "gauge_every_steps": 0,
+        "grid_size": 4,
+        "hidden_dim": 32,
+        "model_name": "clipped_kan_lstm",
+        "moment_mode": "unchanged",
+        "name": "clipped_kan_lstm_h32"
+      },
+      "seed": 2,
+      "epochs": 100,
+      "batch_size": 64,
+      "window": 256,
+      "stride": 256,
+      "eval_stride": 512,
+      "feature_mode": "vt_only",
+      "feature_names": [
+        "V_t"
+      ],
+      "lr": 0.001,
+      "weight_decay": 0.0,
+      "model_input_dim": 1,
+      "timing": {
+        "peak_cuda_memory_mb": 455.4501953125,
+        "projection_seconds_per_event": 0.0,
+        "projection_wall_clock_fraction": 0.0,
+        "projection_wall_clock_seconds": 0.0,
+        "seconds_per_epoch": 42.4764035098,
+        "seconds_per_step": 1.0891385515333334,
+        "wall_clock_seconds": 4247.64035098
+      },
+      "train_windows": 2457,
+      "eval_windows": 256,
+      "global_steps": 3900,
+      "checkpoint_path": "checkpoints/sequence/clipped_kan_lstm_h32_vt_only_seed2.pt",
+      "device": "cuda",
+      "cuda_name": "Tesla T4",
+      "source_log": "results/kaggle_imported/feature_session_b/kaggle_feature_vt_only_clipped_h32_100epoch_3seed.json"
+    },
+    {
+      "variant": "clipped_kan_lstm_h32",
+      "variant_config": {
+        "gauge_every_steps": 0,
+        "grid_size": 4,
+        "hidden_dim": 32,
+        "model_name": "clipped_kan_lstm",
+        "moment_mode": "unchanged",
+        "name": "clipped_kan_lstm_h32"
+      },
+      "seed": 0,
+      "epochs": 100,
+      "batch_size": 64,
+      "window": 256,
+      "stride": 256,
+      "eval_stride": 512,
+      "feature_mode": "current_memory_only",
+      "feature_names": [
+        "V_t",
+        "I_t_minus_1"
+      ],
+      "lr": 0.001,
+      "weight_decay": 0.0,
+      "model_input_dim": 2,
+      "timing": {
+        "peak_cuda_memory_mb": 473.1689453125,
+        "projection_seconds_per_event": 0.0,
+        "projection_wall_clock_fraction": 0.0,
+        "projection_wall_clock_seconds": 0.0,
+        "seconds_per_epoch": 48.218398883729996,
+        "seconds_per_step": 1.236369202146923,
+        "wall_clock_seconds": 4821.839888373
+      },
+      "train_windows": 2457,
+      "eval_windows": 256,
+      "global_steps": 3900,
+      "checkpoint_path": "checkpoints/sequence/clipped_kan_lstm_h32_seed0.pt",
+      "device": "cuda",
+      "cuda_name": "Tesla T4",
+      "source_log": "results/kaggle_imported/feature_session_c/kaggle_feature_current_memory_only_clipped_h32_100epoch_3seed.json"
+    },
+    {
+      "variant": "clipped_kan_lstm_h32",
+      "variant_config": {
+        "gauge_every_steps": 0,
+        "grid_size": 4,
+        "hidden_dim": 32,
+        "model_name": "clipped_kan_lstm",
+        "moment_mode": "unchanged",
+        "name": "clipped_kan_lstm_h32"
+      },
+      "seed": 1,
+      "epochs": 100,
+      "batch_size": 64,
+      "window": 256,
+      "stride": 256,
+      "eval_stride": 512,
+      "feature_mode": "current_memory_only",
+      "feature_names": [
+        "V_t",
+        "I_t_minus_1"
+      ],
+      "lr": 0.001,
+      "weight_decay": 0.0,
+      "model_input_dim": 2,
+      "timing": {
+        "peak_cuda_memory_mb": 473.1689453125,
+        "projection_seconds_per_event": 0.0,
+        "projection_wall_clock_fraction": 0.0,
+        "projection_wall_clock_seconds": 0.0,
+        "seconds_per_epoch": 47.88650053206001,
+        "seconds_per_step": 1.2278589880015387,
+        "wall_clock_seconds": 4788.650053206001
+      },
+      "train_windows": 2457,
+      "eval_windows": 256,
+      "global_steps": 3900,
+      "checkpoint_path": "checkpoints/sequence/clipped_kan_lstm_h32_seed1.pt",
+      "device": "cuda",
+      "cuda_name": "Tesla T4",
+      "source_log": "results/kaggle_imported/feature_session_c/kaggle_feature_current_memory_only_clipped_h32_100epoch_3seed.json"
+    },
+    {
+      "variant": "clipped_kan_lstm_h32",
+      "variant_config": {
+        "gauge_every_steps": 0,
+        "grid_size": 4,
+        "hidden_dim": 32,
+        "model_name": "clipped_kan_lstm",
+        "moment_mode": "unchanged",
+        "name": "clipped_kan_lstm_h32"
+      },
+      "seed": 2,
+      "epochs": 100,
+      "batch_size": 64,
+      "window": 256,
+      "stride": 256,
+      "eval_stride": 512,
+      "feature_mode": "current_memory_only",
+      "feature_names": [
+        "V_t",
+        "I_t_minus_1"
+      ],
+      "lr": 0.001,
+      "weight_decay": 0.0,
+      "model_input_dim": 2,
+      "timing": {
+        "peak_cuda_memory_mb": 473.1689453125,
+        "projection_seconds_per_event": 0.0,
+        "projection_wall_clock_fraction": 0.0,
+        "projection_wall_clock_seconds": 0.0,
+        "seconds_per_epoch": 47.968387969060004,
+        "seconds_per_step": 1.2299586658733335,
+        "wall_clock_seconds": 4796.838796906
+      },
+      "train_windows": 2457,
+      "eval_windows": 256,
+      "global_steps": 3900,
+      "checkpoint_path": "checkpoints/sequence/clipped_kan_lstm_h32_seed2.pt",
+      "device": "cuda",
+      "cuda_name": "Tesla T4",
+      "source_log": "results/kaggle_imported/feature_session_c/kaggle_feature_current_memory_only_clipped_h32_100epoch_3seed.json"
+    },
+    {
+      "variant": "fused_clipped_kan_gru_h32",
+      "variant_config": {
+        "gauge_every_steps": 0,
+        "grid_size": 4,
+        "hidden_dim": 32,
+        "model_name": "fused_clipped_kan_gru",
+        "moment_mode": "unchanged",
+        "name": "fused_clipped_kan_gru_h32"
+      },
+      "seed": 0,
+      "epochs": 100,
+      "batch_size": 32,
+      "window": 256,
+      "stride": 256,
+      "eval_stride": 512,
+      "feature_mode": "no_current",
+      "feature_names": [
+        "V_t",
+        "V_t_minus_1",
+        "dV_t",
+        "sweep_direction"
+      ],
+      "lr": 0.001,
+      "weight_decay": 0.0,
+      "model_input_dim": 4,
+      "timing": {
+        "peak_cuda_memory_mb": 211.63916015625,
+        "projection_seconds_per_event": 0.0,
+        "projection_wall_clock_fraction": 0.0,
+        "projection_wall_clock_seconds": 0.0,
+        "seconds_per_epoch": 83.14298676089999,
+        "seconds_per_step": 1.079779048842857,
+        "wall_clock_seconds": 8314.298676089998
+      },
+      "train_windows": 2457,
+      "eval_windows": 256,
+      "global_steps": 7700,
+      "checkpoint_path": "checkpoints/sequence/fused_clipped_kan_gru_h32_no_current_seed0.pt",
+      "device": "cuda",
+      "cuda_name": "Tesla T4",
+      "source_log": "results/kaggle_imported/fused_clipped_kangru_sdc_100epoch_seed0_1_2/results/sdc_fused_clipped_kangru_no_current_100_seed0_1_2.json"
+    },
+    {
+      "variant": "fused_clipped_kan_gru_h32",
+      "variant_config": {
+        "gauge_every_steps": 0,
+        "grid_size": 4,
+        "hidden_dim": 32,
+        "model_name": "fused_clipped_kan_gru",
+        "moment_mode": "unchanged",
+        "name": "fused_clipped_kan_gru_h32"
+      },
+      "seed": 1,
+      "epochs": 100,
+      "batch_size": 32,
+      "window": 256,
+      "stride": 256,
+      "eval_stride": 512,
+      "feature_mode": "no_current",
+      "feature_names": [
+        "V_t",
+        "V_t_minus_1",
+        "dV_t",
+        "sweep_direction"
+      ],
+      "lr": 0.001,
+      "weight_decay": 0.0,
+      "model_input_dim": 4,
+      "timing": {
+        "peak_cuda_memory_mb": 211.63916015625,
+        "projection_seconds_per_event": 0.0,
+        "projection_wall_clock_fraction": 0.0,
+        "projection_wall_clock_seconds": 0.0,
+        "seconds_per_epoch": 83.82792401994001,
+        "seconds_per_step": 1.0886743379212989,
+        "wall_clock_seconds": 8382.792401994002
+      },
+      "train_windows": 2457,
+      "eval_windows": 256,
+      "global_steps": 7700,
+      "checkpoint_path": "checkpoints/sequence/fused_clipped_kan_gru_h32_no_current_seed1.pt",
+      "device": "cuda",
+      "cuda_name": "Tesla T4",
+      "source_log": "results/kaggle_imported/fused_clipped_kangru_sdc_100epoch_seed0_1_2/results/sdc_fused_clipped_kangru_no_current_100_seed0_1_2.json"
+    },
+    {
+      "variant": "fused_clipped_kan_gru_h32",
+      "variant_config": {
+        "gauge_every_steps": 0,
+        "grid_size": 4,
+        "hidden_dim": 32,
+        "model_name": "fused_clipped_kan_gru",
+        "moment_mode": "unchanged",
+        "name": "fused_clipped_kan_gru_h32"
+      },
+      "seed": 2,
+      "epochs": 100,
+      "batch_size": 32,
+      "window": 256,
+      "stride": 256,
+      "eval_stride": 512,
+      "feature_mode": "no_current",
+      "feature_names": [
+        "V_t",
+        "V_t_minus_1",
+        "dV_t",
+        "sweep_direction"
+      ],
+      "lr": 0.001,
+      "weight_decay": 0.0,
+      "model_input_dim": 4,
+      "timing": {
+        "peak_cuda_memory_mb": 211.63916015625,
+        "projection_seconds_per_event": 0.0,
+        "projection_wall_clock_fraction": 0.0,
+        "projection_wall_clock_seconds": 0.0,
+        "seconds_per_epoch": 83.76143209654,
+        "seconds_per_step": 1.0878108064485716,
+        "wall_clock_seconds": 8376.143209654001
+      },
+      "train_windows": 2457,
+      "eval_windows": 256,
+      "global_steps": 7700,
+      "checkpoint_path": "checkpoints/sequence/fused_clipped_kan_gru_h32_no_current_seed2.pt",
+      "device": "cuda",
+      "cuda_name": "Tesla T4",
+      "source_log": "results/kaggle_imported/fused_clipped_kangru_sdc_100epoch_seed0_1_2/results/sdc_fused_clipped_kangru_no_current_100_seed0_1_2.json"
+    },
+    {
+      "variant": "hybrid_clipped_kan_gru_h32",
+      "variant_config": {
+        "gauge_every_steps": 0,
+        "grid_size": 4,
+        "hidden_dim": 32,
+        "model_name": "hybrid_clipped_kan_gru",
+        "moment_mode": "unchanged",
+        "name": "hybrid_clipped_kan_gru_h32"
+      },
+      "seed": 0,
+      "epochs": 100,
+      "batch_size": 32,
+      "window": 256,
+      "stride": 256,
+      "eval_stride": 512,
+      "feature_mode": "no_current",
+      "feature_names": [
+        "V_t",
+        "V_t_minus_1",
+        "dV_t",
+        "sweep_direction"
+      ],
+      "lr": 0.001,
+      "weight_decay": 0.0,
+      "model_input_dim": 4,
+      "timing": {
+        "peak_cuda_memory_mb": 137.0068359375,
+        "projection_seconds_per_event": 0.0,
+        "projection_wall_clock_fraction": 0.0,
+        "projection_wall_clock_seconds": 0.0,
+        "seconds_per_epoch": 82.51699149053,
+        "seconds_per_step": 1.0716492401367532,
+        "wall_clock_seconds": 8251.699149053
+      },
+      "train_windows": 2457,
+      "eval_windows": 256,
+      "global_steps": 7700,
+      "checkpoint_path": "checkpoints/sequence/hybrid_clipped_kan_gru_h32_no_current_seed0.pt",
+      "device": "cuda",
+      "cuda_name": "Tesla T4",
+      "source_log": "results/kaggle_imported/hybrid_clipped_kangru_sdc_100epoch_seed0_1_2/results/sdc_hybrid_clipped_kangru_no_current_100_seed0_1_2.json"
+    },
+    {
+      "variant": "hybrid_clipped_kan_gru_h32",
+      "variant_config": {
+        "gauge_every_steps": 0,
+        "grid_size": 4,
+        "hidden_dim": 32,
+        "model_name": "hybrid_clipped_kan_gru",
+        "moment_mode": "unchanged",
+        "name": "hybrid_clipped_kan_gru_h32"
+      },
+      "seed": 1,
+      "epochs": 100,
+      "batch_size": 32,
+      "window": 256,
+      "stride": 256,
+      "eval_stride": 512,
+      "feature_mode": "no_current",
+      "feature_names": [
+        "V_t",
+        "V_t_minus_1",
+        "dV_t",
+        "sweep_direction"
+      ],
+      "lr": 0.001,
+      "weight_decay": 0.0,
+      "model_input_dim": 4,
+      "timing": {
+        "peak_cuda_memory_mb": 137.0068359375,
+        "projection_seconds_per_event": 0.0,
+        "projection_wall_clock_fraction": 0.0,
+        "projection_wall_clock_seconds": 0.0,
+        "seconds_per_epoch": 79.74674886657,
+        "seconds_per_step": 1.0356720632022078,
+        "wall_clock_seconds": 7974.674886657
+      },
+      "train_windows": 2457,
+      "eval_windows": 256,
+      "global_steps": 7700,
+      "checkpoint_path": "checkpoints/sequence/hybrid_clipped_kan_gru_h32_no_current_seed1.pt",
+      "device": "cuda",
+      "cuda_name": "Tesla T4",
+      "source_log": "results/kaggle_imported/hybrid_clipped_kangru_sdc_100epoch_seed0_1_2/results/sdc_hybrid_clipped_kangru_no_current_100_seed0_1_2.json"
+    },
+    {
+      "variant": "hybrid_clipped_kan_gru_h32",
+      "variant_config": {
+        "gauge_every_steps": 0,
+        "grid_size": 4,
+        "hidden_dim": 32,
+        "model_name": "hybrid_clipped_kan_gru",
+        "moment_mode": "unchanged",
+        "name": "hybrid_clipped_kan_gru_h32"
+      },
+      "seed": 2,
+      "epochs": 100,
+      "batch_size": 32,
+      "window": 256,
+      "stride": 256,
+      "eval_stride": 512,
+      "feature_mode": "no_current",
+      "feature_names": [
+        "V_t",
+        "V_t_minus_1",
+        "dV_t",
+        "sweep_direction"
+      ],
+      "lr": 0.001,
+      "weight_decay": 0.0,
+      "model_input_dim": 4,
+      "timing": {
+        "peak_cuda_memory_mb": 137.0068359375,
+        "projection_seconds_per_event": 0.0,
+        "projection_wall_clock_fraction": 0.0,
+        "projection_wall_clock_seconds": 0.0,
+        "seconds_per_epoch": 84.40764564438,
+        "seconds_per_step": 1.096203190186753,
+        "wall_clock_seconds": 8440.764564437999
+      },
+      "train_windows": 2457,
+      "eval_windows": 256,
+      "global_steps": 7700,
+      "checkpoint_path": "checkpoints/sequence/hybrid_clipped_kan_gru_h32_no_current_seed2.pt",
+      "device": "cuda",
+      "cuda_name": "Tesla T4",
+      "source_log": "results/kaggle_imported/hybrid_clipped_kangru_sdc_100epoch_seed0_1_2/results/sdc_hybrid_clipped_kangru_no_current_100_seed0_1_2.json"
+    },
+    {
+      "variant": "kan_gru_h32",
+      "variant_config": {
+        "gauge_every_steps": 0,
+        "grid_size": 4,
+        "hidden_dim": 32,
+        "model_name": "kan_gru",
+        "moment_mode": "unchanged",
+        "name": "kan_gru_h32"
+      },
+      "seed": 0,
+      "epochs": 1,
+      "batch_size": 16,
+      "window": 256,
+      "stride": 256,
+      "eval_stride": 512,
+      "feature_mode": "no_current",
+      "feature_names": [
+        "V_t",
+        "V_t_minus_1",
+        "dV_t",
+        "sweep_direction"
+      ],
+      "lr": 0.001,
+      "weight_decay": 0.0,
+      "model_input_dim": 4,
+      "timing": {
+        "peak_cuda_memory_mb": 0.0,
+        "projection_seconds_per_event": 0.0,
+        "projection_wall_clock_fraction": 0.0,
+        "projection_wall_clock_seconds": 0.0,
+        "seconds_per_epoch": 13.032318199999281,
+        "seconds_per_step": 3.2580795499998203,
+        "wall_clock_seconds": 13.032318199999281
+      },
+      "train_windows": 64,
+      "eval_windows": 32,
+      "global_steps": 4,
+      "checkpoint_path": null,
+      "device": "cpu",
+      "cuda_name": null,
+      "source_log": "results/kaggle_imported/kangru_sdc_100epoch_seed0/results/sdc_kan_gru_no_current_1epoch.json"
+    },
+    {
+      "variant": "clipped_kan_gru_h32",
+      "variant_config": {
+        "gauge_every_steps": 0,
+        "grid_size": 4,
+        "hidden_dim": 32,
+        "model_name": "clipped_kan_gru",
+        "moment_mode": "unchanged",
+        "name": "clipped_kan_gru_h32"
+      },
+      "seed": 0,
+      "epochs": 1,
+      "batch_size": 16,
+      "window": 256,
+      "stride": 256,
+      "eval_stride": 512,
+      "feature_mode": "no_current",
+      "feature_names": [
+        "V_t",
+        "V_t_minus_1",
+        "dV_t",
+        "sweep_direction"
+      ],
+      "lr": 0.001,
+      "weight_decay": 0.0,
+      "model_input_dim": 4,
+      "timing": {
+        "peak_cuda_memory_mb": 0.0,
+        "projection_seconds_per_event": 0.0,
+        "projection_wall_clock_fraction": 0.0,
+        "projection_wall_clock_seconds": 0.0,
+        "seconds_per_epoch": 13.603302699993947,
+        "seconds_per_step": 3.4008256749984866,
+        "wall_clock_seconds": 13.603302699993947
+      },
+      "train_windows": 64,
+      "eval_windows": 32,
+      "global_steps": 4,
+      "checkpoint_path": null,
+      "device": "cpu",
+      "cuda_name": null,
+      "source_log": "results/kaggle_imported/kangru_sdc_100epoch_seed0/results/sdc_kan_gru_no_current_1epoch.json"
+    },
+    {
+      "variant": "kan_gru_h32",
+      "variant_config": {
+        "gauge_every_steps": 0,
+        "grid_size": 4,
+        "hidden_dim": 32,
+        "model_name": "kan_gru",
+        "moment_mode": "unchanged",
+        "name": "kan_gru_h32"
+      },
+      "seed": 0,
+      "epochs": 100,
+      "batch_size": 32,
+      "window": 256,
+      "stride": 256,
+      "eval_stride": 512,
+      "feature_mode": "no_current",
+      "feature_names": [
+        "V_t",
+        "V_t_minus_1",
+        "dV_t",
+        "sweep_direction"
+      ],
+      "lr": 0.001,
+      "weight_decay": 0.0,
+      "model_input_dim": 4,
+      "timing": {
+        "peak_cuda_memory_mb": 281.58642578125,
+        "projection_seconds_per_event": 0.0,
+        "projection_wall_clock_fraction": 0.0,
+        "projection_wall_clock_seconds": 0.0,
+        "seconds_per_epoch": 135.35678235231998,
+        "seconds_per_step": 1.75788029028987,
+        "wall_clock_seconds": 13535.678235231999
+      },
+      "train_windows": 2457,
+      "eval_windows": 256,
+      "global_steps": 7700,
+      "checkpoint_path": "checkpoints/sequence/kan_gru_h32_no_current_seed0.pt",
+      "device": "cuda",
+      "cuda_name": "Tesla T4",
+      "source_log": "results/kaggle_imported/kangru_sdc_100epoch_seed0/results/sdc_kangru_no_current_100_seed0.json"
+    },
+    {
+      "variant": "clipped_kan_gru_h32",
+      "variant_config": {
+        "gauge_every_steps": 0,
+        "grid_size": 4,
+        "hidden_dim": 32,
+        "model_name": "clipped_kan_gru",
+        "moment_mode": "unchanged",
+        "name": "clipped_kan_gru_h32"
+      },
+      "seed": 0,
+      "epochs": 100,
+      "batch_size": 32,
+      "window": 256,
+      "stride": 256,
+      "eval_stride": 512,
+      "feature_mode": "no_current",
+      "feature_names": [
+        "V_t",
+        "V_t_minus_1",
+        "dV_t",
+        "sweep_direction"
+      ],
+      "lr": 0.001,
+      "weight_decay": 0.0,
+      "model_input_dim": 4,
+      "timing": {
+        "peak_cuda_memory_mb": 284.57470703125,
+        "projection_seconds_per_event": 0.0,
+        "projection_wall_clock_fraction": 0.0,
+        "projection_wall_clock_seconds": 0.0,
+        "seconds_per_epoch": 141.32175731164,
+        "seconds_per_step": 1.8353474975537665,
+        "wall_clock_seconds": 14132.175731164001
+      },
+      "train_windows": 2457,
+      "eval_windows": 256,
+      "global_steps": 7700,
+      "checkpoint_path": "checkpoints/sequence/clipped_kan_gru_h32_no_current_seed0.pt",
+      "device": "cuda",
+      "cuda_name": "Tesla T4",
+      "source_log": "results/kaggle_imported/kangru_sdc_100epoch_seed0/results/sdc_kangru_no_current_100_seed0.json"
+    },
+    {
+      "variant": "kan_gru_h32",
+      "variant_config": {
+        "gauge_every_steps": 0,
+        "grid_size": 4,
+        "hidden_dim": 32,
+        "model_name": "kan_gru",
+        "moment_mode": "unchanged",
+        "name": "kan_gru_h32"
+      },
+      "seed": 1,
+      "epochs": 100,
+      "batch_size": 32,
+      "window": 256,
+      "stride": 256,
+      "eval_stride": 512,
+      "feature_mode": "no_current",
+      "feature_names": [
+        "V_t",
+        "V_t_minus_1",
+        "dV_t",
+        "sweep_direction"
+      ],
+      "lr": 0.001,
+      "weight_decay": 0.0,
+      "model_input_dim": 4,
+      "timing": {
+        "peak_cuda_memory_mb": 281.58642578125,
+        "projection_seconds_per_event": 0.0,
+        "projection_wall_clock_fraction": 0.0,
+        "projection_wall_clock_seconds": 0.0,
+        "seconds_per_epoch": 136.19355894718,
+        "seconds_per_step": 1.7687475187945456,
+        "wall_clock_seconds": 13619.355894718
+      },
+      "train_windows": 2457,
+      "eval_windows": 256,
+      "global_steps": 7700,
+      "checkpoint_path": "checkpoints/sequence/kan_gru_h32_no_current_seed1.pt",
+      "device": "cuda",
+      "cuda_name": "Tesla T4",
+      "source_log": "results/kaggle_imported/kangru_sdc_100epoch_seed1_2/results/sdc_kangru_no_current_100_seed1_2.json"
+    },
+    {
+      "variant": "kan_gru_h32",
+      "variant_config": {
+        "gauge_every_steps": 0,
+        "grid_size": 4,
+        "hidden_dim": 32,
+        "model_name": "kan_gru",
+        "moment_mode": "unchanged",
+        "name": "kan_gru_h32"
+      },
+      "seed": 2,
+      "epochs": 100,
+      "batch_size": 32,
+      "window": 256,
+      "stride": 256,
+      "eval_stride": 512,
+      "feature_mode": "no_current",
+      "feature_names": [
+        "V_t",
+        "V_t_minus_1",
+        "dV_t",
+        "sweep_direction"
+      ],
+      "lr": 0.001,
+      "weight_decay": 0.0,
+      "model_input_dim": 4,
+      "timing": {
+        "peak_cuda_memory_mb": 281.58642578125,
+        "projection_seconds_per_event": 0.0,
+        "projection_wall_clock_fraction": 0.0,
+        "projection_wall_clock_seconds": 0.0,
+        "seconds_per_epoch": 136.19928278436998,
+        "seconds_per_step": 1.7688218543424674,
+        "wall_clock_seconds": 13619.928278436999
+      },
+      "train_windows": 2457,
+      "eval_windows": 256,
+      "global_steps": 7700,
+      "checkpoint_path": "checkpoints/sequence/kan_gru_h32_no_current_seed2.pt",
+      "device": "cuda",
+      "cuda_name": "Tesla T4",
+      "source_log": "results/kaggle_imported/kangru_sdc_100epoch_seed1_2/results/sdc_kangru_no_current_100_seed1_2.json"
+    },
+    {
+      "variant": "lstm",
+      "variant_config": {
+        "gauge_every_steps": 0,
+        "grid_size": 4,
+        "hidden_dim": 32,
+        "model_name": "lstm",
+        "moment_mode": "unchanged",
+        "name": "lstm"
+      },
+      "seed": 0,
+      "epochs": 100,
+      "batch_size": 64,
+      "window": 256,
+      "stride": 256,
+      "eval_stride": 512,
+      "feature_mode": "full",
+      "lr": 0.001,
+      "weight_decay": 0.0,
+      "timing": {
+        "peak_cuda_memory_mb": 83.81591796875,
+        "projection_seconds_per_event": 0.0,
+        "projection_wall_clock_fraction": 0.0,
+        "projection_wall_clock_seconds": 0.0,
+        "seconds_per_epoch": 0.7623453284400011,
+        "seconds_per_step": 0.019547316113846185,
+        "wall_clock_seconds": 76.23453284400011
+      },
+      "train_windows": 2457,
+      "eval_windows": 256,
+      "global_steps": 3900,
+      "checkpoint_path": "checkpoints/sequence/lstm_seed0.pt",
+      "device": "cuda",
+      "cuda_name": "Tesla T4",
+      "source_log": "results/kaggle_imported/main_h32_100epoch_3seed/kaggle_sequence_h32_100epoch_3seed.json"
+    },
+    {
+      "variant": "gru",
+      "variant_config": {
+        "gauge_every_steps": 0,
+        "grid_size": 4,
+        "hidden_dim": 32,
+        "model_name": "gru",
+        "moment_mode": "unchanged",
+        "name": "gru"
+      },
+      "seed": 0,
+      "epochs": 100,
+      "batch_size": 64,
+      "window": 256,
+      "stride": 256,
+      "eval_stride": 512,
+      "feature_mode": "full",
+      "lr": 0.001,
+      "weight_decay": 0.0,
+      "timing": {
+        "peak_cuda_memory_mb": 80.07177734375,
+        "projection_seconds_per_event": 0.0,
+        "projection_wall_clock_fraction": 0.0,
+        "projection_wall_clock_seconds": 0.0,
+        "seconds_per_epoch": 0.7468697190800003,
+        "seconds_per_step": 0.019150505617435906,
+        "wall_clock_seconds": 74.68697190800003
+      },
+      "train_windows": 2457,
+      "eval_windows": 256,
+      "global_steps": 3900,
+      "checkpoint_path": "checkpoints/sequence/gru_seed0.pt",
+      "device": "cuda",
+      "cuda_name": "Tesla T4",
+      "source_log": "results/kaggle_imported/main_h32_100epoch_3seed/kaggle_sequence_h32_100epoch_3seed.json"
+    },
+    {
+      "variant": "kan_lstm_h32",
+      "variant_config": {
+        "gauge_every_steps": 0,
+        "grid_size": 4,
+        "hidden_dim": 32,
+        "model_name": "kan_lstm",
+        "moment_mode": "unchanged",
+        "name": "kan_lstm_h32"
+      },
+      "seed": 0,
+      "epochs": 100,
+      "batch_size": 64,
+      "window": 256,
+      "stride": 256,
+      "eval_stride": 512,
+      "feature_mode": "full",
+      "lr": 0.001,
+      "weight_decay": 0.0,
+      "timing": {
+        "peak_cuda_memory_mb": 488.4775390625,
+        "projection_seconds_per_event": 0.0,
+        "projection_wall_clock_fraction": 0.0,
+        "projection_wall_clock_seconds": 0.0,
+        "seconds_per_epoch": 41.79756489869,
+        "seconds_per_step": 1.0717324332997435,
+        "wall_clock_seconds": 4179.756489869
+      },
+      "train_windows": 2457,
+      "eval_windows": 256,
+      "global_steps": 3900,
+      "checkpoint_path": "checkpoints/sequence/kan_lstm_h32_seed0.pt",
+      "device": "cuda",
+      "cuda_name": "Tesla T4",
+      "source_log": "results/kaggle_imported/main_h32_100epoch_3seed/kaggle_sequence_h32_100epoch_3seed.json"
+    },
+    {
+      "variant": "gauge_kan_lstm_h32",
+      "variant_config": {
+        "gauge_every_steps": 1,
+        "grid_size": 4,
+        "hidden_dim": 32,
+        "model_name": "gauge_kan_lstm",
+        "moment_mode": "reset",
+        "name": "gauge_kan_lstm_h32"
+      },
+      "seed": 0,
+      "epochs": 100,
+      "batch_size": 64,
+      "window": 256,
+      "stride": 256,
+      "eval_stride": 512,
+      "feature_mode": "full",
+      "lr": 0.001,
+      "weight_decay": 0.0,
+      "timing": {
+        "peak_cuda_memory_mb": 488.4775390625,
+        "projection_seconds_per_event": 0.0010142457717966654,
+        "projection_wall_clock_fraction": 0.0009480739970063657,
+        "projection_wall_clock_seconds": 3.9555585100069948,
+        "seconds_per_epoch": 41.72204408618999,
+        "seconds_per_step": 1.0697960022099997,
+        "wall_clock_seconds": 4172.204408618999
+      },
+      "train_windows": 2457,
+      "eval_windows": 256,
+      "global_steps": 3900,
+      "checkpoint_path": "checkpoints/sequence/gauge_kan_lstm_h32_seed0.pt",
+      "device": "cuda",
+      "cuda_name": "Tesla T4",
+      "source_log": "results/kaggle_imported/main_h32_100epoch_3seed/kaggle_sequence_h32_100epoch_3seed.json"
+    },
+    {
+      "variant": "lstm",
+      "variant_config": {
+        "gauge_every_steps": 0,
+        "grid_size": 4,
+        "hidden_dim": 32,
+        "model_name": "lstm",
+        "moment_mode": "unchanged",
+        "name": "lstm"
+      },
+      "seed": 1,
+      "epochs": 100,
+      "batch_size": 64,
+      "window": 256,
+      "stride": 256,
+      "eval_stride": 512,
+      "feature_mode": "full",
+      "lr": 0.001,
+      "weight_decay": 0.0,
+      "timing": {
+        "peak_cuda_memory_mb": 83.81591796875,
+        "projection_seconds_per_event": 0.0,
+        "projection_wall_clock_fraction": 0.0,
+        "projection_wall_clock_seconds": 0.0,
+        "seconds_per_epoch": 0.832574000250006,
+        "seconds_per_step": 0.021348051288461695,
+        "wall_clock_seconds": 83.2574000250006
+      },
+      "train_windows": 2457,
+      "eval_windows": 256,
+      "global_steps": 3900,
+      "checkpoint_path": "checkpoints/sequence/lstm_seed1.pt",
+      "device": "cuda",
+      "cuda_name": "Tesla T4",
+      "source_log": "results/kaggle_imported/main_h32_100epoch_3seed/kaggle_sequence_h32_100epoch_3seed.json"
+    },
+    {
+      "variant": "gru",
+      "variant_config": {
+        "gauge_every_steps": 0,
+        "grid_size": 4,
+        "hidden_dim": 32,
+        "model_name": "gru",
+        "moment_mode": "unchanged",
+        "name": "gru"
+      },
+      "seed": 1,
+      "epochs": 100,
+      "batch_size": 64,
+      "window": 256,
+      "stride": 256,
+      "eval_stride": 512,
+      "feature_mode": "full",
+      "lr": 0.001,
+      "weight_decay": 0.0,
+      "timing": {
+        "peak_cuda_memory_mb": 80.07177734375,
+        "projection_seconds_per_event": 0.0,
+        "projection_wall_clock_fraction": 0.0,
+        "projection_wall_clock_seconds": 0.0,
+        "seconds_per_epoch": 0.7977479600699917,
+        "seconds_per_step": 0.020455075899230554,
+        "wall_clock_seconds": 79.77479600699917
+      },
+      "train_windows": 2457,
+      "eval_windows": 256,
+      "global_steps": 3900,
+      "checkpoint_path": "checkpoints/sequence/gru_seed1.pt",
+      "device": "cuda",
+      "cuda_name": "Tesla T4",
+      "source_log": "results/kaggle_imported/main_h32_100epoch_3seed/kaggle_sequence_h32_100epoch_3seed.json"
+    },
+    {
+      "variant": "kan_lstm_h32",
+      "variant_config": {
+        "gauge_every_steps": 0,
+        "grid_size": 4,
+        "hidden_dim": 32,
+        "model_name": "kan_lstm",
+        "moment_mode": "unchanged",
+        "name": "kan_lstm_h32"
+      },
+      "seed": 1,
+      "epochs": 100,
+      "batch_size": 64,
+      "window": 256,
+      "stride": 256,
+      "eval_stride": 512,
+      "feature_mode": "full",
+      "lr": 0.001,
+      "weight_decay": 0.0,
+      "timing": {
+        "peak_cuda_memory_mb": 488.4775390625,
+        "projection_seconds_per_event": 0.0,
+        "projection_wall_clock_fraction": 0.0,
+        "projection_wall_clock_seconds": 0.0,
+        "seconds_per_epoch": 40.669074223200006,
+        "seconds_per_step": 1.0427967749538463,
+        "wall_clock_seconds": 4066.9074223200005
+      },
+      "train_windows": 2457,
+      "eval_windows": 256,
+      "global_steps": 3900,
+      "checkpoint_path": "checkpoints/sequence/kan_lstm_h32_seed1.pt",
+      "device": "cuda",
+      "cuda_name": "Tesla T4",
+      "source_log": "results/kaggle_imported/main_h32_100epoch_3seed/kaggle_sequence_h32_100epoch_3seed.json"
+    },
+    {
+      "variant": "gauge_kan_lstm_h32",
+      "variant_config": {
+        "gauge_every_steps": 1,
+        "grid_size": 4,
+        "hidden_dim": 32,
+        "model_name": "gauge_kan_lstm",
+        "moment_mode": "reset",
+        "name": "gauge_kan_lstm_h32"
+      },
+      "seed": 1,
+      "epochs": 100,
+      "batch_size": 64,
+      "window": 256,
+      "stride": 256,
+      "eval_stride": 512,
+      "feature_mode": "full",
+      "lr": 0.001,
+      "weight_decay": 0.0,
+      "timing": {
+        "peak_cuda_memory_mb": 488.4775390625,
+        "projection_seconds_per_event": 0.0009677284725838921,
+        "projection_wall_clock_fraction": 0.0009290446632573737,
+        "projection_wall_clock_seconds": 3.7741410430771793,
+        "seconds_per_epoch": 40.62389239549,
+        "seconds_per_step": 1.0416382665510258,
+        "wall_clock_seconds": 4062.389239549
+      },
+      "train_windows": 2457,
+      "eval_windows": 256,
+      "global_steps": 3900,
+      "checkpoint_path": "checkpoints/sequence/gauge_kan_lstm_h32_seed1.pt",
+      "device": "cuda",
+      "cuda_name": "Tesla T4",
+      "source_log": "results/kaggle_imported/main_h32_100epoch_3seed/kaggle_sequence_h32_100epoch_3seed.json"
+    },
+    {
+      "variant": "lstm",
+      "variant_config": {
+        "gauge_every_steps": 0,
+        "grid_size": 4,
+        "hidden_dim": 32,
+        "model_name": "lstm",
+        "moment_mode": "unchanged",
+        "name": "lstm"
+      },
+      "seed": 2,
+      "epochs": 100,
+      "batch_size": 64,
+      "window": 256,
+      "stride": 256,
+      "eval_stride": 512,
+      "feature_mode": "full",
+      "lr": 0.001,
+      "weight_decay": 0.0,
+      "timing": {
+        "peak_cuda_memory_mb": 83.81591796875,
+        "projection_seconds_per_event": 0.0,
+        "projection_wall_clock_fraction": 0.0,
+        "projection_wall_clock_seconds": 0.0,
+        "seconds_per_epoch": 0.8063631813599932,
+        "seconds_per_step": 0.020675979009230593,
+        "wall_clock_seconds": 80.63631813599932
+      },
+      "train_windows": 2457,
+      "eval_windows": 256,
+      "global_steps": 3900,
+      "checkpoint_path": "checkpoints/sequence/lstm_seed2.pt",
+      "device": "cuda",
+      "cuda_name": "Tesla T4",
+      "source_log": "results/kaggle_imported/main_h32_100epoch_3seed/kaggle_sequence_h32_100epoch_3seed.json"
+    },
+    {
+      "variant": "gru",
+      "variant_config": {
+        "gauge_every_steps": 0,
+        "grid_size": 4,
+        "hidden_dim": 32,
+        "model_name": "gru",
+        "moment_mode": "unchanged",
+        "name": "gru"
+      },
+      "seed": 2,
+      "epochs": 100,
+      "batch_size": 64,
+      "window": 256,
+      "stride": 256,
+      "eval_stride": 512,
+      "feature_mode": "full",
+      "lr": 0.001,
+      "weight_decay": 0.0,
+      "timing": {
+        "peak_cuda_memory_mb": 80.07177734375,
+        "projection_seconds_per_event": 0.0,
+        "projection_wall_clock_fraction": 0.0,
+        "projection_wall_clock_seconds": 0.0,
+        "seconds_per_epoch": 0.8051389426199966,
+        "seconds_per_step": 0.020644588272307605,
+        "wall_clock_seconds": 80.51389426199967
+      },
+      "train_windows": 2457,
+      "eval_windows": 256,
+      "global_steps": 3900,
+      "checkpoint_path": "checkpoints/sequence/gru_seed2.pt",
+      "device": "cuda",
+      "cuda_name": "Tesla T4",
+      "source_log": "results/kaggle_imported/main_h32_100epoch_3seed/kaggle_sequence_h32_100epoch_3seed.json"
+    },
+    {
+      "variant": "kan_lstm_h32",
+      "variant_config": {
+        "gauge_every_steps": 0,
+        "grid_size": 4,
+        "hidden_dim": 32,
+        "model_name": "kan_lstm",
+        "moment_mode": "unchanged",
+        "name": "kan_lstm_h32"
+      },
+      "seed": 2,
+      "epochs": 100,
+      "batch_size": 64,
+      "window": 256,
+      "stride": 256,
+      "eval_stride": 512,
+      "feature_mode": "full",
+      "lr": 0.001,
+      "weight_decay": 0.0,
+      "timing": {
+        "peak_cuda_memory_mb": 488.4775390625,
+        "projection_seconds_per_event": 0.0,
+        "projection_wall_clock_fraction": 0.0,
+        "projection_wall_clock_seconds": 0.0,
+        "seconds_per_epoch": 40.69992998199999,
+        "seconds_per_step": 1.04358794825641,
+        "wall_clock_seconds": 4069.9929981999994
+      },
+      "train_windows": 2457,
+      "eval_windows": 256,
+      "global_steps": 3900,
+      "checkpoint_path": "checkpoints/sequence/kan_lstm_h32_seed2.pt",
+      "device": "cuda",
+      "cuda_name": "Tesla T4",
+      "source_log": "results/kaggle_imported/main_h32_100epoch_3seed/kaggle_sequence_h32_100epoch_3seed.json"
+    },
+    {
+      "variant": "gauge_kan_lstm_h32",
+      "variant_config": {
+        "gauge_every_steps": 1,
+        "grid_size": 4,
+        "hidden_dim": 32,
+        "model_name": "gauge_kan_lstm",
+        "moment_mode": "reset",
+        "name": "gauge_kan_lstm_h32"
+      },
+      "seed": 2,
+      "epochs": 100,
+      "batch_size": 64,
+      "window": 256,
+      "stride": 256,
+      "eval_stride": 512,
+      "feature_mode": "full",
+      "lr": 0.001,
+      "weight_decay": 0.0,
+      "timing": {
+        "peak_cuda_memory_mb": 488.4775390625,
+        "projection_seconds_per_event": 0.0009616583743580775,
+        "projection_wall_clock_fraction": 0.0009275388082560586,
+        "projection_wall_clock_seconds": 3.7504676599965023,
+        "seconds_per_epoch": 40.43461714607998,
+        "seconds_per_step": 1.0367850550276918,
+        "wall_clock_seconds": 4043.461714607998
+      },
+      "train_windows": 2457,
+      "eval_windows": 256,
+      "global_steps": 3900,
+      "checkpoint_path": "checkpoints/sequence/gauge_kan_lstm_h32_seed2.pt",
+      "device": "cuda",
+      "cuda_name": "Tesla T4",
+      "source_log": "results/kaggle_imported/main_h32_100epoch_3seed/kaggle_sequence_h32_100epoch_3seed.json"
+    },
+    {
+      "variant": "kan_lstm_h32",
+      "variant_config": {
+        "gauge_every_steps": 0,
+        "grid_size": 4,
+        "hidden_dim": 32,
+        "model_name": "kan_lstm",
+        "moment_mode": "unchanged",
+        "name": "kan_lstm_h32"
+      },
+      "seed": 0,
+      "epochs": 1,
+      "batch_size": 64,
+      "window": 256,
+      "stride": 256,
+      "eval_stride": 512,
+      "feature_mode": "full",
+      "lr": 0.001,
+      "weight_decay": 0.0,
+      "timing": {
+        "peak_cuda_memory_mb": 490.1337890625,
+        "projection_seconds_per_event": 0.0,
+        "projection_wall_clock_fraction": 0.0,
+        "projection_wall_clock_seconds": 0.0,
+        "seconds_per_epoch": 43.307364101000076,
+        "seconds_per_step": 1.1104452333589763,
+        "wall_clock_seconds": 43.307364101000076
+      },
+      "train_windows": 2457,
+      "eval_windows": 256,
+      "global_steps": 39,
+      "checkpoint_path": "checkpoints/sequence/kan_lstm_h32_seed0.pt",
+      "device": "cuda",
+      "cuda_name": "Tesla T4",
+      "source_log": "results/kaggle_imported/main_h32_100epoch_3seed/kaggle_sequence_h32_timing_calibration.json"
+    },
+    {
+      "variant": "gauge_kan_lstm_h32",
+      "variant_config": {
+        "gauge_every_steps": 1,
+        "grid_size": 4,
+        "hidden_dim": 32,
+        "model_name": "gauge_kan_lstm",
+        "moment_mode": "reset",
+        "name": "gauge_kan_lstm_h32"
+      },
+      "seed": 0,
+      "epochs": 1,
+      "batch_size": 64,
+      "window": 256,
+      "stride": 256,
+      "eval_stride": 512,
+      "feature_mode": "full",
+      "lr": 0.001,
+      "weight_decay": 0.0,
+      "timing": {
+        "peak_cuda_memory_mb": 490.1337890625,
+        "projection_seconds_per_event": 0.004683491897431407,
+        "projection_wall_clock_fraction": 0.004103434731244985,
+        "projection_wall_clock_seconds": 0.18265618399982486,
+        "seconds_per_epoch": 44.51299849099996,
+        "seconds_per_step": 1.1413589356666658,
+        "wall_clock_seconds": 44.51299849099996
+      },
+      "train_windows": 2457,
+      "eval_windows": 256,
+      "global_steps": 39,
+      "checkpoint_path": "checkpoints/sequence/gauge_kan_lstm_h32_seed0.pt",
+      "device": "cuda",
+      "cuda_name": "Tesla T4",
+      "source_log": "results/kaggle_imported/main_h32_100epoch_3seed/kaggle_sequence_h32_timing_calibration.json"
+    },
+    {
+      "variant": "lstm_h100",
+      "variant_config": {
+        "gauge_every_steps": 0,
+        "grid_size": 4,
+        "hidden_dim": 100,
+        "model_name": "lstm",
+        "moment_mode": "unchanged",
+        "name": "lstm_h100"
+      },
+      "seed": 0,
+      "epochs": 100,
+      "batch_size": 64,
+      "window": 256,
+      "stride": 256,
+      "eval_stride": 512,
+      "feature_mode": "no_current",
+      "feature_names": [
+        "V_t",
+        "V_t_minus_1",
+        "dV_t",
+        "sweep_direction"
+      ],
+      "lr": 0.001,
+      "weight_decay": 0.0,
+      "model_input_dim": 4,
+      "timing": {
+        "peak_cuda_memory_mb": 208.5146484375,
+        "projection_seconds_per_event": 0.0,
+        "projection_wall_clock_fraction": 0.0,
+        "projection_wall_clock_seconds": 0.0,
+        "seconds_per_epoch": 0.6476638187599997,
+        "seconds_per_step": 0.016606764583589735,
+        "wall_clock_seconds": 64.76638187599997
+      },
+      "train_windows": 2457,
+      "eval_windows": 256,
+      "global_steps": 3900,
+      "checkpoint_path": "checkpoints/sequence/lstm_h100_no_current_seed0.pt",
+      "device": "cuda",
+      "cuda_name": "Tesla T4",
+      "source_log": "results/kaggle_imported/no_current_baselines_100epoch_3seed/kaggle_no_current_baselines_100epoch_3seed.json"
+    },
+    {
+      "variant": "gru_h116",
+      "variant_config": {
+        "gauge_every_steps": 0,
+        "grid_size": 4,
+        "hidden_dim": 116,
+        "model_name": "gru",
+        "moment_mode": "unchanged",
+        "name": "gru_h116"
+      },
+      "seed": 0,
+      "epochs": 100,
+      "batch_size": 64,
+      "window": 256,
+      "stride": 256,
+      "eval_stride": 512,
+      "feature_mode": "no_current",
+      "feature_names": [
+        "V_t",
+        "V_t_minus_1",
+        "dV_t",
+        "sweep_direction"
+      ],
+      "lr": 0.001,
+      "weight_decay": 0.0,
+      "model_input_dim": 4,
+      "timing": {
+        "peak_cuda_memory_mb": 222.95263671875,
+        "projection_seconds_per_event": 0.0,
+        "projection_wall_clock_fraction": 0.0,
+        "projection_wall_clock_seconds": 0.0,
+        "seconds_per_epoch": 0.5931692865200011,
+        "seconds_per_step": 0.015209468885128235,
+        "wall_clock_seconds": 59.316928652000115
+      },
+      "train_windows": 2457,
+      "eval_windows": 256,
+      "global_steps": 3900,
+      "checkpoint_path": "checkpoints/sequence/gru_h116_no_current_seed0.pt",
+      "device": "cuda",
+      "cuda_name": "Tesla T4",
+      "source_log": "results/kaggle_imported/no_current_baselines_100epoch_3seed/kaggle_no_current_baselines_100epoch_3seed.json"
+    },
+    {
+      "variant": "kan_lstm_h32",
+      "variant_config": {
+        "gauge_every_steps": 0,
+        "grid_size": 4,
+        "hidden_dim": 32,
+        "model_name": "kan_lstm",
+        "moment_mode": "unchanged",
+        "name": "kan_lstm_h32"
+      },
+      "seed": 0,
+      "epochs": 100,
+      "batch_size": 64,
+      "window": 256,
+      "stride": 256,
+      "eval_stride": 512,
+      "feature_mode": "no_current",
+      "feature_names": [
+        "V_t",
+        "V_t_minus_1",
+        "dV_t",
+        "sweep_direction"
+      ],
+      "lr": 0.001,
+      "weight_decay": 0.0,
+      "model_input_dim": 4,
+      "timing": {
+        "peak_cuda_memory_mb": 473.4169921875,
+        "projection_seconds_per_event": 0.0,
+        "projection_wall_clock_fraction": 0.0,
+        "projection_wall_clock_seconds": 0.0,
+        "seconds_per_epoch": 38.098376003990005,
+        "seconds_per_step": 0.9768814359997438,
+        "wall_clock_seconds": 3809.8376003990006
+      },
+      "train_windows": 2457,
+      "eval_windows": 256,
+      "global_steps": 3900,
+      "checkpoint_path": "checkpoints/sequence/kan_lstm_h32_no_current_seed0.pt",
+      "device": "cuda",
+      "cuda_name": "Tesla T4",
+      "source_log": "results/kaggle_imported/no_current_baselines_100epoch_3seed/kaggle_no_current_baselines_100epoch_3seed.json"
+    },
+    {
+      "variant": "lstm_h100",
+      "variant_config": {
+        "gauge_every_steps": 0,
+        "grid_size": 4,
+        "hidden_dim": 100,
+        "model_name": "lstm",
+        "moment_mode": "unchanged",
+        "name": "lstm_h100"
+      },
+      "seed": 1,
+      "epochs": 100,
+      "batch_size": 64,
+      "window": 256,
+      "stride": 256,
+      "eval_stride": 512,
+      "feature_mode": "no_current",
+      "feature_names": [
+        "V_t",
+        "V_t_minus_1",
+        "dV_t",
+        "sweep_direction"
+      ],
+      "lr": 0.001,
+      "weight_decay": 0.0,
+      "model_input_dim": 4,
+      "timing": {
+        "peak_cuda_memory_mb": 208.5146484375,
+        "projection_seconds_per_event": 0.0,
+        "projection_wall_clock_fraction": 0.0,
+        "projection_wall_clock_seconds": 0.0,
+        "seconds_per_epoch": 0.6744553470499978,
+        "seconds_per_step": 0.01729372684743584,
+        "wall_clock_seconds": 67.44553470499977
+      },
+      "train_windows": 2457,
+      "eval_windows": 256,
+      "global_steps": 3900,
+      "checkpoint_path": "checkpoints/sequence/lstm_h100_no_current_seed1.pt",
+      "device": "cuda",
+      "cuda_name": "Tesla T4",
+      "source_log": "results/kaggle_imported/no_current_baselines_100epoch_3seed/kaggle_no_current_baselines_100epoch_3seed.json"
+    },
+    {
+      "variant": "gru_h116",
+      "variant_config": {
+        "gauge_every_steps": 0,
+        "grid_size": 4,
+        "hidden_dim": 116,
+        "model_name": "gru",
+        "moment_mode": "unchanged",
+        "name": "gru_h116"
+      },
+      "seed": 1,
+      "epochs": 100,
+      "batch_size": 64,
+      "window": 256,
+      "stride": 256,
+      "eval_stride": 512,
+      "feature_mode": "no_current",
+      "feature_names": [
+        "V_t",
+        "V_t_minus_1",
+        "dV_t",
+        "sweep_direction"
+      ],
+      "lr": 0.001,
+      "weight_decay": 0.0,
+      "model_input_dim": 4,
+      "timing": {
+        "peak_cuda_memory_mb": 222.95263671875,
+        "projection_seconds_per_event": 0.0,
+        "projection_wall_clock_fraction": 0.0,
+        "projection_wall_clock_seconds": 0.0,
+        "seconds_per_epoch": 0.6216506169999957,
+        "seconds_per_step": 0.0159397594102563,
+        "wall_clock_seconds": 62.16506169999957
+      },
+      "train_windows": 2457,
+      "eval_windows": 256,
+      "global_steps": 3900,
+      "checkpoint_path": "checkpoints/sequence/gru_h116_no_current_seed1.pt",
+      "device": "cuda",
+      "cuda_name": "Tesla T4",
+      "source_log": "results/kaggle_imported/no_current_baselines_100epoch_3seed/kaggle_no_current_baselines_100epoch_3seed.json"
+    },
+    {
+      "variant": "kan_lstm_h32",
+      "variant_config": {
+        "gauge_every_steps": 0,
+        "grid_size": 4,
+        "hidden_dim": 32,
+        "model_name": "kan_lstm",
+        "moment_mode": "unchanged",
+        "name": "kan_lstm_h32"
+      },
+      "seed": 1,
+      "epochs": 100,
+      "batch_size": 64,
+      "window": 256,
+      "stride": 256,
+      "eval_stride": 512,
+      "feature_mode": "no_current",
+      "feature_names": [
+        "V_t",
+        "V_t_minus_1",
+        "dV_t",
+        "sweep_direction"
+      ],
+      "lr": 0.001,
+      "weight_decay": 0.0,
+      "model_input_dim": 4,
+      "timing": {
+        "peak_cuda_memory_mb": 473.4169921875,
+        "projection_seconds_per_event": 0.0,
+        "projection_wall_clock_fraction": 0.0,
+        "projection_wall_clock_seconds": 0.0,
+        "seconds_per_epoch": 38.06938867969001,
+        "seconds_per_step": 0.9761381712741029,
+        "wall_clock_seconds": 3806.938867969001
+      },
+      "train_windows": 2457,
+      "eval_windows": 256,
+      "global_steps": 3900,
+      "checkpoint_path": "checkpoints/sequence/kan_lstm_h32_no_current_seed1.pt",
+      "device": "cuda",
+      "cuda_name": "Tesla T4",
+      "source_log": "results/kaggle_imported/no_current_baselines_100epoch_3seed/kaggle_no_current_baselines_100epoch_3seed.json"
+    },
+    {
+      "variant": "lstm_h100",
+      "variant_config": {
+        "gauge_every_steps": 0,
+        "grid_size": 4,
+        "hidden_dim": 100,
+        "model_name": "lstm",
+        "moment_mode": "unchanged",
+        "name": "lstm_h100"
+      },
+      "seed": 2,
+      "epochs": 100,
+      "batch_size": 64,
+      "window": 256,
+      "stride": 256,
+      "eval_stride": 512,
+      "feature_mode": "no_current",
+      "feature_names": [
+        "V_t",
+        "V_t_minus_1",
+        "dV_t",
+        "sweep_direction"
+      ],
+      "lr": 0.001,
+      "weight_decay": 0.0,
+      "model_input_dim": 4,
+      "timing": {
+        "peak_cuda_memory_mb": 208.5146484375,
+        "projection_seconds_per_event": 0.0,
+        "projection_wall_clock_fraction": 0.0,
+        "projection_wall_clock_seconds": 0.0,
+        "seconds_per_epoch": 0.6774472217100083,
+        "seconds_per_step": 0.017370441582307904,
+        "wall_clock_seconds": 67.74472217100083
+      },
+      "train_windows": 2457,
+      "eval_windows": 256,
+      "global_steps": 3900,
+      "checkpoint_path": "checkpoints/sequence/lstm_h100_no_current_seed2.pt",
+      "device": "cuda",
+      "cuda_name": "Tesla T4",
+      "source_log": "results/kaggle_imported/no_current_baselines_100epoch_3seed/kaggle_no_current_baselines_100epoch_3seed.json"
+    },
+    {
+      "variant": "gru_h116",
+      "variant_config": {
+        "gauge_every_steps": 0,
+        "grid_size": 4,
+        "hidden_dim": 116,
+        "model_name": "gru",
+        "moment_mode": "unchanged",
+        "name": "gru_h116"
+      },
+      "seed": 2,
+      "epochs": 100,
+      "batch_size": 64,
+      "window": 256,
+      "stride": 256,
+      "eval_stride": 512,
+      "feature_mode": "no_current",
+      "feature_names": [
+        "V_t",
+        "V_t_minus_1",
+        "dV_t",
+        "sweep_direction"
+      ],
+      "lr": 0.001,
+      "weight_decay": 0.0,
+      "model_input_dim": 4,
+      "timing": {
+        "peak_cuda_memory_mb": 222.95263671875,
+        "projection_seconds_per_event": 0.0,
+        "projection_wall_clock_fraction": 0.0,
+        "projection_wall_clock_seconds": 0.0,
+        "seconds_per_epoch": 0.6234977335799886,
+        "seconds_per_step": 0.01598712137384586,
+        "wall_clock_seconds": 62.349773357998856
+      },
+      "train_windows": 2457,
+      "eval_windows": 256,
+      "global_steps": 3900,
+      "checkpoint_path": "checkpoints/sequence/gru_h116_no_current_seed2.pt",
+      "device": "cuda",
+      "cuda_name": "Tesla T4",
+      "source_log": "results/kaggle_imported/no_current_baselines_100epoch_3seed/kaggle_no_current_baselines_100epoch_3seed.json"
+    },
+    {
+      "variant": "kan_lstm_h32",
+      "variant_config": {
+        "gauge_every_steps": 0,
+        "grid_size": 4,
+        "hidden_dim": 32,
+        "model_name": "kan_lstm",
+        "moment_mode": "unchanged",
+        "name": "kan_lstm_h32"
+      },
+      "seed": 2,
+      "epochs": 100,
+      "batch_size": 64,
+      "window": 256,
+      "stride": 256,
+      "eval_stride": 512,
+      "feature_mode": "no_current",
+      "feature_names": [
+        "V_t",
+        "V_t_minus_1",
+        "dV_t",
+        "sweep_direction"
+      ],
+      "lr": 0.001,
+      "weight_decay": 0.0,
+      "model_input_dim": 4,
+      "timing": {
+        "peak_cuda_memory_mb": 473.4169921875,
+        "projection_seconds_per_event": 0.0,
+        "projection_wall_clock_fraction": 0.0,
+        "projection_wall_clock_seconds": 0.0,
+        "seconds_per_epoch": 38.06878453592999,
+        "seconds_per_step": 0.9761226804084613,
+        "wall_clock_seconds": 3806.878453592999
+      },
+      "train_windows": 2457,
+      "eval_windows": 256,
+      "global_steps": 3900,
+      "checkpoint_path": "checkpoints/sequence/kan_lstm_h32_no_current_seed2.pt",
+      "device": "cuda",
+      "cuda_name": "Tesla T4",
+      "source_log": "results/kaggle_imported/no_current_baselines_100epoch_3seed/kaggle_no_current_baselines_100epoch_3seed.json"
+    },
+    {
+      "variant": "lstm_h100",
+      "variant_config": {
+        "gauge_every_steps": 0,
+        "grid_size": 4,
+        "hidden_dim": 100,
+        "model_name": "lstm",
+        "moment_mode": "unchanged",
+        "name": "lstm_h100"
+      },
+      "seed": 0,
+      "epochs": 100,
+      "batch_size": 64,
+      "window": 256,
+      "stride": 256,
+      "eval_stride": 512,
+      "feature_mode": "full",
+      "feature_names": [
+        "V_t",
+        "V_t_minus_1",
+        "I_t_minus_1",
+        "dV_t",
+        "sweep_direction"
+      ],
+      "lr": 0.001,
+      "weight_decay": 0.0,
+      "model_input_dim": 5,
+      "timing": {
+        "peak_cuda_memory_mb": 208.70654296875,
+        "projection_seconds_per_event": 0.0,
+        "projection_wall_clock_fraction": 0.0,
+        "projection_wall_clock_seconds": 0.0,
+        "seconds_per_epoch": 0.7624278723899988,
+        "seconds_per_step": 0.019549432625384586,
+        "wall_clock_seconds": 76.24278723899988
+      },
+      "train_windows": 2457,
+      "eval_windows": 256,
+      "global_steps": 3900,
+      "checkpoint_path": "checkpoints/sequence/lstm_h100_seed0.pt",
+      "device": "cuda",
+      "cuda_name": "Tesla T4",
+      "source_log": "results/kaggle_imported/param_matched_lstm_gru_100epoch_3seed/kaggle_param_matched_lstm_gru_100epoch_3seed.json"
+    },
+    {
+      "variant": "gru_h116",
+      "variant_config": {
+        "gauge_every_steps": 0,
+        "grid_size": 4,
+        "hidden_dim": 116,
+        "model_name": "gru",
+        "moment_mode": "unchanged",
+        "name": "gru_h116"
+      },
+      "seed": 0,
+      "epochs": 100,
+      "batch_size": 64,
+      "window": 256,
+      "stride": 256,
+      "eval_stride": 512,
+      "feature_mode": "full",
+      "feature_names": [
+        "V_t",
+        "V_t_minus_1",
+        "I_t_minus_1",
+        "dV_t",
+        "sweep_direction"
+      ],
+      "lr": 0.001,
+      "weight_decay": 0.0,
+      "model_input_dim": 5,
+      "timing": {
+        "peak_cuda_memory_mb": 223.14453125,
+        "projection_seconds_per_event": 0.0,
+        "projection_wall_clock_fraction": 0.0,
+        "projection_wall_clock_seconds": 0.0,
+        "seconds_per_epoch": 0.715341729270001,
+        "seconds_per_step": 0.01834209562230772,
+        "wall_clock_seconds": 71.5341729270001
+      },
+      "train_windows": 2457,
+      "eval_windows": 256,
+      "global_steps": 3900,
+      "checkpoint_path": "checkpoints/sequence/gru_h116_seed0.pt",
+      "device": "cuda",
+      "cuda_name": "Tesla T4",
+      "source_log": "results/kaggle_imported/param_matched_lstm_gru_100epoch_3seed/kaggle_param_matched_lstm_gru_100epoch_3seed.json"
+    },
+    {
+      "variant": "lstm_h100",
+      "variant_config": {
+        "gauge_every_steps": 0,
+        "grid_size": 4,
+        "hidden_dim": 100,
+        "model_name": "lstm",
+        "moment_mode": "unchanged",
+        "name": "lstm_h100"
+      },
+      "seed": 1,
+      "epochs": 100,
+      "batch_size": 64,
+      "window": 256,
+      "stride": 256,
+      "eval_stride": 512,
+      "feature_mode": "full",
+      "feature_names": [
+        "V_t",
+        "V_t_minus_1",
+        "I_t_minus_1",
+        "dV_t",
+        "sweep_direction"
+      ],
+      "lr": 0.001,
+      "weight_decay": 0.0,
+      "model_input_dim": 5,
+      "timing": {
+        "peak_cuda_memory_mb": 208.70654296875,
+        "projection_seconds_per_event": 0.0,
+        "projection_wall_clock_fraction": 0.0,
+        "projection_wall_clock_seconds": 0.0,
+        "seconds_per_epoch": 0.7789915002599992,
+        "seconds_per_step": 0.01997414103230767,
+        "wall_clock_seconds": 77.89915002599992
+      },
+      "train_windows": 2457,
+      "eval_windows": 256,
+      "global_steps": 3900,
+      "checkpoint_path": "checkpoints/sequence/lstm_h100_seed1.pt",
+      "device": "cuda",
+      "cuda_name": "Tesla T4",
+      "source_log": "results/kaggle_imported/param_matched_lstm_gru_100epoch_3seed/kaggle_param_matched_lstm_gru_100epoch_3seed.json"
+    },
+    {
+      "variant": "gru_h116",
+      "variant_config": {
+        "gauge_every_steps": 0,
+        "grid_size": 4,
+        "hidden_dim": 116,
+        "model_name": "gru",
+        "moment_mode": "unchanged",
+        "name": "gru_h116"
+      },
+      "seed": 1,
+      "epochs": 100,
+      "batch_size": 64,
+      "window": 256,
+      "stride": 256,
+      "eval_stride": 512,
+      "feature_mode": "full",
+      "feature_names": [
+        "V_t",
+        "V_t_minus_1",
+        "I_t_minus_1",
+        "dV_t",
+        "sweep_direction"
+      ],
+      "lr": 0.001,
+      "weight_decay": 0.0,
+      "model_input_dim": 5,
+      "timing": {
+        "peak_cuda_memory_mb": 223.14453125,
+        "projection_seconds_per_event": 0.0,
+        "projection_wall_clock_fraction": 0.0,
+        "projection_wall_clock_seconds": 0.0,
+        "seconds_per_epoch": 0.7209083220100001,
+        "seconds_per_step": 0.018484828769487184,
+        "wall_clock_seconds": 72.09083220100001
+      },
+      "train_windows": 2457,
+      "eval_windows": 256,
+      "global_steps": 3900,
+      "checkpoint_path": "checkpoints/sequence/gru_h116_seed1.pt",
+      "device": "cuda",
+      "cuda_name": "Tesla T4",
+      "source_log": "results/kaggle_imported/param_matched_lstm_gru_100epoch_3seed/kaggle_param_matched_lstm_gru_100epoch_3seed.json"
+    },
+    {
+      "variant": "lstm_h100",
+      "variant_config": {
+        "gauge_every_steps": 0,
+        "grid_size": 4,
+        "hidden_dim": 100,
+        "model_name": "lstm",
+        "moment_mode": "unchanged",
+        "name": "lstm_h100"
+      },
+      "seed": 2,
+      "epochs": 100,
+      "batch_size": 64,
+      "window": 256,
+      "stride": 256,
+      "eval_stride": 512,
+      "feature_mode": "full",
+      "feature_names": [
+        "V_t",
+        "V_t_minus_1",
+        "I_t_minus_1",
+        "dV_t",
+        "sweep_direction"
+      ],
+      "lr": 0.001,
+      "weight_decay": 0.0,
+      "model_input_dim": 5,
+      "timing": {
+        "peak_cuda_memory_mb": 208.70654296875,
+        "projection_seconds_per_event": 0.0,
+        "projection_wall_clock_fraction": 0.0,
+        "projection_wall_clock_seconds": 0.0,
+        "seconds_per_epoch": 0.780449951139999,
+        "seconds_per_step": 0.020011537208717924,
+        "wall_clock_seconds": 78.0449951139999
+      },
+      "train_windows": 2457,
+      "eval_windows": 256,
+      "global_steps": 3900,
+      "checkpoint_path": "checkpoints/sequence/lstm_h100_seed2.pt",
+      "device": "cuda",
+      "cuda_name": "Tesla T4",
+      "source_log": "results/kaggle_imported/param_matched_lstm_gru_100epoch_3seed/kaggle_param_matched_lstm_gru_100epoch_3seed.json"
+    },
+    {
+      "variant": "gru_h116",
+      "variant_config": {
+        "gauge_every_steps": 0,
+        "grid_size": 4,
+        "hidden_dim": 116,
+        "model_name": "gru",
+        "moment_mode": "unchanged",
+        "name": "gru_h116"
+      },
+      "seed": 2,
+      "epochs": 100,
+      "batch_size": 64,
+      "window": 256,
+      "stride": 256,
+      "eval_stride": 512,
+      "feature_mode": "full",
+      "feature_names": [
+        "V_t",
+        "V_t_minus_1",
+        "I_t_minus_1",
+        "dV_t",
+        "sweep_direction"
+      ],
+      "lr": 0.001,
+      "weight_decay": 0.0,
+      "model_input_dim": 5,
+      "timing": {
+        "peak_cuda_memory_mb": 223.14453125,
+        "projection_seconds_per_event": 0.0,
+        "projection_wall_clock_fraction": 0.0,
+        "projection_wall_clock_seconds": 0.0,
+        "seconds_per_epoch": 0.7227213241699997,
+        "seconds_per_step": 0.018531316004358967,
+        "wall_clock_seconds": 72.27213241699997
+      },
+      "train_windows": 2457,
+      "eval_windows": 256,
+      "global_steps": 3900,
+      "checkpoint_path": "checkpoints/sequence/gru_h116_seed2.pt",
+      "device": "cuda",
+      "cuda_name": "Tesla T4",
+      "source_log": "results/kaggle_imported/param_matched_lstm_gru_100epoch_3seed/kaggle_param_matched_lstm_gru_100epoch_3seed.json"
+    },
+    {
+      "variant": "lstm_h100",
+      "variant_config": {
+        "gauge_every_steps": 0,
+        "grid_size": 4,
+        "hidden_dim": 100,
+        "model_name": "lstm",
+        "moment_mode": "unchanged",
+        "name": "lstm_h100"
+      },
+      "seed": 0,
+      "epochs": 1,
+      "batch_size": 64,
+      "window": 256,
+      "stride": 256,
+      "eval_stride": 512,
+      "feature_mode": "full",
+      "feature_names": [
+        "V_t",
+        "V_t_minus_1",
+        "I_t_minus_1",
+        "dV_t",
+        "sweep_direction"
+      ],
+      "lr": 0.001,
+      "weight_decay": 0.0,
+      "model_input_dim": 5,
+      "timing": {
+        "peak_cuda_memory_mb": 208.70654296875,
+        "projection_seconds_per_event": 0.0,
+        "projection_wall_clock_fraction": 0.0,
+        "projection_wall_clock_seconds": 0.0,
+        "seconds_per_epoch": 1.6686174579999715,
+        "seconds_per_step": 0.042785063025640294,
+        "wall_clock_seconds": 1.6686174579999715
+      },
+      "train_windows": 2457,
+      "eval_windows": 256,
+      "global_steps": 39,
+      "checkpoint_path": "checkpoints/sequence/lstm_h100_seed0.pt",
+      "device": "cuda",
+      "cuda_name": "Tesla T4",
+      "source_log": "results/kaggle_imported/param_matched_lstm_gru_100epoch_3seed/kaggle_param_matched_lstm_gru_1epoch.json"
+    },
+    {
+      "variant": "gru_h116",
+      "variant_config": {
+        "gauge_every_steps": 0,
+        "grid_size": 4,
+        "hidden_dim": 116,
+        "model_name": "gru",
+        "moment_mode": "unchanged",
+        "name": "gru_h116"
+      },
+      "seed": 0,
+      "epochs": 1,
+      "batch_size": 64,
+      "window": 256,
+      "stride": 256,
+      "eval_stride": 512,
+      "feature_mode": "full",
+      "feature_names": [
+        "V_t",
+        "V_t_minus_1",
+        "I_t_minus_1",
+        "dV_t",
+        "sweep_direction"
+      ],
+      "lr": 0.001,
+      "weight_decay": 0.0,
+      "model_input_dim": 5,
+      "timing": {
+        "peak_cuda_memory_mb": 223.14453125,
+        "projection_seconds_per_event": 0.0,
+        "projection_wall_clock_fraction": 0.0,
+        "projection_wall_clock_seconds": 0.0,
+        "seconds_per_epoch": 0.7904203079999661,
+        "seconds_per_step": 0.020267187384614516,
+        "wall_clock_seconds": 0.7904203079999661
+      },
+      "train_windows": 2457,
+      "eval_windows": 256,
+      "global_steps": 39,
+      "checkpoint_path": "checkpoints/sequence/gru_h116_seed0.pt",
+      "device": "cuda",
+      "cuda_name": "Tesla T4",
+      "source_log": "results/kaggle_imported/param_matched_lstm_gru_100epoch_3seed/kaggle_param_matched_lstm_gru_1epoch.json"
+    },
+    {
+      "variant": "gru_h116",
+      "variant_config": {
+        "gauge_every_steps": 0,
+        "grid_size": 4,
+        "hidden_dim": 116,
+        "model_name": "gru",
+        "moment_mode": "unchanged",
+        "name": "gru_h116"
+      },
+      "seed": 0,
+      "epochs": 100,
+      "batch_size": 64,
+      "window": 128,
+      "stride": 128,
+      "eval_stride": 256,
+      "feature_mode": "no_current",
+      "feature_names": [
+        "V_t",
+        "V_t_minus_1",
+        "dV_t",
+        "sweep_direction"
+      ],
+      "lr": 0.001,
+      "weight_decay": 0.0,
+      "model_input_dim": 4,
+      "timing": {
+        "peak_cuda_memory_mb": 125.1396484375,
+        "projection_seconds_per_event": 0.0,
+        "projection_wall_clock_fraction": 0.0,
+        "projection_wall_clock_seconds": 0.0,
+        "seconds_per_epoch": 0.8884295764000126,
+        "seconds_per_step": 0.01153804644675341,
+        "wall_clock_seconds": 88.84295764000126
+      },
+      "train_windows": 4875,
+      "eval_windows": 504,
+      "global_steps": 7700,
+      "checkpoint_path": "checkpoints/window128_gru_seeds0_1/gru_h116_no_current_seed0.pt",
+      "device": "cuda",
+      "cuda_name": "Tesla T4",
+      "source_log": "revision_experiments/window_imports/results_reviewer_window128_seeds0_1/results/window128_gru_seeds0_1.json"
+    },
+    {
+      "variant": "gru_h116",
+      "variant_config": {
+        "gauge_every_steps": 0,
+        "grid_size": 4,
+        "hidden_dim": 116,
+        "model_name": "gru",
+        "moment_mode": "unchanged",
+        "name": "gru_h116"
+      },
+      "seed": 1,
+      "epochs": 100,
+      "batch_size": 64,
+      "window": 128,
+      "stride": 128,
+      "eval_stride": 256,
+      "feature_mode": "no_current",
+      "feature_names": [
+        "V_t",
+        "V_t_minus_1",
+        "dV_t",
+        "sweep_direction"
+      ],
+      "lr": 0.001,
+      "weight_decay": 0.0,
+      "model_input_dim": 4,
+      "timing": {
+        "peak_cuda_memory_mb": 125.1396484375,
+        "projection_seconds_per_event": 0.0,
+        "projection_wall_clock_fraction": 0.0,
+        "projection_wall_clock_seconds": 0.0,
+        "seconds_per_epoch": 0.8878741852999883,
+        "seconds_per_step": 0.011530833575324523,
+        "wall_clock_seconds": 88.78741852999883
+      },
+      "train_windows": 4875,
+      "eval_windows": 504,
+      "global_steps": 7700,
+      "checkpoint_path": "checkpoints/window128_gru_seeds0_1/gru_h116_no_current_seed1.pt",
+      "device": "cuda",
+      "cuda_name": "Tesla T4",
+      "source_log": "revision_experiments/window_imports/results_reviewer_window128_seeds0_1/results/window128_gru_seeds0_1.json"
+    },
+    {
+      "variant": "clipped_kan_gru_h32",
+      "variant_config": {
+        "gauge_every_steps": 0,
+        "grid_size": 4,
+        "hidden_dim": 32,
+        "model_name": "clipped_kan_gru",
+        "moment_mode": "unchanged",
+        "name": "clipped_kan_gru_h32"
+      },
+      "seed": 0,
+      "epochs": 100,
+      "batch_size": 32,
+      "window": 128,
+      "stride": 128,
+      "eval_stride": 256,
+      "feature_mode": "no_current",
+      "feature_names": [
+        "V_t",
+        "V_t_minus_1",
+        "dV_t",
+        "sweep_direction"
+      ],
+      "lr": 0.001,
+      "weight_decay": 0.0,
+      "model_input_dim": 4,
+      "timing": {
+        "peak_cuda_memory_mb": 150.66845703125,
+        "projection_seconds_per_event": 0.0,
+        "projection_wall_clock_fraction": 0.0,
+        "projection_wall_clock_seconds": 0.0,
+        "seconds_per_epoch": 156.64915722573,
+        "seconds_per_step": 1.0238507008217648,
+        "wall_clock_seconds": 15664.915722573
+      },
+      "train_windows": 4875,
+      "eval_windows": 504,
+      "global_steps": 15300,
+      "checkpoint_path": "checkpoints/window128_kan_seeds0_1/clipped_kan_gru_h32_no_current_seed0.pt",
+      "device": "cuda",
+      "cuda_name": "Tesla T4",
+      "source_log": "revision_experiments/window_imports/results_reviewer_window128_seeds0_1/results/window128_kan_seeds0_1.json"
+    },
+    {
+      "variant": "clipped_kan_gru_h32",
+      "variant_config": {
+        "gauge_every_steps": 0,
+        "grid_size": 4,
+        "hidden_dim": 32,
+        "model_name": "clipped_kan_gru",
+        "moment_mode": "unchanged",
+        "name": "clipped_kan_gru_h32"
+      },
+      "seed": 1,
+      "epochs": 100,
+      "batch_size": 32,
+      "window": 128,
+      "stride": 128,
+      "eval_stride": 256,
+      "feature_mode": "no_current",
+      "feature_names": [
+        "V_t",
+        "V_t_minus_1",
+        "dV_t",
+        "sweep_direction"
+      ],
+      "lr": 0.001,
+      "weight_decay": 0.0,
+      "model_input_dim": 4,
+      "timing": {
+        "peak_cuda_memory_mb": 150.66845703125,
+        "projection_seconds_per_event": 0.0,
+        "projection_wall_clock_fraction": 0.0,
+        "projection_wall_clock_seconds": 0.0,
+        "seconds_per_epoch": 156.77311658635,
+        "seconds_per_step": 1.0246608927212417,
+        "wall_clock_seconds": 15677.311658634999
+      },
+      "train_windows": 4875,
+      "eval_windows": 504,
+      "global_steps": 15300,
+      "checkpoint_path": "checkpoints/window128_kan_seeds0_1/clipped_kan_gru_h32_no_current_seed1.pt",
+      "device": "cuda",
+      "cuda_name": "Tesla T4",
+      "source_log": "revision_experiments/window_imports/results_reviewer_window128_seeds0_1/results/window128_kan_seeds0_1.json"
+    },
+    {
+      "variant": "gru_h116",
+      "variant_config": {
+        "gauge_every_steps": 0,
+        "grid_size": 4,
+        "hidden_dim": 116,
+        "model_name": "gru",
+        "moment_mode": "unchanged",
+        "name": "gru_h116"
+      },
+      "seed": 2,
+      "epochs": 100,
+      "batch_size": 64,
+      "window": 128,
+      "stride": 128,
+      "eval_stride": 256,
+      "feature_mode": "no_current",
+      "feature_names": [
+        "V_t",
+        "V_t_minus_1",
+        "dV_t",
+        "sweep_direction"
+      ],
+      "lr": 0.001,
+      "weight_decay": 0.0,
+      "model_input_dim": 4,
+      "timing": {
+        "peak_cuda_memory_mb": 125.1396484375,
+        "projection_seconds_per_event": 0.0,
+        "projection_wall_clock_fraction": 0.0,
+        "projection_wall_clock_seconds": 0.0,
+        "seconds_per_epoch": 0.7621046579500035,
+        "seconds_per_step": 0.009897463090259784,
+        "wall_clock_seconds": 76.21046579500035
+      },
+      "train_windows": 4875,
+      "eval_windows": 504,
+      "global_steps": 7700,
+      "checkpoint_path": "checkpoints/window128_gru_seeds2/gru_h116_no_current_seed2.pt",
+      "device": "cuda",
+      "cuda_name": "Tesla T4",
+      "source_log": "revision_experiments/window_imports/results_reviewer_window128_seeds2/results/window128_gru_seeds2.json"
+    },
+    {
+      "variant": "clipped_kan_gru_h32",
+      "variant_config": {
+        "gauge_every_steps": 0,
+        "grid_size": 4,
+        "hidden_dim": 32,
+        "model_name": "clipped_kan_gru",
+        "moment_mode": "unchanged",
+        "name": "clipped_kan_gru_h32"
+      },
+      "seed": 2,
+      "epochs": 100,
+      "batch_size": 32,
+      "window": 128,
+      "stride": 128,
+      "eval_stride": 256,
+      "feature_mode": "no_current",
+      "feature_names": [
+        "V_t",
+        "V_t_minus_1",
+        "dV_t",
+        "sweep_direction"
+      ],
+      "lr": 0.001,
+      "weight_decay": 0.0,
+      "model_input_dim": 4,
+      "timing": {
+        "peak_cuda_memory_mb": 150.66845703125,
+        "projection_seconds_per_event": 0.0,
+        "projection_wall_clock_fraction": 0.0,
+        "projection_wall_clock_seconds": 0.0,
+        "seconds_per_epoch": 138.32648010314,
+        "seconds_per_step": 0.9040946411969935,
+        "wall_clock_seconds": 13832.648010314
+      },
+      "train_windows": 4875,
+      "eval_windows": 504,
+      "global_steps": 15300,
+      "checkpoint_path": "checkpoints/window128_kan_seeds2/clipped_kan_gru_h32_no_current_seed2.pt",
+      "device": "cuda",
+      "cuda_name": "Tesla T4",
+      "source_log": "revision_experiments/window_imports/results_reviewer_window128_seeds2/results/window128_kan_seeds2.json"
+    },
+    {
+      "variant": "gru_h116",
+      "variant_config": {
+        "gauge_every_steps": 0,
+        "grid_size": 4,
+        "hidden_dim": 116,
+        "model_name": "gru",
+        "moment_mode": "unchanged",
+        "name": "gru_h116"
+      },
+      "seed": 0,
+      "epochs": 100,
+      "batch_size": 64,
+      "window": 512,
+      "stride": 512,
+      "eval_stride": 1024,
+      "feature_mode": "no_current",
+      "feature_names": [
+        "V_t",
+        "V_t_minus_1",
+        "dV_t",
+        "sweep_direction"
+      ],
+      "lr": 0.001,
+      "weight_decay": 0.0,
+      "model_input_dim": 4,
+      "timing": {
+        "peak_cuda_memory_mb": 420.4072265625,
+        "projection_seconds_per_event": 0.0,
+        "projection_wall_clock_fraction": 0.0,
+        "projection_wall_clock_seconds": 0.0,
+        "seconds_per_epoch": 0.7193888549999974,
+        "seconds_per_step": 0.03596944274999987,
+        "wall_clock_seconds": 71.93888549999974
+      },
+      "train_windows": 1248,
+      "eval_windows": 136,
+      "global_steps": 2000,
+      "checkpoint_path": "checkpoints/window512_gru_seeds0_1/gru_h116_no_current_seed0.pt",
+      "device": "cuda",
+      "cuda_name": "Tesla T4",
+      "source_log": "revision_experiments/window_imports/results_reviewer_window512_seeds0_1/results/window512_gru_seeds0_1.json"
+    },
+    {
+      "variant": "gru_h116",
+      "variant_config": {
+        "gauge_every_steps": 0,
+        "grid_size": 4,
+        "hidden_dim": 116,
+        "model_name": "gru",
+        "moment_mode": "unchanged",
+        "name": "gru_h116"
+      },
+      "seed": 1,
+      "epochs": 100,
+      "batch_size": 64,
+      "window": 512,
+      "stride": 512,
+      "eval_stride": 1024,
+      "feature_mode": "no_current",
+      "feature_names": [
+        "V_t",
+        "V_t_minus_1",
+        "dV_t",
+        "sweep_direction"
+      ],
+      "lr": 0.001,
+      "weight_decay": 0.0,
+      "model_input_dim": 4,
+      "timing": {
+        "peak_cuda_memory_mb": 420.4072265625,
+        "projection_seconds_per_event": 0.0,
+        "projection_wall_clock_fraction": 0.0,
+        "projection_wall_clock_seconds": 0.0,
+        "seconds_per_epoch": 0.7162366249800107,
+        "seconds_per_step": 0.03581183124900053,
+        "wall_clock_seconds": 71.62366249800107
+      },
+      "train_windows": 1248,
+      "eval_windows": 136,
+      "global_steps": 2000,
+      "checkpoint_path": "checkpoints/window512_gru_seeds0_1/gru_h116_no_current_seed1.pt",
+      "device": "cuda",
+      "cuda_name": "Tesla T4",
+      "source_log": "revision_experiments/window_imports/results_reviewer_window512_seeds0_1/results/window512_gru_seeds0_1.json"
+    },
+    {
+      "variant": "clipped_kan_gru_h32",
+      "variant_config": {
+        "gauge_every_steps": 0,
+        "grid_size": 4,
+        "hidden_dim": 32,
+        "model_name": "clipped_kan_gru",
+        "moment_mode": "unchanged",
+        "name": "clipped_kan_gru_h32"
+      },
+      "seed": 0,
+      "epochs": 100,
+      "batch_size": 32,
+      "window": 512,
+      "stride": 512,
+      "eval_stride": 1024,
+      "feature_mode": "no_current",
+      "feature_names": [
+        "V_t",
+        "V_t_minus_1",
+        "dV_t",
+        "sweep_direction"
+      ],
+      "lr": 0.001,
+      "weight_decay": 0.0,
+      "model_input_dim": 4,
+      "timing": {
+        "peak_cuda_memory_mb": 552.38720703125,
+        "projection_seconds_per_event": 0.0,
+        "projection_wall_clock_fraction": 0.0,
+        "projection_wall_clock_seconds": 0.0,
+        "seconds_per_epoch": 149.47165009291,
+        "seconds_per_step": 3.832606412638718,
+        "wall_clock_seconds": 14947.165009291
+      },
+      "train_windows": 1248,
+      "eval_windows": 136,
+      "global_steps": 3900,
+      "checkpoint_path": "checkpoints/window512_kan_seeds0_1/clipped_kan_gru_h32_no_current_seed0.pt",
+      "device": "cuda",
+      "cuda_name": "Tesla T4",
+      "source_log": "revision_experiments/window_imports/results_reviewer_window512_seeds0_1/results/window512_kan_seeds0_1.json"
+    },
+    {
+      "variant": "clipped_kan_gru_h32",
+      "variant_config": {
+        "gauge_every_steps": 0,
+        "grid_size": 4,
+        "hidden_dim": 32,
+        "model_name": "clipped_kan_gru",
+        "moment_mode": "unchanged",
+        "name": "clipped_kan_gru_h32"
+      },
+      "seed": 1,
+      "epochs": 100,
+      "batch_size": 32,
+      "window": 512,
+      "stride": 512,
+      "eval_stride": 1024,
+      "feature_mode": "no_current",
+      "feature_names": [
+        "V_t",
+        "V_t_minus_1",
+        "dV_t",
+        "sweep_direction"
+      ],
+      "lr": 0.001,
+      "weight_decay": 0.0,
+      "model_input_dim": 4,
+      "timing": {
+        "peak_cuda_memory_mb": 552.38720703125,
+        "projection_seconds_per_event": 0.0,
+        "projection_wall_clock_fraction": 0.0,
+        "projection_wall_clock_seconds": 0.0,
+        "seconds_per_epoch": 149.28662748980003,
+        "seconds_per_step": 3.8278622433282052,
+        "wall_clock_seconds": 14928.662748980001
+      },
+      "train_windows": 1248,
+      "eval_windows": 136,
+      "global_steps": 3900,
+      "checkpoint_path": "checkpoints/window512_kan_seeds0_1/clipped_kan_gru_h32_no_current_seed1.pt",
+      "device": "cuda",
+      "cuda_name": "Tesla T4",
+      "source_log": "revision_experiments/window_imports/results_reviewer_window512_seeds0_1/results/window512_kan_seeds0_1.json"
+    },
+    {
+      "variant": "gru_h116",
+      "variant_config": {
+        "gauge_every_steps": 0,
+        "grid_size": 4,
+        "hidden_dim": 116,
+        "model_name": "gru",
+        "moment_mode": "unchanged",
+        "name": "gru_h116"
+      },
+      "seed": 2,
+      "epochs": 100,
+      "batch_size": 64,
+      "window": 512,
+      "stride": 512,
+      "eval_stride": 1024,
+      "feature_mode": "no_current",
+      "feature_names": [
+        "V_t",
+        "V_t_minus_1",
+        "dV_t",
+        "sweep_direction"
+      ],
+      "lr": 0.001,
+      "weight_decay": 0.0,
+      "model_input_dim": 4,
+      "timing": {
+        "peak_cuda_memory_mb": 420.4072265625,
+        "projection_seconds_per_event": 0.0,
+        "projection_wall_clock_fraction": 0.0,
+        "projection_wall_clock_seconds": 0.0,
+        "seconds_per_epoch": 0.7347061679199942,
+        "seconds_per_step": 0.036735308395999706,
+        "wall_clock_seconds": 73.47061679199942
+      },
+      "train_windows": 1248,
+      "eval_windows": 136,
+      "global_steps": 2000,
+      "checkpoint_path": "checkpoints/window512_gru_seeds2/gru_h116_no_current_seed2.pt",
+      "device": "cuda",
+      "cuda_name": "Tesla T4",
+      "source_log": "revision_experiments/window_imports/results_reviewer_window512_seeds2/results/window512_gru_seeds2.json"
+    },
+    {
+      "variant": "clipped_kan_gru_h32",
+      "variant_config": {
+        "gauge_every_steps": 0,
+        "grid_size": 4,
+        "hidden_dim": 32,
+        "model_name": "clipped_kan_gru",
+        "moment_mode": "unchanged",
+        "name": "clipped_kan_gru_h32"
+      },
+      "seed": 2,
+      "epochs": 100,
+      "batch_size": 32,
+      "window": 512,
+      "stride": 512,
+      "eval_stride": 1024,
+      "feature_mode": "no_current",
+      "feature_names": [
+        "V_t",
+        "V_t_minus_1",
+        "dV_t",
+        "sweep_direction"
+      ],
+      "lr": 0.001,
+      "weight_decay": 0.0,
+      "model_input_dim": 4,
+      "timing": {
+        "peak_cuda_memory_mb": 552.38720703125,
+        "projection_seconds_per_event": 0.0,
+        "projection_wall_clock_fraction": 0.0,
+        "projection_wall_clock_seconds": 0.0,
+        "seconds_per_epoch": 148.49111175171,
+        "seconds_per_step": 3.8074644038900005,
+        "wall_clock_seconds": 14849.111175171001
+      },
+      "train_windows": 1248,
+      "eval_windows": 136,
+      "global_steps": 3900,
+      "checkpoint_path": "checkpoints/window512_kan_seeds2/clipped_kan_gru_h32_no_current_seed2.pt",
+      "device": "cuda",
+      "cuda_name": "Tesla T4",
+      "source_log": "revision_experiments/window_imports/results_reviewer_window512_seeds2/results/window512_kan_seeds2.json"
+    }
+  ]
+}

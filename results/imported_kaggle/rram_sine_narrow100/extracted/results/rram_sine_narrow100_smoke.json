@@ -1,0 +1,160 @@
+{
+  "note": "RRAM LSTM public dataset run.",
+  "task": "sine",
+  "task_notes": "RRAM sinusoidal compact-model task; phase split.",
+  "root": "data/raw/rram_lstm",
+  "results": [
+    {
+      "variant": "gru_h116",
+      "seed": 0,
+      "task": "sine",
+      "task_notes": "RRAM sinusoidal compact-model task; phase split.",
+      "input_dim": 2,
+      "seq_len": 5,
+      "epochs": 1,
+      "batch_size": 512,
+      "lr": 0.001,
+      "train_rows": 995,
+      "val_rows": 995,
+      "test_rows": 995,
+      "global_steps": 2,
+      "complexity": {
+        "total_parameters": 41877,
+        "trainable_parameters": 41877,
+        "kan_layers": 0,
+        "kan_edges": 0,
+        "spline_coefficients": 0,
+        "spline_scales": 0,
+        "base_scales": 0,
+        "kan_output_biases": 0
+      },
+      "checkpoint_path": "checkpoints/rram_sine_narrow100_smoke/gru_h116_sine_seed0.pt",
+      "epoch_summaries": [
+        {
+          "epoch": 1,
+          "train_loss_mean": 1.0210918188095093,
+          "train_loss_last": 1.0221549272537231,
+          "epoch_seconds": 0.8681860780000079,
+          "val_metrics": {
+            "rmse": 0.959234356880188,
+            "mae": 0.8811450004577637,
+            "r2": 0.07336997985839844,
+            "raw_rmse": 0.0006528039230033755,
+            "raw_mae": 0.0005996604450047016,
+            "raw_r2": 0.07337003946304321
+          }
+        }
+      ],
+      "final_val_metrics": {
+        "rmse": 0.959234356880188,
+        "mae": 0.8811450004577637,
+        "r2": 0.07336997985839844,
+        "raw_rmse": 0.0006528039230033755,
+        "raw_mae": 0.0005996604450047016,
+        "raw_r2": 0.07337003946304321
+      },
+      "test_metrics": {
+        "rmse": 0.956024706363678,
+        "mae": 0.8779461979866028,
+        "r2": 0.07411962747573853,
+        "raw_rmse": 0.0006506196223199368,
+        "raw_mae": 0.0005974835366941988,
+        "raw_r2": 0.07411962747573853
+      },
+      "timing": {
+        "wall_clock_seconds": 0.8843113749999816,
+        "seconds_per_epoch": 0.8843113749999816,
+        "seconds_per_step": 0.4421556874999908
+      }
+    },
+    {
+      "variant": "clipped_kan_gru_h32",
+      "seed": 0,
+      "task": "sine",
+      "task_notes": "RRAM sinusoidal compact-model task; phase split.",
+      "input_dim": 2,
+      "seq_len": 5,
+      "epochs": 1,
+      "batch_size": 512,
+      "lr": 0.001,
+      "train_rows": 995,
+      "val_rows": 995,
+      "test_rows": 995,
+      "global_steps": 2,
+      "complexity": {
+        "total_parameters": 29505,
+        "trainable_parameters": 29505,
+        "kan_layers": 2,
+        "kan_edges": 3264,
+        "spline_coefficients": 22848,
+        "spline_scales": 3264,
+        "base_scales": 3264,
+        "kan_output_biases": 96
+      },
+      "checkpoint_path": "checkpoints/rram_sine_narrow100_smoke/clipped_kan_gru_h32_sine_seed0.pt",
+      "epoch_summaries": [
+        {
+          "epoch": 1,
+          "train_loss_mean": 1.0691140294075012,
+          "train_loss_last": 1.0798791646957397,
+          "epoch_seconds": 0.2535363210000128,
+          "val_metrics": {
+            "rmse": 1.0140817165374756,
+            "mae": 0.9043163061141968,
+            "r2": -0.035625576972961426,
+            "raw_rmse": 0.0006901301094330847,
+            "raw_mae": 0.0006154296570457518,
+            "raw_r2": -0.03562569618225098
+          }
+        }
+      ],
+      "final_val_metrics": {
+        "rmse": 1.0140817165374756,
+        "mae": 0.9043163061141968,
+        "r2": -0.035625576972961426,
+        "raw_rmse": 0.0006901301094330847,
+        "raw_mae": 0.0006154296570457518,
+        "raw_r2": -0.03562569618225098
+      },
+      "test_metrics": {
+        "rmse": 1.0081294775009155,
+        "mae": 0.8985050916671753,
+        "r2": -0.029554367065429688,
+        "raw_rmse": 0.0006860793801024556,
+        "raw_mae": 0.0006114748539403081,
+        "raw_r2": -0.029554367065429688
+      },
+      "timing": {
+        "wall_clock_seconds": 0.2884566120000045,
+        "seconds_per_epoch": 0.2884566120000045,
+        "seconds_per_step": 0.14422830600000225
+      }
+    }
+  ],
+  "summary": [
+    {
+      "variant": "gru_h116",
+      "runs": 1,
+      "params": 41877,
+      "val_r2_mean": 0.07336997985839844,
+      "val_r2_std": 0.0,
+      "val_raw_rmse_mean": 0.0006528039230033755,
+      "test_r2_mean": 0.07411962747573853,
+      "test_r2_std": 0.0,
+      "test_raw_rmse_mean": 0.0006506196223199368,
+      "seconds_per_epoch_mean": 0.8843113749999816
+    },
+    {
+      "variant": "clipped_kan_gru_h32",
+      "runs": 1,
+      "params": 29505,
+      "val_r2_mean": -0.035625576972961426,
+      "val_r2_std": 0.0,
+      "val_raw_rmse_mean": 0.0006901301094330847,
+      "test_r2_mean": -0.029554367065429688,
+      "test_r2_std": 0.0,
+      "test_raw_rmse_mean": 0.0006860793801024556,
+      "seconds_per_epoch_mean": 0.2884566120000045
+    }
+  ]
+}

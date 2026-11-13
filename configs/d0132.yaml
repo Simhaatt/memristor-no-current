@@ -1,0 +1,1122 @@
+{
+  "regime": "d0132",
+  "meaning": "Archived run records; missing settings must be read from the cited runner/log, not assumed.",
+  "runs": [
+    {
+      "variant": "static_mlp_h200",
+      "seed": 0,
+      "epochs": 100,
+      "protocol": "device_transfer",
+      "timing": {
+        "wall_clock_seconds": 1.3629679000005126,
+        "seconds_per_epoch": 0.013629679000005127
+      },
+      "train_windows": 24,
+      "window": 128,
+      "eval_stride": 128,
+      "feature_names": [
+        "V_t",
+        "V_t_minus_1",
+        "dV_t",
+        "sweep_direction",
+        "log10_R_compact"
+      ],
+      "source_log": "results/d0132_hybrid_residual/d0132_hybrid_residual_results.json"
+    },
+    {
+      "variant": "static_mlp_h200",
+      "seed": 1,
+      "epochs": 100,
+      "protocol": "device_transfer",
+      "timing": {
+        "wall_clock_seconds": 1.773293900070712,
+        "seconds_per_epoch": 0.017732939000707118
+      },
+      "train_windows": 24,
+      "window": 128,
+      "eval_stride": 128,
+      "feature_names": [
+        "V_t",
+        "V_t_minus_1",
+        "dV_t",
+        "sweep_direction",
+        "log10_R_compact"
+      ],
+      "source_log": "results/d0132_hybrid_residual/d0132_hybrid_residual_results.json"
+    },
+    {
+      "variant": "static_mlp_h200",
+      "seed": 2,
+      "epochs": 100,
+      "protocol": "device_transfer",
+      "timing": {
+        "wall_clock_seconds": 1.5359992999583483,
+        "seconds_per_epoch": 0.015359992999583483
+      },
+      "train_windows": 24,
+      "window": 128,
+      "eval_stride": 128,
+      "feature_names": [
+        "V_t",
+        "V_t_minus_1",
+        "dV_t",
+        "sweep_direction",
+        "log10_R_compact"
+      ],
+      "source_log": "results/d0132_hybrid_residual/d0132_hybrid_residual_results.json"
+    },
+    {
+      "variant": "gru_h116",
+      "seed": 0,
+      "epochs": 100,
+      "protocol": "device_transfer",
+      "timing": {
+        "wall_clock_seconds": 13.330669500050135,
+        "seconds_per_epoch": 0.13330669500050135
+      },
+      "train_windows": 24,
+      "window": 128,
+      "eval_stride": 128,
+      "feature_names": [
+        "V_t",
+        "V_t_minus_1",
+        "dV_t",
+        "sweep_direction",
+        "log10_R_compact"
+      ],
+      "source_log": "results/d0132_hybrid_residual/d0132_hybrid_residual_results.json"
+    },
+    {
+      "variant": "gru_h116",
+      "seed": 1,
+      "epochs": 100,
+      "protocol": "device_transfer",
+      "timing": {
+        "wall_clock_seconds": 13.988387599936686,
+        "seconds_per_epoch": 0.13988387599936686
+      },
+      "train_windows": 24,
+      "window": 128,
+      "eval_stride": 128,
+      "feature_names": [
+        "V_t",
+        "V_t_minus_1",
+        "dV_t",
+        "sweep_direction",
+        "log10_R_compact"
+      ],
+      "source_log": "results/d0132_hybrid_residual/d0132_hybrid_residual_results.json"
+    },
+    {
+      "variant": "gru_h116",
+      "seed": 2,
+      "epochs": 100,
+      "protocol": "device_transfer",
+      "timing": {
+        "wall_clock_seconds": 14.1686584999552,
+        "seconds_per_epoch": 0.141686584999552
+      },
+      "train_windows": 24,
+      "window": 128,
+      "eval_stride": 128,
+      "feature_names": [
+        "V_t",
+        "V_t_minus_1",
+        "dV_t",
+        "sweep_direction",
+        "log10_R_compact"
+      ],
+      "source_log": "results/d0132_hybrid_residual/d0132_hybrid_residual_results.json"
+    },
+    {
+      "variant": "clipped_kan_gru_h32",
+      "seed": 0,
+      "epochs": 100,
+      "protocol": "device_transfer",
+      "timing": {
+        "wall_clock_seconds": 192.3468911999371,
+        "seconds_per_epoch": 1.9234689119993709
+      },
+      "train_windows": 24,
+      "window": 128,
+      "eval_stride": 128,
+      "feature_names": [
+        "V_t",
+        "V_t_minus_1",
+        "dV_t",
+        "sweep_direction",
+        "log10_R_compact"
+      ],
+      "source_log": "results/d0132_hybrid_residual/d0132_hybrid_residual_results.json"
+    },
+    {
+      "variant": "clipped_kan_gru_h32",
+      "seed": 1,
+      "epochs": 100,
+      "protocol": "device_transfer",
+      "timing": {
+        "wall_clock_seconds": 186.15330140001606,
+        "seconds_per_epoch": 1.8615330140001607
+      },
+      "train_windows": 24,
+      "window": 128,
+      "eval_stride": 128,
+      "feature_names": [
+        "V_t",
+        "V_t_minus_1",
+        "dV_t",
+        "sweep_direction",
+        "log10_R_compact"
+      ],
+      "source_log": "results/d0132_hybrid_residual/d0132_hybrid_residual_results.json"
+    },
+    {
+      "variant": "clipped_kan_gru_h32",
+      "seed": 2,
+      "epochs": 100,
+      "protocol": "device_transfer",
+      "timing": {
+        "wall_clock_seconds": 191.57987539994065,
+        "seconds_per_epoch": 1.9157987539994066
+      },
+      "train_windows": 24,
+      "window": 128,
+      "eval_stride": 128,
+      "feature_names": [
+        "V_t",
+        "V_t_minus_1",
+        "dV_t",
+        "sweep_direction",
+        "log10_R_compact"
+      ],
+      "source_log": "results/d0132_hybrid_residual/d0132_hybrid_residual_results.json"
+    },
+    {
+      "variant": "static_mlp_h200",
+      "seed": 0,
+      "epochs": 100,
+      "protocol": "device_transfer",
+      "timing": {
+        "wall_clock_seconds": 1.3985784000251442,
+        "seconds_per_epoch": 0.013985784000251442
+      },
+      "train_windows": 24,
+      "window": 128,
+      "eval_stride": 128,
+      "feature_names": [
+        "V_t",
+        "V_t_minus_1",
+        "dV_t",
+        "sweep_direction",
+        "log10_R_compact"
+      ],
+      "source_log": "results/d0132_hybrid_residual/d0132_hybrid_residual_results.json"
+    },
+    {
+      "variant": "static_mlp_h200",
+      "seed": 1,
+      "epochs": 100,
+      "protocol": "device_transfer",
+      "timing": {
+        "wall_clock_seconds": 1.586486199987121,
+        "seconds_per_epoch": 0.015864861999871208
+      },
+      "train_windows": 24,
+      "window": 128,
+      "eval_stride": 128,
+      "feature_names": [
+        "V_t",
+        "V_t_minus_1",
+        "dV_t",
+        "sweep_direction",
+        "log10_R_compact"
+      ],
+      "source_log": "results/d0132_hybrid_residual/d0132_hybrid_residual_results.json"
+    },
+    {
+      "variant": "static_mlp_h200",
+      "seed": 2,
+      "epochs": 100,
+      "protocol": "device_transfer",
+      "timing": {
+        "wall_clock_seconds": 1.5327382000396028,
+        "seconds_per_epoch": 0.015327382000396027
+      },
+      "train_windows": 24,
+      "window": 128,
+      "eval_stride": 128,
+      "feature_names": [
+        "V_t",
+        "V_t_minus_1",
+        "dV_t",
+        "sweep_direction",
+        "log10_R_compact"
+      ],
+      "source_log": "results/d0132_hybrid_residual/d0132_hybrid_residual_results.json"
+    },
+    {
+      "variant": "gru_h116",
+      "seed": 0,
+      "epochs": 100,
+      "protocol": "device_transfer",
+      "timing": {
+        "wall_clock_seconds": 13.715294099994935,
+        "seconds_per_epoch": 0.13715294099994935
+      },
+      "train_windows": 24,
+      "window": 128,
+      "eval_stride": 128,
+      "feature_names": [
+        "V_t",
+        "V_t_minus_1",
+        "dV_t",
+        "sweep_direction",
+        "log10_R_compact"
+      ],
+      "source_log": "results/d0132_hybrid_residual/d0132_hybrid_residual_results.json"
+    },
+    {
+      "variant": "gru_h116",
+      "seed": 1,
+      "epochs": 100,
+      "protocol": "device_transfer",
+      "timing": {
+        "wall_clock_seconds": 14.024434400023893,
+        "seconds_per_epoch": 0.1402443440002389
+      },
+      "train_windows": 24,
+      "window": 128,
+      "eval_stride": 128,
+      "feature_names": [
+        "V_t",
+        "V_t_minus_1",
+        "dV_t",
+        "sweep_direction",
+        "log10_R_compact"
+      ],
+      "source_log": "results/d0132_hybrid_residual/d0132_hybrid_residual_results.json"
+    },
+    {
+      "variant": "gru_h116",
+      "seed": 2,
+      "epochs": 100,
+      "protocol": "device_transfer",
+      "timing": {
+        "wall_clock_seconds": 14.605782600003295,
+        "seconds_per_epoch": 0.14605782600003295
+      },
+      "train_windows": 24,
+      "window": 128,
+      "eval_stride": 128,
+      "feature_names": [
+        "V_t",
+        "V_t_minus_1",
+        "dV_t",
+        "sweep_direction",
+        "log10_R_compact"
+      ],
+      "source_log": "results/d0132_hybrid_residual/d0132_hybrid_residual_results.json"
+    },
+    {
+      "variant": "clipped_kan_gru_h32",
+      "seed": 0,
+      "epochs": 100,
+      "protocol": "device_transfer",
+      "timing": {
+        "wall_clock_seconds": 190.07315569999628,
+        "seconds_per_epoch": 1.9007315569999628
+      },
+      "train_windows": 24,
+      "window": 128,
+      "eval_stride": 128,
+      "feature_names": [
+        "V_t",
+        "V_t_minus_1",
+        "dV_t",
+        "sweep_direction",
+        "log10_R_compact"
+      ],
+      "source_log": "results/d0132_hybrid_residual/d0132_hybrid_residual_results.json"
+    },
+    {
+      "variant": "clipped_kan_gru_h32",
+      "seed": 1,
+      "epochs": 100,
+      "protocol": "device_transfer",
+      "timing": {
+        "wall_clock_seconds": 196.29749509994872,
+        "seconds_per_epoch": 1.9629749509994872
+      },
+      "train_windows": 24,
+      "window": 128,
+      "eval_stride": 128,
+      "feature_names": [
+        "V_t",
+        "V_t_minus_1",
+        "dV_t",
+        "sweep_direction",
+        "log10_R_compact"
+      ],
+      "source_log": "results/d0132_hybrid_residual/d0132_hybrid_residual_results.json"
+    },
+    {
+      "variant": "clipped_kan_gru_h32",
+      "seed": 2,
+      "epochs": 100,
+      "protocol": "device_transfer",
+      "timing": {
+        "wall_clock_seconds": 183.33890370000154,
+        "seconds_per_epoch": 1.8333890370000154
+      },
+      "train_windows": 24,
+      "window": 128,
+      "eval_stride": 128,
+      "feature_names": [
+        "V_t",
+        "V_t_minus_1",
+        "dV_t",
+        "sweep_direction",
+        "log10_R_compact"
+      ],
+      "source_log": "results/d0132_hybrid_residual/d0132_hybrid_residual_results.json"
+    },
+    {
+      "variant": "static_mlp_h200",
+      "seed": 0,
+      "epochs": 100,
+      "protocol": "within_d0132",
+      "timing": {
+        "wall_clock_seconds": 2.378347299993038,
+        "seconds_per_epoch": 0.02378347299993038
+      },
+      "train_windows": 48,
+      "window": 128,
+      "eval_stride": 128,
+      "feature_names": [
+        "V_t",
+        "V_t_minus_1",
+        "dV_t",
+        "sweep_direction",
+        "log10_R_compact"
+      ],
+      "source_log": "results/d0132_hybrid_residual/d0132_hybrid_residual_results.json"
+    },
+    {
+      "variant": "static_mlp_h200",
+      "seed": 1,
+      "epochs": 100,
+      "protocol": "within_d0132",
+      "timing": {
+        "wall_clock_seconds": 2.297003799933009,
+        "seconds_per_epoch": 0.02297003799933009
+      },
+      "train_windows": 48,
+      "window": 128,
+      "eval_stride": 128,
+      "feature_names": [
+        "V_t",
+        "V_t_minus_1",
+        "dV_t",
+        "sweep_direction",
+        "log10_R_compact"
+      ],
+      "source_log": "results/d0132_hybrid_residual/d0132_hybrid_residual_results.json"
+    },
+    {
+      "variant": "static_mlp_h200",
+      "seed": 2,
+      "epochs": 100,
+      "protocol": "within_d0132",
+      "timing": {
+        "wall_clock_seconds": 2.1588279999559745,
+        "seconds_per_epoch": 0.021588279999559746
+      },
+      "train_windows": 48,
+      "window": 128,
+      "eval_stride": 128,
+      "feature_names": [
+        "V_t",
+        "V_t_minus_1",
+        "dV_t",
+        "sweep_direction",
+        "log10_R_compact"
+      ],
+      "source_log": "results/d0132_hybrid_residual/d0132_hybrid_residual_results.json"
+    },
+    {
+      "variant": "gru_h116",
+      "seed": 0,
+      "epochs": 100,
+      "protocol": "within_d0132",
+      "timing": {
+        "wall_clock_seconds": 24.19863619992975,
+        "seconds_per_epoch": 0.24198636199929752
+      },
+      "train_windows": 48,
+      "window": 128,
+      "eval_stride": 128,
+      "feature_names": [
+        "V_t",
+        "V_t_minus_1",
+        "dV_t",
+        "sweep_direction",
+        "log10_R_compact"
+      ],
+      "source_log": "results/d0132_hybrid_residual/d0132_hybrid_residual_results.json"
+    },
+    {
+      "variant": "gru_h116",
+      "seed": 1,
+      "epochs": 100,
+      "protocol": "within_d0132",
+      "timing": {
+        "wall_clock_seconds": 27.755133699974976,
+        "seconds_per_epoch": 0.27755133699974976
+      },
+      "train_windows": 48,
+      "window": 128,
+      "eval_stride": 128,
+      "feature_names": [
+        "V_t",
+        "V_t_minus_1",
+        "dV_t",
+        "sweep_direction",
+        "log10_R_compact"
+      ],
+      "source_log": "results/d0132_hybrid_residual/d0132_hybrid_residual_results.json"
+    },
+    {
+      "variant": "gru_h116",
+      "seed": 2,
+      "epochs": 100,
+      "protocol": "within_d0132",
+      "timing": {
+        "wall_clock_seconds": 29.564072499983013,
+        "seconds_per_epoch": 0.29564072499983013
+      },
+      "train_windows": 48,
+      "window": 128,
+      "eval_stride": 128,
+      "feature_names": [
+        "V_t",
+        "V_t_minus_1",
+        "dV_t",
+        "sweep_direction",
+        "log10_R_compact"
+      ],
+      "source_log": "results/d0132_hybrid_residual/d0132_hybrid_residual_results.json"
+    },
+    {
+      "variant": "clipped_kan_gru_h32",
+      "seed": 0,
+      "epochs": 100,
+      "protocol": "within_d0132",
+      "timing": {
+        "wall_clock_seconds": 427.46220249996986,
+        "seconds_per_epoch": 4.274622024999698
+      },
+      "train_windows": 48,
+      "window": 128,
+      "eval_stride": 128,
+      "feature_names": [
+        "V_t",
+        "V_t_minus_1",
+        "dV_t",
+        "sweep_direction",
+        "log10_R_compact"
+      ],
+      "source_log": "results/d0132_hybrid_residual/d0132_hybrid_residual_results.json"
+    },
+    {
+      "variant": "clipped_kan_gru_h32",
+      "seed": 1,
+      "epochs": 100,
+      "protocol": "within_d0132",
+      "timing": {
+        "wall_clock_seconds": 456.02762750000693,
+        "seconds_per_epoch": 4.560276275000069
+      },
+      "train_windows": 48,
+      "window": 128,
+      "eval_stride": 128,
+      "feature_names": [
+        "V_t",
+        "V_t_minus_1",
+        "dV_t",
+        "sweep_direction",
+        "log10_R_compact"
+      ],
+      "source_log": "results/d0132_hybrid_residual/d0132_hybrid_residual_results.json"
+    },
+    {
+      "variant": "clipped_kan_gru_h32",
+      "seed": 2,
+      "epochs": 100,
+      "protocol": "within_d0132",
+      "timing": {
+        "wall_clock_seconds": 458.4209227000829,
+        "seconds_per_epoch": 4.584209227000829
+      },
+      "train_windows": 48,
+      "window": 128,
+      "eval_stride": 128,
+      "feature_names": [
+        "V_t",
+        "V_t_minus_1",
+        "dV_t",
+        "sweep_direction",
+        "log10_R_compact"
+      ],
+      "source_log": "results/d0132_hybrid_residual/d0132_hybrid_residual_results.json"
+    },
+    {
+      "variant": "static_mlp_h200",
+      "seed": 0,
+      "epochs": 100,
+      "protocol": "within_d0132",
+      "timing": {
+        "wall_clock_seconds": 3.08813549997285,
+        "seconds_per_epoch": 0.0308813549997285
+      },
+      "train_windows": 48,
+      "window": 128,
+      "eval_stride": 128,
+      "feature_names": [
+        "V_t",
+        "V_t_minus_1",
+        "dV_t",
+        "sweep_direction",
+        "log10_R_compact"
+      ],
+      "source_log": "results/d0132_hybrid_residual/d0132_hybrid_residual_results.json"
+    },
+    {
+      "variant": "static_mlp_h200",
+      "seed": 1,
+      "epochs": 100,
+      "protocol": "within_d0132",
+      "timing": {
+        "wall_clock_seconds": 2.8298542000120506,
+        "seconds_per_epoch": 0.028298542000120507
+      },
+      "train_windows": 48,
+      "window": 128,
+      "eval_stride": 128,
+      "feature_names": [
+        "V_t",
+        "V_t_minus_1",
+        "dV_t",
+        "sweep_direction",
+        "log10_R_compact"
+      ],
+      "source_log": "results/d0132_hybrid_residual/d0132_hybrid_residual_results.json"
+    },
+    {
+      "variant": "static_mlp_h200",
+      "seed": 2,
+      "epochs": 100,
+      "protocol": "within_d0132",
+      "timing": {
+        "wall_clock_seconds": 3.161216599983163,
+        "seconds_per_epoch": 0.03161216599983163
+      },
+      "train_windows": 48,
+      "window": 128,
+      "eval_stride": 128,
+      "feature_names": [
+        "V_t",
+        "V_t_minus_1",
+        "dV_t",
+        "sweep_direction",
+        "log10_R_compact"
+      ],
+      "source_log": "results/d0132_hybrid_residual/d0132_hybrid_residual_results.json"
+    },
+    {
+      "variant": "gru_h116",
+      "seed": 0,
+      "epochs": 100,
+      "protocol": "within_d0132",
+      "timing": {
+        "wall_clock_seconds": 32.81709010002669,
+        "seconds_per_epoch": 0.3281709010002669
+      },
+      "train_windows": 48,
+      "window": 128,
+      "eval_stride": 128,
+      "feature_names": [
+        "V_t",
+        "V_t_minus_1",
+        "dV_t",
+        "sweep_direction",
+        "log10_R_compact"
+      ],
+      "source_log": "results/d0132_hybrid_residual/d0132_hybrid_residual_results.json"
+    },
+    {
+      "variant": "gru_h116",
+      "seed": 1,
+      "epochs": 100,
+      "protocol": "within_d0132",
+      "timing": {
+        "wall_clock_seconds": 33.678551899967715,
+        "seconds_per_epoch": 0.3367855189996771
+      },
+      "train_windows": 48,
+      "window": 128,
+      "eval_stride": 128,
+      "feature_names": [
+        "V_t",
+        "V_t_minus_1",
+        "dV_t",
+        "sweep_direction",
+        "log10_R_compact"
+      ],
+      "source_log": "results/d0132_hybrid_residual/d0132_hybrid_residual_results.json"
+    },
+    {
+      "variant": "gru_h116",
+      "seed": 2,
+      "epochs": 100,
+      "protocol": "within_d0132",
+      "timing": {
+        "wall_clock_seconds": 34.16437460004818,
+        "seconds_per_epoch": 0.34164374600048175
+      },
+      "train_windows": 48,
+      "window": 128,
+      "eval_stride": 128,
+      "feature_names": [
+        "V_t",
+        "V_t_minus_1",
+        "dV_t",
+        "sweep_direction",
+        "log10_R_compact"
+      ],
+      "source_log": "results/d0132_hybrid_residual/d0132_hybrid_residual_results.json"
+    },
+    {
+      "variant": "clipped_kan_gru_h32",
+      "seed": 0,
+      "epochs": 100,
+      "protocol": "within_d0132",
+      "timing": {
+        "wall_clock_seconds": 406.24470040004235,
+        "seconds_per_epoch": 4.062447004000424
+      },
+      "train_windows": 48,
+      "window": 128,
+      "eval_stride": 128,
+      "feature_names": [
+        "V_t",
+        "V_t_minus_1",
+        "dV_t",
+        "sweep_direction",
+        "log10_R_compact"
+      ],
+      "source_log": "results/d0132_hybrid_residual/d0132_hybrid_residual_results.json"
+    },
+    {
+      "variant": "clipped_kan_gru_h32",
+      "seed": 1,
+      "epochs": 100,
+      "protocol": "within_d0132",
+      "timing": {
+        "wall_clock_seconds": 408.3887494999217,
+        "seconds_per_epoch": 4.0838874949992165
+      },
+      "train_windows": 48,
+      "window": 128,
+      "eval_stride": 128,
+      "feature_names": [
+        "V_t",
+        "V_t_minus_1",
+        "dV_t",
+        "sweep_direction",
+        "log10_R_compact"
+      ],
+      "source_log": "results/d0132_hybrid_residual/d0132_hybrid_residual_results.json"
+    },
+    {
+      "variant": "clipped_kan_gru_h32",
+      "seed": 2,
+      "epochs": 100,
+      "protocol": "within_d0132",
+      "timing": {
+        "wall_clock_seconds": 396.4345270000631,
+        "seconds_per_epoch": 3.964345270000631
+      },
+      "train_windows": 48,
+      "window": 128,
+      "eval_stride": 128,
+      "feature_names": [
+        "V_t",
+        "V_t_minus_1",
+        "dV_t",
+        "sweep_direction",
+        "log10_R_compact"
+      ],
+      "source_log": "results/d0132_hybrid_residual/d0132_hybrid_residual_results.json"
+    },
+    {
+      "variant": "static_mlp_h200",
+      "seed": 0,
+      "epochs": 100,
+      "protocol": "device_transfer",
+      "timing": {
+        "wall_clock_seconds": 1.053119899937883,
+        "seconds_per_epoch": 0.01053119899937883
+      },
+      "train_windows": 24,
+      "window": 128,
+      "eval_stride": 128,
+      "feature_names": [
+        "V_t",
+        "V_t_minus_1",
+        "dV_t",
+        "sweep_direction"
+      ],
+      "source_log": "results/d0132_resistance_sequence/d0132_resistance_sequence_results.json"
+    },
+    {
+      "variant": "static_mlp_h200",
+      "seed": 1,
+      "epochs": 100,
+      "protocol": "device_transfer",
+      "timing": {
+        "wall_clock_seconds": 1.028488599928096,
+        "seconds_per_epoch": 0.010284885999280959
+      },
+      "train_windows": 24,
+      "window": 128,
+      "eval_stride": 128,
+      "feature_names": [
+        "V_t",
+        "V_t_minus_1",
+        "dV_t",
+        "sweep_direction"
+      ],
+      "source_log": "results/d0132_resistance_sequence/d0132_resistance_sequence_results.json"
+    },
+    {
+      "variant": "static_mlp_h200",
+      "seed": 2,
+      "epochs": 100,
+      "protocol": "device_transfer",
+      "timing": {
+        "wall_clock_seconds": 1.0286976000061259,
+        "seconds_per_epoch": 0.010286976000061258
+      },
+      "train_windows": 24,
+      "window": 128,
+      "eval_stride": 128,
+      "feature_names": [
+        "V_t",
+        "V_t_minus_1",
+        "dV_t",
+        "sweep_direction"
+      ],
+      "source_log": "results/d0132_resistance_sequence/d0132_resistance_sequence_results.json"
+    },
+    {
+      "variant": "gru_h116",
+      "seed": 0,
+      "epochs": 100,
+      "protocol": "device_transfer",
+      "timing": {
+        "wall_clock_seconds": 12.545144099975005,
+        "seconds_per_epoch": 0.12545144099975006
+      },
+      "train_windows": 24,
+      "window": 128,
+      "eval_stride": 128,
+      "feature_names": [
+        "V_t",
+        "V_t_minus_1",
+        "dV_t",
+        "sweep_direction"
+      ],
+      "source_log": "results/d0132_resistance_sequence/d0132_resistance_sequence_results.json"
+    },
+    {
+      "variant": "gru_h116",
+      "seed": 1,
+      "epochs": 100,
+      "protocol": "device_transfer",
+      "timing": {
+        "wall_clock_seconds": 12.706815999932587,
+        "seconds_per_epoch": 0.12706815999932586
+      },
+      "train_windows": 24,
+      "window": 128,
+      "eval_stride": 128,
+      "feature_names": [
+        "V_t",
+        "V_t_minus_1",
+        "dV_t",
+        "sweep_direction"
+      ],
+      "source_log": "results/d0132_resistance_sequence/d0132_resistance_sequence_results.json"
+    },
+    {
+      "variant": "gru_h116",
+      "seed": 2,
+      "epochs": 100,
+      "protocol": "device_transfer",
+      "timing": {
+        "wall_clock_seconds": 14.86499160004314,
+        "seconds_per_epoch": 0.1486499160004314
+      },
+      "train_windows": 24,
+      "window": 128,
+      "eval_stride": 128,
+      "feature_names": [
+        "V_t",
+        "V_t_minus_1",
+        "dV_t",
+        "sweep_direction"
+      ],
+      "source_log": "results/d0132_resistance_sequence/d0132_resistance_sequence_results.json"
+    },
+    {
+      "variant": "clipped_kan_gru_h32",
+      "seed": 0,
+      "epochs": 100,
+      "protocol": "device_transfer",
+      "timing": {
+        "wall_clock_seconds": 190.3304041000083,
+        "seconds_per_epoch": 1.903304041000083
+      },
+      "train_windows": 24,
+      "window": 128,
+      "eval_stride": 128,
+      "feature_names": [
+        "V_t",
+        "V_t_minus_1",
+        "dV_t",
+        "sweep_direction"
+      ],
+      "source_log": "results/d0132_resistance_sequence/d0132_resistance_sequence_results.json"
+    },
+    {
+      "variant": "clipped_kan_gru_h32",
+      "seed": 1,
+      "epochs": 100,
+      "protocol": "device_transfer",
+      "timing": {
+        "wall_clock_seconds": 186.96242989995517,
+        "seconds_per_epoch": 1.8696242989995517
+      },
+      "train_windows": 24,
+      "window": 128,
+      "eval_stride": 128,
+      "feature_names": [
+        "V_t",
+        "V_t_minus_1",
+        "dV_t",
+        "sweep_direction"
+      ],
+      "source_log": "results/d0132_resistance_sequence/d0132_resistance_sequence_results.json"
+    },
+    {
+      "variant": "clipped_kan_gru_h32",
+      "seed": 2,
+      "epochs": 100,
+      "protocol": "device_transfer",
+      "timing": {
+        "wall_clock_seconds": 204.84812730003614,
+        "seconds_per_epoch": 2.048481273000361
+      },
+      "train_windows": 24,
+      "window": 128,
+      "eval_stride": 128,
+      "feature_names": [
+        "V_t",
+        "V_t_minus_1",
+        "dV_t",
+        "sweep_direction"
+      ],
+      "source_log": "results/d0132_resistance_sequence/d0132_resistance_sequence_results.json"
+    },
+    {
+      "variant": "static_mlp_h200",
+      "seed": 0,
+      "epochs": 100,
+      "protocol": "within_d0132",
+      "timing": {
+        "wall_clock_seconds": 3.3557995000155643,
+        "seconds_per_epoch": 0.03355799500015564
+      },
+      "train_windows": 48,
+      "window": 128,
+      "eval_stride": 128,
+      "feature_names": [
+        "V_t",
+        "V_t_minus_1",
+        "dV_t",
+        "sweep_direction"
+      ],
+      "source_log": "results/d0132_resistance_sequence/d0132_resistance_sequence_results.json"
+    },
+    {
+      "variant": "static_mlp_h200",
+      "seed": 1,
+      "epochs": 100,
+      "protocol": "within_d0132",
+      "timing": {
+        "wall_clock_seconds": 3.3670169999822974,
+        "seconds_per_epoch": 0.033670169999822974
+      },
+      "train_windows": 48,
+      "window": 128,
+      "eval_stride": 128,
+      "feature_names": [
+        "V_t",
+        "V_t_minus_1",
+        "dV_t",
+        "sweep_direction"
+      ],
+      "source_log": "results/d0132_resistance_sequence/d0132_resistance_sequence_results.json"
+    },
+    {
+      "variant": "static_mlp_h200",
+      "seed": 2,
+      "epochs": 100,
+      "protocol": "within_d0132",
+      "timing": {
+        "wall_clock_seconds": 2.7375830999808386,
+        "seconds_per_epoch": 0.027375830999808386
+      },
+      "train_windows": 48,
+      "window": 128,
+      "eval_stride": 128,
+      "feature_names": [
+        "V_t",
+        "V_t_minus_1",
+        "dV_t",
+        "sweep_direction"
+      ],
+      "source_log": "results/d0132_resistance_sequence/d0132_resistance_sequence_results.json"
+    },
+    {
+      "variant": "gru_h116",
+      "seed": 0,
+      "epochs": 100,
+      "protocol": "within_d0132",
+      "timing": {
+        "wall_clock_seconds": 31.22758919990156,
+        "seconds_per_epoch": 0.31227589199901556
+      },
+      "train_windows": 48,
+      "window": 128,
+      "eval_stride": 128,
+      "feature_names": [
+        "V_t",
+        "V_t_minus_1",
+        "dV_t",
+        "sweep_direction"
+      ],
+      "source_log": "results/d0132_resistance_sequence/d0132_resistance_sequence_results.json"
+    },
+    {
+      "variant": "gru_h116",
+      "seed": 1,
+      "epochs": 100,
+      "protocol": "within_d0132",
+      "timing": {
+        "wall_clock_seconds": 30.648938299971633,
+        "seconds_per_epoch": 0.30648938299971634
+      },
+      "train_windows": 48,
+      "window": 128,
+      "eval_stride": 128,
+      "feature_names": [
+        "V_t",
+        "V_t_minus_1",
+        "dV_t",
+        "sweep_direction"
+      ],
+      "source_log": "results/d0132_resistance_sequence/d0132_resistance_sequence_results.json"
+    },
+    {
+      "variant": "gru_h116",
+      "seed": 2,
+      "epochs": 100,
+      "protocol": "within_d0132",
+      "timing": {
+        "wall_clock_seconds": 31.68102719995659,
+        "seconds_per_epoch": 0.3168102719995659
+      },
+      "train_windows": 48,
+      "window": 128,
+      "eval_stride": 128,
+      "feature_names": [
+        "V_t",
+        "V_t_minus_1",
+        "dV_t",
+        "sweep_direction"
+      ],
+      "source_log": "results/d0132_resistance_sequence/d0132_resistance_sequence_results.json"
+    },
+    {
+      "variant": "clipped_kan_gru_h32",
+      "seed": 0,
+      "epochs": 100,
+      "protocol": "within_d0132",
+      "timing": {
+        "wall_clock_seconds": 399.44348239991814,
+        "seconds_per_epoch": 3.9944348239991814
+      },
+      "train_windows": 48,
+      "window": 128,
+      "eval_stride": 128,
+      "feature_names": [
+        "V_t",
+        "V_t_minus_1",
+        "dV_t",
+        "sweep_direction"
+      ],
+      "source_log": "results/d0132_resistance_sequence/d0132_resistance_sequence_results.json"
+    },
+    {
+      "variant": "clipped_kan_gru_h32",
+      "seed": 1,
+      "epochs": 100,
+      "protocol": "within_d0132",
+      "timing": {
+        "wall_clock_seconds": 348.08136850001756,
+        "seconds_per_epoch": 3.4808136850001756
+      },
+      "train_windows": 48,
+      "window": 128,
+      "eval_stride": 128,
+      "feature_names": [
+        "V_t",
+        "V_t_minus_1",
+        "dV_t",
+        "sweep_direction"
+      ],
+      "source_log": "results/d0132_resistance_sequence/d0132_resistance_sequence_results.json"
+    },
+    {
+      "variant": "clipped_kan_gru_h32",
+      "seed": 2,
+      "epochs": 100,
+      "protocol": "within_d0132",
+      "timing": {
+        "wall_clock_seconds": 334.38758199999575,
+        "seconds_per_epoch": 3.3438758199999574
+      },
+      "train_windows": 48,
+      "window": 128,
+      "eval_stride": 128,
+      "feature_names": [
+        "V_t",
+        "V_t_minus_1",
+        "dV_t",
+        "sweep_direction"
+      ],
+      "source_log": "results/d0132_resistance_sequence/d0132_resistance_sequence_results.json"
+    }
+  ]
+}

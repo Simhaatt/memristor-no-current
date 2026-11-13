@@ -1,0 +1,2528 @@
+{
+  "regime": "rram",
+  "meaning": "Archived run records; missing settings must be read from the cited runner/log, not assumed.",
+  "runs": [
+    {
+      "variant": "gru_h116",
+      "seed": 0,
+      "epochs": 100,
+      "batch_size": 512,
+      "lr": 0.001,
+      "grid_range": [
+        -2.0,
+        2.0
+      ],
+      "timing": {
+        "wall_clock_seconds": 2.860903112000017,
+        "seconds_per_epoch": 0.02860903112000017,
+        "seconds_per_step": 0.014304515560000085,
+        "peak_cuda_memory_mb": 57.6806640625
+      },
+      "global_steps": 200,
+      "checkpoint_path": "checkpoints/rram_sine_grid_distill_full/gru_h116_sine_grid-2.0_2.0_seed0.pt",
+      "source_log": "results/final_tables/rram_sine_adjusted_grid_distillation.json"
+    },
+    {
+      "variant": "clipped_kan_gru_h32_wide",
+      "seed": 0,
+      "epochs": 100,
+      "batch_size": 512,
+      "lr": 0.001,
+      "grid_range": [
+        -2.0,
+        2.0
+      ],
+      "timing": {
+        "wall_clock_seconds": 10.699691463000022,
+        "seconds_per_epoch": 0.10699691463000022,
+        "seconds_per_step": 0.05349845731500011,
+        "peak_cuda_memory_mb": 99.42236328125
+      },
+      "global_steps": 200,
+      "checkpoint_path": "checkpoints/rram_sine_grid_distill_full/clipped_kan_gru_h32_wide_sine_grid-2.0_2.0_seed0.pt",
+      "source_log": "results/final_tables/rram_sine_adjusted_grid_distillation.json"
+    },
+    {
+      "variant": "kan_gru_h32_wide",
+      "seed": 0,
+      "epochs": 100,
+      "batch_size": 512,
+      "lr": 0.001,
+      "grid_range": [
+        -2.0,
+        2.0
+      ],
+      "timing": {
+        "wall_clock_seconds": 10.220150132000015,
+        "seconds_per_epoch": 0.10220150132000015,
+        "seconds_per_step": 0.051100750660000076,
+        "peak_cuda_memory_mb": 98.58154296875
+      },
+      "global_steps": 200,
+      "checkpoint_path": "checkpoints/rram_sine_grid_distill_full/kan_gru_h32_wide_sine_grid-2.0_2.0_seed0.pt",
+      "source_log": "results/final_tables/rram_sine_adjusted_grid_distillation.json"
+    },
+    {
+      "variant": "fused_clipped_kan_gru_h32_wide",
+      "seed": 0,
+      "epochs": 100,
+      "batch_size": 512,
+      "lr": 0.001,
+      "grid_range": [
+        -2.0,
+        2.0
+      ],
+      "timing": {
+        "wall_clock_seconds": 6.337497915000029,
+        "seconds_per_epoch": 0.06337497915000029,
+        "seconds_per_step": 0.031687489575000144,
+        "peak_cuda_memory_mb": 88.67919921875
+      },
+      "global_steps": 200,
+      "checkpoint_path": "checkpoints/rram_sine_grid_distill_full/fused_clipped_kan_gru_h32_wide_sine_grid-2.0_2.0_seed0.pt",
+      "source_log": "results/final_tables/rram_sine_adjusted_grid_distillation.json"
+    },
+    {
+      "variant": "kan_lstm_h32_wide",
+      "seed": 0,
+      "epochs": 100,
+      "batch_size": 512,
+      "lr": 0.001,
+      "grid_range": [
+        -2.0,
+        2.0
+      ],
+      "timing": {
+        "wall_clock_seconds": 6.14056603399996,
+        "seconds_per_epoch": 0.0614056603399996,
+        "seconds_per_step": 0.0307028301699998,
+        "peak_cuda_memory_mb": 105.6630859375
+      },
+      "global_steps": 200,
+      "checkpoint_path": "checkpoints/rram_sine_grid_distill_full/kan_lstm_h32_wide_sine_grid-2.0_2.0_seed0.pt",
+      "source_log": "results/final_tables/rram_sine_adjusted_grid_distillation.json"
+    },
+    {
+      "variant": "distilled_gru_h32",
+      "seed": 0,
+      "epochs": 100,
+      "batch_size": 512,
+      "timing": {
+        "wall_clock_seconds": 2.0991336110000134,
+        "seconds_per_epoch": 0.020991336110000133,
+        "seconds_per_step": 0.010495668055000067,
+        "peak_cuda_memory_mb": 34.89404296875
+      },
+      "global_steps": 200,
+      "checkpoint_path": "checkpoints/rram_sine_grid_distill_full/distilled_gru_h32_from_clipped_kan_gru_h32_wide_w0.25_seed0.pt",
+      "grid_range": [
+        -2.0,
+        2.0
+      ],
+      "source_log": "results/final_tables/rram_sine_adjusted_grid_distillation.json"
+    },
+    {
+      "variant": "distilled_gru_h32",
+      "seed": 0,
+      "epochs": 100,
+      "batch_size": 512,
+      "timing": {
+        "wall_clock_seconds": 2.008255673000008,
+        "seconds_per_epoch": 0.02008255673000008,
+        "seconds_per_step": 0.01004127836500004,
+        "peak_cuda_memory_mb": 34.89404296875
+      },
+      "global_steps": 200,
+      "checkpoint_path": "checkpoints/rram_sine_grid_distill_full/distilled_gru_h32_from_clipped_kan_gru_h32_wide_w0.5_seed0.pt",
+      "grid_range": [
+        -2.0,
+        2.0
+      ],
+      "source_log": "results/final_tables/rram_sine_adjusted_grid_distillation.json"
+    },
+    {
+      "variant": "distilled_gru_h32",
+      "seed": 0,
+      "epochs": 100,
+      "batch_size": 512,
+      "timing": {
+        "wall_clock_seconds": 1.982829479999964,
+        "seconds_per_epoch": 0.01982829479999964,
+        "seconds_per_step": 0.00991414739999982,
+        "peak_cuda_memory_mb": 34.89404296875
+      },
+      "global_steps": 200,
+      "checkpoint_path": "checkpoints/rram_sine_grid_distill_full/distilled_gru_h32_from_clipped_kan_gru_h32_wide_w0.75_seed0.pt",
+      "grid_range": [
+        -2.0,
+        2.0
+      ],
+      "source_log": "results/final_tables/rram_sine_adjusted_grid_distillation.json"
+    },
+    {
+      "variant": "distilled_gru_h64",
+      "seed": 0,
+      "epochs": 100,
+      "batch_size": 512,
+      "timing": {
+        "wall_clock_seconds": 2.183513541000025,
+        "seconds_per_epoch": 0.021835135410000248,
+        "seconds_per_step": 0.010917567705000124,
+        "peak_cuda_memory_mb": 43.103515625
+      },
+      "global_steps": 200,
+      "checkpoint_path": "checkpoints/rram_sine_grid_distill_full/distilled_gru_h64_from_clipped_kan_gru_h32_wide_w0.25_seed0.pt",
+      "grid_range": [
+        -2.0,
+        2.0
+      ],
+      "source_log": "results/final_tables/rram_sine_adjusted_grid_distillation.json"
+    },
+    {
+      "variant": "distilled_gru_h64",
+      "seed": 0,
+      "epochs": 100,
+      "batch_size": 512,
+      "timing": {
+        "wall_clock_seconds": 2.052718671999969,
+        "seconds_per_epoch": 0.02052718671999969,
+        "seconds_per_step": 0.010263593359999846,
+        "peak_cuda_memory_mb": 43.103515625
+      },
+      "global_steps": 200,
+      "checkpoint_path": "checkpoints/rram_sine_grid_distill_full/distilled_gru_h64_from_clipped_kan_gru_h32_wide_w0.5_seed0.pt",
+      "grid_range": [
+        -2.0,
+        2.0
+      ],
+      "source_log": "results/final_tables/rram_sine_adjusted_grid_distillation.json"
+    },
+    {
+      "variant": "distilled_gru_h64",
+      "seed": 0,
+      "epochs": 100,
+      "batch_size": 512,
+      "timing": {
+        "wall_clock_seconds": 2.2159092300000225,
+        "seconds_per_epoch": 0.022159092300000224,
+        "seconds_per_step": 0.011079546150000112,
+        "peak_cuda_memory_mb": 43.103515625
+      },
+      "global_steps": 200,
+      "checkpoint_path": "checkpoints/rram_sine_grid_distill_full/distilled_gru_h64_from_clipped_kan_gru_h32_wide_w0.75_seed0.pt",
+      "grid_range": [
+        -2.0,
+        2.0
+      ],
+      "source_log": "results/final_tables/rram_sine_adjusted_grid_distillation.json"
+    },
+    {
+      "variant": "distilled_gru_h116",
+      "seed": 0,
+      "epochs": 100,
+      "batch_size": 512,
+      "timing": {
+        "wall_clock_seconds": 2.248096664000002,
+        "seconds_per_epoch": 0.02248096664000002,
+        "seconds_per_step": 0.01124048332000001,
+        "peak_cuda_memory_mb": 58.21630859375
+      },
+      "global_steps": 200,
+      "checkpoint_path": "checkpoints/rram_sine_grid_distill_full/distilled_gru_h116_from_clipped_kan_gru_h32_wide_w0.25_seed0.pt",
+      "grid_range": [
+        -2.0,
+        2.0
+      ],
+      "source_log": "results/final_tables/rram_sine_adjusted_grid_distillation.json"
+    },
+    {
+      "variant": "distilled_gru_h116",
+      "seed": 0,
+      "epochs": 100,
+      "batch_size": 512,
+      "timing": {
+        "wall_clock_seconds": 2.2009594930000276,
+        "seconds_per_epoch": 0.022009594930000275,
+        "seconds_per_step": 0.011004797465000138,
+        "peak_cuda_memory_mb": 58.21630859375
+      },
+      "global_steps": 200,
+      "checkpoint_path": "checkpoints/rram_sine_grid_distill_full/distilled_gru_h116_from_clipped_kan_gru_h32_wide_w0.5_seed0.pt",
+      "grid_range": [
+        -2.0,
+        2.0
+      ],
+      "source_log": "results/final_tables/rram_sine_adjusted_grid_distillation.json"
+    },
+    {
+      "variant": "distilled_gru_h116",
+      "seed": 0,
+      "epochs": 100,
+      "batch_size": 512,
+      "timing": {
+        "wall_clock_seconds": 2.328506324999978,
+        "seconds_per_epoch": 0.02328506324999978,
+        "seconds_per_step": 0.01164253162499989,
+        "peak_cuda_memory_mb": 58.21630859375
+      },
+      "global_steps": 200,
+      "checkpoint_path": "checkpoints/rram_sine_grid_distill_full/distilled_gru_h116_from_clipped_kan_gru_h32_wide_w0.75_seed0.pt",
+      "grid_range": [
+        -2.0,
+        2.0
+      ],
+      "source_log": "results/final_tables/rram_sine_adjusted_grid_distillation.json"
+    },
+    {
+      "variant": "gru_h116",
+      "seed": 1,
+      "epochs": 100,
+      "batch_size": 512,
+      "lr": 0.001,
+      "grid_range": [
+        -2.0,
+        2.0
+      ],
+      "timing": {
+        "wall_clock_seconds": 1.9005482500000426,
+        "seconds_per_epoch": 0.019005482500000427,
+        "seconds_per_step": 0.009502741250000214,
+        "peak_cuda_memory_mb": 58.21337890625
+      },
+      "global_steps": 200,
+      "checkpoint_path": "checkpoints/rram_sine_grid_distill_full/gru_h116_sine_grid-2.0_2.0_seed1.pt",
+      "source_log": "results/final_tables/rram_sine_adjusted_grid_distillation.json"
+    },
+    {
+      "variant": "clipped_kan_gru_h32_wide",
+      "seed": 1,
+      "epochs": 100,
+      "batch_size": 512,
+      "lr": 0.001,
+      "grid_range": [
+        -2.0,
+        2.0
+      ],
+      "timing": {
+        "wall_clock_seconds": 10.443562065000037,
+        "seconds_per_epoch": 0.10443562065000038,
+        "seconds_per_step": 0.05221781032500019,
+        "peak_cuda_memory_mb": 99.90283203125
+      },
+      "global_steps": 200,
+      "checkpoint_path": "checkpoints/rram_sine_grid_distill_full/clipped_kan_gru_h32_wide_sine_grid-2.0_2.0_seed1.pt",
+      "source_log": "results/final_tables/rram_sine_adjusted_grid_distillation.json"
+    },
+    {
+      "variant": "kan_gru_h32_wide",
+      "seed": 1,
+      "epochs": 100,
+      "batch_size": 512,
+      "lr": 0.001,
+      "grid_range": [
+        -2.0,
+        2.0
+      ],
+      "timing": {
+        "wall_clock_seconds": 10.37147307500004,
+        "seconds_per_epoch": 0.1037147307500004,
+        "seconds_per_step": 0.0518573653750002,
+        "peak_cuda_memory_mb": 99.06201171875
+      },
+      "global_steps": 200,
+      "checkpoint_path": "checkpoints/rram_sine_grid_distill_full/kan_gru_h32_wide_sine_grid-2.0_2.0_seed1.pt",
+      "source_log": "results/final_tables/rram_sine_adjusted_grid_distillation.json"
+    },
+    {
+      "variant": "fused_clipped_kan_gru_h32_wide",
+      "seed": 1,
+      "epochs": 100,
+      "batch_size": 512,
+      "lr": 0.001,
+      "grid_range": [
+        -2.0,
+        2.0
+      ],
+      "timing": {
+        "wall_clock_seconds": 6.52148937100003,
+        "seconds_per_epoch": 0.06521489371000029,
+        "seconds_per_step": 0.032607446855000145,
+        "peak_cuda_memory_mb": 89.78466796875
+      },
+      "global_steps": 200,
+      "checkpoint_path": "checkpoints/rram_sine_grid_distill_full/fused_clipped_kan_gru_h32_wide_sine_grid-2.0_2.0_seed1.pt",
+      "source_log": "results/final_tables/rram_sine_adjusted_grid_distillation.json"
+    },
+    {
+      "variant": "kan_lstm_h32_wide",
+      "seed": 1,
+      "epochs": 100,
+      "batch_size": 512,
+      "lr": 0.001,
+      "grid_range": [
+        -2.0,
+        2.0
+      ],
+      "timing": {
+        "wall_clock_seconds": 6.271188738000092,
+        "seconds_per_epoch": 0.06271188738000091,
+        "seconds_per_step": 0.03135594369000046,
+        "peak_cuda_memory_mb": 105.8935546875
+      },
+      "global_steps": 200,
+      "checkpoint_path": "checkpoints/rram_sine_grid_distill_full/kan_lstm_h32_wide_sine_grid-2.0_2.0_seed1.pt",
+      "source_log": "results/final_tables/rram_sine_adjusted_grid_distillation.json"
+    },
+    {
+      "variant": "distilled_gru_h32",
+      "seed": 1,
+      "epochs": 100,
+      "batch_size": 512,
+      "timing": {
+        "wall_clock_seconds": 1.9783176319999711,
+        "seconds_per_epoch": 0.01978317631999971,
+        "seconds_per_step": 0.009891588159999855,
+        "peak_cuda_memory_mb": 35.12451171875
+      },
+      "global_steps": 200,
+      "checkpoint_path": "checkpoints/rram_sine_grid_distill_full/distilled_gru_h32_from_clipped_kan_gru_h32_wide_w0.25_seed1.pt",
+      "grid_range": [
+        -2.0,
+        2.0
+      ],
+      "source_log": "results/final_tables/rram_sine_adjusted_grid_distillation.json"
+    },
+    {
+      "variant": "distilled_gru_h32",
+      "seed": 1,
+      "epochs": 100,
+      "batch_size": 512,
+      "timing": {
+        "wall_clock_seconds": 2.025398107000001,
+        "seconds_per_epoch": 0.02025398107000001,
+        "seconds_per_step": 0.010126990535000005,
+        "peak_cuda_memory_mb": 35.12451171875
+      },
+      "global_steps": 200,
+      "checkpoint_path": "checkpoints/rram_sine_grid_distill_full/distilled_gru_h32_from_clipped_kan_gru_h32_wide_w0.5_seed1.pt",
+      "grid_range": [
+        -2.0,
+        2.0
+      ],
+      "source_log": "results/final_tables/rram_sine_adjusted_grid_distillation.json"
+    },
+    {
+      "variant": "distilled_gru_h32",
+      "seed": 1,
+      "epochs": 100,
+      "batch_size": 512,
+      "timing": {
+        "wall_clock_seconds": 2.1187229800000296,
+        "seconds_per_epoch": 0.021187229800000297,
+        "seconds_per_step": 0.010593614900000149,
+        "peak_cuda_memory_mb": 35.12451171875
+      },
+      "global_steps": 200,
+      "checkpoint_path": "checkpoints/rram_sine_grid_distill_full/distilled_gru_h32_from_clipped_kan_gru_h32_wide_w0.75_seed1.pt",
+      "grid_range": [
+        -2.0,
+        2.0
+      ],
+      "source_log": "results/final_tables/rram_sine_adjusted_grid_distillation.json"
+    },
+    {
+      "variant": "distilled_gru_h64",
+      "seed": 1,
+      "epochs": 100,
+      "batch_size": 512,
+      "timing": {
+        "wall_clock_seconds": 2.1230511680000745,
+        "seconds_per_epoch": 0.021230511680000744,
+        "seconds_per_step": 0.010615255840000372,
+        "peak_cuda_memory_mb": 43.333984375
+      },
+      "global_steps": 200,
+      "checkpoint_path": "checkpoints/rram_sine_grid_distill_full/distilled_gru_h64_from_clipped_kan_gru_h32_wide_w0.25_seed1.pt",
+      "grid_range": [
+        -2.0,
+        2.0
+      ],
+      "source_log": "results/final_tables/rram_sine_adjusted_grid_distillation.json"
+    },
+    {
+      "variant": "distilled_gru_h64",
+      "seed": 1,
+      "epochs": 100,
+      "batch_size": 512,
+      "timing": {
+        "wall_clock_seconds": 2.1803217789999962,
+        "seconds_per_epoch": 0.02180321778999996,
+        "seconds_per_step": 0.01090160889499998,
+        "peak_cuda_memory_mb": 43.333984375
+      },
+      "global_steps": 200,
+      "checkpoint_path": "checkpoints/rram_sine_grid_distill_full/distilled_gru_h64_from_clipped_kan_gru_h32_wide_w0.5_seed1.pt",
+      "grid_range": [
+        -2.0,
+        2.0
+      ],
+      "source_log": "results/final_tables/rram_sine_adjusted_grid_distillation.json"
+    },
+    {
+      "variant": "distilled_gru_h64",
+      "seed": 1,
+      "epochs": 100,
+      "batch_size": 512,
+      "timing": {
+        "wall_clock_seconds": 2.046698959000082,
+        "seconds_per_epoch": 0.02046698959000082,
+        "seconds_per_step": 0.01023349479500041,
+        "peak_cuda_memory_mb": 43.333984375
+      },
+      "global_steps": 200,
+      "checkpoint_path": "checkpoints/rram_sine_grid_distill_full/distilled_gru_h64_from_clipped_kan_gru_h32_wide_w0.75_seed1.pt",
+      "grid_range": [
+        -2.0,
+        2.0
+      ],
+      "source_log": "results/final_tables/rram_sine_adjusted_grid_distillation.json"
+    },
+    {
+      "variant": "distilled_gru_h116",
+      "seed": 1,
+      "epochs": 100,
+      "batch_size": 512,
+      "timing": {
+        "wall_clock_seconds": 2.2231754179999825,
+        "seconds_per_epoch": 0.022231754179999827,
+        "seconds_per_step": 0.011115877089999913,
+        "peak_cuda_memory_mb": 58.44677734375
+      },
+      "global_steps": 200,
+      "checkpoint_path": "checkpoints/rram_sine_grid_distill_full/distilled_gru_h116_from_clipped_kan_gru_h32_wide_w0.25_seed1.pt",
+      "grid_range": [
+        -2.0,
+        2.0
+      ],
+      "source_log": "results/final_tables/rram_sine_adjusted_grid_distillation.json"
+    },
+    {
+      "variant": "distilled_gru_h116",
+      "seed": 1,
+      "epochs": 100,
+      "batch_size": 512,
+      "timing": {
+        "wall_clock_seconds": 2.3711009400000194,
+        "seconds_per_epoch": 0.023711009400000194,
+        "seconds_per_step": 0.011855504700000097,
+        "peak_cuda_memory_mb": 58.44677734375
+      },
+      "global_steps": 200,
+      "checkpoint_path": "checkpoints/rram_sine_grid_distill_full/distilled_gru_h116_from_clipped_kan_gru_h32_wide_w0.5_seed1.pt",
+      "grid_range": [
+        -2.0,
+        2.0
+      ],
+      "source_log": "results/final_tables/rram_sine_adjusted_grid_distillation.json"
+    },
+    {
+      "variant": "distilled_gru_h116",
+      "seed": 1,
+      "epochs": 100,
+      "batch_size": 512,
+      "timing": {
+        "wall_clock_seconds": 2.214979951999908,
+        "seconds_per_epoch": 0.02214979951999908,
+        "seconds_per_step": 0.01107489975999954,
+        "peak_cuda_memory_mb": 58.44677734375
+      },
+      "global_steps": 200,
+      "checkpoint_path": "checkpoints/rram_sine_grid_distill_full/distilled_gru_h116_from_clipped_kan_gru_h32_wide_w0.75_seed1.pt",
+      "grid_range": [
+        -2.0,
+        2.0
+      ],
+      "source_log": "results/final_tables/rram_sine_adjusted_grid_distillation.json"
+    },
+    {
+      "variant": "gru_h116",
+      "seed": 2,
+      "epochs": 100,
+      "batch_size": 512,
+      "lr": 0.001,
+      "grid_range": [
+        -2.0,
+        2.0
+      ],
+      "timing": {
+        "wall_clock_seconds": 2.012674320999963,
+        "seconds_per_epoch": 0.02012674320999963,
+        "seconds_per_step": 0.010063371604999816,
+        "peak_cuda_memory_mb": 58.44384765625
+      },
+      "global_steps": 200,
+      "checkpoint_path": "checkpoints/rram_sine_grid_distill_full/gru_h116_sine_grid-2.0_2.0_seed2.pt",
+      "source_log": "results/final_tables/rram_sine_adjusted_grid_distillation.json"
+    },
+    {
+      "variant": "clipped_kan_gru_h32_wide",
+      "seed": 2,
+      "epochs": 100,
+      "batch_size": 512,
+      "lr": 0.001,
+      "grid_range": [
+        -2.0,
+        2.0
+      ],
+      "timing": {
+        "wall_clock_seconds": 10.26933303699991,
+        "seconds_per_epoch": 0.1026933303699991,
+        "seconds_per_step": 0.05134666518499955,
+        "peak_cuda_memory_mb": 100.13330078125
+      },
+      "global_steps": 200,
+      "checkpoint_path": "checkpoints/rram_sine_grid_distill_full/clipped_kan_gru_h32_wide_sine_grid-2.0_2.0_seed2.pt",
+      "source_log": "results/final_tables/rram_sine_adjusted_grid_distillation.json"
+    },
+    {
+      "variant": "kan_gru_h32_wide",
+      "seed": 2,
+      "epochs": 100,
+      "batch_size": 512,
+      "lr": 0.001,
+      "grid_range": [
+        -2.0,
+        2.0
+      ],
+      "timing": {
+        "wall_clock_seconds": 10.008394519000035,
+        "seconds_per_epoch": 0.10008394519000036,
+        "seconds_per_step": 0.05004197259500018,
+        "peak_cuda_memory_mb": 99.29248046875
+      },
+      "global_steps": 200,
+      "checkpoint_path": "checkpoints/rram_sine_grid_distill_full/kan_gru_h32_wide_sine_grid-2.0_2.0_seed2.pt",
+      "source_log": "results/final_tables/rram_sine_adjusted_grid_distillation.json"
+    },
+    {
+      "variant": "fused_clipped_kan_gru_h32_wide",
+      "seed": 2,
+      "epochs": 100,
+      "batch_size": 512,
+      "lr": 0.001,
+      "grid_range": [
+        -2.0,
+        2.0
+      ],
+      "timing": {
+        "wall_clock_seconds": 6.2936622460000535,
+        "seconds_per_epoch": 0.06293662246000054,
+        "seconds_per_step": 0.03146831123000027,
+        "peak_cuda_memory_mb": 90.01513671875
+      },
+      "global_steps": 200,
+      "checkpoint_path": "checkpoints/rram_sine_grid_distill_full/fused_clipped_kan_gru_h32_wide_sine_grid-2.0_2.0_seed2.pt",
+      "source_log": "results/final_tables/rram_sine_adjusted_grid_distillation.json"
+    },
+    {
+      "variant": "kan_lstm_h32_wide",
+      "seed": 2,
+      "epochs": 100,
+      "batch_size": 512,
+      "lr": 0.001,
+      "grid_range": [
+        -2.0,
+        2.0
+      ],
+      "timing": {
+        "wall_clock_seconds": 6.052825424000048,
+        "seconds_per_epoch": 0.06052825424000048,
+        "seconds_per_step": 0.03026412712000024,
+        "peak_cuda_memory_mb": 106.1240234375
+      },
+      "global_steps": 200,
+      "checkpoint_path": "checkpoints/rram_sine_grid_distill_full/kan_lstm_h32_wide_sine_grid-2.0_2.0_seed2.pt",
+      "source_log": "results/final_tables/rram_sine_adjusted_grid_distillation.json"
+    },
+    {
+      "variant": "distilled_gru_h32",
+      "seed": 2,
+      "epochs": 100,
+      "batch_size": 512,
+      "timing": {
+        "wall_clock_seconds": 1.9657920719999993,
+        "seconds_per_epoch": 0.019657920719999993,
+        "seconds_per_step": 0.009828960359999996,
+        "peak_cuda_memory_mb": 35.35498046875
+      },
+      "global_steps": 200,
+      "checkpoint_path": "checkpoints/rram_sine_grid_distill_full/distilled_gru_h32_from_clipped_kan_gru_h32_wide_w0.25_seed2.pt",
+      "grid_range": [
+        -2.0,
+        2.0
+      ],
+      "source_log": "results/final_tables/rram_sine_adjusted_grid_distillation.json"
+    },
+    {
+      "variant": "distilled_gru_h32",
+      "seed": 2,
+      "epochs": 100,
+      "batch_size": 512,
+      "timing": {
+        "wall_clock_seconds": 2.1221333559999493,
+        "seconds_per_epoch": 0.021221333559999493,
+        "seconds_per_step": 0.010610666779999747,
+        "peak_cuda_memory_mb": 35.35498046875
+      },
+      "global_steps": 200,
+      "checkpoint_path": "checkpoints/rram_sine_grid_distill_full/distilled_gru_h32_from_clipped_kan_gru_h32_wide_w0.5_seed2.pt",
+      "grid_range": [
+        -2.0,
+        2.0
+      ],
+      "source_log": "results/final_tables/rram_sine_adjusted_grid_distillation.json"
+    },
+    {
+      "variant": "distilled_gru_h32",
+      "seed": 2,
+      "epochs": 100,
+      "batch_size": 512,
+      "timing": {
+        "wall_clock_seconds": 2.0193229620000466,
+        "seconds_per_epoch": 0.020193229620000464,
+        "seconds_per_step": 0.010096614810000232,
+        "peak_cuda_memory_mb": 35.35498046875
+      },
+      "global_steps": 200,
+      "checkpoint_path": "checkpoints/rram_sine_grid_distill_full/distilled_gru_h32_from_clipped_kan_gru_h32_wide_w0.75_seed2.pt",
+      "grid_range": [
+        -2.0,
+        2.0
+      ],
+      "source_log": "results/final_tables/rram_sine_adjusted_grid_distillation.json"
+    },
+    {
+      "variant": "distilled_gru_h64",
+      "seed": 2,
+      "epochs": 100,
+      "batch_size": 512,
+      "timing": {
+        "wall_clock_seconds": 2.0763542869999583,
+        "seconds_per_epoch": 0.020763542869999582,
+        "seconds_per_step": 0.010381771434999791,
+        "peak_cuda_memory_mb": 43.564453125
+      },
+      "global_steps": 200,
+      "checkpoint_path": "checkpoints/rram_sine_grid_distill_full/distilled_gru_h64_from_clipped_kan_gru_h32_wide_w0.25_seed2.pt",
+      "grid_range": [
+        -2.0,
+        2.0
+      ],
+      "source_log": "results/final_tables/rram_sine_adjusted_grid_distillation.json"
+    },
+    {
+      "variant": "distilled_gru_h64",
+      "seed": 2,
+      "epochs": 100,
+      "batch_size": 512,
+      "timing": {
+        "wall_clock_seconds": 2.178617051999936,
+        "seconds_per_epoch": 0.02178617051999936,
+        "seconds_per_step": 0.01089308525999968,
+        "peak_cuda_memory_mb": 43.564453125
+      },
+      "global_steps": 200,
+      "checkpoint_path": "checkpoints/rram_sine_grid_distill_full/distilled_gru_h64_from_clipped_kan_gru_h32_wide_w0.5_seed2.pt",
+      "grid_range": [
+        -2.0,
+        2.0
+      ],
+      "source_log": "results/final_tables/rram_sine_adjusted_grid_distillation.json"
+    },
+    {
+      "variant": "distilled_gru_h64",
+      "seed": 2,
+      "epochs": 100,
+      "batch_size": 512,
+      "timing": {
+        "wall_clock_seconds": 2.1223608090000425,
+        "seconds_per_epoch": 0.021223608090000425,
+        "seconds_per_step": 0.010611804045000213,
+        "peak_cuda_memory_mb": 43.564453125
+      },
+      "global_steps": 200,
+      "checkpoint_path": "checkpoints/rram_sine_grid_distill_full/distilled_gru_h64_from_clipped_kan_gru_h32_wide_w0.75_seed2.pt",
+      "grid_range": [
+        -2.0,
+        2.0
+      ],
+      "source_log": "results/final_tables/rram_sine_adjusted_grid_distillation.json"
+    },
+    {
+      "variant": "distilled_gru_h116",
+      "seed": 2,
+      "epochs": 100,
+      "batch_size": 512,
+      "timing": {
+        "wall_clock_seconds": 2.3697243190000563,
+        "seconds_per_epoch": 0.023697243190000564,
+        "seconds_per_step": 0.011848621595000282,
+        "peak_cuda_memory_mb": 58.67724609375
+      },
+      "global_steps": 200,
+      "checkpoint_path": "checkpoints/rram_sine_grid_distill_full/distilled_gru_h116_from_clipped_kan_gru_h32_wide_w0.25_seed2.pt",
+      "grid_range": [
+        -2.0,
+        2.0
+      ],
+      "source_log": "results/final_tables/rram_sine_adjusted_grid_distillation.json"
+    },
+    {
+      "variant": "distilled_gru_h116",
+      "seed": 2,
+      "epochs": 100,
+      "batch_size": 512,
+      "timing": {
+        "wall_clock_seconds": 2.2093144599999732,
+        "seconds_per_epoch": 0.022093144599999733,
+        "seconds_per_step": 0.011046572299999866,
+        "peak_cuda_memory_mb": 58.67724609375
+      },
+      "global_steps": 200,
+      "checkpoint_path": "checkpoints/rram_sine_grid_distill_full/distilled_gru_h116_from_clipped_kan_gru_h32_wide_w0.5_seed2.pt",
+      "grid_range": [
+        -2.0,
+        2.0
+      ],
+      "source_log": "results/final_tables/rram_sine_adjusted_grid_distillation.json"
+    },
+    {
+      "variant": "distilled_gru_h116",
+      "seed": 2,
+      "epochs": 100,
+      "batch_size": 512,
+      "timing": {
+        "wall_clock_seconds": 2.235639282999955,
+        "seconds_per_epoch": 0.02235639282999955,
+        "seconds_per_step": 0.011178196414999775,
+        "peak_cuda_memory_mb": 58.67724609375
+      },
+      "global_steps": 200,
+      "checkpoint_path": "checkpoints/rram_sine_grid_distill_full/distilled_gru_h116_from_clipped_kan_gru_h32_wide_w0.75_seed2.pt",
+      "grid_range": [
+        -2.0,
+        2.0
+      ],
+      "source_log": "results/final_tables/rram_sine_adjusted_grid_distillation.json"
+    },
+    {
+      "variant": "gru_h116",
+      "seed": 0,
+      "epochs": 100,
+      "batch_size": 512,
+      "lr": 0.001,
+      "task": "sine",
+      "timing": {
+        "wall_clock_seconds": 2.34849970099998,
+        "seconds_per_epoch": 0.0234849970099998,
+        "seconds_per_step": 0.0117424985049999
+      },
+      "global_steps": 200,
+      "checkpoint_path": "checkpoints/rram_sine_narrow100_full/gru_h116_sine_seed0.pt",
+      "source_log": "results/final_tables/rram_sine_narrow100.json"
+    },
+    {
+      "variant": "clipped_kan_gru_h32",
+      "seed": 0,
+      "epochs": 100,
+      "batch_size": 512,
+      "lr": 0.001,
+      "task": "sine",
+      "timing": {
+        "wall_clock_seconds": 10.660229343000026,
+        "seconds_per_epoch": 0.10660229343000026,
+        "seconds_per_step": 0.05330114671500013
+      },
+      "global_steps": 200,
+      "checkpoint_path": "checkpoints/rram_sine_narrow100_full/clipped_kan_gru_h32_sine_seed0.pt",
+      "source_log": "results/final_tables/rram_sine_narrow100.json"
+    },
+    {
+      "variant": "kan_gru_h32",
+      "seed": 0,
+      "epochs": 100,
+      "batch_size": 512,
+      "lr": 0.001,
+      "task": "sine",
+      "timing": {
+        "wall_clock_seconds": 10.283182967000016,
+        "seconds_per_epoch": 0.10283182967000017,
+        "seconds_per_step": 0.05141591483500008
+      },
+      "global_steps": 200,
+      "checkpoint_path": "checkpoints/rram_sine_narrow100_full/kan_gru_h32_sine_seed0.pt",
+      "source_log": "results/final_tables/rram_sine_narrow100.json"
+    },
+    {
+      "variant": "gru_h116",
+      "seed": 1,
+      "epochs": 100,
+      "batch_size": 512,
+      "lr": 0.001,
+      "task": "sine",
+      "timing": {
+        "wall_clock_seconds": 1.9294112640000094,
+        "seconds_per_epoch": 0.019294112640000093,
+        "seconds_per_step": 0.009647056320000047
+      },
+      "global_steps": 200,
+      "checkpoint_path": "checkpoints/rram_sine_narrow100_full/gru_h116_sine_seed1.pt",
+      "source_log": "results/final_tables/rram_sine_narrow100.json"
+    },
+    {
+      "variant": "clipped_kan_gru_h32",
+      "seed": 1,
+      "epochs": 100,
+      "batch_size": 512,
+      "lr": 0.001,
+      "task": "sine",
+      "timing": {
+        "wall_clock_seconds": 10.652132810000012,
+        "seconds_per_epoch": 0.10652132810000012,
+        "seconds_per_step": 0.05326066405000006
+      },
+      "global_steps": 200,
+      "checkpoint_path": "checkpoints/rram_sine_narrow100_full/clipped_kan_gru_h32_sine_seed1.pt",
+      "source_log": "results/final_tables/rram_sine_narrow100.json"
+    },
+    {
+      "variant": "kan_gru_h32",
+      "seed": 1,
+      "epochs": 100,
+      "batch_size": 512,
+      "lr": 0.001,
+      "task": "sine",
+      "timing": {
+        "wall_clock_seconds": 10.396245996999994,
+        "seconds_per_epoch": 0.10396245996999993,
+        "seconds_per_step": 0.05198122998499997
+      },
+      "global_steps": 200,
+      "checkpoint_path": "checkpoints/rram_sine_narrow100_full/kan_gru_h32_sine_seed1.pt",
+      "source_log": "results/final_tables/rram_sine_narrow100.json"
+    },
+    {
+      "variant": "gru_h116",
+      "seed": 2,
+      "epochs": 100,
+      "batch_size": 512,
+      "lr": 0.001,
+      "task": "sine",
+      "timing": {
+        "wall_clock_seconds": 1.87528544099996,
+        "seconds_per_epoch": 0.0187528544099996,
+        "seconds_per_step": 0.0093764272049998
+      },
+      "global_steps": 200,
+      "checkpoint_path": "checkpoints/rram_sine_narrow100_full/gru_h116_sine_seed2.pt",
+      "source_log": "results/final_tables/rram_sine_narrow100.json"
+    },
+    {
+      "variant": "clipped_kan_gru_h32",
+      "seed": 2,
+      "epochs": 100,
+      "batch_size": 512,
+      "lr": 0.001,
+      "task": "sine",
+      "timing": {
+        "wall_clock_seconds": 10.551852269999983,
+        "seconds_per_epoch": 0.10551852269999984,
+        "seconds_per_step": 0.05275926134999992
+      },
+      "global_steps": 200,
+      "checkpoint_path": "checkpoints/rram_sine_narrow100_full/clipped_kan_gru_h32_sine_seed2.pt",
+      "source_log": "results/final_tables/rram_sine_narrow100.json"
+    },
+    {
+      "variant": "kan_gru_h32",
+      "seed": 2,
+      "epochs": 100,
+      "batch_size": 512,
+      "lr": 0.001,
+      "task": "sine",
+      "timing": {
+        "wall_clock_seconds": 10.230033744000025,
+        "seconds_per_epoch": 0.10230033744000025,
+        "seconds_per_step": 0.051150168720000125
+      },
+      "global_steps": 200,
+      "checkpoint_path": "checkpoints/rram_sine_narrow100_full/kan_gru_h32_sine_seed2.pt",
+      "source_log": "results/final_tables/rram_sine_narrow100.json"
+    },
+    {
+      "variant": "lstm_h100",
+      "seed": 0,
+      "epochs": 100,
+      "batch_size": 512,
+      "lr": 0.001,
+      "task": "random_walk",
+      "timing": {
+        "wall_clock_seconds": 21.100939874999995,
+        "seconds_per_epoch": 0.21100939874999994,
+        "seconds_per_step": 0.010550469937499998
+      },
+      "global_steps": 2000,
+      "checkpoint_path": "checkpoints/rram_external100_random_walk/lstm_h100_random_walk_seed0.pt",
+      "source_log": "results/imported_kaggle/rram_external100/results/rram_external100_random_walk.json"
+    },
+    {
+      "variant": "gru_h116",
+      "seed": 0,
+      "epochs": 100,
+      "batch_size": 512,
+      "lr": 0.001,
+      "task": "random_walk",
+      "timing": {
+        "wall_clock_seconds": 19.884264362000067,
+        "seconds_per_epoch": 0.19884264362000068,
+        "seconds_per_step": 0.009942132181000034
+      },
+      "global_steps": 2000,
+      "checkpoint_path": "checkpoints/rram_external100_random_walk/gru_h116_random_walk_seed0.pt",
+      "source_log": "results/imported_kaggle/rram_external100/results/rram_external100_random_walk.json"
+    },
+    {
+      "variant": "kan_lstm_h32",
+      "seed": 0,
+      "epochs": 100,
+      "batch_size": 512,
+      "lr": 0.001,
+      "task": "random_walk",
+      "timing": {
+        "wall_clock_seconds": 60.891312278999976,
+        "seconds_per_epoch": 0.6089131227899998,
+        "seconds_per_step": 0.03044565613949999
+      },
+      "global_steps": 2000,
+      "checkpoint_path": "checkpoints/rram_external100_random_walk/kan_lstm_h32_random_walk_seed0.pt",
+      "source_log": "results/imported_kaggle/rram_external100/results/rram_external100_random_walk.json"
+    },
+    {
+      "variant": "clipped_kan_lstm_h32",
+      "seed": 0,
+      "epochs": 100,
+      "batch_size": 512,
+      "lr": 0.001,
+      "task": "random_walk",
+      "timing": {
+        "wall_clock_seconds": 64.87520192600005,
+        "seconds_per_epoch": 0.6487520192600005,
+        "seconds_per_step": 0.032437600963000024
+      },
+      "global_steps": 2000,
+      "checkpoint_path": "checkpoints/rram_external100_random_walk/clipped_kan_lstm_h32_random_walk_seed0.pt",
+      "source_log": "results/imported_kaggle/rram_external100/results/rram_external100_random_walk.json"
+    },
+    {
+      "variant": "kan_gru_h32",
+      "seed": 0,
+      "epochs": 100,
+      "batch_size": 512,
+      "lr": 0.001,
+      "task": "random_walk",
+      "timing": {
+        "wall_clock_seconds": 100.17350975299973,
+        "seconds_per_epoch": 1.0017350975299975,
+        "seconds_per_step": 0.05008675487649987
+      },
+      "global_steps": 2000,
+      "checkpoint_path": "checkpoints/rram_external100_random_walk/kan_gru_h32_random_walk_seed0.pt",
+      "source_log": "results/imported_kaggle/rram_external100/results/rram_external100_random_walk.json"
+    },
+    {
+      "variant": "clipped_kan_gru_h32",
+      "seed": 0,
+      "epochs": 100,
+      "batch_size": 512,
+      "lr": 0.001,
+      "task": "random_walk",
+      "timing": {
+        "wall_clock_seconds": 104.32684911500019,
+        "seconds_per_epoch": 1.0432684911500019,
+        "seconds_per_step": 0.052163424557500095
+      },
+      "global_steps": 2000,
+      "checkpoint_path": "checkpoints/rram_external100_random_walk/clipped_kan_gru_h32_random_walk_seed0.pt",
+      "source_log": "results/imported_kaggle/rram_external100/results/rram_external100_random_walk.json"
+    },
+    {
+      "variant": "lstm_h100",
+      "seed": 1,
+      "epochs": 100,
+      "batch_size": 512,
+      "lr": 0.001,
+      "task": "random_walk",
+      "timing": {
+        "wall_clock_seconds": 21.120523611999943,
+        "seconds_per_epoch": 0.21120523611999942,
+        "seconds_per_step": 0.010560261805999971
+      },
+      "global_steps": 2000,
+      "checkpoint_path": "checkpoints/rram_external100_random_walk/lstm_h100_random_walk_seed1.pt",
+      "source_log": "results/imported_kaggle/rram_external100/results/rram_external100_random_walk.json"
+    },
+    {
+      "variant": "gru_h116",
+      "seed": 1,
+      "epochs": 100,
+      "batch_size": 512,
+      "lr": 0.001,
+      "task": "random_walk",
+      "timing": {
+        "wall_clock_seconds": 20.059763788000055,
+        "seconds_per_epoch": 0.20059763788000054,
+        "seconds_per_step": 0.010029881894000028
+      },
+      "global_steps": 2000,
+      "checkpoint_path": "checkpoints/rram_external100_random_walk/gru_h116_random_walk_seed1.pt",
+      "source_log": "results/imported_kaggle/rram_external100/results/rram_external100_random_walk.json"
+    },
+    {
+      "variant": "kan_lstm_h32",
+      "seed": 1,
+      "epochs": 100,
+      "batch_size": 512,
+      "lr": 0.001,
+      "task": "random_walk",
+      "timing": {
+        "wall_clock_seconds": 61.461734764000084,
+        "seconds_per_epoch": 0.6146173476400009,
+        "seconds_per_step": 0.03073086738200004
+      },
+      "global_steps": 2000,
+      "checkpoint_path": "checkpoints/rram_external100_random_walk/kan_lstm_h32_random_walk_seed1.pt",
+      "source_log": "results/imported_kaggle/rram_external100/results/rram_external100_random_walk.json"
+    },
+    {
+      "variant": "clipped_kan_lstm_h32",
+      "seed": 1,
+      "epochs": 100,
+      "batch_size": 512,
+      "lr": 0.001,
+      "task": "random_walk",
+      "timing": {
+        "wall_clock_seconds": 66.22985883699994,
+        "seconds_per_epoch": 0.6622985883699993,
+        "seconds_per_step": 0.03311492941849997
+      },
+      "global_steps": 2000,
+      "checkpoint_path": "checkpoints/rram_external100_random_walk/clipped_kan_lstm_h32_random_walk_seed1.pt",
+      "source_log": "results/imported_kaggle/rram_external100/results/rram_external100_random_walk.json"
+    },
+    {
+      "variant": "kan_gru_h32",
+      "seed": 1,
+      "epochs": 100,
+      "batch_size": 512,
+      "lr": 0.001,
+      "task": "random_walk",
+      "timing": {
+        "wall_clock_seconds": 101.30108710100012,
+        "seconds_per_epoch": 1.0130108710100012,
+        "seconds_per_step": 0.05065054355050006
+      },
+      "global_steps": 2000,
+      "checkpoint_path": "checkpoints/rram_external100_random_walk/kan_gru_h32_random_walk_seed1.pt",
+      "source_log": "results/imported_kaggle/rram_external100/results/rram_external100_random_walk.json"
+    },
+    {
+      "variant": "clipped_kan_gru_h32",
+      "seed": 1,
+      "epochs": 100,
+      "batch_size": 512,
+      "lr": 0.001,
+      "task": "random_walk",
+      "timing": {
+        "wall_clock_seconds": 105.06247828400001,
+        "seconds_per_epoch": 1.0506247828400002,
+        "seconds_per_step": 0.052531239142
+      },
+      "global_steps": 2000,
+      "checkpoint_path": "checkpoints/rram_external100_random_walk/clipped_kan_gru_h32_random_walk_seed1.pt",
+      "source_log": "results/imported_kaggle/rram_external100/results/rram_external100_random_walk.json"
+    },
+    {
+      "variant": "lstm_h100",
+      "seed": 2,
+      "epochs": 100,
+      "batch_size": 512,
+      "lr": 0.001,
+      "task": "random_walk",
+      "timing": {
+        "wall_clock_seconds": 21.207887731000028,
+        "seconds_per_epoch": 0.21207887731000027,
+        "seconds_per_step": 0.010603943865500015
+      },
+      "global_steps": 2000,
+      "checkpoint_path": "checkpoints/rram_external100_random_walk/lstm_h100_random_walk_seed2.pt",
+      "source_log": "results/imported_kaggle/rram_external100/results/rram_external100_random_walk.json"
+    },
+    {
+      "variant": "gru_h116",
+      "seed": 2,
+      "epochs": 100,
+      "batch_size": 512,
+      "lr": 0.001,
+      "task": "random_walk",
+      "timing": {
+        "wall_clock_seconds": 20.253484724000373,
+        "seconds_per_epoch": 0.20253484724000373,
+        "seconds_per_step": 0.010126742362000186
+      },
+      "global_steps": 2000,
+      "checkpoint_path": "checkpoints/rram_external100_random_walk/gru_h116_random_walk_seed2.pt",
+      "source_log": "results/imported_kaggle/rram_external100/results/rram_external100_random_walk.json"
+    },
+    {
+      "variant": "kan_lstm_h32",
+      "seed": 2,
+      "epochs": 100,
+      "batch_size": 512,
+      "lr": 0.001,
+      "task": "random_walk",
+      "timing": {
+        "wall_clock_seconds": 61.241325011999834,
+        "seconds_per_epoch": 0.6124132501199984,
+        "seconds_per_step": 0.030620662505999915
+      },
+      "global_steps": 2000,
+      "checkpoint_path": "checkpoints/rram_external100_random_walk/kan_lstm_h32_random_walk_seed2.pt",
+      "source_log": "results/imported_kaggle/rram_external100/results/rram_external100_random_walk.json"
+    },
+    {
+      "variant": "clipped_kan_lstm_h32",
+      "seed": 2,
+      "epochs": 100,
+      "batch_size": 512,
+      "lr": 0.001,
+      "task": "random_walk",
+      "timing": {
+        "wall_clock_seconds": 65.07097464399976,
+        "seconds_per_epoch": 0.6507097464399976,
+        "seconds_per_step": 0.03253548732199988
+      },
+      "global_steps": 2000,
+      "checkpoint_path": "checkpoints/rram_external100_random_walk/clipped_kan_lstm_h32_random_walk_seed2.pt",
+      "source_log": "results/imported_kaggle/rram_external100/results/rram_external100_random_walk.json"
+    },
+    {
+      "variant": "kan_gru_h32",
+      "seed": 2,
+      "epochs": 100,
+      "batch_size": 512,
+      "lr": 0.001,
+      "task": "random_walk",
+      "timing": {
+        "wall_clock_seconds": 101.1481686369998,
+        "seconds_per_epoch": 1.011481686369998,
+        "seconds_per_step": 0.0505740843184999
+      },
+      "global_steps": 2000,
+      "checkpoint_path": "checkpoints/rram_external100_random_walk/kan_gru_h32_random_walk_seed2.pt",
+      "source_log": "results/imported_kaggle/rram_external100/results/rram_external100_random_walk.json"
+    },
+    {
+      "variant": "clipped_kan_gru_h32",
+      "seed": 2,
+      "epochs": 100,
+      "batch_size": 512,
+      "lr": 0.001,
+      "task": "random_walk",
+      "timing": {
+        "wall_clock_seconds": 104.43661390599982,
+        "seconds_per_epoch": 1.0443661390599983,
+        "seconds_per_step": 0.05221830695299991
+      },
+      "global_steps": 2000,
+      "checkpoint_path": "checkpoints/rram_external100_random_walk/clipped_kan_gru_h32_random_walk_seed2.pt",
+      "source_log": "results/imported_kaggle/rram_external100/results/rram_external100_random_walk.json"
+    },
+    {
+      "variant": "lstm_h100",
+      "seed": 0,
+      "epochs": 100,
+      "batch_size": 512,
+      "lr": 0.001,
+      "task": "sine",
+      "timing": {
+        "wall_clock_seconds": 2.382102974999725,
+        "seconds_per_epoch": 0.023821029749997252,
+        "seconds_per_step": 0.011910514874998626
+      },
+      "global_steps": 200,
+      "checkpoint_path": "checkpoints/rram_external100_sine/lstm_h100_sine_seed0.pt",
+      "source_log": "results/imported_kaggle/rram_external100/results/rram_external100_sine.json"
+    },
+    {
+      "variant": "gru_h116",
+      "seed": 0,
+      "epochs": 100,
+      "batch_size": 512,
+      "lr": 0.001,
+      "task": "sine",
+      "timing": {
+        "wall_clock_seconds": 1.8531179819997305,
+        "seconds_per_epoch": 0.018531179819997304,
+        "seconds_per_step": 0.009265589909998652
+      },
+      "global_steps": 200,
+      "checkpoint_path": "checkpoints/rram_external100_sine/gru_h116_sine_seed0.pt",
+      "source_log": "results/imported_kaggle/rram_external100/results/rram_external100_sine.json"
+    },
+    {
+      "variant": "kan_lstm_h32",
+      "seed": 0,
+      "epochs": 100,
+      "batch_size": 512,
+      "lr": 0.001,
+      "task": "sine",
+      "timing": {
+        "wall_clock_seconds": 6.18197942300003,
+        "seconds_per_epoch": 0.0618197942300003,
+        "seconds_per_step": 0.03090989711500015
+      },
+      "global_steps": 200,
+      "checkpoint_path": "checkpoints/rram_external100_sine/kan_lstm_h32_sine_seed0.pt",
+      "source_log": "results/imported_kaggle/rram_external100/results/rram_external100_sine.json"
+    },
+    {
+      "variant": "clipped_kan_lstm_h32",
+      "seed": 0,
+      "epochs": 100,
+      "batch_size": 512,
+      "lr": 0.001,
+      "task": "sine",
+      "timing": {
+        "wall_clock_seconds": 6.396160382999824,
+        "seconds_per_epoch": 0.06396160382999824,
+        "seconds_per_step": 0.03198080191499912
+      },
+      "global_steps": 200,
+      "checkpoint_path": "checkpoints/rram_external100_sine/clipped_kan_lstm_h32_sine_seed0.pt",
+      "source_log": "results/imported_kaggle/rram_external100/results/rram_external100_sine.json"
+    },
+    {
+      "variant": "kan_gru_h32",
+      "seed": 0,
+      "epochs": 100,
+      "batch_size": 512,
+      "lr": 0.001,
+      "task": "sine",
+      "timing": {
+        "wall_clock_seconds": 10.138628382000206,
+        "seconds_per_epoch": 0.10138628382000206,
+        "seconds_per_step": 0.05069314191000103
+      },
+      "global_steps": 200,
+      "checkpoint_path": "checkpoints/rram_external100_sine/kan_gru_h32_sine_seed0.pt",
+      "source_log": "results/imported_kaggle/rram_external100/results/rram_external100_sine.json"
+    },
+    {
+      "variant": "clipped_kan_gru_h32",
+      "seed": 0,
+      "epochs": 100,
+      "batch_size": 512,
+      "lr": 0.001,
+      "task": "sine",
+      "timing": {
+        "wall_clock_seconds": 10.425981000999855,
+        "seconds_per_epoch": 0.10425981000999855,
+        "seconds_per_step": 0.052129905004999276
+      },
+      "global_steps": 200,
+      "checkpoint_path": "checkpoints/rram_external100_sine/clipped_kan_gru_h32_sine_seed0.pt",
+      "source_log": "results/imported_kaggle/rram_external100/results/rram_external100_sine.json"
+    },
+    {
+      "variant": "lstm_h100",
+      "seed": 1,
+      "epochs": 100,
+      "batch_size": 512,
+      "lr": 0.001,
+      "task": "sine",
+      "timing": {
+        "wall_clock_seconds": 1.9516399900003307,
+        "seconds_per_epoch": 0.019516399900003308,
+        "seconds_per_step": 0.009758199950001654
+      },
+      "global_steps": 200,
+      "checkpoint_path": "checkpoints/rram_external100_sine/lstm_h100_sine_seed1.pt",
+      "source_log": "results/imported_kaggle/rram_external100/results/rram_external100_sine.json"
+    },
+    {
+      "variant": "gru_h116",
+      "seed": 1,
+      "epochs": 100,
+      "batch_size": 512,
+      "lr": 0.001,
+      "task": "sine",
+      "timing": {
+        "wall_clock_seconds": 1.9184996409999258,
+        "seconds_per_epoch": 0.019184996409999256,
+        "seconds_per_step": 0.009592498204999628
+      },
+      "global_steps": 200,
+      "checkpoint_path": "checkpoints/rram_external100_sine/gru_h116_sine_seed1.pt",
+      "source_log": "results/imported_kaggle/rram_external100/results/rram_external100_sine.json"
+    },
+    {
+      "variant": "kan_lstm_h32",
+      "seed": 1,
+      "epochs": 100,
+      "batch_size": 512,
+      "lr": 0.001,
+      "task": "sine",
+      "timing": {
+        "wall_clock_seconds": 6.120420363999983,
+        "seconds_per_epoch": 0.06120420363999983,
+        "seconds_per_step": 0.030602101819999915
+      },
+      "global_steps": 200,
+      "checkpoint_path": "checkpoints/rram_external100_sine/kan_lstm_h32_sine_seed1.pt",
+      "source_log": "results/imported_kaggle/rram_external100/results/rram_external100_sine.json"
+    },
+    {
+      "variant": "clipped_kan_lstm_h32",
+      "seed": 1,
+      "epochs": 100,
+      "batch_size": 512,
+      "lr": 0.001,
+      "task": "sine",
+      "timing": {
+        "wall_clock_seconds": 6.51068500700012,
+        "seconds_per_epoch": 0.06510685007000121,
+        "seconds_per_step": 0.032553425035000604
+      },
+      "global_steps": 200,
+      "checkpoint_path": "checkpoints/rram_external100_sine/clipped_kan_lstm_h32_sine_seed1.pt",
+      "source_log": "results/imported_kaggle/rram_external100/results/rram_external100_sine.json"
+    },
+    {
+      "variant": "kan_gru_h32",
+      "seed": 1,
+      "epochs": 100,
+      "batch_size": 512,
+      "lr": 0.001,
+      "task": "sine",
+      "timing": {
+        "wall_clock_seconds": 10.254895472000044,
+        "seconds_per_epoch": 0.10254895472000043,
+        "seconds_per_step": 0.051274477360000216
+      },
+      "global_steps": 200,
+      "checkpoint_path": "checkpoints/rram_external100_sine/kan_gru_h32_sine_seed1.pt",
+      "source_log": "results/imported_kaggle/rram_external100/results/rram_external100_sine.json"
+    },
+    {
+      "variant": "clipped_kan_gru_h32",
+      "seed": 1,
+      "epochs": 100,
+      "batch_size": 512,
+      "lr": 0.001,
+      "task": "sine",
+      "timing": {
+        "wall_clock_seconds": 10.555119492999893,
+        "seconds_per_epoch": 0.10555119492999893,
+        "seconds_per_step": 0.05277559746499946
+      },
+      "global_steps": 200,
+      "checkpoint_path": "checkpoints/rram_external100_sine/clipped_kan_gru_h32_sine_seed1.pt",
+      "source_log": "results/imported_kaggle/rram_external100/results/rram_external100_sine.json"
+    },
+    {
+      "variant": "lstm_h100",
+      "seed": 2,
+      "epochs": 100,
+      "batch_size": 512,
+      "lr": 0.001,
+      "task": "sine",
+      "timing": {
+        "wall_clock_seconds": 2.1201710039999853,
+        "seconds_per_epoch": 0.021201710039999853,
+        "seconds_per_step": 0.010600855019999926
+      },
+      "global_steps": 200,
+      "checkpoint_path": "checkpoints/rram_external100_sine/lstm_h100_sine_seed2.pt",
+      "source_log": "results/imported_kaggle/rram_external100/results/rram_external100_sine.json"
+    },
+    {
+      "variant": "gru_h116",
+      "seed": 2,
+      "epochs": 100,
+      "batch_size": 512,
+      "lr": 0.001,
+      "task": "sine",
+      "timing": {
+        "wall_clock_seconds": 1.9315587529999902,
+        "seconds_per_epoch": 0.019315587529999904,
+        "seconds_per_step": 0.009657793764999952
+      },
+      "global_steps": 200,
+      "checkpoint_path": "checkpoints/rram_external100_sine/gru_h116_sine_seed2.pt",
+      "source_log": "results/imported_kaggle/rram_external100/results/rram_external100_sine.json"
+    },
+    {
+      "variant": "kan_lstm_h32",
+      "seed": 2,
+      "epochs": 100,
+      "batch_size": 512,
+      "lr": 0.001,
+      "task": "sine",
+      "timing": {
+        "wall_clock_seconds": 6.127024126999913,
+        "seconds_per_epoch": 0.06127024126999913,
+        "seconds_per_step": 0.030635120634999565
+      },
+      "global_steps": 200,
+      "checkpoint_path": "checkpoints/rram_external100_sine/kan_lstm_h32_sine_seed2.pt",
+      "source_log": "results/imported_kaggle/rram_external100/results/rram_external100_sine.json"
+    },
+    {
+      "variant": "clipped_kan_lstm_h32",
+      "seed": 2,
+      "epochs": 100,
+      "batch_size": 512,
+      "lr": 0.001,
+      "task": "sine",
+      "timing": {
+        "wall_clock_seconds": 6.604584383000201,
+        "seconds_per_epoch": 0.06604584383000202,
+        "seconds_per_step": 0.03302292191500101
+      },
+      "global_steps": 200,
+      "checkpoint_path": "checkpoints/rram_external100_sine/clipped_kan_lstm_h32_sine_seed2.pt",
+      "source_log": "results/imported_kaggle/rram_external100/results/rram_external100_sine.json"
+    },
+    {
+      "variant": "kan_gru_h32",
+      "seed": 2,
+      "epochs": 100,
+      "batch_size": 512,
+      "lr": 0.001,
+      "task": "sine",
+      "timing": {
+        "wall_clock_seconds": 10.226433568000175,
+        "seconds_per_epoch": 0.10226433568000175,
+        "seconds_per_step": 0.051132167840000874
+      },
+      "global_steps": 200,
+      "checkpoint_path": "checkpoints/rram_external100_sine/kan_gru_h32_sine_seed2.pt",
+      "source_log": "results/imported_kaggle/rram_external100/results/rram_external100_sine.json"
+    },
+    {
+      "variant": "clipped_kan_gru_h32",
+      "seed": 2,
+      "epochs": 100,
+      "batch_size": 512,
+      "lr": 0.001,
+      "task": "sine",
+      "timing": {
+        "wall_clock_seconds": 10.47530490600002,
+        "seconds_per_epoch": 0.1047530490600002,
+        "seconds_per_step": 0.0523765245300001
+      },
+      "global_steps": 200,
+      "checkpoint_path": "checkpoints/rram_external100_sine/clipped_kan_gru_h32_sine_seed2.pt",
+      "source_log": "results/imported_kaggle/rram_external100/results/rram_external100_sine.json"
+    },
+    {
+      "variant": "gru_h116",
+      "seed": 0,
+      "epochs": 100,
+      "batch_size": 512,
+      "lr": 0.001,
+      "grid_range": [
+        -2.0,
+        2.0
+      ],
+      "timing": {
+        "wall_clock_seconds": 2.860903112000017,
+        "seconds_per_epoch": 0.02860903112000017,
+        "seconds_per_step": 0.014304515560000085,
+        "peak_cuda_memory_mb": 57.6806640625
+      },
+      "global_steps": 200,
+      "checkpoint_path": "checkpoints/rram_sine_grid_distill_full/gru_h116_sine_grid-2.0_2.0_seed0.pt",
+      "source_log": "results/imported_kaggle/rram_sine_grid_distill/extracted/results/rram_sine_grid_distill_full.json"
+    },
+    {
+      "variant": "clipped_kan_gru_h32_wide",
+      "seed": 0,
+      "epochs": 100,
+      "batch_size": 512,
+      "lr": 0.001,
+      "grid_range": [
+        -2.0,
+        2.0
+      ],
+      "timing": {
+        "wall_clock_seconds": 10.699691463000022,
+        "seconds_per_epoch": 0.10699691463000022,
+        "seconds_per_step": 0.05349845731500011,
+        "peak_cuda_memory_mb": 99.42236328125
+      },
+      "global_steps": 200,
+      "checkpoint_path": "checkpoints/rram_sine_grid_distill_full/clipped_kan_gru_h32_wide_sine_grid-2.0_2.0_seed0.pt",
+      "source_log": "results/imported_kaggle/rram_sine_grid_distill/extracted/results/rram_sine_grid_distill_full.json"
+    },
+    {
+      "variant": "kan_gru_h32_wide",
+      "seed": 0,
+      "epochs": 100,
+      "batch_size": 512,
+      "lr": 0.001,
+      "grid_range": [
+        -2.0,
+        2.0
+      ],
+      "timing": {
+        "wall_clock_seconds": 10.220150132000015,
+        "seconds_per_epoch": 0.10220150132000015,
+        "seconds_per_step": 0.051100750660000076,
+        "peak_cuda_memory_mb": 98.58154296875
+      },
+      "global_steps": 200,
+      "checkpoint_path": "checkpoints/rram_sine_grid_distill_full/kan_gru_h32_wide_sine_grid-2.0_2.0_seed0.pt",
+      "source_log": "results/imported_kaggle/rram_sine_grid_distill/extracted/results/rram_sine_grid_distill_full.json"
+    },
+    {
+      "variant": "fused_clipped_kan_gru_h32_wide",
+      "seed": 0,
+      "epochs": 100,
+      "batch_size": 512,
+      "lr": 0.001,
+      "grid_range": [
+        -2.0,
+        2.0
+      ],
+      "timing": {
+        "wall_clock_seconds": 6.337497915000029,
+        "seconds_per_epoch": 0.06337497915000029,
+        "seconds_per_step": 0.031687489575000144,
+        "peak_cuda_memory_mb": 88.67919921875
+      },
+      "global_steps": 200,
+      "checkpoint_path": "checkpoints/rram_sine_grid_distill_full/fused_clipped_kan_gru_h32_wide_sine_grid-2.0_2.0_seed0.pt",
+      "source_log": "results/imported_kaggle/rram_sine_grid_distill/extracted/results/rram_sine_grid_distill_full.json"
+    },
+    {
+      "variant": "kan_lstm_h32_wide",
+      "seed": 0,
+      "epochs": 100,
+      "batch_size": 512,
+      "lr": 0.001,
+      "grid_range": [
+        -2.0,
+        2.0
+      ],
+      "timing": {
+        "wall_clock_seconds": 6.14056603399996,
+        "seconds_per_epoch": 0.0614056603399996,
+        "seconds_per_step": 0.0307028301699998,
+        "peak_cuda_memory_mb": 105.6630859375
+      },
+      "global_steps": 200,
+      "checkpoint_path": "checkpoints/rram_sine_grid_distill_full/kan_lstm_h32_wide_sine_grid-2.0_2.0_seed0.pt",
+      "source_log": "results/imported_kaggle/rram_sine_grid_distill/extracted/results/rram_sine_grid_distill_full.json"
+    },
+    {
+      "variant": "distilled_gru_h32",
+      "seed": 0,
+      "epochs": 100,
+      "batch_size": 512,
+      "timing": {
+        "wall_clock_seconds": 2.0991336110000134,
+        "seconds_per_epoch": 0.020991336110000133,
+        "seconds_per_step": 0.010495668055000067,
+        "peak_cuda_memory_mb": 34.89404296875
+      },
+      "global_steps": 200,
+      "checkpoint_path": "checkpoints/rram_sine_grid_distill_full/distilled_gru_h32_from_clipped_kan_gru_h32_wide_w0.25_seed0.pt",
+      "grid_range": [
+        -2.0,
+        2.0
+      ],
+      "source_log": "results/imported_kaggle/rram_sine_grid_distill/extracted/results/rram_sine_grid_distill_full.json"
+    },
+    {
+      "variant": "distilled_gru_h32",
+      "seed": 0,
+      "epochs": 100,
+      "batch_size": 512,
+      "timing": {
+        "wall_clock_seconds": 2.008255673000008,
+        "seconds_per_epoch": 0.02008255673000008,
+        "seconds_per_step": 0.01004127836500004,
+        "peak_cuda_memory_mb": 34.89404296875
+      },
+      "global_steps": 200,
+      "checkpoint_path": "checkpoints/rram_sine_grid_distill_full/distilled_gru_h32_from_clipped_kan_gru_h32_wide_w0.5_seed0.pt",
+      "grid_range": [
+        -2.0,
+        2.0
+      ],
+      "source_log": "results/imported_kaggle/rram_sine_grid_distill/extracted/results/rram_sine_grid_distill_full.json"
+    },
+    {
+      "variant": "distilled_gru_h32",
+      "seed": 0,
+      "epochs": 100,
+      "batch_size": 512,
+      "timing": {
+        "wall_clock_seconds": 1.982829479999964,
+        "seconds_per_epoch": 0.01982829479999964,
+        "seconds_per_step": 0.00991414739999982,
+        "peak_cuda_memory_mb": 34.89404296875
+      },
+      "global_steps": 200,
+      "checkpoint_path": "checkpoints/rram_sine_grid_distill_full/distilled_gru_h32_from_clipped_kan_gru_h32_wide_w0.75_seed0.pt",
+      "grid_range": [
+        -2.0,
+        2.0
+      ],
+      "source_log": "results/imported_kaggle/rram_sine_grid_distill/extracted/results/rram_sine_grid_distill_full.json"
+    },
+    {
+      "variant": "distilled_gru_h64",
+      "seed": 0,
+      "epochs": 100,
+      "batch_size": 512,
+      "timing": {
+        "wall_clock_seconds": 2.183513541000025,
+        "seconds_per_epoch": 0.021835135410000248,
+        "seconds_per_step": 0.010917567705000124,
+        "peak_cuda_memory_mb": 43.103515625
+      },
+      "global_steps": 200,
+      "checkpoint_path": "checkpoints/rram_sine_grid_distill_full/distilled_gru_h64_from_clipped_kan_gru_h32_wide_w0.25_seed0.pt",
+      "grid_range": [
+        -2.0,
+        2.0
+      ],
+      "source_log": "results/imported_kaggle/rram_sine_grid_distill/extracted/results/rram_sine_grid_distill_full.json"
+    },
+    {
+      "variant": "distilled_gru_h64",
+      "seed": 0,
+      "epochs": 100,
+      "batch_size": 512,
+      "timing": {
+        "wall_clock_seconds": 2.052718671999969,
+        "seconds_per_epoch": 0.02052718671999969,
+        "seconds_per_step": 0.010263593359999846,
+        "peak_cuda_memory_mb": 43.103515625
+      },
+      "global_steps": 200,
+      "checkpoint_path": "checkpoints/rram_sine_grid_distill_full/distilled_gru_h64_from_clipped_kan_gru_h32_wide_w0.5_seed0.pt",
+      "grid_range": [
+        -2.0,
+        2.0
+      ],
+      "source_log": "results/imported_kaggle/rram_sine_grid_distill/extracted/results/rram_sine_grid_distill_full.json"
+    },
+    {
+      "variant": "distilled_gru_h64",
+      "seed": 0,
+      "epochs": 100,
+      "batch_size": 512,
+      "timing": {
+        "wall_clock_seconds": 2.2159092300000225,
+        "seconds_per_epoch": 0.022159092300000224,
+        "seconds_per_step": 0.011079546150000112,
+        "peak_cuda_memory_mb": 43.103515625
+      },
+      "global_steps": 200,
+      "checkpoint_path": "checkpoints/rram_sine_grid_distill_full/distilled_gru_h64_from_clipped_kan_gru_h32_wide_w0.75_seed0.pt",
+      "grid_range": [
+        -2.0,
+        2.0
+      ],
+      "source_log": "results/imported_kaggle/rram_sine_grid_distill/extracted/results/rram_sine_grid_distill_full.json"
+    },
+    {
+      "variant": "distilled_gru_h116",
+      "seed": 0,
+      "epochs": 100,
+      "batch_size": 512,
+      "timing": {
+        "wall_clock_seconds": 2.248096664000002,
+        "seconds_per_epoch": 0.02248096664000002,
+        "seconds_per_step": 0.01124048332000001,
+        "peak_cuda_memory_mb": 58.21630859375
+      },
+      "global_steps": 200,
+      "checkpoint_path": "checkpoints/rram_sine_grid_distill_full/distilled_gru_h116_from_clipped_kan_gru_h32_wide_w0.25_seed0.pt",
+      "grid_range": [
+        -2.0,
+        2.0
+      ],
+      "source_log": "results/imported_kaggle/rram_sine_grid_distill/extracted/results/rram_sine_grid_distill_full.json"
+    },
+    {
+      "variant": "distilled_gru_h116",
+      "seed": 0,
+      "epochs": 100,
+      "batch_size": 512,
+      "timing": {
+        "wall_clock_seconds": 2.2009594930000276,
+        "seconds_per_epoch": 0.022009594930000275,
+        "seconds_per_step": 0.011004797465000138,
+        "peak_cuda_memory_mb": 58.21630859375
+      },
+      "global_steps": 200,
+      "checkpoint_path": "checkpoints/rram_sine_grid_distill_full/distilled_gru_h116_from_clipped_kan_gru_h32_wide_w0.5_seed0.pt",
+      "grid_range": [
+        -2.0,
+        2.0
+      ],
+      "source_log": "results/imported_kaggle/rram_sine_grid_distill/extracted/results/rram_sine_grid_distill_full.json"
+    },
+    {
+      "variant": "distilled_gru_h116",
+      "seed": 0,
+      "epochs": 100,
+      "batch_size": 512,
+      "timing": {
+        "wall_clock_seconds": 2.328506324999978,
+        "seconds_per_epoch": 0.02328506324999978,
+        "seconds_per_step": 0.01164253162499989,
+        "peak_cuda_memory_mb": 58.21630859375
+      },
+      "global_steps": 200,
+      "checkpoint_path": "checkpoints/rram_sine_grid_distill_full/distilled_gru_h116_from_clipped_kan_gru_h32_wide_w0.75_seed0.pt",
+      "grid_range": [
+        -2.0,
+        2.0
+      ],
+      "source_log": "results/imported_kaggle/rram_sine_grid_distill/extracted/results/rram_sine_grid_distill_full.json"
+    },
+    {
+      "variant": "gru_h116",
+      "seed": 1,
+      "epochs": 100,
+      "batch_size": 512,
+      "lr": 0.001,
+      "grid_range": [
+        -2.0,
+        2.0
+      ],
+      "timing": {
+        "wall_clock_seconds": 1.9005482500000426,
+        "seconds_per_epoch": 0.019005482500000427,
+        "seconds_per_step": 0.009502741250000214,
+        "peak_cuda_memory_mb": 58.21337890625
+      },
+      "global_steps": 200,
+      "checkpoint_path": "checkpoints/rram_sine_grid_distill_full/gru_h116_sine_grid-2.0_2.0_seed1.pt",
+      "source_log": "results/imported_kaggle/rram_sine_grid_distill/extracted/results/rram_sine_grid_distill_full.json"
+    },
+    {
+      "variant": "clipped_kan_gru_h32_wide",
+      "seed": 1,
+      "epochs": 100,
+      "batch_size": 512,
+      "lr": 0.001,
+      "grid_range": [
+        -2.0,
+        2.0
+      ],
+      "timing": {
+        "wall_clock_seconds": 10.443562065000037,
+        "seconds_per_epoch": 0.10443562065000038,
+        "seconds_per_step": 0.05221781032500019,
+        "peak_cuda_memory_mb": 99.90283203125
+      },
+      "global_steps": 200,
+      "checkpoint_path": "checkpoints/rram_sine_grid_distill_full/clipped_kan_gru_h32_wide_sine_grid-2.0_2.0_seed1.pt",
+      "source_log": "results/imported_kaggle/rram_sine_grid_distill/extracted/results/rram_sine_grid_distill_full.json"
+    },
+    {
+      "variant": "kan_gru_h32_wide",
+      "seed": 1,
+      "epochs": 100,
+      "batch_size": 512,
+      "lr": 0.001,
+      "grid_range": [
+        -2.0,
+        2.0
+      ],
+      "timing": {
+        "wall_clock_seconds": 10.37147307500004,
+        "seconds_per_epoch": 0.1037147307500004,
+        "seconds_per_step": 0.0518573653750002,
+        "peak_cuda_memory_mb": 99.06201171875
+      },
+      "global_steps": 200,
+      "checkpoint_path": "checkpoints/rram_sine_grid_distill_full/kan_gru_h32_wide_sine_grid-2.0_2.0_seed1.pt",
+      "source_log": "results/imported_kaggle/rram_sine_grid_distill/extracted/results/rram_sine_grid_distill_full.json"
+    },
+    {
+      "variant": "fused_clipped_kan_gru_h32_wide",
+      "seed": 1,
+      "epochs": 100,
+      "batch_size": 512,
+      "lr": 0.001,
+      "grid_range": [
+        -2.0,
+        2.0
+      ],
+      "timing": {
+        "wall_clock_seconds": 6.52148937100003,
+        "seconds_per_epoch": 0.06521489371000029,
+        "seconds_per_step": 0.032607446855000145,
+        "peak_cuda_memory_mb": 89.78466796875
+      },
+      "global_steps": 200,
+      "checkpoint_path": "checkpoints/rram_sine_grid_distill_full/fused_clipped_kan_gru_h32_wide_sine_grid-2.0_2.0_seed1.pt",
+      "source_log": "results/imported_kaggle/rram_sine_grid_distill/extracted/results/rram_sine_grid_distill_full.json"
+    },
+    {
+      "variant": "kan_lstm_h32_wide",
+      "seed": 1,
+      "epochs": 100,
+      "batch_size": 512,
+      "lr": 0.001,
+      "grid_range": [
+        -2.0,
+        2.0
+      ],
+      "timing": {
+        "wall_clock_seconds": 6.271188738000092,
+        "seconds_per_epoch": 0.06271188738000091,
+        "seconds_per_step": 0.03135594369000046,
+        "peak_cuda_memory_mb": 105.8935546875
+      },
+      "global_steps": 200,
+      "checkpoint_path": "checkpoints/rram_sine_grid_distill_full/kan_lstm_h32_wide_sine_grid-2.0_2.0_seed1.pt",
+      "source_log": "results/imported_kaggle/rram_sine_grid_distill/extracted/results/rram_sine_grid_distill_full.json"
+    },
+    {
+      "variant": "distilled_gru_h32",
+      "seed": 1,
+      "epochs": 100,
+      "batch_size": 512,
+      "timing": {
+        "wall_clock_seconds": 1.9783176319999711,
+        "seconds_per_epoch": 0.01978317631999971,
+        "seconds_per_step": 0.009891588159999855,
+        "peak_cuda_memory_mb": 35.12451171875
+      },
+      "global_steps": 200,
+      "checkpoint_path": "checkpoints/rram_sine_grid_distill_full/distilled_gru_h32_from_clipped_kan_gru_h32_wide_w0.25_seed1.pt",
+      "grid_range": [
+        -2.0,
+        2.0
+      ],
+      "source_log": "results/imported_kaggle/rram_sine_grid_distill/extracted/results/rram_sine_grid_distill_full.json"
+    },
+    {
+      "variant": "distilled_gru_h32",
+      "seed": 1,
+      "epochs": 100,
+      "batch_size": 512,
+      "timing": {
+        "wall_clock_seconds": 2.025398107000001,
+        "seconds_per_epoch": 0.02025398107000001,
+        "seconds_per_step": 0.010126990535000005,
+        "peak_cuda_memory_mb": 35.12451171875
+      },
+      "global_steps": 200,
+      "checkpoint_path": "checkpoints/rram_sine_grid_distill_full/distilled_gru_h32_from_clipped_kan_gru_h32_wide_w0.5_seed1.pt",
+      "grid_range": [
+        -2.0,
+        2.0
+      ],
+      "source_log": "results/imported_kaggle/rram_sine_grid_distill/extracted/results/rram_sine_grid_distill_full.json"
+    },
+    {
+      "variant": "distilled_gru_h32",
+      "seed": 1,
+      "epochs": 100,
+      "batch_size": 512,
+      "timing": {
+        "wall_clock_seconds": 2.1187229800000296,
+        "seconds_per_epoch": 0.021187229800000297,
+        "seconds_per_step": 0.010593614900000149,
+        "peak_cuda_memory_mb": 35.12451171875
+      },
+      "global_steps": 200,
+      "checkpoint_path": "checkpoints/rram_sine_grid_distill_full/distilled_gru_h32_from_clipped_kan_gru_h32_wide_w0.75_seed1.pt",
+      "grid_range": [
+        -2.0,
+        2.0
+      ],
+      "source_log": "results/imported_kaggle/rram_sine_grid_distill/extracted/results/rram_sine_grid_distill_full.json"
+    },
+    {
+      "variant": "distilled_gru_h64",
+      "seed": 1,
+      "epochs": 100,
+      "batch_size": 512,
+      "timing": {
+        "wall_clock_seconds": 2.1230511680000745,
+        "seconds_per_epoch": 0.021230511680000744,
+        "seconds_per_step": 0.010615255840000372,
+        "peak_cuda_memory_mb": 43.333984375
+      },
+      "global_steps": 200,
+      "checkpoint_path": "checkpoints/rram_sine_grid_distill_full/distilled_gru_h64_from_clipped_kan_gru_h32_wide_w0.25_seed1.pt",
+      "grid_range": [
+        -2.0,
+        2.0
+      ],
+      "source_log": "results/imported_kaggle/rram_sine_grid_distill/extracted/results/rram_sine_grid_distill_full.json"
+    },
+    {
+      "variant": "distilled_gru_h64",
+      "seed": 1,
+      "epochs": 100,
+      "batch_size": 512,
+      "timing": {
+        "wall_clock_seconds": 2.1803217789999962,
+        "seconds_per_epoch": 0.02180321778999996,
+        "seconds_per_step": 0.01090160889499998,
+        "peak_cuda_memory_mb": 43.333984375
+      },
+      "global_steps": 200,
+      "checkpoint_path": "checkpoints/rram_sine_grid_distill_full/distilled_gru_h64_from_clipped_kan_gru_h32_wide_w0.5_seed1.pt",
+      "grid_range": [
+        -2.0,
+        2.0
+      ],
+      "source_log": "results/imported_kaggle/rram_sine_grid_distill/extracted/results/rram_sine_grid_distill_full.json"
+    },
+    {
+      "variant": "distilled_gru_h64",
+      "seed": 1,
+      "epochs": 100,
+      "batch_size": 512,
+      "timing": {
+        "wall_clock_seconds": 2.046698959000082,
+        "seconds_per_epoch": 0.02046698959000082,
+        "seconds_per_step": 0.01023349479500041,
+        "peak_cuda_memory_mb": 43.333984375
+      },
+      "global_steps": 200,
+      "checkpoint_path": "checkpoints/rram_sine_grid_distill_full/distilled_gru_h64_from_clipped_kan_gru_h32_wide_w0.75_seed1.pt",
+      "grid_range": [
+        -2.0,
+        2.0
+      ],
+      "source_log": "results/imported_kaggle/rram_sine_grid_distill/extracted/results/rram_sine_grid_distill_full.json"
+    },
+    {
+      "variant": "distilled_gru_h116",
+      "seed": 1,
+      "epochs": 100,
+      "batch_size": 512,
+      "timing": {
+        "wall_clock_seconds": 2.2231754179999825,
+        "seconds_per_epoch": 0.022231754179999827,
+        "seconds_per_step": 0.011115877089999913,
+        "peak_cuda_memory_mb": 58.44677734375
+      },
+      "global_steps": 200,
+      "checkpoint_path": "checkpoints/rram_sine_grid_distill_full/distilled_gru_h116_from_clipped_kan_gru_h32_wide_w0.25_seed1.pt",
+      "grid_range": [
+        -2.0,
+        2.0
+      ],
+      "source_log": "results/imported_kaggle/rram_sine_grid_distill/extracted/results/rram_sine_grid_distill_full.json"
+    },
+    {
+      "variant": "distilled_gru_h116",
+      "seed": 1,
+      "epochs": 100,
+      "batch_size": 512,
+      "timing": {
+        "wall_clock_seconds": 2.3711009400000194,
+        "seconds_per_epoch": 0.023711009400000194,
+        "seconds_per_step": 0.011855504700000097,
+        "peak_cuda_memory_mb": 58.44677734375
+      },
+      "global_steps": 200,
+      "checkpoint_path": "checkpoints/rram_sine_grid_distill_full/distilled_gru_h116_from_clipped_kan_gru_h32_wide_w0.5_seed1.pt",
+      "grid_range": [
+        -2.0,
+        2.0
+      ],
+      "source_log": "results/imported_kaggle/rram_sine_grid_distill/extracted/results/rram_sine_grid_distill_full.json"
+    },
+    {
+      "variant": "distilled_gru_h116",
+      "seed": 1,
+      "epochs": 100,
+      "batch_size": 512,
+      "timing": {
+        "wall_clock_seconds": 2.214979951999908,
+        "seconds_per_epoch": 0.02214979951999908,
+        "seconds_per_step": 0.01107489975999954,
+        "peak_cuda_memory_mb": 58.44677734375
+      },
+      "global_steps": 200,
+      "checkpoint_path": "checkpoints/rram_sine_grid_distill_full/distilled_gru_h116_from_clipped_kan_gru_h32_wide_w0.75_seed1.pt",
+      "grid_range": [
+        -2.0,
+        2.0
+      ],
+      "source_log": "results/imported_kaggle/rram_sine_grid_distill/extracted/results/rram_sine_grid_distill_full.json"
+    },
+    {
+      "variant": "gru_h116",
+      "seed": 2,
+      "epochs": 100,
+      "batch_size": 512,
+      "lr": 0.001,
+      "grid_range": [
+        -2.0,
+        2.0
+      ],
+      "timing": {
+        "wall_clock_seconds": 2.012674320999963,
+        "seconds_per_epoch": 0.02012674320999963,
+        "seconds_per_step": 0.010063371604999816,
+        "peak_cuda_memory_mb": 58.44384765625
+      },
+      "global_steps": 200,
+      "checkpoint_path": "checkpoints/rram_sine_grid_distill_full/gru_h116_sine_grid-2.0_2.0_seed2.pt",
+      "source_log": "results/imported_kaggle/rram_sine_grid_distill/extracted/results/rram_sine_grid_distill_full.json"
+    },
+    {
+      "variant": "clipped_kan_gru_h32_wide",
+      "seed": 2,
+      "epochs": 100,
+      "batch_size": 512,
+      "lr": 0.001,
+      "grid_range": [
+        -2.0,
+        2.0
+      ],
+      "timing": {
+        "wall_clock_seconds": 10.26933303699991,
+        "seconds_per_epoch": 0.1026933303699991,
+        "seconds_per_step": 0.05134666518499955,
+        "peak_cuda_memory_mb": 100.13330078125
+      },
+      "global_steps": 200,
+      "checkpoint_path": "checkpoints/rram_sine_grid_distill_full/clipped_kan_gru_h32_wide_sine_grid-2.0_2.0_seed2.pt",
+      "source_log": "results/imported_kaggle/rram_sine_grid_distill/extracted/results/rram_sine_grid_distill_full.json"
+    },
+    {
+      "variant": "kan_gru_h32_wide",
+      "seed": 2,
+      "epochs": 100,
+      "batch_size": 512,
+      "lr": 0.001,
+      "grid_range": [
+        -2.0,
+        2.0
+      ],
+      "timing": {
+        "wall_clock_seconds": 10.008394519000035,
+        "seconds_per_epoch": 0.10008394519000036,
+        "seconds_per_step": 0.05004197259500018,
+        "peak_cuda_memory_mb": 99.29248046875
+      },
+      "global_steps": 200,
+      "checkpoint_path": "checkpoints/rram_sine_grid_distill_full/kan_gru_h32_wide_sine_grid-2.0_2.0_seed2.pt",
+      "source_log": "results/imported_kaggle/rram_sine_grid_distill/extracted/results/rram_sine_grid_distill_full.json"
+    },
+    {
+      "variant": "fused_clipped_kan_gru_h32_wide",
+      "seed": 2,
+      "epochs": 100,
+      "batch_size": 512,
+      "lr": 0.001,
+      "grid_range": [
+        -2.0,
+        2.0
+      ],
+      "timing": {
+        "wall_clock_seconds": 6.2936622460000535,
+        "seconds_per_epoch": 0.06293662246000054,
+        "seconds_per_step": 0.03146831123000027,
+        "peak_cuda_memory_mb": 90.01513671875
+      },
+      "global_steps": 200,
+      "checkpoint_path": "checkpoints/rram_sine_grid_distill_full/fused_clipped_kan_gru_h32_wide_sine_grid-2.0_2.0_seed2.pt",
+      "source_log": "results/imported_kaggle/rram_sine_grid_distill/extracted/results/rram_sine_grid_distill_full.json"
+    },
+    {
+      "variant": "kan_lstm_h32_wide",
+      "seed": 2,
+      "epochs": 100,
+      "batch_size": 512,
+      "lr": 0.001,
+      "grid_range": [
+        -2.0,
+        2.0
+      ],
+      "timing": {
+        "wall_clock_seconds": 6.052825424000048,
+        "seconds_per_epoch": 0.06052825424000048,
+        "seconds_per_step": 0.03026412712000024,
+        "peak_cuda_memory_mb": 106.1240234375
+      },
+      "global_steps": 200,
+      "checkpoint_path": "checkpoints/rram_sine_grid_distill_full/kan_lstm_h32_wide_sine_grid-2.0_2.0_seed2.pt",
+      "source_log": "results/imported_kaggle/rram_sine_grid_distill/extracted/results/rram_sine_grid_distill_full.json"
+    },
+    {
+      "variant": "distilled_gru_h32",
+      "seed": 2,
+      "epochs": 100,
+      "batch_size": 512,
+      "timing": {
+        "wall_clock_seconds": 1.9657920719999993,
+        "seconds_per_epoch": 0.019657920719999993,
+        "seconds_per_step": 0.009828960359999996,
+        "peak_cuda_memory_mb": 35.35498046875
+      },
+      "global_steps": 200,
+      "checkpoint_path": "checkpoints/rram_sine_grid_distill_full/distilled_gru_h32_from_clipped_kan_gru_h32_wide_w0.25_seed2.pt",
+      "grid_range": [
+        -2.0,
+        2.0
+      ],
+      "source_log": "results/imported_kaggle/rram_sine_grid_distill/extracted/results/rram_sine_grid_distill_full.json"
+    },
+    {
+      "variant": "distilled_gru_h32",
+      "seed": 2,
+      "epochs": 100,
+      "batch_size": 512,
+      "timing": {
+        "wall_clock_seconds": 2.1221333559999493,
+        "seconds_per_epoch": 0.021221333559999493,
+        "seconds_per_step": 0.010610666779999747,
+        "peak_cuda_memory_mb": 35.35498046875
+      },
+      "global_steps": 200,
+      "checkpoint_path": "checkpoints/rram_sine_grid_distill_full/distilled_gru_h32_from_clipped_kan_gru_h32_wide_w0.5_seed2.pt",
+      "grid_range": [
+        -2.0,
+        2.0
+      ],
+      "source_log": "results/imported_kaggle/rram_sine_grid_distill/extracted/results/rram_sine_grid_distill_full.json"
+    },
+    {
+      "variant": "distilled_gru_h32",
+      "seed": 2,
+      "epochs": 100,
+      "batch_size": 512,
+      "timing": {
+        "wall_clock_seconds": 2.0193229620000466,
+        "seconds_per_epoch": 0.020193229620000464,
+        "seconds_per_step": 0.010096614810000232,
+        "peak_cuda_memory_mb": 35.35498046875
+      },
+      "global_steps": 200,
+      "checkpoint_path": "checkpoints/rram_sine_grid_distill_full/distilled_gru_h32_from_clipped_kan_gru_h32_wide_w0.75_seed2.pt",
+      "grid_range": [
+        -2.0,
+        2.0
+      ],
+      "source_log": "results/imported_kaggle/rram_sine_grid_distill/extracted/results/rram_sine_grid_distill_full.json"
+    },
+    {
+      "variant": "distilled_gru_h64",
+      "seed": 2,
+      "epochs": 100,
+      "batch_size": 512,
+      "timing": {
+        "wall_clock_seconds": 2.0763542869999583,
+        "seconds_per_epoch": 0.020763542869999582,
+        "seconds_per_step": 0.010381771434999791,
+        "peak_cuda_memory_mb": 43.564453125
+      },
+      "global_steps": 200,
+      "checkpoint_path": "checkpoints/rram_sine_grid_distill_full/distilled_gru_h64_from_clipped_kan_gru_h32_wide_w0.25_seed2.pt",
+      "grid_range": [
+        -2.0,
+        2.0
+      ],
+      "source_log": "results/imported_kaggle/rram_sine_grid_distill/extracted/results/rram_sine_grid_distill_full.json"
+    },
+    {
+      "variant": "distilled_gru_h64",
+      "seed": 2,
+      "epochs": 100,
+      "batch_size": 512,
+      "timing": {
+        "wall_clock_seconds": 2.178617051999936,
+        "seconds_per_epoch": 0.02178617051999936,
+        "seconds_per_step": 0.01089308525999968,
+        "peak_cuda_memory_mb": 43.564453125
+      },
+      "global_steps": 200,
+      "checkpoint_path": "checkpoints/rram_sine_grid_distill_full/distilled_gru_h64_from_clipped_kan_gru_h32_wide_w0.5_seed2.pt",
+      "grid_range": [
+        -2.0,
+        2.0
+      ],
+      "source_log": "results/imported_kaggle/rram_sine_grid_distill/extracted/results/rram_sine_grid_distill_full.json"
+    },
+    {
+      "variant": "distilled_gru_h64",
+      "seed": 2,
+      "epochs": 100,
+      "batch_size": 512,
+      "timing": {
+        "wall_clock_seconds": 2.1223608090000425,
+        "seconds_per_epoch": 0.021223608090000425,
+        "seconds_per_step": 0.010611804045000213,
+        "peak_cuda_memory_mb": 43.564453125
+      },
+      "global_steps": 200,
+      "checkpoint_path": "checkpoints/rram_sine_grid_distill_full/distilled_gru_h64_from_clipped_kan_gru_h32_wide_w0.75_seed2.pt",
+      "grid_range": [
+        -2.0,
+        2.0
+      ],
+      "source_log": "results/imported_kaggle/rram_sine_grid_distill/extracted/results/rram_sine_grid_distill_full.json"
+    },
+    {
+      "variant": "distilled_gru_h116",
+      "seed": 2,
+      "epochs": 100,
+      "batch_size": 512,
+      "timing": {
+        "wall_clock_seconds": 2.3697243190000563,
+        "seconds_per_epoch": 0.023697243190000564,
+        "seconds_per_step": 0.011848621595000282,
+        "peak_cuda_memory_mb": 58.67724609375
+      },
+      "global_steps": 200,
+      "checkpoint_path": "checkpoints/rram_sine_grid_distill_full/distilled_gru_h116_from_clipped_kan_gru_h32_wide_w0.25_seed2.pt",
+      "grid_range": [
+        -2.0,
+        2.0
+      ],
+      "source_log": "results/imported_kaggle/rram_sine_grid_distill/extracted/results/rram_sine_grid_distill_full.json"
+    },
+    {
+      "variant": "distilled_gru_h116",
+      "seed": 2,
+      "epochs": 100,
+      "batch_size": 512,
+      "timing": {
+        "wall_clock_seconds": 2.2093144599999732,
+        "seconds_per_epoch": 0.022093144599999733,
+        "seconds_per_step": 0.011046572299999866,
+        "peak_cuda_memory_mb": 58.67724609375
+      },
+      "global_steps": 200,
+      "checkpoint_path": "checkpoints/rram_sine_grid_distill_full/distilled_gru_h116_from_clipped_kan_gru_h32_wide_w0.5_seed2.pt",
+      "grid_range": [
+        -2.0,
+        2.0
+      ],
+      "source_log": "results/imported_kaggle/rram_sine_grid_distill/extracted/results/rram_sine_grid_distill_full.json"
+    },
+    {
+      "variant": "distilled_gru_h116",
+      "seed": 2,
+      "epochs": 100,
+      "batch_size": 512,
+      "timing": {
+        "wall_clock_seconds": 2.235639282999955,
+        "seconds_per_epoch": 0.02235639282999955,
+        "seconds_per_step": 0.011178196414999775,
+        "peak_cuda_memory_mb": 58.67724609375
+      },
+      "global_steps": 200,
+      "checkpoint_path": "checkpoints/rram_sine_grid_distill_full/distilled_gru_h116_from_clipped_kan_gru_h32_wide_w0.75_seed2.pt",
+      "grid_range": [
+        -2.0,
+        2.0
+      ],
+      "source_log": "results/imported_kaggle/rram_sine_grid_distill/extracted/results/rram_sine_grid_distill_full.json"
+    },
+    {
+      "variant": "gru_h116",
+      "seed": 0,
+      "epochs": 100,
+      "batch_size": 512,
+      "lr": 0.001,
+      "task": "sine",
+      "timing": {
+        "wall_clock_seconds": 2.34849970099998,
+        "seconds_per_epoch": 0.0234849970099998,
+        "seconds_per_step": 0.0117424985049999
+      },
+      "global_steps": 200,
+      "checkpoint_path": "checkpoints/rram_sine_narrow100_full/gru_h116_sine_seed0.pt",
+      "source_log": "results/imported_kaggle/rram_sine_narrow100/extracted/results/rram_sine_narrow100_full.json"
+    },
+    {
+      "variant": "clipped_kan_gru_h32",
+      "seed": 0,
+      "epochs": 100,
+      "batch_size": 512,
+      "lr": 0.001,
+      "task": "sine",
+      "timing": {
+        "wall_clock_seconds": 10.660229343000026,
+        "seconds_per_epoch": 0.10660229343000026,
+        "seconds_per_step": 0.05330114671500013
+      },
+      "global_steps": 200,
+      "checkpoint_path": "checkpoints/rram_sine_narrow100_full/clipped_kan_gru_h32_sine_seed0.pt",
+      "source_log": "results/imported_kaggle/rram_sine_narrow100/extracted/results/rram_sine_narrow100_full.json"
+    },
+    {
+      "variant": "kan_gru_h32",
+      "seed": 0,
+      "epochs": 100,
+      "batch_size": 512,
+      "lr": 0.001,
+      "task": "sine",
+      "timing": {
+        "wall_clock_seconds": 10.283182967000016,
+        "seconds_per_epoch": 0.10283182967000017,
+        "seconds_per_step": 0.05141591483500008
+      },
+      "global_steps": 200,
+      "checkpoint_path": "checkpoints/rram_sine_narrow100_full/kan_gru_h32_sine_seed0.pt",
+      "source_log": "results/imported_kaggle/rram_sine_narrow100/extracted/results/rram_sine_narrow100_full.json"
+    },
+    {
+      "variant": "gru_h116",
+      "seed": 1,
+      "epochs": 100,
+      "batch_size": 512,
+      "lr": 0.001,
+      "task": "sine",
+      "timing": {
+        "wall_clock_seconds": 1.9294112640000094,
+        "seconds_per_epoch": 0.019294112640000093,
+        "seconds_per_step": 0.009647056320000047
+      },
+      "global_steps": 200,
+      "checkpoint_path": "checkpoints/rram_sine_narrow100_full/gru_h116_sine_seed1.pt",
+      "source_log": "results/imported_kaggle/rram_sine_narrow100/extracted/results/rram_sine_narrow100_full.json"
+    },
+    {
+      "variant": "clipped_kan_gru_h32",
+      "seed": 1,
+      "epochs": 100,
+      "batch_size": 512,
+      "lr": 0.001,
+      "task": "sine",
+      "timing": {
+        "wall_clock_seconds": 10.652132810000012,
+        "seconds_per_epoch": 0.10652132810000012,
+        "seconds_per_step": 0.05326066405000006
+      },
+      "global_steps": 200,
+      "checkpoint_path": "checkpoints/rram_sine_narrow100_full/clipped_kan_gru_h32_sine_seed1.pt",
+      "source_log": "results/imported_kaggle/rram_sine_narrow100/extracted/results/rram_sine_narrow100_full.json"
+    },
+    {
+      "variant": "kan_gru_h32",
+      "seed": 1,
+      "epochs": 100,
+      "batch_size": 512,
+      "lr": 0.001,
+      "task": "sine",
+      "timing": {
+        "wall_clock_seconds": 10.396245996999994,
+        "seconds_per_epoch": 0.10396245996999993,
+        "seconds_per_step": 0.05198122998499997
+      },
+      "global_steps": 200,
+      "checkpoint_path": "checkpoints/rram_sine_narrow100_full/kan_gru_h32_sine_seed1.pt",
+      "source_log": "results/imported_kaggle/rram_sine_narrow100/extracted/results/rram_sine_narrow100_full.json"
+    },
+    {
+      "variant": "gru_h116",
+      "seed": 2,
+      "epochs": 100,
+      "batch_size": 512,
+      "lr": 0.001,
+      "task": "sine",
+      "timing": {
+        "wall_clock_seconds": 1.87528544099996,
+        "seconds_per_epoch": 0.0187528544099996,
+        "seconds_per_step": 0.0093764272049998
+      },
+      "global_steps": 200,
+      "checkpoint_path": "checkpoints/rram_sine_narrow100_full/gru_h116_sine_seed2.pt",
+      "source_log": "results/imported_kaggle/rram_sine_narrow100/extracted/results/rram_sine_narrow100_full.json"
+    },
+    {
+      "variant": "clipped_kan_gru_h32",
+      "seed": 2,
+      "epochs": 100,
+      "batch_size": 512,
+      "lr": 0.001,
+      "task": "sine",
+      "timing": {
+        "wall_clock_seconds": 10.551852269999983,
+        "seconds_per_epoch": 0.10551852269999984,
+        "seconds_per_step": 0.05275926134999992
+      },
+      "global_steps": 200,
+      "checkpoint_path": "checkpoints/rram_sine_narrow100_full/clipped_kan_gru_h32_sine_seed2.pt",
+      "source_log": "results/imported_kaggle/rram_sine_narrow100/extracted/results/rram_sine_narrow100_full.json"
+    },
+    {
+      "variant": "kan_gru_h32",
+      "seed": 2,
+      "epochs": 100,
+      "batch_size": 512,
+      "lr": 0.001,
+      "task": "sine",
+      "timing": {
+        "wall_clock_seconds": 10.230033744000025,
+        "seconds_per_epoch": 0.10230033744000025,
+        "seconds_per_step": 0.051150168720000125
+      },
+      "global_steps": 200,
+      "checkpoint_path": "checkpoints/rram_sine_narrow100_full/kan_gru_h32_sine_seed2.pt",
+      "source_log": "results/imported_kaggle/rram_sine_narrow100/extracted/results/rram_sine_narrow100_full.json"
+    },
+    {
+      "variant": "gru_h116",
+      "seed": 0,
+      "epochs": 1,
+      "batch_size": 512,
+      "lr": 0.001,
+      "task": "sine",
+      "timing": {
+        "wall_clock_seconds": 0.8843113749999816,
+        "seconds_per_epoch": 0.8843113749999816,
+        "seconds_per_step": 0.4421556874999908
+      },
+      "global_steps": 2,
+      "checkpoint_path": "checkpoints/rram_sine_narrow100_smoke/gru_h116_sine_seed0.pt",
+      "source_log": "results/imported_kaggle/rram_sine_narrow100/extracted/results/rram_sine_narrow100_smoke.json"
+    },
+    {
+      "variant": "clipped_kan_gru_h32",
+      "seed": 0,
+      "epochs": 1,
+      "batch_size": 512,
+      "lr": 0.001,
+      "task": "sine",
+      "timing": {
+        "wall_clock_seconds": 0.2884566120000045,
+        "seconds_per_epoch": 0.2884566120000045,
+        "seconds_per_step": 0.14422830600000225
+      },
+      "global_steps": 2,
+      "checkpoint_path": "checkpoints/rram_sine_narrow100_smoke/clipped_kan_gru_h32_sine_seed0.pt",
+      "source_log": "results/imported_kaggle/rram_sine_narrow100/extracted/results/rram_sine_narrow100_smoke.json"
+    }
+  ]
+}

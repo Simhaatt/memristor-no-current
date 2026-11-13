@@ -1,0 +1,99 @@
+{
+  "feature_names": [
+    "V_t",
+    "V_t_minus_1",
+    "I_t_minus_1",
+    "dV_t",
+    "sweep_direction"
+  ],
+  "normalization": "Feature and target z-score statistics are computed from train curves only.",
+  "seed": 42,
+  "source_convention": "voltage = Volt.1 - Volt; current = Volt",
+  "split_curve_counts": {
+    "test": 9,
+    "train": 39,
+    "val": 8
+  },
+  "split_curve_indices": {
+    "test": [
+      43,
+      14,
+      54,
+      2,
+      36,
+      33,
+      1,
+      13,
+      8
+    ],
+    "train": [
+      28,
+      51,
+      18,
+      24,
+      7,
+      17,
+      27,
+      46,
+      55,
+      39,
+      41,
+      5,
+      53,
+      25,
+      29,
+      31,
+      34,
+      20,
+      48,
+      42,
+      40,
+      50,
+      44,
+      4,
+      26,
+      15,
+      32,
+      23,
+      37,
+      9,
+      52,
+      21,
+      16,
+      3,
+      30,
+      10,
+      47,
+      49,
+      6
+    ],
+    "val": [
+      38,
+      11,
+      22,
+      19,
+      35,
+      0,
+      45,
+      12
+    ]
+  },
+  "summary": {
+    "columns": [
+      "Volt",
+      "Volt.1",
+      "second"
+    ],
+    "name": "SDC state data",
+    "notes": "Voltage is Volt.1 - Volt and current is Volt, matching the source repository preprocessing.",
+    "rows": 895944,
+    "sequences": 56,
+    "split_type": "curve-wise"
+  },
+  "target_names": [
+    "I_t"
+  ],
+  "test_rows": 143991,
+  "train_rows": 623961,
+  "val_rows": 127992
+}

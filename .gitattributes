@@ -1,0 +1,2 @@
+# Preserve exact artifact bytes so SHA256SUMS also verifies after cloning.
+* -text
